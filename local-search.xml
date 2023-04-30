@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2023/04/30/hello-world/"/>
+    <url>/2023/04/30/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>这是我的第一篇博客，经过一晚上的琢磨，总算是搭建好了，本博客使用到的教程如下：</p><p><a href="https://www.bilibili.com/video/av44544186">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a> </p><p><a href="https://www.bilibili.com/video/av97690084">【基础篇】免费搭建博客hexo-最详细的搭建教程-人人都可以有博客</a> </p><p>用的是github可以支（免）持（费）托管</p><p>使用的文章编辑器：typora、简书</p><p>转到博客目录(管理员运行)cd C:\Users\你的用户名\blog&#x2F;</p><p>hexo s 初始化本地服务器 </p><p><a href="http://localhost:4000/">http://localhost:4000</a></p><p>hexo clean 清理</p><p>hexo d 推送</p><p>hexo new “my-Blog” 新建一篇博客</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
