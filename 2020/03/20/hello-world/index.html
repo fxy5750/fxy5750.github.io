@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.4k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          9 分钟
+          12 分钟
         
       </span>
     
@@ -290,13 +290,15 @@
 
 
 
-
-
-<h2 id="发布一篇内容"><a href="#发布一篇内容" class="headerlink" title="发布一篇内容"></a>发布一篇内容</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs verilog"># 新建一篇博客<br>hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&quot;需要新建的名称&quot;</span><br><br># hexo clean命令清除public目录中的所有文件和缓存。<br>hexo clean<br><br>#hexo g是hexo <span class="hljs-keyword">generate</span>的简写，用于生成静态网站文件。当你更新博客内容后，需要使用该命令重新生成网站文件，然后才能查看最新的更改。执行hexo g命令后，Hexo会根据你在_config<span class="hljs-variable">.yml</span>中设置的配置信息，将博客源文件（Markdown、HTML、CSS等）转换成静态网页并存储在public目录中。<br>hexo g<br><br>#通过执行hexo d命令，可以将本地生成的静态文件部署到指定的远程服务器上，从而使其他人可以通过访问该服务器来浏览你的博客内容。<br>hexo d<br></code></pre></td></tr></table></figure>
+<h2 id="写一篇文章"><a href="#写一篇文章" class="headerlink" title="写一篇文章"></a>写一篇文章</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs clean"># 新建一篇博客<br>hexo new <span class="hljs-string">&quot;需要新建的名称&quot;</span><br><br># 以下是一篇文章的引用信息<br>title: 文章标题..................### 文章标题<br>index_img: /img/example.jpg..................### 文章缩略图<br>date: <span class="hljs-number">2019</span><span class="hljs-number">-10</span><span class="hljs-number">-10</span> <span class="hljs-number">10</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00.</span>.................### 文章日期<br>categories:..................### 文章分类<br>- 站点新闻..................### 文章分类名称<br>tags:..................### 文章标签<br>- Hello Word..................### 标签名称<br></code></pre></td></tr></table></figure>
 
 
 
-<h2 id="此博客的维护支持"><a href="#此博客的维护支持" class="headerlink" title="此博客的维护支持"></a>此博客的维护支持</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-comment"># hexo中插入PDF</span><br><span class="hljs-comment"># 1.安装hexo-pdf</span><br>npm install --save hexo-pdf<br><br><span class="hljs-comment"># 本地PDF引用（需要在source文件夹下创建一个叫pdf的文件夹）</span><br>&#123;% pdf <span class="hljs-regexp">/pdf/</span>xxx.pdf %&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="推送博客内容到-Pages"><a href="#推送博客内容到-Pages" class="headerlink" title="推送博客内容到 Pages"></a>推送博客内容到 Pages</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs verilog"># hexo clean命令清除public目录中的所有文件和缓存。<br>hexo clean<br><br>#hexo g是hexo <span class="hljs-keyword">generate</span>的简写，用于生成静态网站文件。当你更新博客内容后，需要使用该命令重新生成网站文件，然后才能查看最新的更改。执行hexo g命令后，Hexo会根据你在_config<span class="hljs-variable">.yml</span>中设置的配置信息，将博客源文件（Markdown、HTML、CSS等）转换成静态网页并存储在public目录中。<br>hexo g<br><br>#通过执行hexo d命令，可以将本地生成的静态文件部署到指定的远程服务器上，从而使其他人可以通过访问该服务器来浏览你的博客内容。<br>hexo d<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="此博客的维护支持"><a href="#此博客的维护支持" class="headerlink" title="此博客的维护支持"></a>此博客的维护支持</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-comment"># hexo中插入PDF</span><br><span class="hljs-comment"># 1.安装hexo-pdf</span><br>npm install --save hexo-pdf<br><br><span class="hljs-comment"># 本地PDF引用（需要在source文件夹下创建一个叫pdf的文件夹）</span><br>&#123;% pdf <span class="hljs-regexp">/pdf/</span>xxx.pdf %&#125;<br><br><span class="hljs-comment"># PDF技术支持：https://zhuanlan.zhihu.com/p/550626417?utm_id=0</span><br></code></pre></td></tr></table></figure>
 
 
 
