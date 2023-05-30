@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.8k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          12 分钟
+          16 分钟
         
       </span>
     
@@ -306,6 +306,10 @@
 
 
 <h2 id="写一篇文章"><a href="#写一篇文章" class="headerlink" title="写一篇文章"></a>写一篇文章</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs clean"># 新建一篇博客<br>hexo new <span class="hljs-string">&quot;需要新建的名称&quot;</span><br><br># 以下是一篇文章的引用信息<br>title: 文章标题..................### 文章标题<br>index_img: /img/example.jpg..................### 文章缩略图<br>date: <span class="hljs-number">2019</span><span class="hljs-number">-10</span><span class="hljs-number">-10</span> <span class="hljs-number">10</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00.</span>.................### 文章日期<br>categories:..................### 文章分类<br>- 站点新闻..................### 文章分类名称<br>tags:..................### 文章标签<br>- Hello Word..................### 标签名称<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="媒体内容"><a href="#媒体内容" class="headerlink" title="媒体内容"></a>媒体内容</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">在Markdown文件中使用以下代码来插入视频<br>&lt;video width=<span class="hljs-string">&quot;100%&quot;</span> controls&gt;<br>&lt;<span class="hljs-built_in">source</span> src=<span class="hljs-string">&quot;/videos/sword_dolly_v1.mp4&quot;</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span>&gt;<br>&lt;/video&gt;<br><br><br>第三方插件 DPlayer<br>&#123;% dplayer <span class="hljs-string">&quot;url=/videos/sword_dolly_v1.mp4&quot;</span> %&#125;<br><span class="hljs-comment"># 这是指向本地的方法</span><br><br>&#123;% dplayer <span class="hljs-string">&quot;url=https://tencent-xpc13.xpccdn.com/5e57b9cec7f1f.mp4&quot;</span> %&#125;<br><span class="hljs-comment"># 这是指向网络流媒体的方法</span><br></code></pre></td></tr></table></figure>
 
 
 

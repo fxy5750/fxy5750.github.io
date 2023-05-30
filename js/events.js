@@ -172,7 +172,7 @@ Fluid.events = {
 关于此博客
 这个博客基于Hexo构建，使用了Fluid主题。博客的源代码托管在GitHub上，欢迎访问并star。 本博客旨在分享我的学习心得和经验，同时也希望能够为其他人提供一些帮助和借鉴。如果您喜欢我的博客，请分享给更多的人，谢谢！
 
-主题由：Fluid驱动 https://fxy5750.github.io/2020/03/20/hello-world/#%E5%96%9C%E6%AC%A2%E8%BF%99%E6%AC%BE%E4%B8%BB%E9%A2%98%E5%90%97%EF%BC%9F
+主题由：Fluid驱动 https://hexo.fluid-dev.com/docs
 
 博客由：hexo驱动 https://hexo.io/zh-cn/
     `);
