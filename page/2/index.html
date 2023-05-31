@@ -16,12 +16,12 @@
   <meta name="author" content="fxy5750">
   <meta name="keywords" content="">
   
-    <meta name="description" content="又是一个中二宅的Bolg...">
+    <meta name="description" content="又一个中二宅的Bolg...">
 <meta property="og:type" content="website">
 <meta property="og:title" content="小晓de雨滴">
 <meta property="og:url" content="https://fxy5750.github.io/page/2/index.html">
 <meta property="og:site_name" content="小晓de雨滴">
-<meta property="og:description" content="又是一个中二宅的Bolg...">
+<meta property="og:description" content="又一个中二宅的Bolg...">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="fxy5750">
 <meta name="twitter:card" content="summary_large_image">
@@ -451,7 +451,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>
