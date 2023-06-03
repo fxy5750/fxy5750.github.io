@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.7k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          14 分钟
+          15 分钟
         
       </span>
     
@@ -296,8 +296,11 @@
 <p>你是否想拥有一台属于自己的远程服务器？一台随时待命，7x24小时在线的服务器？现在，我将使用一台电脑作为本次项目的介绍，带你开启AIO服务器</p>
 <span id="more"></span>
 
+</br>
 
-
+<blockquote>
+<p>防喷声明：文章并不适合资深网络大佬，我只是将自己一脚踩一个坑的经验分享出来，仅此而已，如果对你们的专业知识有冒犯，请多谅解。</p>
+</blockquote>
 <h2 id="获取动态公网IP"><a href="#获取动态公网IP" class="headerlink" title="获取动态公网IP"></a>获取动态公网IP</h2><p><img src="/../img/images/%E5%85%AC%E7%BD%91IP%E8%8E%B7%E5%8F%96-1682863608705.PNG" srcset="/img/loading.gif" lazyload alt="公网IP获取"></p>
 <p>先搞定动态公网ip，剩下的都简单，不行的话换内网ip</p>
 <h2 id="远程连接技术支持"><a href="#远程连接技术支持" class="headerlink" title="远程连接技术支持"></a>远程连接技术支持</h2><ol>
@@ -311,9 +314,14 @@
 <h2 id="远程桌面特点"><a href="#远程桌面特点" class="headerlink" title="远程桌面特点"></a>远程桌面特点</h2><p>1、可以在任何一个地方使用一个手机或一个平板，甚至是一台笔记本来连接你的高性能服务器，有效解决当前电脑性能不足或软件不兼容等问题<br>2、拥有服务器的完全控制权</p>
 <h2 id="远程桌面应用领域"><a href="#远程桌面应用领域" class="headerlink" title="远程桌面应用领域"></a>远程桌面应用领域</h2><p>1、工作生产力（word、office、excel等软件）<br>2、游戏平台（steam、origin、epice等软件）<br>3、渲染服务器（pr视频剪辑渲染）</p>
 <h2 id="在软件层次需要做的步骤"><a href="#在软件层次需要做的步骤" class="headerlink" title="在软件层次需要做的步骤"></a>在软件层次需要做的步骤</h2><p>1、需要关闭自动更新功能<br>2、需要关闭电脑自动休眠功能<br>3、需要开启远程桌面（键入—&gt;右键win10图标—&gt;设置—&gt;系统—&gt;远程桌面—&gt;启用远程桌面—&gt;点击确定即可）：3389端口<br>4、路由器需要配置端口映射和动态域名 | 另需公网IP<br>5、需要关闭UAC弹窗（键入—&gt;win+R—&gt;“UAC”—&gt;将滑块拉到最低即从不通知那）<br>6、需要开启开机自动登录功能（键入—&gt;win+R—&gt;“netplwiz”—&gt;将“要使用本计算机，用户必须输入用户名和密码关闭”关闭勾选—&gt;”确定”—&gt;输入一边账号密码即可）<br>7、主板需要开启来电自动唤醒功能</p>
-<h2 id="需要准备的软件"><a href="#需要准备的软件" class="headerlink" title="需要准备的软件"></a>需要准备的软件</h2><p>1、微软自带的RDP远程桌面功能<br>2、AnyDesk软件（<a href="https://anydesk.com）|">https://anydesk.com）|</a> 另需自行配置无人值守功能<br>3、向日葵远程控制（<a target="_blank" rel="noopener" href="https://sunlogin.oray.com)/">https://sunlogin.oray.com）</a> | 需要输入一遍账号密码<br>4、VNC server软件（<a target="_blank" rel="noopener" href="https://www.realvnc.com)/">https://www.realvnc.com）</a><br>备注：准备多个远程软件，可避免某个软件抽风导致无法远程控制桌面</p>
+<h2 id="需要准备的软件"><a href="#需要准备的软件" class="headerlink" title="需要准备的软件"></a>需要准备的软件</h2><p>1、微软自带的RDP远程桌面功能</p>
+<p>2、Parsec（<a target="_blank" rel="noopener" href="https://parsec.app/downloads%EF%BC%89|">https://parsec.app/downloads）|</a> 两个设备都要登录同一个账号</p>
+<p>3、向日葵远程控制（<a target="_blank" rel="noopener" href="https://sunlogin.oray.com)/">https://sunlogin.oray.com）</a> | 需要输入一遍账号密码</p>
+<p>4、VNC server软件（<a target="_blank" rel="noopener" href="https://www.realvnc.com)/">https://www.realvnc.com）</a> | 可选安装</p>
+<p>5、Todek远程软件（<a target="_blank" rel="noopener" href="https://www.todesk.com/%EF%BC%89">https://www.todesk.com/）</a> | 免费的远程软件</p>
+<p>备注：准备多个远程软件，可避免某个软件抽风导致无法远程控制桌面</p>
 <h2 id="需要准备的硬件"><a href="#需要准备的硬件" class="headerlink" title="需要准备的硬件"></a>需要准备的硬件</h2><p>1、需要一个智能插座（向日葵智能插座、小米智能插座）*非必须，可使用向日葵开机棒解决<br>2、需要一个HDMI欺骗器（避免显卡休眠、解决amd平台CPU无核显无法远程连接问题）</p>
-<h2 id="配置单"><a href="#配置单" class="headerlink" title="配置单"></a>配置单</h2><p>操作系统：win10（0元购）<br>处理器：E5-2696 v3（600一颗，共2颗：1200元）<br>主板：超微 X10DAL-i X99（1000元）<br>内存条：三星ddr4 ecc 2r4 2133 16G内存（180一条，共8条：1440元）<br>硬盘：三星970 evo 1TB（899元）<br>显卡：3080ti 七彩虹 12G（8300元）<br>显示器：27寸飞利浦（600元）<br>机箱：追风者pk620（849元）<br>散热器：利民fs140*2（458元）<br>电源：长城1250w电源（959元）<br>合计：15705<br>此配置生成时间：2022&#x2F;05&#x2F;24<br>注：电子产品价格波动较大此清单仅做参考</p>
+<h2 id="配置单"><a href="#配置单" class="headerlink" title="配置单"></a>配置单</h2><p>操作系统：win10（0元购）<br>处理器：E5-2696 v3（600一颗，共2颗：1200元）<br>主板：超微 X10DAL-i X99（1000元）<br>内存条：三星ddr4 ecc 2r4 2133 16G内存（180一条，共8条：1440元）<br>硬盘：三星970 evo 1TB（899元）<br>显卡：3080ti 七彩虹 12G（8300元）<br>显示器：27寸飞利浦（600元）<br>机箱：追风者pk620（849元）<br>散热器：利民fs140*2（458元）<br>电源：长城1250w电源（959元）<br>合计：15705<br>此配置生成时间：2022&#x2F;05&#x2F;24<br>注：电子产品价格波动较大，定价是由大环境决定的，此清单仅做参考</p>
 <h2 id="Tips："><a href="#Tips：" class="headerlink" title="Tips："></a>Tips：</h2><p>anydesk可以设置密码实现无人值守<br>以下为装机小提示：<br>sata接口（用于连接硬盘接口）<br>SATA数据线<br>PW线（开机）</p>
 
                 
@@ -519,7 +527,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://fxy5750.github.io/2020/03/20/hello-world/#喜欢这款主题吗？" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://fxy5750.github.io/2020/03/20/hello-world/#喜欢这款主题吗？" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <a> | </a> <a target="_blank" rel="noopener" href="https://fxy5750.gitee.io/gps/"><span>查找我的站点</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
   
