@@ -179,6 +179,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
@@ -298,7 +310,7 @@
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>哈哈，还是被聪明的你发现了，如你所见，这就是我的小破站了。以后有新的文章就会在这里进行更新。</p>
 
-    <div id="aplayer-XHQkbqTA" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-CKLJUEvl" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="446156870" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
     ></div>
 
@@ -325,7 +337,7 @@
 
 
 
-<h2 id="推送博客内容到-Pages"><a href="#推送博客内容到-Pages" class="headerlink" title="推送博客内容到 Pages"></a>推送博客内容到 Pages</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs verilog"># hexo clean命令清除public目录中的所有文件和缓存。<br>hexo clean<br><br>#hexo g是hexo <span class="hljs-keyword">generate</span>的简写，用于生成静态网站文件。当你更新博客内容后，需要使用该命令重新生成网站文件，然后才能查看最新的更改。执行hexo g命令后，Hexo会根据你在_config<span class="hljs-variable">.yml</span>中设置的配置信息，将博客源文件（Markdown、HTML、CSS等）转换成静态网页并存储在public目录中。<br>hexo g<br><br>#通过执行hexo d命令，可以将本地生成的静态文件部署到指定的远程服务器上，从而使其他人可以通过访问该服务器来浏览你的博客内容。<br>hexo d<br></code></pre></td></tr></table></figure>
+<h2 id="推送博客内容到-Pages"><a href="#推送博客内容到-Pages" class="headerlink" title="推送博客内容到 Pages"></a>推送博客内容到 Pages</h2><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># hexo clean命令清除public目录中的所有文件和缓存。</span><br><span class="hljs-attribute">hexo</span> clean<br><br><span class="hljs-comment">#hexo g是hexo generate的简写，用于生成静态网站文件。当你更新博客内容后，需要使用该命令重新生成网站文件，然后才能查看最新的更改。执行hexo g命令后，Hexo会根据你在_config.yml中设置的配置信息，将博客源文件（Markdown、HTML、CSS等）转换成静态网页并存储在public目录中。</span><br>hexo g<br><br><span class="hljs-comment">#通过执行hexo d命令，可以将本地生成的静态文件部署到指定的远程服务器上，从而使其他人可以通过访问该服务器来浏览你的博客内容。</span><br>hexo d<br><br><span class="hljs-comment"># 更快捷的流程</span><br>hexo clean<br>hexo g -d<br><span class="hljs-comment"># 输入秘钥</span><br><span class="hljs-comment"># 完成上传</span><br></code></pre></td></tr></table></figure>
 
 
 
