@@ -5,6 +5,9 @@
 
 
 
+
+
+
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
@@ -88,13 +91,19 @@
 
 
   
+  
 <meta name="generator" content="Hexo 6.3.0"></head>
+
+
+
 
 
 <body>
   
-
+  
+  
   <header>
+    
     
 
 <div class="header-inner" style="height: 100vh;">
@@ -208,14 +217,24 @@
 
   
 
+    
+
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/KZMCWMQHAJLBN.jpg') no-repeat center center; background-size: cover;">
+     style="position: relative;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
+      <div class="banner-text text-center fade-in-up" style="z-index: 3;">
         <div class="h2">
           
             <span id="subtitle" data-typed-text="又一个中二宅的Blog..."></span>
+            <script>
+              var typed = new Typed('#subtitle', {
+                strings: [&#34;又一个中二宅的Blog...&#34;],
+                typeSpeed: 40,
+                cursorChar: ' | ',
+                loop: false
+              });
+            </script>
           
         </div>
 
@@ -223,12 +242,20 @@
       </div>
 
       
-        <div class="scroll-down-bar">
+        <div class="scroll-down-bar" style="z-index: 3;">
           <i class="iconfont icon-arrowdown"></i>
         </div>
       
     </div>
   </div>
+  
+    <video autoplay loop muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 2;">
+	  <source src="https://cdn.jsdelivr.net/gh/fxy5750/blog-images@main/Pic/202310222123280.mp4" type="video/mp4">
+	  <source src="https://cdn.jsdelivr.net/gh/fxy5750/blog-images@main/Pic/202310222123280.mp4" type="video/webm">
+	  <source src="https://cdn.jsdelivr.net/gh/fxy5750/blog-images@main/Pic/202310222123280.mp4" type="video/ogg">
+	  <!-- 添加更多的视频格式和来源 -->
+    </video>
+  
 </div>
 
 </div>
@@ -245,6 +272,10 @@
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
+
+
+
+
 
 
   <div class="row mx-auto index-card">

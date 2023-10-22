@@ -5,6 +5,9 @@
 
 
 
+
+
+
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
@@ -119,13 +122,19 @@
 
 
   
+  
 <meta name="generator" content="Hexo 6.3.0"></head>
+
+
+
 
 
 <body>
   
-
+  
+  
   <header>
+    
     
 
 <div class="header-inner" style="height: 70vh;">
@@ -239,11 +248,13 @@
 
   
 
+    
+
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/wlop_haiqingyan.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/../img/bg/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
+      <div class="banner-text text-center fade-in-up" style="z-index: 3;">
         <div class="h2">
           
             <span id="subtitle">旧主板刷nvme驱动</span>
@@ -296,6 +307,7 @@
       
     </div>
   </div>
+  
 </div>
 
 </div>
@@ -323,7 +335,11 @@
             
               <div class="markdown-body">
                 
-                <h2 id="旧主板再唤新春-BIOS刷入NVME驱动"><a href="#旧主板再唤新春-BIOS刷入NVME驱动" class="headerlink" title="旧主板再唤新春 BIOS刷入NVME驱动"></a>旧主板再唤新春 BIOS刷入NVME驱动</h2><p><img src="/../img/images/1000.jpg" srcset="/img/loading.gif" lazyload alt="1000"></p>
+                <p class="note note-warning">警告：刷写BIOS有风险，请具备一定折腾能力或敢于承担风险，不过还是希望你不要害怕困难，幸运会眷顾有勇气的人。</p>
+
+
+
+<h2 id="旧主板再唤新春-BIOS刷入NVME驱动"><a href="#旧主板再唤新春-BIOS刷入NVME驱动" class="headerlink" title="旧主板再唤新春 BIOS刷入NVME驱动"></a>旧主板再唤新春 BIOS刷入NVME驱动</h2><p><img src="/../img/images/1000.jpg" srcset="/img/loading.gif" lazyload alt="1000"></p>
 <h3 id="让旧主板支持nvme有两种办法"><a href="#让旧主板支持nvme有两种办法" class="headerlink" title="让旧主板支持nvme有两种办法"></a>让旧主板支持nvme有两种办法</h3><p>因为旧主板是不支持NVME协议的，如H61、H81等主板，需要用以下两种方法来支持NVME协议</p>
 <p>1.修改BIOS</p>
 <p>2.使用Clover引导启动</p>
