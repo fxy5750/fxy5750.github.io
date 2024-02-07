@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.2k 字
+          3.5k 字
         
       </span>
     
@@ -260,7 +260,7 @@
         
         
         
-          27 分钟
+          30 分钟
         
       </span>
     
@@ -325,15 +325,22 @@
 <h2 id="远程桌面应用领域"><a href="#远程桌面应用领域" class="headerlink" title="远程桌面应用领域"></a>远程桌面应用领域</h2><p>1、工作生产力（word、office、excel等软件）<br>2、游戏平台（steam、origin、epice等软件）<br>3、渲染服务器（pr视频剪辑渲染、blender建模渲染）<br>4、AIGC绘画服务（stable diffusion）<br>5、简易的聊天机器人（chatGLM3）</p>
 <h2 id="游戏应用实例"><a href="#游戏应用实例" class="headerlink" title="游戏应用实例"></a>游戏应用实例</h2><iframe src="//player.bilibili.com/player.html?aid=389821962&bvid=BV1Jd4y1r7tT&cid=884396013&page=1&autoplay=0" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-
-
-<p>此实例引用的是B站UP主 <a target="_blank" rel="noopener" href="https://space.bilibili.com/6852813">Dymayxxx</a> 的视频，测试使用的网络环境为某连锁酒店的无线，dell g3 3590笔记本，远程连接到无公网ip的内网台式机串流游玩。</p>
+<p>此实例引用的是B站UP主 <a target="_blank" rel="noopener" href="https://space.bilibili.com/6852813">Dymayxxx</a> 的视频，测试使用的网络环境为某连锁酒店的WiFi网络，dell g3 3590笔记本，通过Zerotier内网穿透，再使用Parsec远程连接到内网台式机串流。</p>
 <h2 id="办公渲染应用实例"><a href="#办公渲染应用实例" class="headerlink" title="办公渲染应用实例"></a>办公渲染应用实例</h2><iframe src="//player.bilibili.com/player.html?aid=274916302&bvid=BV13F411178W&cid=1240122490&page=1&autoplay=0" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <p>位于3000公里之外的远程实例应用，主要讲述了RDP软件和Parsec软件的特点，以及IPMI系统的便利和服务器系列主板的优势，该UP主要用于远程渲染，24小时待机，同时开启微信，办公文档作业。</p>
 <h2 id="基于ubuntu的家庭服务器部署全过程"><a href="#基于ubuntu的家庭服务器部署全过程" class="headerlink" title="基于ubuntu的家庭服务器部署全过程"></a>基于ubuntu的家庭服务器部署全过程</h2><iframe src="//player.bilibili.com/player.html?aid=366367464&bvid=BV1S94y1J79J&cid=1343557402&page=1&autoplay=0" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <p>其实现在普通人家里闲置电脑的概率，比你我想象中的高，基本上大学毕业就是一个节点、归其缘由我认为是源自windows的尿性，一台普通电脑在不优化的情况下很难用超过4年。 但是当我们换一个思路安装好linux。无论多久远的电脑都可以是你的流媒体服务器，在局域网内任何设备上用海报墙播放下载电影，或者变成homeassistant智能家居中枢、远程控制家里的灯光、监测路由器状态、远程开关电视盒子等等， 甚至你可以托管自己的游戏服务器并与和朋友一起回味几十款老游戏，比如这个98版的《仙剑剑奇侠传》、或者是大航海时代、 亦或者最朴实无华的简易nas、让你在windows、mac、ios、android之间可以自由地传输文件。</p>
+<h2 id="安全的访问远程ConmfyUI的方法？"><a href="#安全的访问远程ConmfyUI的方法？" class="headerlink" title="安全的访问远程ConmfyUI的方法？"></a>安全的访问远程ConmfyUI的方法？</h2><iframe src="//player.bilibili.com/player.html?aid=926386760&bvid=BV1hT4y1E78k&cid=216925513&page=1&autoplay=0" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>主要是用到ComfyUI的功能，这个在自己笔记本上跑性能不够，为了用到自己的远程电脑，直接端口转发又担心安全性，索性用Zerotier内网穿透进行访问。需要被远程那一方有Openwrt和Zerotier插件，控制端只需要有Zerotier客户端就行。关于Moon服务器看需求，我个人认为不需要。（其实是没云服务器）</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css">#防火墙执行命令，需要将虚拟网卡替换为你的zt字段的内容，例如我的是ztmosodkqf，就复制这段替换即可<br>iptables -<span class="hljs-selector-tag">I</span> FORWARD -<span class="hljs-selector-tag">i</span> 虚拟网卡 -j ACCEPT<br>iptables -<span class="hljs-selector-tag">I</span> FORWARD -o 虚拟网卡 -j ACCEPT<br>iptables -t nat -<span class="hljs-selector-tag">I</span> POSTROUTING -o 虚拟网卡 -j MASQUERADE<br></code></pre></td></tr></table></figure>
+
+
+
+
+
 <h2 id="在软件层次需要做的步骤"><a href="#在软件层次需要做的步骤" class="headerlink" title="在软件层次需要做的步骤"></a>在软件层次需要做的步骤</h2><p>1、需要关闭自动更新功能（可选）<br>2、需要关闭电脑自动休眠功能<br>3、需要开启远程桌面（键入—&gt;右键win10图标—&gt;设置—&gt;系统—&gt;远程桌面—&gt;启用远程桌面—&gt;点击确定即可）：3389端口<br>4、路由器需要配置端口映射和动态域名 | 另需公网IP<br>5、需要关闭UAC弹窗（键入—&gt;win+R—&gt;“UAC”—&gt;将滑块拉到最低即从不通知那）<br>6、需要开启开机自动登录功能（键入—&gt;win+R—&gt;“netplwiz”—&gt;将“要使用本计算机，用户必须输入用户名和密码关闭”关闭勾选—&gt;”确定”—&gt;输入一边账号密码即可）<br>7、主板需要开启来电自动唤醒功能（带IPMI功能主板非必须）</p>
 <h2 id="需要准备的软件"><a href="#需要准备的软件" class="headerlink" title="需要准备的软件"></a>需要准备的软件</h2><p>1、微软自带的RDP远程桌面功能<br>2、Parsec（<a target="_blank" rel="noopener" href="https://parsec.app/downloads%EF%BC%89|">https://parsec.app/downloads）|</a> 两个设备都要登录同一个账号<br>3、向日葵远程控制（<a target="_blank" rel="noopener" href="https://sunlogin.oray.com)/">https://sunlogin.oray.com）</a> | 需要输入一遍账号密码<br>4、VNC server软件（<a target="_blank" rel="noopener" href="https://www.realvnc.com)/">https://www.realvnc.com）</a> | 可选安装<br>5、Todek远程软件（<a target="_blank" rel="noopener" href="https://www.todesk.com/%EF%BC%89">https://www.todesk.com/）</a> | 免费的远程软件<br>备注：准备多个远程软件，可避免某个软件抽风导致无法远程控制桌面</p>
 <h2 id="需要准备的硬件"><a href="#需要准备的硬件" class="headerlink" title="需要准备的硬件"></a>需要准备的硬件</h2><p>1、需要一个智能插座（向日葵智能插座、小米智能插座）<br>2、需要一个HDMI欺骗器（避免显卡休眠，CPU无核显无法远程连接问题）<br>3、IPMI功能的工作站主板（BMC芯片服务器主板内置），有这个的话可以远程调bios，配合智能插座实现彻底断电<br>4、感应式灭火器（长时间出门在外，电脑不间断工作还是准备一个好，未雨绸缪才能临危不乱）</p>

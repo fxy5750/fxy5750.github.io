@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          646 字
+          736 字
         
       </span>
     
@@ -260,7 +260,7 @@
         
         
         
-          6 分钟
+          7 分钟
         
       </span>
     
@@ -312,7 +312,7 @@
 <p><a href="/dl/%E5%90%AF%E5%8A%A8%E4%B8%89%E4%B8%AA%E5%BE%AE%E4%BF%A1.bat">启动三个微信，下载即用</a></p>
 <p><a href="/dl/%E5%90%AF%E5%8A%A8%E5%9B%9B%E4%B8%AA%E5%BE%AE%E4%BF%A1.bat">启动四个微信，下载即用</a></p>
 <hr>
-<h3 id="bat内容："><a href="#bat内容：" class="headerlink" title="bat内容："></a>bat内容：</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs awk">@echo off<br>title 服务启动中<br><br>echo 检查微信是否运行<br><br>tasklist <span class="hljs-regexp">/FI &quot;IMAGENAME eq WeChat.exe&quot; | find /i</span> <span class="hljs-string">&quot;WeChat.exe&quot;</span> &gt; nul<br><span class="hljs-keyword">if</span> %errorlevel% equ <span class="hljs-number">1</span> (<br>    echo 微信没有运行，可以执行“启动微信多开脚本”.<br>) <span class="hljs-keyword">else</span> (<br>    echo 你的电脑正在运行微信.<br>)<br><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br><br> <br>:杀死进程<br>taskkill <span class="hljs-regexp">/f /im</span> WeChat.exe<br><br>:需要启动多少个微信，复制下方的完整地址即可，例如，启动两个就复制两个<br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br><br>echo 即将自动关闭此窗口<br>timeout /t <span class="hljs-number">3</span><br><br><span class="hljs-keyword">exit</span><br></code></pre></td></tr></table></figure>
+<h3 id="bat内容："><a href="#bat内容：" class="headerlink" title="bat内容："></a>bat内容：</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs awk">@echo off<br>title 服务启动中<br><br>echo 检查微信是否运行<br><br>tasklist <span class="hljs-regexp">/FI &quot;IMAGENAME eq WeChat.exe&quot; | find /i</span> <span class="hljs-string">&quot;WeChat.exe&quot;</span> &gt; nul<br><span class="hljs-keyword">if</span> %errorlevel% equ <span class="hljs-number">1</span> (<br>    echo 微信没有运行，可以执行“启动微信多开脚本”.<br>) <span class="hljs-keyword">else</span> (<br>    echo 你的电脑正在运行微信.<br>)<br><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改.<br> <br>:杀死进程<br>taskkill <span class="hljs-regexp">/f /im</span> WeChat.exe<br><br>:需要启动多少个微信，复制下方的完整地址即可，例如，启动两个就复制两行完整的 start 字段内容<br><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改..<br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改...<br><br>echo 即将自动关闭此窗口<br>timeout /t <span class="hljs-number">3</span><br><br><span class="hljs-keyword">exit</span><br></code></pre></td></tr></table></figure>
 
 
                 
