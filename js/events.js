@@ -164,17 +164,21 @@ Fluid.events = {
     if (!('console' in window)) {
       return;
     }
-     // eslint-disable-next-line no-console
-   console.log(`
-关于我
-我是fxy5750，一个热爱设计与技术的中二宅。这个博客主要记录了我的学习笔记、生活感悟以及对技术发展的见解。 如果您对我的文章有任何疑问或者建议，欢迎随时联系我。
-
-关于此博客
-这个博客基于Hexo构建，使用了Fluid主题。博客的源代码托管在GitHub上，欢迎访问并star。 本博客旨在分享我的学习心得和经验，同时也希望能够为其他人提供一些帮助和借鉴。如果您喜欢我的博客，请分享给更多的人，谢谢！
-
-主题由：Fluid驱动 https://hexo.fluid-dev.com/docs
-
-博客由：hexo驱动 https://hexo.io/zh-cn/
+    // eslint-disable-next-line no-console
+    console.log(`
+-------------------------------------------------
+|                                               |
+|      ________  __            _        __      |
+|     |_   __  |[  |          (_)      |  ]     |
+|       | |_ \\_| | | __   _   __   .--.| |      |
+|       |  _|    | |[  | | | [  |/ /'\`\\' |      |
+|      _| |_     | | | \\_/ |, | || \\__/  |      |
+|     |_____|   [___]'.__.'_/[___]'.__.;__]     |
+|                                               |
+|            Powered by Hexo x Fluid            |
+| https://github.com/fluid-dev/hexo-theme-fluid |
+|                                               |
+-------------------------------------------------
     `);
   }
 };
