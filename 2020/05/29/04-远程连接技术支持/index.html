@@ -279,7 +279,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.7k 字
+          3.1k 字
         
       </span>
     
@@ -290,7 +290,7 @@
         
         
         
-          23 分钟
+          26 分钟
         
       </span>
     
@@ -394,6 +394,15 @@
 <h2 id="需要准备的软件"><a href="#需要准备的软件" class="headerlink" title="需要准备的软件"></a>需要准备的软件</h2><p>1、微软自带的RDP远程桌面功能<br>2、Parsec（<a target="_blank" rel="noopener" href="https://parsec.app/downloads%EF%BC%89|">https://parsec.app/downloads）|</a> 两个设备都要登录同一个账号<br>3、向日葵远程控制（<a target="_blank" rel="noopener" href="https://sunlogin.oray.com)/">https://sunlogin.oray.com）</a> | 需要输入一遍账号密码<br>4、VNC server软件（<a target="_blank" rel="noopener" href="https://www.realvnc.com)/">https://www.realvnc.com）</a> | 可选安装<br>5、Todek远程软件（<a target="_blank" rel="noopener" href="https://www.todesk.com/%EF%BC%89">https://www.todesk.com/）</a> | 免费的远程软件<br>6、无界趣连（<a target="_blank" rel="noopener" href="https://www.ldmnq.com/forum/88388.html%EF%BC%89|%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%8E%A7%E5%88%B6%E6%82%A8%E7%9A%84%E8%BF%9C%E7%A8%8B%E7%94%B5%E8%84%91%EF%BC%8C%E8%99%9A%E6%8B%9F%E4%BA%91%E6%89%8B%E6%9C%BA">https://www.ldmnq.com/forum/88388.html）|在手机上控制您的远程电脑，虚拟云手机</a><br>备注：准备多个远程软件，可避免某个软件抽风导致无法远程控制桌面</p>
 <p>经过后期验证，向日葵开机棒完全可以由软路由的网络唤醒或玩客云IPKVM的网络唤醒实现。因此向日葵开机棒基本可以不用买。</p>
 <h2 id="需要准备的硬件"><a href="#需要准备的硬件" class="headerlink" title="需要准备的硬件"></a>需要准备的硬件</h2><p>1、需要一个智能插座（向日葵智能插座、小米智能插座）<br>2、需要一个HDMI欺骗器（避免显卡休眠，CPU无核显无法远程连接问题）<br>3、IPMI功能的工作站主板（BMC芯片服务器主板内置），有这个的话可以远程调bios，配合智能插座实现彻底断电<br>4、感应式灭火器（长时间出门在外，电脑不间断工作还是准备一个好，未雨绸缪才能临危不乱）</p>
+<h2 id="网管交换机"><a href="#网管交换机" class="headerlink" title="网管交换机"></a>网管交换机</h2><p>使用网管交换机，屏蔽局域网设备访问路由器</p>
+<p>在网管交换机上屏蔽局域网设备访问路由器的地址通常可以通过配置访问控制列表（Access Control List，ACL）来实现。通过ACL，你可以设置规则来限制特定IP地址或IP地址范围的设备访问路由器的权限。</p>
+<p>具体步骤可能会根据你所使用的网管交换机品牌和型号而有所不同，但一般的步骤如下：</p>
+<ol>
+<li>登录网管交换机的管理界面，进入配置界面。</li>
+<li>创建一个ACL，定义允许或拒绝访问路由器的规则。你可以指定具体的源IP地址范围或者设备的IP地址。</li>
+<li>将设置好的ACL应用到交换机相应的端口上，以限制局域网设备访问路由器的权限。</li>
+</ol>
+<p>记得在配置ACL时仔细考虑规则的顺序和逻辑，确保不会影响到网络的正常运行。另外，建议在生产环境中进行配置前先在测试环境中进行测试验证。祝你顺利实现网络安全设置！如果有需要进一步了解的信息或者有其他问题，随时问我哦！🛠️🔐👨‍💻</p>
 <h2 id="配置单"><a href="#配置单" class="headerlink" title="配置单"></a>配置单</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs routeros">操作系统：win10/Windows<span class="hljs-built_in"> Server </span>2022（0元购）<br>处理器：AMD EPYC 7742<span class="hljs-number">*2</span>(6800<span class="hljs-number">*2</span>=13600元)<br>主板：超微 H11DSI双路（1450元）<br>内存条：三星ddr4 ecc 2666 32G<span class="hljs-number">*16</span>（195一条，共16条：3120元）<br>系统硬盘：英睿达 4TB SSD M.2固态（1184元）<br>数据盘：自行选择<br>显卡：4090 七彩虹 24G/A5000专业图形显卡（15999元）<br>显示器：不含显示器<br>机箱：追风者pk620（849元）<br>散热器：TR4 4U5热管<span class="hljs-number">*2</span>（95<span class="hljs-number">*2</span>=190元）<br>电源：长城2000w电源（1779元）<br>合计：38076<br>此配置生成时间：2023/08/20<br>注：电子产品价格波动较大，定价是由大环境决定的，此清单仅做参考<br><br>功能特色：IPMI系统，512G内存，EPYC 7742双路128核256线程<br>应用用途：影视后期、深度学习、AI人工智能、流体仿真等领域解决方案<br></code></pre></td></tr></table></figure>
 
 
