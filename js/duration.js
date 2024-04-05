@@ -1,6 +1,6 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>!(function() {
+!(function() {
   /** 计时起始时间，自行修改 **/
-  var start = new Date("2020/01/01 00:00:00");
+  var start = new Date("2023/04/30 00:00:00");
 
   function update() {
     var now = new Date();
@@ -22,7 +22,7 @@
     if(String(snum).length === 1 ){
       snum = "0" + snum;
     }
-    document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
+    document.getElementById("timeDate").innerHTML = "在风雨中度过了&nbsp"+dnum+"&nbsp天";
     document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
   }
 
