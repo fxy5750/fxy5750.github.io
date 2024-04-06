@@ -1,4 +1,4 @@
-//说明文件:
+// 说明文件:
 // photos.json是图片宽高信息，并储存图片的展示顺序。
 // var imgPath = "/img/images/"; 是读取图片的路径。
 // 运行npm i -S image-size 导入获取文件大小第三方包

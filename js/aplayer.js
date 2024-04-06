@@ -24,9 +24,34 @@
           url: 'https://www.ytmp3.cn/down/49003.mp3',
           cover: 'https://p1.music.126.net/hH4UmteuzsqZHacrr3YS_g==/18358545649308968.jpg?param=130y130',
         },
+		{
+		  name: 'Lanterns',
+		  artist: 'Xomu',
+		  url: 'http://music.163.com/song/media/outer/url?id=569962512.mp3',
+		  cover: 'https://p1.music.126.net/qmzulQXHPTXSTjckc7jebA==/109951163324324308.jpg?param=130y130',
+		},
+		{
+		  name: 'Setsuna',
+		  artist: 'Xomu,Justin Klyvis',
+		  url: 'http://music.163.com/song/media/outer/url?id=1447458944.mp3',
+		  cover: 'https://p2.music.126.net/ZD7IqCFdMlTQVhh2n2lLxQ==/109951164980686606.jpg?param=130y130',
+		},
+		{
+		  name: '江上清风游',
+		  artist: '变奏的梦想',
+		  url: 'http://music.163.com/song/media/outer/url?id=32743519.mp3',
+		  cover: 'https://p1.music.126.net/rxtmC5LLUxMfWx7szJr-bw==/7968160767131459.jpg?param=130y130',
+		},
+		{
+		  name: 'Windy Hill',
+		  artist: '羽肿',
+		  url: 'http://music.163.com/song/media/outer/url?id=427606780.mp3',
+		  cover: 'https://p2.music.126.net/R5wdneWJADdilEDtqBev-w==/109951169463411528.jpg?param=130y130',
+		},
       ]
     });
   }
 })();
 
 //MP3音乐外链  https://www.ytmp3.cn/
+//远方音乐外链 https://mp3.ltyuanfang.cn/

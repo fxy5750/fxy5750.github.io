@@ -347,7 +347,7 @@
 <figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">&#123;<span class="hljs-meta">%</span> dplayer <span class="hljs-string">&quot;url=/videos/sword_dolly_v1.mp4&quot;</span> <span class="hljs-string">&quot;pic=https://tse3-mm.cn.bing.net/th/id/OIP-C.9Fs5GJeIHHJKIjaugIZAMQHaEo?pid=ImgDet&amp;rs=1&quot;</span> <span class="hljs-string">&quot;subtitle=https://example.com/example.vtt&quot;</span> <span class="hljs-meta">%</span>&#125;<br></code></pre></td></tr></table></figure>
 </li>
 <li><p><strong>配置 Fluid 主题：修改 <code>_config.yml</code> 文件，添加以下配置：</strong></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-string">Copy</span> <span class="hljs-string">Code#</span> <span class="hljs-string">DPlayer</span><br><span class="hljs-attr">dplayer:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">useCDN:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># DPlayer</span><br><span class="hljs-attr">dplayer:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">useCDN:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 <p>如果 <code>useCDN</code> 设置为 <code>true</code>，则使用 CDN 加载 DPlayer 脚本和样式。如果设置为 <code>false</code>，则使用本地脚本和样式。</p>
 </li>
@@ -358,7 +358,7 @@
 </ol>
 <p>这些是在 Fluid 主题中部署 DPlayer 的基本步骤。请根据您的需要和具体情况进行调整和配置。</p>
 <p>dplayer官方指南 : <a target="_blank" rel="noopener" href="https://dplayer.diygod.dev/zh/guide.html#%E5%AE%89%E8%A3%85">https://dplayer.diygod.dev/zh/guide.html#%E5%AE%89%E8%A3%85</a></p>
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; height:400px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"/videos/sword_dolly_v1.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; height:400px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"/videos/sword_dolly_v1.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 
                 
