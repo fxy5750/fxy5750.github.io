@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>window.onload = function() {
+window.onload = function() {
   //不同的日期显示不同的样式，200 天为黄色提示，400天为红色提示，可以自己定义。
   let warningDay = 200;
   let errorDay = 400;
