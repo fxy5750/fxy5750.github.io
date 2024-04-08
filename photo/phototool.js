@@ -1,4 +1,4 @@
-//用image-size来输出图片的宽高信息和路径
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>//用image-size来输出图片的宽高信息和路径
 
 const fs = require('fs-extra');
 const path = require('path');

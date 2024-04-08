@@ -278,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.9k 字
+          4.1k 字
         
       </span>
     
@@ -289,7 +289,7 @@
         
         
         
-          33 分钟
+          35 分钟
         
       </span>
     
@@ -384,7 +384,7 @@
 <li><p>接下来输入 <code>node source/photo/phototool.js</code> 这样就会运行这个文件，注意哈，你的路径如果改了这里也要改。</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">imagescreate</span>/phototool.js<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>现在你的 <code>photo</code> 目录中，就会多出 <code>photos.json</code> 和 <code>photosInfo.json</code> </p>
+<li><p>然后，在你的 <code>photo</code> 目录中，就会多出 <code>photos.json</code> 和 <code>photosInfo.json</code> </p>
 </li>
 <li><p>这个 <code>photos.json</code> 文件主要是用来记录图片宽高信息，以及图片的展示顺序，如果你按照我的操作新建了一个 <code>images-</code> 文件夹，那么 <code>name</code> 里的名称就和我的一样（name这个是分类名称，可自行修改。），这是我的图片元数据示例，你的图片名称和我的是不一样的，这段无需复制，仅做展示说明：</p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs prolog">[&#123;<br>	<span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;images-&quot;</span>,<br>	<span class="hljs-string">&quot;children&quot;</span>: [<br>	<br>		<span class="hljs-string">&quot;1280.3630 Watch_detail_page_display.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display3.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display4.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display6.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display9.png&quot;</span>,  <br>		<span class="hljs-string">&quot;800.800 暗影头盔_EV.png&quot;</span>,<br>		<span class="hljs-string">&quot;1280.540 龙斧_终了2.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1080 Snipaste_2023-11-30_14_EV_2.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1080 Snipaste_2023-11-30_13.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1080 木桶渲染_4.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1080 Snipaste_2023-11-30_5.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1080 202310262210568.png&quot;</span>,<br>		<span class="hljs-string">&quot;2560.1080 blender_blue_1.png&quot;</span>,<br>		<span class="hljs-string">&quot;1080.1352 A03魔法球_渲染.png&quot;</span>, <br>		<span class="hljs-string">&quot;540.676 渲染-火焰.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1012 【8】最终渲染-夜景+台灯.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1012 【8】最终渲染-夜景.png&quot;</span>,<br>		<span class="hljs-string">&quot;1920.1012 【8】最终渲染-白天.png&quot;</span><br>	]<br>&#125;]<br></code></pre></td></tr></table></figure></li>
@@ -413,7 +413,7 @@
 <li><p>找到 <code>/photo/Phtotos.json</code> 图片配置文件，用 HBuilder 等代码编辑工具，重新整理代码格式。</p>
 </li>
 <li><p>例如我要添加图片，则在 <code>&quot;1920.1080 复古音箱-渲染2.png&quot;,</code> 的上方添加即可，</p>
-<p>注意规律：宽高中间有一个英文的点 <code>.</code><br>然后空格 <code> 空格</code><br>接下来是图片的名称和它的格式：<code>复古音箱-渲染2.png</code><br>然后你新加的图片在第一个位置，则要在尾部继续加一个英文 <code>,</code> 逗号<br>注意这一列图片的最后一张是没有逗号的，如果你在其中调整了顺序别搞错了，逗号也别少加。<br>这里的 <code>name</code> 里的参数可自行修改，这个是分类显示的名称。<br>然后有多个分类，则如示范所展示参考：</p>
+<p>注意规律：宽高中间有一个英文的点 <code>.</code><br>宽高的数值要和图片的宽高保持一致<br>再按下空格 <code> 空格</code><br>接下来是图片的名称和它的格式：<code>复古音箱-渲染2.png</code><br>用英文引号 “” 作为包裹数据段落<br>然后你新加的图片在第一个位置，则要在尾部继续加一个英文 <code>,</code> 逗号<br>注意这一列图片的最后一张是没有逗号的，如果你在其中调整了顺序别搞错了，逗号也别少加。<br>这里的 <code>name</code> 里的参数可自行修改，这个是分类显示的名称。<br>然后有多个分类，则如示范所展示参考：</p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs prolog">[&#123;<br>	<span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Blender&quot;</span>,<br>	<span class="hljs-string">&quot;children&quot;</span>: [<br>	    <span class="hljs-string">&quot;宽.高 图片名称.png&quot;</span>, <br>		<span class="hljs-string">&quot;1920.1080 复古音箱-渲染2.png&quot;</span>, <br>		<span class="hljs-string">&quot;1920.1080 复古音箱-渲染白膜.png&quot;</span>, <br>		<span class="hljs-string">&quot;1280.3630 Watch_detail_page_display.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display3.png&quot;</span><br>	]<br>&#125;,<br>  &#123;<br>    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;其它&quot;</span>,<br>    <span class="hljs-string">&quot;children&quot;</span>: [<br>      <span class="hljs-string">&quot;800.800 foot1.jpg&quot;</span>,<br>      <span class="hljs-string">&quot;800.800 foot2.jpg&quot;</span>,<br>      <span class="hljs-string">&quot;1000.1500 13445.jpg&quot;</span><br>    ]<br>  &#125;<br>]<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>接下来是将相册的图片和img公用一个路径，我们只需要找到 <code>source/js/photoWall.js</code> 修改图片访问路径即可。</p>
@@ -424,7 +424,13 @@
 <li><p>如果你的 hexo注入器 一直加载没反应，注意用 F12 审查元素，看看有没有一个 <code>&lt;</code> 符号的，我之前是这样的问题，一直困扰了很久，最后发现是 <code>aplayer</code> 的锅，于是在 npm 中卸载并删除了 <code>aplayer</code> 和 <code>hexo-tag-aplayer</code> 这两个文件夹，重新执行 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 后就可以跑起来了，最后 <code>aplayer</code> 也是用 hexo注入器 执行的。</p>
 </li>
 </ol>
-<h2 id="直接套用"><a href="#直接套用" class="headerlink" title="直接套用"></a>直接套用</h2><p>如果你也是 Fluid 主题，你可以直接套我改好的这个，然后自己稍作修改即可。<br>或者你也是在路径关系这里踩了坑，也可以直接套用我改的源码。<br>在这里下载</p>
+<h2 id="直接套用"><a href="#直接套用" class="headerlink" title="直接套用"></a>直接套用</h2><ol>
+<li>如果你也是 Fluid 主题，你可以直接套我改好的这个，然后复制到博客的根目录，再稍作修改即可。</li>
+<li>或者你也是在路径关系这里踩了坑，也可以直接参考我改的源码，为避免你的博客配置被覆盖，所以没有提供 <code>_config.yml</code> 文件，你至少需要修改Fluid的导航栏配置<br><a target="_blank" rel="noopener" href="https://wwi.lanzoup.com/iAytU1uc2owh">在这里下载文件</a> | <a target="_blank" rel="noopener" href="https://dir.yardtea.cc/">文件路径树</a>参考</li>
+</ol>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-keyword">blog</span><br><span class="hljs-keyword"></span>├─ Readme.txt<br>├─ node_modules<br>│    └─ hexo-theme-fluid<br>├─ <span class="hljs-keyword">scripts</span><br><span class="hljs-keyword"></span>│    └─ injector.<span class="hljs-keyword">js </span>                        <span class="hljs-comment">#图片框架使用CDN加载，还是本地加载，可在这里配置</span><br>└─ source<br>       ├─ img<br>       │    ├─ <span class="hljs-keyword">bg</span><br><span class="hljs-keyword"></span>       │    └─ images                       <span class="hljs-comment">#这里放你的图片，含示例图片</span><br>       ├─ <span class="hljs-keyword">js</span><br><span class="hljs-keyword"></span>       │    ├─ <span class="hljs-keyword">jquery.fancybox.min.css </span>     <span class="hljs-comment">#本地加载图片框架的，别动就是</span><br>       │    ├─ <span class="hljs-keyword">jquery.fancybox.min.js </span>      <span class="hljs-comment">#本地加载图片框架的，别动就是</span><br>       │    ├─ lazyload.<span class="hljs-keyword">js </span>                 <span class="hljs-comment">#本地加载图片框架的，别动就是</span><br>       │    ├─ minigrid.min.<span class="hljs-keyword">js </span>             <span class="hljs-comment">#本地加载图片框架的，别动就是</span><br>       │    └─ photoWall.<span class="hljs-keyword">js </span>                <span class="hljs-comment">#配置图片展示样式的文件</span><br>       └─ photo                             <span class="hljs-comment">#相册路径</span><br>              ├─ index.md                   <span class="hljs-comment">#相册页</span><br>              ├─ photos.<span class="hljs-keyword">json </span>               <span class="hljs-comment">#图片大小信息和展示顺序</span><br>              ├─ photosInfo.<span class="hljs-keyword">json </span>           <span class="hljs-comment">#记录image-size输出图片元数据的</span><br>              └─ phototool.<span class="hljs-keyword">js </span>              <span class="hljs-comment">#用image-size来输出图片的宽高信息和路径的脚本</span><br></code></pre></td></tr></table></figure>
+
+
 <br/>
 
 
@@ -432,7 +438,7 @@
 <hr>
 <br/>
 
-<h5 id="相册页按先后顺序鸣谢："><a href="#相册页按先后顺序鸣谢：" class="headerlink" title="相册页按先后顺序鸣谢："></a>相册页按先后顺序鸣谢：</h5><p><a target="_blank" rel="noopener" href="https://4dtree.github.io/2022/06/21/Hexo-Fluid%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/">四维树的博客 - Fluid主题添加相册功能</a><br><a target="_blank" rel="noopener" href="https://hzx17.github.io/2022/07/14/hexo%E9%85%8D%E7%BD%AE/hexo%E7%9B%B8%E5%86%8C%E5%AE%9E%E7%8E%B0/">何十七 - hexo的fluid主题添加相册功能及自定义页面 </a><br><a target="_blank" rel="noopener" href="https://gishai.top/blog/posts/798ba833.html">GISHAI - hexo的fluid主题添加瀑布流懒加载相册功能</a><br><a target="_blank" rel="noopener" href="https://weichao.io/09dacc5ba02c/">魏超 - 为 Hexo + Fluid 博客添加承载相册的页面</a></p>
+<h5 id="相册页鸣谢："><a href="#相册页鸣谢：" class="headerlink" title="相册页鸣谢："></a>相册页鸣谢：</h5><p><a target="_blank" rel="noopener" href="https://4dtree.github.io/2022/06/21/Hexo-Fluid%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/">四维树的博客 - Fluid主题添加相册功能</a><br><a target="_blank" rel="noopener" href="https://hzx17.github.io/2022/07/14/hexo%E9%85%8D%E7%BD%AE/hexo%E7%9B%B8%E5%86%8C%E5%AE%9E%E7%8E%B0/">何十七 - hexo的fluid主题添加相册功能及自定义页面 </a><br><a target="_blank" rel="noopener" href="https://gishai.top/blog/posts/798ba833.html">GISHAI - hexo的fluid主题添加瀑布流懒加载相册功能</a><br><a target="_blank" rel="noopener" href="https://weichao.io/09dacc5ba02c/">魏超 - 为 Hexo + Fluid 博客添加承载相册的页面</a></p>
 
                 
               </div>
@@ -497,6 +503,11 @@
         </div>
       
       
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年4月5日</div>
+        </div>
+      
       
         <div class="license-meta-item">
           <div>许可协议</div>
@@ -504,9 +515,21 @@
             
               
               
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
                   </span>
                 </a>
               
