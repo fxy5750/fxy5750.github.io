@@ -278,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.1k 字
+          4.3k 字
         
       </span>
     
@@ -289,7 +289,7 @@
         
         
         
-          35 分钟
+          37 分钟
         
       </span>
     
@@ -347,10 +347,9 @@
 </ol>
 <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs clean">- &#123; key: <span class="hljs-string">&quot;相册&quot;</span>, link: <span class="hljs-string">&quot;/photo/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-images&quot;</span> &#125;<br>#   key 是自定义显示的名称，如果不考虑多语言的话，其实可以直接把key: <span class="hljs-string">&quot;photo&quot;</span>换成key: <span class="hljs-string">&quot;相册&quot;</span>就行了<br>#   /phto/ 是定义这个页面为photo，这里也可以写为photos，看喜好了，重点是后面别搞错引用路径，不然要折腾好久的<br>#   icon   是引用图标<br><br><br>### 规范写法 ###<br>#在themes/hexo-theme-fluid/languages/zh-CN.yml文件中添加下面的内容即可：<br><br>photo:<br>  menu: <span class="hljs-string">&#x27;相册&#x27;</span><br>  title: <span class="hljs-string">&#x27;相册&#x27;</span><br>  subtitle: <span class="hljs-string">&#x27;相册&#x27;</span><br></code></pre></td></tr></table></figure>
 
-
-
-
-
+<ol start="5">
+<li>然后在Fluid的配置文件中找到 <code>自定义页</code> 更改首页图片为你需要的。</li>
+</ol>
 <h1 id="创建相册页面"><a href="#创建相册页面" class="headerlink" title="创建相册页面"></a>创建相册页面</h1><ol>
 <li>手动进入<code>Blog（你的博客）</code> - <code>source</code> 目录下，新建一个 <code>photo</code> 文件夹，这是相册页路径，</li>
 <li>新建一个 <code>index.md</code> 文件，这是相册页面，</li>
@@ -365,7 +364,7 @@
 
 <h1 id="图片设置"><a href="#图片设置" class="headerlink" title="图片设置"></a>图片设置</h1><ol>
 <li>目前采用的是本地加载，主要有 Github 和 Gitee 两个位置托管博客，暂不考虑 Github+picgo搭建图床 ，Github搭建的图床对国内没有梯子的用户不友好，当然有 云对象存储COS 最好了，反正我是走白嫖路线，自己的博客目前用不上。</li>
-<li>把你需要展示的相册文件复制到 <code>photo/images-</code> 目录下，没有就在 <code>photo</code> 文件夹中新建一个 <code>images-</code> 文件夹。这样做的目的是因为博客中有在很多图片是不需要展示到照片墙中的，所以我们要手动筛选出自己喜欢的图片放上去，这样不仅不会额外占用存储空间也更有意义。</li>
+<li>把你需要展示的相册文件复制到 <code>photo/images-</code> 目录下，用来存放图片，没有就在 <code>photo</code> 文件夹中新建一个 <code>images-</code> 文件夹（photo里新建的文件夹不能有空的文件夹）。这样做的目的是因为博客中有在很多图片是不需要展示到照片墙中的，所以我们要手动筛选出自己喜欢的图片放上去，这样不仅不会额外占用存储空间也更有意义。</li>
 <li>hexo注入器的工作原理是渲染后，在将自行添加的代码注入到博客中的，也就是会说<strong>你的相册路径要用渲染后的路径位置。</strong></li>
 </ol>
 <h1 id="创建phototool-js文件处理图片"><a href="#创建phototool-js文件处理图片" class="headerlink" title="创建phototool.js文件处理图片"></a>创建phototool.js文件处理图片</h1><ol>
@@ -382,7 +381,17 @@
 <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs processing">npm install <span class="hljs-built_in">image</span>-<span class="hljs-built_in">size</span> --<span class="hljs-built_in">save</span><br></code></pre></td></tr></table></figure>
 </li>
 <li><p>接下来输入 <code>node source/photo/phototool.js</code> 这样就会运行这个文件，注意哈，你的路径如果改了这里也要改。</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">imagescreate</span>/phototool.js<br></code></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">source</span>/photo/phototool.js<br></code></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>如果你运行时出现了如下的报错信息的话，可以看一下第7步，没出现错误的话则直接看第7步。</p>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs subunit">$ node source/photo/phototool.js<br>node:internal/modules/cjs/loader:1078<br>  throw err;<br>  ^<br><br><span class="hljs-keyword">Error: </span>Cannot find module &#x27;fs-extra&#x27;<br>Require stack:<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>这个错误意味着在运行脚本<code>phototool.js</code>的过程中，Node.js 无法找到名为<code>fs-extra</code>的模块。 <code>fs-extra</code> 是一个第三方模块，用于提供比内置的 Node.js <code>fs</code> 模块更多功能。要解决这个问题，你需要确保在你的项目中安装了 <code>fs-extra</code> 模块。你可以使用 <code>npm</code> 包管理器来安装它，比如运行以下命令：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> fs-extra<br></code></pre></td></tr></table></figure>
+
+<p>现在重新运行 <code>node source/photo/phototool.js</code> 就正常了</p>
 </li>
 <li><p>然后，在你的 <code>photo</code> 目录中，就会多出 <code>photos.json</code> 和 <code>photosInfo.json</code> </p>
 </li>
