@@ -278,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.3k 字
+          4.4k 字
         
       </span>
     
@@ -422,7 +422,7 @@
 <li><p>找到 <code>/photo/Phtotos.json</code> 图片配置文件，用 HBuilder 等代码编辑工具，重新整理代码格式。</p>
 </li>
 <li><p>例如我要添加图片，则在 <code>&quot;1920.1080 复古音箱-渲染2.png&quot;,</code> 的上方添加即可，</p>
-<p>注意规律：宽高中间有一个英文的点 <code>.</code><br>宽高的数值要和图片的宽高保持一致<br>再按下空格 <code> 空格</code><br>接下来是图片的名称和它的格式：<code>复古音箱-渲染2.png</code><br>用英文引号 “” 作为包裹数据段落<br>然后你新加的图片在第一个位置，则要在尾部继续加一个英文 <code>,</code> 逗号<br>注意这一列图片的最后一张是没有逗号的，如果你在其中调整了顺序别搞错了，逗号也别少加。<br>这里的 <code>name</code> 里的参数可自行修改，这个是分类显示的名称。<br>然后有多个分类，则如示范所展示参考：</p>
+<p>注意规律：宽高中间有一个英文的点 <code>.</code><br>宽高的数值要和图片的宽高保持一致<br>再按下空格 <code> 空格</code><br>接下来是图片的名称和它的格式：<code>复古音箱-渲染2.png</code><br>用英文引号 “” 作为包裹数据段落<br>然后你新加的图片在第一个位置，则要在尾部继续加一个英文 <code>,</code> 逗号<br>注意：一个分类（这个分类是指：Blender、其它）的图片的最后一张是没有逗号的，如果你在其中调整了顺序别搞错了，逗号也别少加。<br>这里的 <code>name</code> 里的参数可自行修改，这个是分类显示的名称。<br>然后有多个分类，则如示范所展示参考：<br>值得注意的是，这里的分类并不是按文件夹分类，它们都是指向同一个图片目录（路径），也就是说在这个配置文件中修改的分类只会影响渲染后注入网页的效果；</p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs prolog">[&#123;<br>	<span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Blender&quot;</span>,<br>	<span class="hljs-string">&quot;children&quot;</span>: [<br>	    <span class="hljs-string">&quot;宽.高 图片名称.png&quot;</span>, <br>		<span class="hljs-string">&quot;1920.1080 复古音箱-渲染2.png&quot;</span>, <br>		<span class="hljs-string">&quot;1920.1080 复古音箱-渲染白膜.png&quot;</span>, <br>		<span class="hljs-string">&quot;1280.3630 Watch_detail_page_display.png&quot;</span>,<br>		<span class="hljs-string">&quot;1000.1500 Watch_detail_page_display3.png&quot;</span><br>	]<br>&#125;,<br>  &#123;<br>    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;其它&quot;</span>,<br>    <span class="hljs-string">&quot;children&quot;</span>: [<br>      <span class="hljs-string">&quot;800.800 foot1.jpg&quot;</span>,<br>      <span class="hljs-string">&quot;800.800 foot2.jpg&quot;</span>,<br>      <span class="hljs-string">&quot;1000.1500 13445.jpg&quot;</span><br>    ]<br>  &#125;<br>]<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>接下来是将相册的图片和img公用一个路径，我们只需要找到 <code>source/js/photoWall.js</code> 修改图片访问路径即可。</p>
