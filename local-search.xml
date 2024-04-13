@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>blender特斯拉</title>
+    <link href="/2024/04/13/31-blender%E7%89%B9%E6%96%AF%E6%8B%89/"/>
+    <url>/2024/04/13/31-blender%E7%89%B9%E6%96%AF%E6%8B%89/</url>
+    
+    <content type="html"><![CDATA[<h1 id="xiaoxiao-de-特斯拉"><a href="#xiaoxiao-de-特斯拉" class="headerlink" title="xiaoxiao de 特斯拉"></a>xiaoxiao de 特斯拉</h1><p>特斯拉建模部分有了最新进度，目前建模篇已经完成，并为它添加了一个简易的渲染效果，在接下来的时间将会完成渲染篇和动画篇，此文章将继续更新。</p><p>对于建模部分，它并不会很难，主要的是缩裹和一些修改器的配合使用，</p><p><img src="/../img/images/Snipaste_2024-04-11_16-27-06.png" alt="Snipaste_2024-04-11_16-27-06"></p><h2 id="建模部分概览"><a href="#建模部分概览" class="headerlink" title="建模部分概览"></a>建模部分概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/%E7%89%B9%E6%96%AF%E6%8B%89_A_%E7%AE%80%E6%98%93%E6%B8%B2%E6%9F%93.png" alt="特斯拉_A_简易渲染"></div><div class="group-image-wrap"><img src="/../img/images/%E7%89%B9%E6%96%AF%E6%8B%89_B_%E7%BA%BF%E6%A1%86.png" alt="特斯拉_B_线框"></div><div class="group-image-wrap"><img src="/../img/images/%E7%89%B9%E6%96%AF%E6%8B%89_C_%E5%BB%BA%E6%A8%A1%E9%83%A8%E5%88%86%E6%B8%B2%E6%9F%93.png" alt="特斯拉_C_建模部分渲染"></div></div></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>设计类</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Blender</tag>
+      
+      <tag>3D建模</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>为hexo博客Fluid主题添加相册功能</title>
     <link href="/2024/04/05/30-hexo%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/"/>
     <url>/2024/04/05/30-hexo%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/</url>
