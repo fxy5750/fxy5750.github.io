@@ -18,12 +18,6 @@
           url: 'http://music.163.com/song/media/outer/url?id=2039800841.mp3',
           cover: 'https://y.gtimg.cn/music/photo_new/T002R500x500M00000012EpR22Be8H.jpg',
         },
-        {
-          name: 'China-X',
-          artist: '徐梦圆',
-          url: 'https://www.ytmp3.cn/down/49003.mp3',
-          cover: 'https://p1.music.126.net/hH4UmteuzsqZHacrr3YS_g==/18358545649308968.jpg?param=130y130',
-        },
 		{
 		  name: 'Lanterns',
 		  artist: 'Xomu',
@@ -47,6 +41,12 @@
 		  artist: '羽肿',
 		  url: 'http://music.163.com/song/media/outer/url?id=427606780.mp3',
 		  cover: 'https://p2.music.126.net/R5wdneWJADdilEDtqBev-w==/109951169463411528.jpg?param=130y130',
+		},
+		{
+		  name: '花火が瞬く夜に',
+		  artist: '羽肿',
+		  url: 'http://music.163.com/song/media/outer/url?id=434902428.mp3',
+		  cover: 'https://p2.music.126.net/SZRV6SlwgKt9QaozGxVBlQ==/109951169428343759.jpg?param=130y130',
 		},
       ]
     });
