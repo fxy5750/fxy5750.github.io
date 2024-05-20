@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Blender恐怖池核氛围场景</title>
+    <link href="/2024/05/20/34-blender%E6%81%90%E6%80%96%E6%B1%A0%E6%A0%B8%E6%B0%9B%E5%9B%B4%E5%9C%BA%E6%99%AF/"/>
+    <url>/2024/05/20/34-blender%E6%81%90%E6%80%96%E6%B1%A0%E6%A0%B8%E6%B0%9B%E5%9B%B4%E5%9C%BA%E6%99%AF/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954858843&bvid=BV1cy411a7zZ&cid=1552101187&page=1&autoplay=1" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h1 id="xiaoxiao-de-恐怖池核氛围场景"><a href="#xiaoxiao-de-恐怖池核氛围场景" class="headerlink" title="xiaoxiao de 恐怖池核氛围场景"></a>xiaoxiao de 恐怖池核氛围场景</h1><p>恐怖池核氛围场景，跟着高老师学习的场景练习，题材是一个中世纪的破旧宾馆，在此次练习中，学习了洋面，以及漂浮物制作，简单的布料模拟，以及圣诞灯拖入摆放技巧，还有破旧的墙面与墙皮融合。</p><p>在这次的练习中遇到的问题：</p><ul><li>玩偶和远处小黄鸭漂浮的位置幅度过大（已解决）</li><li>水面的泡沫过多，影响视觉观感（已解决）</li><li>水面过于透明，暂时没解决</li></ul><p>添加的内容：</p><ul><li>给大黄鸭配上了一个墨镜🕶️</li><li>聚焦物体是一个小丑玩偶</li><li>用了张伟版闪灵图片</li></ul><table><thead><tr><th>名称</th><th>恐怖池核氛围场景</th><th>使用软件</th><th>Blender</th></tr></thead><tbody><tr><td>总计时长</td><td>2天 &#x2F; 10h</td><td>风格</td><td>恐怖</td></tr><tr><td>总计屏数</td><td>1屏</td><td>规范信息</td><td>1920*1080px</td></tr><tr><td>产品定位</td><td>练习</td><td>备注</td><td>cycles渲染练习</td></tr></tbody></table></br><h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/TerrorPoolNucleus_banner_1.png" alt="TerrorPoolNucleus_banner_1"></div><div class="group-image-wrap"><img src="/../img/images/TerrorPoolNucleus_banner_2.png" alt="TerrorPoolNucleus_banner_2"></div><div class="group-image-wrap"><img src="/../img/images/TerrorPoolNucleus_banner_3.png" alt="TerrorPoolNucleus_banner_3"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/TerrorPoolNucleus_banner_4.png" alt="TerrorPoolNucleus_banner_4"></div><div class="group-image-wrap"><img src="/../img/images/TerrorPoolNucleus_banner_5.png" alt="TerrorPoolNucleus_banner_5"></div></div></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>设计类</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Blender</tag>
+      
+      <tag>3D建模</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Blender蓝色梦想</title>
     <link href="/2024/05/17/33-blender%E5%B0%8F%E9%A3%9E%E6%9C%BA/"/>
     <url>/2024/05/17/33-blender%E5%B0%8F%E9%A3%9E%E6%9C%BA/</url>
@@ -582,7 +609,7 @@
     <link href="/2022/12/31/07-blender%E5%B0%8F%E6%88%BF%E9%97%B4/"/>
     <url>/2022/12/31/07-blender%E5%B0%8F%E6%88%BF%E9%97%B4/</url>
     
-    <content type="html"><![CDATA[<h2 id="xiaoxiao-de-Blender-小房间"><a href="#xiaoxiao-de-Blender-小房间" class="headerlink" title="xiaoxiao de Blender 小房间"></a>xiaoxiao de Blender 小房间</h2><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E7%99%BD%E5%A4%A9.png" alt="【8】最终渲染-白天"></p><p>白天&#x2F;开灯场景</p><hr><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E5%A4%9C%E6%99%AF.png" alt="【8】最终渲染-夜景"></p><p>夜晚&#x2F;吊顶开灯场景</p><hr><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E5%A4%9C%E6%99%AF+%E5%8F%B0%E7%81%AF.png" alt="【8】最终渲染-夜景+台灯"></p><p>夜晚&#x2F;吊顶+台灯开灯场景</p><h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><p><a href="https://wwi.lanzoup.com/iNziD0xqw43e">点此下载</a> 访问密码: h5n6</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="xiaoxiao-de-Blender-小房间"><a href="#xiaoxiao-de-Blender-小房间" class="headerlink" title="xiaoxiao de Blender 小房间"></a>xiaoxiao de Blender 小房间</h2><p>自学blender的第一个作品，从羊羊羊的教室学习的，风格是稍微硬朗的感觉。</p><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E7%99%BD%E5%A4%A9.png" alt="【8】最终渲染-白天"></p><p>白天&#x2F;开灯场景</p><hr><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E5%A4%9C%E6%99%AF.png" alt="【8】最终渲染-夜景"></p><p>夜晚&#x2F;吊顶开灯场景</p><hr><p><img src="/../img/images/%E3%80%908%E3%80%91%E6%9C%80%E7%BB%88%E6%B8%B2%E6%9F%93-%E5%A4%9C%E6%99%AF+%E5%8F%B0%E7%81%AF.png" alt="【8】最终渲染-夜景+台灯"></p><p>夜晚&#x2F;吊顶+台灯开灯场景</p><h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><p><a href="https://wwi.lanzoup.com/iNziD0xqw43e">点此下载</a> 访问密码: h5n6</p>]]></content>
     
     
     <categories>
