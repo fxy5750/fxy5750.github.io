@@ -277,7 +277,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          163 字
+          312 字
         
       </span>
     
@@ -288,7 +288,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -341,6 +341,9 @@
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">ping</span> <span class="hljs-number">192.168.1.1</span><br><span class="hljs-comment"># 这样默认 ping 四次</span><br><br><span class="hljs-attribute">ping</span> <span class="hljs-number">192.168.1.1</span> -n <span class="hljs-number">10</span><br><span class="hljs-comment"># 这样会指定 ping 10 次</span><br><br><span class="hljs-attribute">ping</span> <span class="hljs-number">192.168.1.1</span> -t<br><span class="hljs-comment"># 这样会一直 ping 下去，直到关闭cmd窗口</span><br></code></pre></td></tr></table></figure>
 
 
+
+<p>1.脚本设置见：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wojuzi/article/details/105008721">Win10 cmd 同步系统时间命令</a><br>2.然后把脚本放在系统启动目录下<br>运行<code>shell:startup</code>即可打开启动目录<br>3.创建<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1&spm=1001.2101.3001.7020">计划任务</a><br>“控制面板”—“管理工具”—“任务计划程序”—“创建基本任务”<br>选择脚本所在位置，OK<br>4.脚本配置信息<br>需要确保电脑里的time.windows.com可用，即立即同步可用的情况下使用（“设置”—“时间和语言”—“同步时钟”可用）</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk">@echo off<br>%<span class="hljs-number">1</span> mshta vbscript:CreateObject(<span class="hljs-string">&quot;Shell.Application&quot;</span>).ShellExecute(<span class="hljs-string">&quot;cmd.exe&quot;</span>,<span class="hljs-string">&quot;/c %~s0 ::&quot;</span>,<span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;runas&quot;</span>,<span class="hljs-number">1</span>)(window.close)&amp;&amp;<span class="hljs-keyword">exit</span><br>net stop w32time<br>net start w32time<br>w32tm /resync<br>pause<br></code></pre></td></tr></table></figure>
 
 
 
@@ -452,9 +455,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/" title="游戏抽奖概率攻略">
+                      <a href="/2020/05/29/04-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/" title="远程连接技术支持">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">游戏抽奖概率攻略</span>
+                        <span class="hidden-mobile">远程连接技术支持</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
