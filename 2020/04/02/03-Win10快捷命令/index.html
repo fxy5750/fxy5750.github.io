@@ -7,8 +7,11 @@
 
 <head>
   <meta charset="UTF-8">
+
   <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
   <link rel="icon" href="/img/avatar-2.png">
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -48,7 +51,7 @@
 <!-- 主题依赖的图标库，不要自行修改 -->
 <!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
 
 
 
@@ -69,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"fxy5750.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":40,"cursorChar":" | ","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"fxy5750.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":40,"cursorChar":" | ","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,8 +81,6 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-  
-
   
 
   
@@ -277,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          372 字
+          377 字
         
       </span>
     
@@ -343,6 +344,8 @@
 <h3 id="同步系统时间"><a href="#同步系统时间" class="headerlink" title="同步系统时间"></a>同步系统时间</h3><p>用途：cmos纽扣电池没电时候，手动同步时间太麻烦了，用这个脚本试试吧。</p>
 <p>1.脚本设置见：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wojuzi/article/details/105008721">Win10 cmd 同步系统时间命令</a><br>2.然后把脚本放在系统启动目录下<br>运行<code>shell:startup</code>即可打开启动目录<br>3.创建<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1&spm=1001.2101.3001.7020">计划任务</a><br>“控制面板”—“管理工具”—“任务计划程序”—“创建基本任务”<br>选择脚本所在位置，OK<br>4.脚本配置信息<br>需要确保电脑里的time.windows.com可用，即立即同步可用的情况下使用（“设置”—“时间和语言”—“同步时钟”可用）</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk">@echo off<br>%<span class="hljs-number">1</span> mshta vbscript:CreateObject(<span class="hljs-string">&quot;Shell.Application&quot;</span>).ShellExecute(<span class="hljs-string">&quot;cmd.exe&quot;</span>,<span class="hljs-string">&quot;/c %~s0 ::&quot;</span>,<span class="hljs-string">&quot;&quot;</span>,<span class="hljs-string">&quot;runas&quot;</span>,<span class="hljs-number">1</span>)(window.close)&amp;&amp;<span class="hljs-keyword">exit</span><br>net stop w32time<br>net start w32time<br>w32tm /resync<br>pause<br></code></pre></td></tr></table></figure>
+
+<h3 id="清除dns缓存"><a href="#清除dns缓存" class="headerlink" title="清除dns缓存"></a>清除dns缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Ipconfig /flushdns<br></code></pre></td></tr></table></figure>
 
 
 
@@ -423,19 +426,19 @@
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
+                    <i class="iconfont icon-cc-by"></i>
                   </span>
                 </a>
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                   <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
-                    <i class="iconfont icon-nc"></i>
+                    <i class="iconfont icon-cc-nc"></i>
                   </span>
                 </a>
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                   <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
-                    <i class="iconfont icon-sa"></i>
+                    <i class="iconfont icon-cc-sa"></i>
                   </span>
                 </a>
               
@@ -454,9 +457,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/" title="游戏抽奖概率攻略">
+                      <a href="/2020/05/29/04-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/" title="远程连接技术支持">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">游戏抽奖概率攻略</span>
+                        <span class="hidden-mobile">远程连接技术支持</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -576,7 +579,6 @@
   
   
   
-  
 </div>
 
   </footer>
@@ -603,10 +605,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
