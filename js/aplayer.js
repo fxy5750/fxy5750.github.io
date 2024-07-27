@@ -19,10 +19,10 @@
           cover: 'https://y.gtimg.cn/music/photo_new/T002R500x500M00000012EpR22Be8H.jpg',
         },
 		{
-		  name: 'Lanterns',
-		  artist: 'Xomu',
-		  url: 'http://music.163.com/song/media/outer/url?id=569962512.mp3',
-		  cover: 'https://p1.music.126.net/qmzulQXHPTXSTjckc7jebA==/109951163324324308.jpg?param=130y130',
+		  name: '春庭雪（0.8x）',
+		  artist: '小瑞',
+		  url: 'http://music.163.com/song/media/outer/url?id=2155773719.mp3',
+		  cover: 'https://p2.music.126.net/ourVEuAU6mMOR4uhz5ygfg==/109951169607079525.jpg?param=130y130',
 		},
 		{
 		  name: 'Setsuna',
