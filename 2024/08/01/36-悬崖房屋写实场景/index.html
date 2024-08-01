@@ -1,0 +1,787 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
+  <link rel="icon" href="/img/avatar-2.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="fxy5750">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="跟随菠萝包的派教程练习的写实环境场景，对于此教程的评价是：在地形那一块剪辑混过好几次，因此需要对BL的材质有一定程度的理解，不然会做起来很吃力，现在我感觉更多是跟了一遍，因此，做完后在做一个自己的练习很重要，起码知道原理...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blender海边悬崖房屋写实环境">
+<meta property="og:url" content="https://fxy5750.github.io/2024/08/01/36-%E6%82%AC%E5%B4%96%E6%88%BF%E5%B1%8B%E5%86%99%E5%AE%9E%E5%9C%BA%E6%99%AF/index.html">
+<meta property="og:site_name" content="小晓de雨滴">
+<meta property="og:description" content="跟随菠萝包的派教程练习的写实环境场景，对于此教程的评价是：在地形那一块剪辑混过好几次，因此需要对BL的材质有一定程度的理解，不然会做起来很吃力，现在我感觉更多是跟了一遍，因此，做完后在做一个自己的练习很重要，起码知道原理...">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fxy5750.github.io/img/images/SeasideCliffHouse_150.jpg">
+<meta property="article:published_time" content="2024-08-01T04:26:00.000Z">
+<meta property="article:modified_time" content="2024-08-01T15:59:07.000Z">
+<meta property="article:author" content="fxy5750">
+<meta property="article:tag" content="Blender">
+<meta property="article:tag" content="3D建模">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fxy5750.github.io/img/images/SeasideCliffHouse_150.jpg">
+  
+  
+  
+  <title>Blender海边悬崖房屋写实环境 - 小晓de雨滴</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"fxy5750.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":40,"cursorChar":" | ","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小晓de雨滴</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/photo/" target="_self">
+                <i class="iconfont icon-images"></i>
+                <span>相册</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/" target="_self">
+                    
+                    <span>此博客</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/i/" target="_self">
+                    
+                    <span>本人</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/../img/bg/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">Blender海边悬崖房屋写实环境</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-08-01 12:26" pubdate>
+          2024年8月1日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          696 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          6 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Blender海边悬崖房屋写实环境</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><p>施工中…</p>
+<h1 id="xiaoxiao-de-悬崖房屋写实场景"><a href="#xiaoxiao-de-悬崖房屋写实场景" class="headerlink" title="xiaoxiao de 悬崖房屋写实场景"></a>xiaoxiao de 悬崖房屋写实场景</h1><p>这是跟随B站 | <a target="_blank" rel="noopener" href="https://space.bilibili.com/25687140/video">菠萝包的派教程</a> 做的写实环境场景练习，期间断续过几次，一次SP的，一次地形的，对于此教程的评价是：尤其在地形那一块剪辑混过好几次，后期的地形细节会有很多是需要自己加的，WorldCreator特别吃内存，一旦爆满就会闪退，如果你跟随教程制作突然闪退这是很头疼的事情，你至少需要32G内存才能尽可能避免闪退问题，后期的材质节点需要对BL的材质有一定程度的理解，不然会做起来很吃力，现在我感觉更多是跟了一遍，因此，做完后在做一个自己的练习很重要，起码知道原理…</p>
+<p>关于植被分布：</p>
+<ul>
+<li>使用实例化于点上可以将不同植被进行分布，同时将你的集合作为分布的实例</li>
+<li>在节点中ctrl+G可以建立组，简化面板</li>
+<li>几何节点这是一个比较神奇的功能，它可以对相机边缘外的内容进行裁剪，以减少草地的模型和材质对计算机的占用</li>
+<li>场景中植被会有随风摆动效果，这是几何节点的噪波和随机值进行控制动态部分</li>
+</ul>
+<p>在这次的练习中遇到的问题：</p>
+<ul>
+<li>海面的细节存在问题</li>
+<li>无人机结束扫描直线飞行中，坐标系面板中存在多个XYZ数值变化，可能加空物体可以解决</li>
+<li>房屋用到SP绘制材质，要确保所有的UV分布均匀，UV的方向要保持统一。</li>
+<li>运算功能是不仅在着色器里有，它在几何节点也有，它类似PS的图层样式，目前较难理解</li>
+<li>视图层勾选雾场（含Z选项），同时相机勾选雾场，在世界环境中可调整雾场范围，</li>
+</ul>
+<p>添加的内容：</p>
+<ul>
+<li><p>场景中添加了无人机扫描（无人机来自遗落战境|<a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLzBDRm2ujpaY6CLUWcgYiChStdSRK0xQ_">Drone défender Oblivion svm6 - YouTube</a>）</p>
+<p>-无人机添加扫描效果</p>
+<p>-无人机添加尾焰喷射效果</p>
+<p>-无人机沿路径动画飞行（线性）</p>
+</li>
+<li><p>场景中添加了海鸥鸟群（Spyderfy 3.0）</p>
+</li>
+<li><p>场景中添加了海面浮标（<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=oysCSbhXYBo">Blender Tutorial - Creating a Stormy Ocean (youtube.com)</a>）</p>
+</li>
+<li><p>其它基础资产（Bridge）</p>
+<p>-废弃船只</p>
+<p>-石块</p>
+<p>-围栏</p>
+<p>-长凳</p>
+<p>-梯子</p>
+<p>-箱子</p>
+<p>-铁镐</p>
+<p>-远处房屋（布的）</p>
+</li>
+<li><p>Ps对图层后期场景雾进行合成处理</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>恐怖池核氛围场景</th>
+<th>使用软件</th>
+<th>Blender&#x2F;Substance 3D Painter&#x2F;WorldCreator&#x2F;Photoshop</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>总计时长</td>
+<td>20天 &#x2F; 3h（预估）</td>
+<td>风格</td>
+<td>写实</td>
+</tr>
+<tr>
+<td>总计屏数</td>
+<td>1P&#x2F;1V</td>
+<td>规范信息</td>
+<td>2560*1440px</td>
+</tr>
+<tr>
+<td>产品定位</td>
+<td>练习</td>
+<td>备注</td>
+<td>cycles写实渲染</td>
+</tr>
+</tbody></table>
+</br>
+
+
+
+
+
+
+
+<h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-35.png" alt="Snipaste_2024-08-01_16-13-35"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-09.png" alt="Snipaste_2024-08-01_16-13-09"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-07.png" alt="Snipaste_2024-07-29_11-07-07"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-14.png" alt="Snipaste_2024-07-29_11-07-14"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_20-09-51.png" alt="Snipaste_2024-07-29_20-09-51"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03.png" alt="Snipaste_2024-08-01_16-16-03"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/SeasideCliffHouse_150.jpg" alt="SeasideCliffHouse_150"></div></div></div>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AE%BE%E8%AE%A1%E7%B1%BB/" class="category-chain-item">设计类</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Blender/" class="print-no-link">#Blender</a>
+      
+        <a href="/tags/3D%E5%BB%BA%E6%A8%A1/" class="print-no-link">#3D建模</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Blender海边悬崖房屋写实环境</div>
+      <div>https://fxy5750.github.io/2024/08/01/36-悬崖房屋写实场景/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>fxy5750</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年8月1日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年8月1日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-cc-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-cc-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/07/25/35-%E4%B8%AA%E4%BA%BA%E9%9A%90%E7%A7%81/" title="个人隐私防止开盒建议">
+                        <span class="hidden-mobile">个人隐私防止开盒建议</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <p>本站使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.fluid-dev.com/docs/" data-pjax-state>Fluid</a> 作为主题 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/" data-pjax-state>Hexo</a> 框架驱动 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com" data-pjax-state>Github</a> 托管 &amp;  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dash.cloudflare.com/" data-pjax-state>Cloudflare</a> 提供加速服务</p>
+
+<div> <br/> <p><a target="_blank" rel="noopener" href="https://fxy5750.gitee.io/gps/"><span><i class="iconfont icon-map"></i> 查找我的站点</span></a> | <a href="../2024/07/25/35-个人隐私/"><span><i class="iconfont icon-plan"></i> 个人隐私防止开盒建议</span></a> </p>
+<br/> </div>
+<div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/outdate.js"></script>
+  <div id="aplayer"></div>
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+  <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+  <script defer src="/js/aplayer.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>
