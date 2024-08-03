@@ -8,7 +8,7 @@
     <link href="/2024/08/01/36-%E6%82%AC%E5%B4%96%E6%88%BF%E5%B1%8B%E5%86%99%E5%AE%9E%E5%9C%BA%E6%99%AF/"/>
     <url>/2024/08/01/36-%E6%82%AC%E5%B4%96%E6%88%BF%E5%B1%8B%E5%86%99%E5%AE%9E%E5%9C%BA%E6%99%AF/</url>
     
-    <content type="html"><![CDATA[<h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><p>施工中…</p><h1 id="xiaoxiao-de-悬崖房屋写实场景"><a href="#xiaoxiao-de-悬崖房屋写实场景" class="headerlink" title="xiaoxiao de 悬崖房屋写实场景"></a>xiaoxiao de 悬崖房屋写实场景</h1><p>这是跟随B站 | <a href="https://space.bilibili.com/25687140/video">菠萝包的派教程</a> 做的写实环境场景练习，期间断续过几次，一次SP的，一次地形的，对于此教程的评价是：尤其在地形那一块剪辑混过好几次，后期的地形细节会有很多是需要自己加的，WorldCreator特别吃内存，一旦爆满就会闪退，如果你跟随教程制作突然闪退这是很头疼的事情，你至少需要32G内存才能尽可能避免闪退问题，后期的材质节点需要对BL的材质有一定程度的理解，不然会做起来很吃力，现在我感觉更多是跟了一遍，因此，做完后在做一个自己的练习很重要，起码知道原理…</p><p>关于植被分布：</p><ul><li>使用实例化于点上可以将不同植被进行分布，同时将你的集合作为分布的实例</li><li>在节点中ctrl+G可以建立组，简化面板</li><li>几何节点这是一个比较神奇的功能，它可以对相机边缘外的内容进行裁剪，以减少草地的模型和材质对计算机的占用</li><li>场景中植被会有随风摆动效果，这是几何节点的噪波和随机值进行控制动态部分</li></ul><p>在这次的练习中遇到的问题：</p><ul><li><p>物体移动范围过远相机内消失（在相机的结束点设置场景的距离即可，和视图裁剪一样。）</p></li><li><p>海面的细节存在问题</p></li><li><p>无人机结束扫描直线飞行中，坐标系面板中存在多个XYZ数值变化，可能加空物体可以解决</p></li><li><p>房屋用到SP绘制材质，要确保所有的UV分布均匀，UV的方向要保持统一。</p></li><li><p>运算功能是不仅在着色器里有，它在几何节点也有，它类似PS的图层样式，目前较难理解</p></li><li><p>视图层勾选雾场（含Z选项），同时相机勾选雾场，在世界环境中可调整雾场范围，</p><p>-EV渲染出纯净的黑白通道雾场，需要在渲染模式使用雾场渲染通道，关闭显示叠加层</p></li><li><p>在CY渲染引擎中，通过减少降噪阈值，可提升渲染速度，<a href="https://www.bilibili.com/video/BV1534y1c7Gv">将Blender渲染时间提升超过90%</a></p><p>-这是在昨晚上传渲染农场无意间发现的，提示过低的降噪在动画中无意义，会增加渲染时长。</p></li></ul><p>添加的内容：</p><ul><li><p>场景中添加了无人机扫描（无人机来自遗落战境|<a href="https://www.youtube.com/playlist?list=PLzBDRm2ujpaY6CLUWcgYiChStdSRK0xQ_">Drone défender Oblivion svm6 - YouTube</a>）</p><p>-无人机添加扫描效果</p><p>-无人机添加尾焰喷射效果</p><p>-无人机沿路径动画飞行（线性）</p></li><li><p>场景中添加了海鸥鸟群（Spyderfy 3.0）</p></li><li><p>场景中添加了海面浮标（<a href="https://www.youtube.com/watch?v=oysCSbhXYBo">Blender Tutorial - Creating a Stormy Ocean (youtube.com)</a>）</p></li><li><p>其它基础资产（Bridge）</p><p>-废弃船只</p><p>-石块</p><p>-围栏</p><p>-长凳</p><p>-梯子</p><p>-箱子</p><p>-铁镐</p><p>-灌木</p><p>-花朵</p><p>-远处房屋（布的）</p></li><li><p>Ps对图层后期场景雾进行合成处理</p><p>-雾场黑白通道与渲染图融合（滤色）</p><p>-CameraRAW滤镜调色</p></li></ul><table><thead><tr><th>名称</th><th>恐怖池核氛围场景</th><th>使用软件</th><th>Blender&#x2F;Substance 3D Painter&#x2F;WorldCreator&#x2F;Photoshop</th></tr></thead><tbody><tr><td>总计时长</td><td>20天 &#x2F; 3h（预估）</td><td>风格</td><td>写实</td></tr><tr><td>总计屏数</td><td>1P&#x2F;1V</td><td>规范信息</td><td>2560*1440px</td></tr><tr><td>产品定位</td><td>练习</td><td>备注</td><td>cycles写实渲染</td></tr></tbody></table></br><h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-35.png" alt="Snipaste_2024-08-01_16-13-35"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-09.png" alt="Snipaste_2024-08-01_16-13-09"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-07.png" alt="Snipaste_2024-07-29_11-07-07"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-14.png" alt="Snipaste_2024-07-29_11-07-14"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_20-09-51.png" alt="Snipaste_2024-07-29_20-09-51"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03.png" alt="Snipaste_2024-08-01_16-16-03"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/SeasideCliffHouse_150.jpg" alt="SeasideCliffHouse_150"></div></div></div>]]></content>
+    <content type="html"><![CDATA[<h1 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h1><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112897309082371&bvid=BV1XpijeUEjn&cid=500001636956562&page=1&autoplay=1" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h1 id="xiaoxiao-de-悬崖房屋写实场景"><a href="#xiaoxiao-de-悬崖房屋写实场景" class="headerlink" title="xiaoxiao de 悬崖房屋写实场景"></a>xiaoxiao de 悬崖房屋写实场景</h1><p>这是跟随B站 | <a href="https://space.bilibili.com/25687140/video">菠萝包的派教程</a> 做的写实环境场景练习，期间断续过几次，一次SP的，一次地形的，对于此教程的评价是：尤其在地形那一块剪辑混过好几次，后期的地形细节会有很多是需要自己加的，WorldCreator特别吃内存，一旦爆满就会闪退，如果你跟随教程制作突然闪退这是很头疼的事情，你至少需要32G内存才能尽可能避免闪退问题，后期的材质节点需要对BL的材质有一定程度的理解，不然会做起来很吃力，现在我感觉更多是跟了一遍，因此，做完后在做一个自己的练习很重要，起码知道原理…</p><p>关于植被分布：</p><ul><li>使用实例化于点上可以将不同植被进行分布，同时将你的集合作为分布的实例</li><li>在节点中ctrl+G可以建立组，简化面板</li><li>几何节点这是一个比较神奇的功能，它可以对相机边缘外的内容进行裁剪，以减少草地的模型和材质对计算机的占用</li><li>场景中植被会有随风摆动效果，这是几何节点的噪波和随机值进行控制动态部分</li></ul><p>在这次的练习中遇到的问题：</p><ul><li><p>物体移动范围过远相机内消失（在相机的结束点设置场景的距离即可，和视图裁剪一样。）</p></li><li><p>海面的细节存在问题</p></li><li><p>无人机结束扫描直线飞行中，坐标系面板中存在多个XYZ数值变化，可能加空物体可以解决</p></li><li><p>房屋用到SP绘制材质，要确保所有的UV分布均匀，UV的方向要保持统一。</p></li><li><p>运算功能是不仅在着色器里有，它在几何节点也有，它类似PS的图层样式，目前较难理解</p></li><li><p>视图层勾选雾场（含Z选项），同时相机勾选雾场，在世界环境中可调整雾场范围，</p><p>-EV渲染出纯净的黑白通道雾场，需要在渲染模式使用雾场渲染通道，关闭显示叠加层</p></li><li><p>在CY渲染引擎中，通过减少降噪阈值，可提升渲染速度，<a href="https://www.bilibili.com/video/BV1534y1c7Gv">将Blender渲染时间提升超过90%</a></p><p>-这是在昨晚上传渲染农场无意间发现的，提示过低的降噪在动画中无意义，会增加渲染时长。</p></li></ul><p>添加的内容：</p><ul><li><p>场景中添加了无人机扫描（无人机来自遗落战境|<a href="https://www.youtube.com/playlist?list=PLzBDRm2ujpaY6CLUWcgYiChStdSRK0xQ_">Drone défender Oblivion svm6 - YouTube</a>）</p><p>-无人机添加扫描效果</p><p>-无人机添加尾焰喷射效果</p><p>-无人机沿路径动画飞行（线性）</p></li><li><p>场景中添加了海鸥鸟群（Spyderfy 3.0）</p></li><li><p>场景中添加了海面浮标（<a href="https://www.youtube.com/watch?v=oysCSbhXYBo">Blender Tutorial - Creating a Stormy Ocean (youtube.com)</a>）</p></li><li><p>其它基础资产（Bridge）</p><p>-废弃船只</p><p>-石块</p><p>-围栏</p><p>-长凳</p><p>-梯子</p><p>-箱子</p><p>-铁镐</p><p>-灌木</p><p>-花朵</p><p>-远处房屋（布的）</p></li><li><p>Ps对图层后期场景雾进行合成处理</p><p>-雾场黑白通道与渲染图融合（滤色）</p><p>-CameraRAW滤镜调色</p></li></ul><table><thead><tr><th>名称</th><th>海边悬崖房屋写实环境</th><th>使用软件</th><th>Blender&#x2F;Substance 3D Painter&#x2F;WorldCreator&#x2F;Photoshop</th></tr></thead><tbody><tr><td>总计时长</td><td>20天 &#x2F; 3h（预估）</td><td>风格</td><td>写实</td></tr><tr><td>总计屏数</td><td>1P&#x2F;1V</td><td>规范信息</td><td>2560*1440px</td></tr><tr><td>产品定位</td><td>练习</td><td>备注</td><td>cycles写实渲染</td></tr><tr><td>文件公布</td><td><a href="https://cloud.189.cn/t/ie22iaMfyUjm">下载文件</a>（访问码：j8k0）</td><td>声明</td><td>请勿商用</td></tr></tbody></table></br><h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-35.png" alt="Snipaste_2024-08-01_16-13-35"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-13-09.png" alt="Snipaste_2024-08-01_16-13-09"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-07.png" alt="Snipaste_2024-07-29_11-07-07"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_11-07-14.png" alt="Snipaste_2024-07-29_11-07-14"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-07-29_20-09-51.png" alt="Snipaste_2024-07-29_20-09-51"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03.png" alt="Snipaste_2024-08-01_16-16-03"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03_1.png" alt="Snipaste_2024-08-01_16-16-03_1"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03_2.png" alt="Snipaste_2024-08-01_16-16-03_2"></div><div class="group-image-wrap"><img src="/../img/images/Snipaste_2024-08-01_16-16-03_3.png" alt="Snipaste_2024-08-01_16-16-03_3"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/SeasideCliffHouse_150.jpg" alt="SeasideCliffHouse_150"></div></div></div>]]></content>
     
     
     <categories>
@@ -734,31 +734,6 @@
   
   
   <entry>
-    <title>游戏抽奖概率攻略</title>
-    <link href="/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/"/>
-    <url>/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/</url>
-    
-    <content type="html"><![CDATA[<h2 id="一篇似乎解开游戏抽奖的秘密…"><a href="#一篇似乎解开游戏抽奖的秘密…" class="headerlink" title="一篇似乎解开游戏抽奖的秘密…"></a>一篇似乎解开游戏抽奖的秘密…</h2><p><img src="/../img/images/clip_image002.jpg" alt="img"></p><blockquote><p>声明：此文档是根据前人经验得出，本人暂无实践测试，内容仅做参考，若产生任何损失均与本人无关！</p></blockquote><iframe width="100%" height="500" src="//player.bilibili.com/player.html?aid=77887230&bvid=BV1HJ411q7Ye&cid=133249891&page=1&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>抽奖概率：</p><p>*1、【限制每日数量】一天奖池内的极品数量有限，如果有人中奖且公屏上有滚动式中奖信息提醒，那么今天的极品已经没了，不建议抽奖因为基本是处于亏钱的。一般出现在一直抽都抽不到的游戏上（案例：剑灵七角金刚石）</p><p>2、【先到先得的】它并不是概率抽奖机会平等的，而是先到先得，手快有手慢无的， “伪随机”，此方法也存在一定的数量限制，（案例：可口可乐皮肤）</p><p>*3、【比例式概率】它也不是机会平等的，你如果在不知情的情况下会变成工具人，因为它会根据今日收入和支出来控制比例，比如：一台机器在上有一个顾客使用时，而且亏了很多，那么你在上去，中奖概率则更高，同理反之，刚中奖的机器不会有人上位，亏损概率极高，此方法常见在老虎机或街机以及某些赌博机上</p><p>*4、【跟金法】会在一个时间段内要人填补数量，如果上一个人中奖，而且在公屏上有明显的提示，那么你要立马跟着抽，这样获奖概率会更大，中奖后会重置一遍填补数量，这时候就不建议上去抽，亏损概率极高，此方法与第7条类似（案例：CSOL）</p><p>5、【伪随机】英雄联盟战利品系统内，假设你购买的是S1赛季内的皮肤宝箱，同时那里的皮肤你都有了，宝箱的说明是能开到一样你没有的皮肤，但是一年后出了S2赛季新皮肤，虽然箱子一模一样，但你仍然不能开不到新皮肤，因为这个箱子已经过时了，它限制奖励内容为S1赛季内的所有皮肤或奖品，而新皮肤是刚出的，程序员一般不会为已经过时的宝箱更新代码，很显然这就是同一个箱子不同的奖池，所以这种开过时宝箱基本没戏。（案例：英雄联盟）</p><p>6、【概率递增法】严格的说这更像是砸钱法，为了避免真欧皇和真非酋，它不存在一发入魂，也不会干几千甚至几万都不出，它会有个保底机制，同时也有个最低填补数量机制，你最少需要砸一定的金钱（比如：400，运气较好），同时它又怕你脸黑抽个几万都不出，所以当你抽到一定数量时会中（比如：8000，运气较差）。（案例：腾讯手游）</p><p>7、【纯拼脸型】这是一张简单粗暴的抽奖设定，如果抽到了某样东西它是直接到背包内，而且抽奖的动画效果是假的，它纯粹是为了拉拉你的肾上腺素，使得你在抽奖时更有快感。这种建议不要抽奖（案例：CSGO）</p><p>8、【道具强化类】在强化某样极品高阶道具，要的价格高而昂贵，其特征为一连串失败和一连串成功，这种也类似“跟金法”，它需要填补一定数量才能成功。建议使用垫子（准备好一连串强化或抽奖）把低阶道具先强化，如果出现一次成功，那么第二次第三次成功的概率一样大，直到触发阈值后便会强化失败，然后在循环一次即可。（案例：疾风之刃）</p><p>9、【远离低谷】抽奖程序是单独设定的，部分游戏的公开抽奖需要很多人填补到一定数量才会提高极品触发概率，尤其是新服刚开的时候，不要抽奖。（第2条与这条会产生冲突，但是第2条有明显特征，就是先到先得，只要有奖励数量存在就必得的那种，你可以先用垫子试水，如果失败十次内，建议放弃）。</p><p>10、【拒绝连抽】游戏里抽奖几乎都会有单抽和十连抽，如果十连抽没有什么额外奖励的话，那么就选择单抽，因为单抽的时段更长，同时其它在线的玩家也会抽奖来填补奖池数量，这样更能避免顺号，提高中奖概率。</p><p>数字条例前带有“*”的符号是有明显中奖提示的奖池机制</p><p>提示：切莫相信小赌怡情，大堵伤身，如果可以的话，建议不赌为赢。</p><p><a href="https://www.bilibili.com/video/BV1HJ411q7Ye">原视频链接</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>游戏资讯</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>娱乐</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>远程连接技术支持</title>
     <link href="/2020/05/29/04-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
     <url>/2020/05/29/04-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/</url>
@@ -776,6 +751,31 @@
     <tags>
       
       <tag>服务器技术</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>游戏抽奖概率攻略</title>
+    <link href="/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/"/>
+    <url>/2020/05/29/05-%E6%8A%BD%E5%A5%96%E6%A6%82%E7%8E%87%E6%94%BB%E7%95%A5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一篇似乎解开游戏抽奖的秘密…"><a href="#一篇似乎解开游戏抽奖的秘密…" class="headerlink" title="一篇似乎解开游戏抽奖的秘密…"></a>一篇似乎解开游戏抽奖的秘密…</h2><p><img src="/../img/images/clip_image002.jpg" alt="img"></p><blockquote><p>声明：此文档是根据前人经验得出，本人暂无实践测试，内容仅做参考，若产生任何损失均与本人无关！</p></blockquote><iframe width="100%" height="500" src="//player.bilibili.com/player.html?aid=77887230&bvid=BV1HJ411q7Ye&cid=133249891&page=1&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>抽奖概率：</p><p>*1、【限制每日数量】一天奖池内的极品数量有限，如果有人中奖且公屏上有滚动式中奖信息提醒，那么今天的极品已经没了，不建议抽奖因为基本是处于亏钱的。一般出现在一直抽都抽不到的游戏上（案例：剑灵七角金刚石）</p><p>2、【先到先得的】它并不是概率抽奖机会平等的，而是先到先得，手快有手慢无的， “伪随机”，此方法也存在一定的数量限制，（案例：可口可乐皮肤）</p><p>*3、【比例式概率】它也不是机会平等的，你如果在不知情的情况下会变成工具人，因为它会根据今日收入和支出来控制比例，比如：一台机器在上有一个顾客使用时，而且亏了很多，那么你在上去，中奖概率则更高，同理反之，刚中奖的机器不会有人上位，亏损概率极高，此方法常见在老虎机或街机以及某些赌博机上</p><p>*4、【跟金法】会在一个时间段内要人填补数量，如果上一个人中奖，而且在公屏上有明显的提示，那么你要立马跟着抽，这样获奖概率会更大，中奖后会重置一遍填补数量，这时候就不建议上去抽，亏损概率极高，此方法与第7条类似（案例：CSOL）</p><p>5、【伪随机】英雄联盟战利品系统内，假设你购买的是S1赛季内的皮肤宝箱，同时那里的皮肤你都有了，宝箱的说明是能开到一样你没有的皮肤，但是一年后出了S2赛季新皮肤，虽然箱子一模一样，但你仍然不能开不到新皮肤，因为这个箱子已经过时了，它限制奖励内容为S1赛季内的所有皮肤或奖品，而新皮肤是刚出的，程序员一般不会为已经过时的宝箱更新代码，很显然这就是同一个箱子不同的奖池，所以这种开过时宝箱基本没戏。（案例：英雄联盟）</p><p>6、【概率递增法】严格的说这更像是砸钱法，为了避免真欧皇和真非酋，它不存在一发入魂，也不会干几千甚至几万都不出，它会有个保底机制，同时也有个最低填补数量机制，你最少需要砸一定的金钱（比如：400，运气较好），同时它又怕你脸黑抽个几万都不出，所以当你抽到一定数量时会中（比如：8000，运气较差）。（案例：腾讯手游）</p><p>7、【纯拼脸型】这是一张简单粗暴的抽奖设定，如果抽到了某样东西它是直接到背包内，而且抽奖的动画效果是假的，它纯粹是为了拉拉你的肾上腺素，使得你在抽奖时更有快感。这种建议不要抽奖（案例：CSGO）</p><p>8、【道具强化类】在强化某样极品高阶道具，要的价格高而昂贵，其特征为一连串失败和一连串成功，这种也类似“跟金法”，它需要填补一定数量才能成功。建议使用垫子（准备好一连串强化或抽奖）把低阶道具先强化，如果出现一次成功，那么第二次第三次成功的概率一样大，直到触发阈值后便会强化失败，然后在循环一次即可。（案例：疾风之刃）</p><p>9、【远离低谷】抽奖程序是单独设定的，部分游戏的公开抽奖需要很多人填补到一定数量才会提高极品触发概率，尤其是新服刚开的时候，不要抽奖。（第2条与这条会产生冲突，但是第2条有明显特征，就是先到先得，只要有奖励数量存在就必得的那种，你可以先用垫子试水，如果失败十次内，建议放弃）。</p><p>10、【拒绝连抽】游戏里抽奖几乎都会有单抽和十连抽，如果十连抽没有什么额外奖励的话，那么就选择单抽，因为单抽的时段更长，同时其它在线的玩家也会抽奖来填补奖池数量，这样更能避免顺号，提高中奖概率。</p><p>数字条例前带有“*”的符号是有明显中奖提示的奖池机制</p><p>提示：切莫相信小赌怡情，大堵伤身，如果可以的话，建议不赌为赢。</p><p><a href="https://www.bilibili.com/video/BV1HJ411q7Ye">原视频链接</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏资讯</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>娱乐</tag>
       
     </tags>
     
