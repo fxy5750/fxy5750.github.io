@@ -224,6 +224,14 @@
                     <span>本人</span>
                   </a>
                 
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/360/" target="_self">
+                    
+                    <span>全景图容器</span>
+                  </a>
+                
               </div>
             </li>
           
@@ -280,7 +288,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.5k 字
+          6.6k 字
         
       </span>
     
@@ -291,7 +299,7 @@
         
         
         
-          55 分钟
+          56 分钟
         
       </span>
     
@@ -360,6 +368,8 @@
 <li><font color=Gray>【非必要】路由器设置端口转发，添加规则外部端口自定义，内部端口：3389（3389端口是Windows 2000(2003) Server远程桌面的服务端口），协议：TCP，内部ip地址选择需要被控制的宿主机地址，其余不要变动。为保障安全，内部端口最好改一下。</font></li>
 <li><font color=Gray>【非必要】关闭电脑自动休眠功能，有IPMI&#x2F;Pikvm可略过</font></li>
 <li><font color=Gray>【非必要】关闭自动更新功能</font></li>
+<li>说明书收纳，将你的机柜里所有设备有关说明书保存收纳，便于以后维护查阅，别看说明书平时用不着，关键时候总能发挥一些作用。</li>
+<li>网线应该要有标识，短时间是能记住某个网线是走哪里的，但是时间一场，会导致遗忘，因此给网线增加标识，是哪个设备使用，通往哪个房间。</li>
 </ol>
 <h2 id="在软件层次再次检查"><a href="#在软件层次再次检查" class="headerlink" title="在软件层次再次检查"></a>在软件层次再次检查</h2><p>1、关闭自动更新功能（可选）<br>2、关闭电脑自动休眠功能<br>3、开启远程桌面（键入—&gt;右键win10图标—&gt;设置—&gt;系统—&gt;远程桌面—&gt;启用远程桌面—&gt;点击确定即可）：3389端口（可选）<br>4、路由器需要配置端口映射和动态域名 | 另需公网IP<br>5、关闭UAC弹窗（键入—&gt;win+R—&gt;“UAC”—&gt;将滑块拉到最低即从不通知那）<br>6、开启开机自动登录功能（键入—&gt;win+R—&gt;“netplwiz”—&gt;将“要使用本计算机，用户必须输入用户名和密码关闭”关闭勾选—&gt;”确定”—&gt;输入一边账号密码即可）<br>7、主板开启来电自动唤醒功能（带IPMI功能主板非必须）</p>
 <h2 id="远程桌面特点"><a href="#远程桌面特点" class="headerlink" title="远程桌面特点"></a>远程桌面特点</h2><p>1、可以在任何一个地方使用一个手机或一个平板，甚至是一台笔记本来连接你的高性能服务器，有效解决当前电脑性能不足或软件不兼容等问题，再外出情况下，只要携带更少的东西出门，不用搬着一个笨重的台式电脑&#x2F;服务器到处跑。<br>2、拥有服务器的完全控制权<br>3、通过Pikum可以远程管理Bios甚至可以远程装系统</p>
@@ -471,7 +481,7 @@
 <tr>
 <td>2024年7月25日</td>
 <td>远程连接意外丢失，DC供电电源故障，造成供电不足，无限卡开机，pcie直通的lan4，lan5口无法被直通，似乎因电力问题造成损坏（尚未确定）</td>
-<td>更换DC电源，移除SATA硬盘，双内存更改为单内存，减去虚拟winserver系统，避免过热严重，增加pwm温控风扇37度，pwm单独供电不再使用软路由的USB供电，增加虚拟机定时重启（按月），取消注册虚拟机，在重新激活虚拟机后减去空白的PCI设备 <a target="_blank" rel="noopener" href="https://blog.csdn.net/RGBBB/article/details/122156505">https://blog.csdn.net/RGBBB/article/details/122156505</a> 本次更改尽可能的降低设备功耗占用，功耗降低可减少发热造成死机概率。</td>
+<td>更换DC电源，移除SATA硬盘，双内存更改为单内存，减去虚拟winserver系统，避免过热严重，增加pwm温控风扇37度，pwm单独供电不再使用软路由的USB供电，增加虚拟机定时重启（按月），取消注册虚拟机，在重新激活虚拟机后减去空白的PCI设备 <a target="_blank" rel="noopener" href="https://blog.csdn.net/RGBBB/article/details/122156505">https://blog.csdn.net/RGBBB/article/details/122156505</a> 本次更改尽可能的降低设备功耗占用，功耗降低可减少发热造成死机概率。 关于硬件直通还需要再参考此文章 <a target="_blank" rel="noopener" href="https://blog.csdn.net/seaship/article/details/114278280">esxi6.7的直通_esxi添加pci设备灰色-CSDN博客</a> 目前暂时没时间处理和测试稳定性</td>
 <td>2024年8月6日解决</td>
 </tr>
 <tr>

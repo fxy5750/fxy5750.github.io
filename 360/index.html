@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/three.min.js"> </script>
+<script type="text/javascript" src="js/panolens.min.js"></script>
+<style >
+/* 	body{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 98%;
+		height: 98%;
+	}
+	#panolens-div{
+		width: 100%;
+		height:100%; */
+	
+	
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      a:link, a:visited{
+        color: #bdc3c7;
+      }
+
+      .credit{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        color: #fff;
+      }
+	  #panolens-div{
+	  	width: 100%;
+	  	height:100%;
+		
+	/* emm，你似乎对这个很好奇？好吧，我是跟着这个文章弄的： */	
+	/* https://juejin.cn/post/7062158995686948894 */
+	/* https://hsiaofeng.com/archives/ */
+</style>
+</head>
+<body >
+<div class="credit"><a href="../">小晓de雨滴.Blog</a> | <a href="https://github.com/pchen66/panolens.js">Panolens.js</a> image panorama example. Image from <a href="https://developers.google.com/maps/documentation/javascript/streetview?hl=ja">Google Streetview API</a></div>
+<div id="panolens-div"></div>
+<script type="text/javascript">
+		let panolens_image = new PANOLENS.ImagePanorama('img/ceshitu.jpg'); //图片路径
+		let viewer = new PANOLENS.Viewer({ // 创建全景查看器 
+		  container: document.querySelector('#panolens-div'),
+		});
+		viewer.add(panolens_image ); // 将图片添加的查看器
+</script>
+
+</body>
+</html>
