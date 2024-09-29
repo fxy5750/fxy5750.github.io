@@ -21,7 +21,7 @@
   
     <meta name="description" content="从小一直用的安卓手机到现在，安卓手机好在自由，方便的文件管理，人性化的操作和实惠的价格，臃肿在很多APP喜欢自启，常驻后台，摇一摇，开屏广告，通知推送等，就比如MIUI、澎湃OS，现在root越来越难获取，所以出一期在不root的情况下尽可能优化手机，减少内存占用，提高运行效率和手机续航时间。（其它安卓手机大同小异，也可以参考）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android优化&#x2F;MIUI优化">
+<meta property="og:title" content="Android优化&#x2F;MIUI优化&#x2F;澎湃OS优化">
 <meta property="og:url" content="https://fxy5750.github.io/2024/09/29/38-Android%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="小晓de雨滴">
 <meta property="og:description" content="从小一直用的安卓手机到现在，安卓手机好在自由，方便的文件管理，人性化的操作和实惠的价格，臃肿在很多APP喜欢自启，常驻后台，摇一摇，开屏广告，通知推送等，就比如MIUI、澎湃OS，现在root越来越难获取，所以出一期在不root的情况下尽可能优化手机，减少内存占用，提高运行效率和手机续航时间。（其它安卓手机大同小异，也可以参考）">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-09-29_20-22-18.png">
 <meta property="og:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-09-29_20-22-53.png">
 <meta property="article:published_time" content="2024-09-29T04:00:00.000Z">
-<meta property="article:modified_time" content="2024-09-29T13:45:54.540Z">
+<meta property="article:modified_time" content="2024-09-29T14:01:23.942Z">
 <meta property="article:author" content="fxy5750">
 <meta property="article:tag" content="实用工具">
 <meta property="article:tag" content="Android">
@@ -39,7 +39,7 @@
   
   
   
-  <title>Android优化/MIUI优化 - 小晓de雨滴</title>
+  <title>Android优化/MIUI优化/澎湃OS优化 - 小晓de雨滴</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -268,7 +268,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">Android优化/MIUI优化</span>
+            <span id="subtitle">Android优化/MIUI优化/澎湃OS优化</span>
           
         </div>
 
@@ -291,7 +291,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.7k 字
+          4k 字
         
       </span>
     
@@ -302,7 +302,7 @@
         
         
         
-          31 分钟
+          34 分钟
         
       </span>
     
@@ -339,7 +339,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Android优化/MIUI优化</h1>
+            <h1 id="seo-header">Android优化/MIUI优化/澎湃OS优化</h1>
             
             
               <div class="markdown-body">
@@ -354,8 +354,8 @@
 <h2 id="普通-ADB-激活"><a href="#普通-ADB-激活" class="headerlink" title="普通 ADB 激活"></a>普通 ADB 激活</h2><p>这期主要是免 Root 和设备管理员的情况下，如何使用冰箱。</p>
 <p><img src="/../img/images/Android%E4%BC%98%E5%8C%96%E9%85%8D%E5%9B%BE.png" alt="Android优化配图"></p>
 <h3 id="前期准备软件："><a href="#前期准备软件：" class="headerlink" title="前期准备软件："></a>前期准备软件：</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.catchingnow.icebox">冰箱 IceBox</a></li>
-<li><a target="_blank" rel="noopener" href="https://shizuku.rikka.app/">Shizuku (rikka.app)</a></li>
+<li><a target="_blank" rel="noopener" href="https://iceboxdoc.catchingnow.cn/">冰箱 Ice Box 文档 </a> | <a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.catchingnow.icebox">下载 冰箱 IceBox</a></li>
+<li><a target="_blank" rel="noopener" href="https://shizuku.rikka.app/">Shizuku文档 (rikka.app)</a>  |  <a target="_blank" rel="noopener" href="https://github.com/RikkaApps/Shizuku/releases">下载 Shizuku </a> （可能需要学术访问）</li>
 <li><a target="_blank" rel="noopener" href="https://github.com/didjdk/adbhelper/blob/main/README.md">甲壳虫 ADB</a></li>
 <li>准备一点耐心，分别安装它们</li>
 <li>如果你对文字教程不感冒，也可以观看相似的 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gp4y1m7i5/">视频教程</a></li>
@@ -691,6 +691,19 @@
 </ol>
 </li>
 </ul>
+<h1 id="开屏广告"><a href="#开屏广告" class="headerlink" title="开屏广告"></a>开屏广告</h1><p>可通过李跳跳实现跳过广告，不过这个 <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/618880318/answers/updated">软件动了某大厂的福祉</a> ，吃了律师函，现已下架停更，下载需要通过学术访问去搜这个软件，下载并导入规则来跳过烦人的广告，可免root跳过广告。</p>
+<p><strong>功能特色：</strong></p>
+<ul>
+<li>【我的缺点】在少数系统上为了稳定性，会延长音量条的消失时间。</li>
+<li>【很能跳】专注跳广告，能跳过绝大多数APP的开屏广告和弹窗广告。</li>
+<li>【能省电】每跳过一次广告，相当于变相地帮你节省2~3秒的电量。耗电快的手机，赶紧试试吧，别把电量花在看广告上。</li>
+<li>【不收费】免费使用，没有任何套路。用收费的标准，做免费的产品。</li>
+<li>【速度快】能秒跳绝大多数广告。</li>
+<li>【稳定】运行极其稳定，无需反复开启无障碍权限。</li>
+<li>【安全】无需联网，从源头上杜绝了隐私外泄的可能。</li>
+<li>【极简】极简设计，傻瓜式操作，懒癌专属。</li>
+<li>【良心】仅需一个权限?。</li>
+</ul>
 <h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><h6 id="部分信息来源鸣谢："><a href="#部分信息来源鸣谢：" class="headerlink" title="部分信息来源鸣谢："></a>部分信息来源鸣谢：</h6><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv7247200/">MIUI关闭广告完全攻略 （系统广告、20个系统APP、启动页广告） - 哔哩哔哩 (bilibili.com)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gp4y1m7i5/">ADB免root小白教学！！激活shizuku,冰箱，黑域等等各种玩机软件!!!_哔哩哔哩_bilibili</a><br><a target="_blank" rel="noopener" href="https://iceboxdoc.catchingnow.cn/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7">Ice-Box-Docs | 冰箱 Ice Box 应用在线文档 (catchingnow.cn)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv26086456/">如何简单关闭MIUI智能服务的开屏广告和推送？ - 哔哩哔哩 (bilibili.com)</a><br><a target="_blank" rel="noopener" href="https://jamcz.com/gjgjx/">jamcz.com&#x2F;gjgjx&#x2F;</a><br><a target="_blank" rel="noopener" href="https://blog.tomys.top/2021-08/miui_ad/">MIUI使用ADB彻底关闭系统级广告 - 荼蘼博客 (tomys.top)</a><br><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7645354120">https://tieba.baidu.com/p/7645354120</a></p>
 
                 
@@ -739,7 +752,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Android优化/MIUI优化</div>
+      <div>Android优化/MIUI优化/澎湃OS优化</div>
       <div>https://fxy5750.github.io/2024/09/29/38-Android优化/</div>
     </div>
     <div class="license-meta">
