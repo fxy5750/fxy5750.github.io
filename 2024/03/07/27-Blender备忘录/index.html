@@ -289,7 +289,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.3k 字
         
       </span>
     
@@ -300,7 +300,7 @@
         
         
         
-          11 分钟
+          12 分钟
         
       </span>
     
@@ -579,14 +579,13 @@
 </tbody></table>
 <h2 id="资产库说明"><a href="#资产库说明" class="headerlink" title="资产库说明"></a>资产库说明</h2><p><a target="_blank" rel="noopener" href="https://docs.blender.org/manual/zh-hans/dev/editors/preferences/file_paths.html#asset-libraries">blender的资产库</a>使用的是绝对路径，你指定了此目录后，如果后续这个目录被删掉或移走了，在blender中就无法引用这个资产库，因此，你要确保这个资产库在一个相对安全不会移动的目录管理。</p>
 <h2 id="Birdge说明"><a href="#Birdge说明" class="headerlink" title="Birdge说明"></a>Birdge说明</h2><ul>
-<li><p><em><strong>注意</strong></em><br>Blender版本高于4.x, 使用ATBridge<br>Blender版本低于4.x, 使用Fix_Fixel_Bridge_Addon</p>
-</li>
-<li><p>第二条<br>一定要关闭中文翻译下面的“新建数据”选项（偏好设置里面的新建数据要点掉），然后重启blender，大多数问题跟这个设置没关掉有关</p>
-</li>
+<li><em><strong>注意</strong></em><br>Blender版本高于4.x, 使用ATBridge<br>Blender版本低于4.x, 使用Fix_Fixel_Bridge_Addon</li>
+<li>第二条<br>一定要关闭中文翻译下面的“新建数据”选项（偏好设置里面的新建数据要点掉），然后重启blender，大多数问题跟这个设置没关掉有关</li>
+<li>Birdge将在 2025 年开始合并到 fab 上，合并后将开始收费，因此在 2025 年之前将 18000+ 资产入库可以继续使用之前的资产。</li>
 </ul>
 <h2 id="Blender迁移"><a href="#Blender迁移" class="headerlink" title="Blender迁移"></a>Blender迁移</h2><ul>
 <li><p>文件路径</p>
-<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs livescript">C:<span class="hljs-string">\Users\用户名\AppData\Roaming\Blender</span> Foundation<span class="hljs-string">\Blender</span><br><br><span class="hljs-comment"># 用户名是你的电脑用户名称</span><br><span class="hljs-comment"># 在此路径中，找到你需要迁移的版本（例如：3.6），将它复制一份到另一台PC计算机中，即可无损迁移插件设置</span><br><span class="hljs-comment"># 同样，你可以原地复制一份，并更改对应版本号升级Blender（此项在4.0及以后的版本可能会失效）</span><br></code></pre></td></tr></table></figure></li>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs livescript"><span class="hljs-comment">#路径</span><br>C:<span class="hljs-string">\Users\用户名\AppData\Roaming\Blender</span> Foundation<span class="hljs-string">\Blender\你的配置文件</span><br><br><span class="hljs-comment">#示例：</span><br>C:<span class="hljs-string">\Users\Fxy5750\AppData\Roaming\Blender</span> Foundation<span class="hljs-string">\Blender\3.6</span><br><br><br><span class="hljs-comment"># 用户名是你的电脑用户名称</span><br><span class="hljs-comment"># 在此路径中，找到你需要迁移的版本（例如：3.6），将它复制一份到另一台PC计算机中，即可无损迁移插件设置</span><br><span class="hljs-comment"># 同样，你可以原地复制一份，并更改对应版本号升级Blender（此项在4.0及以后的版本可能会失效）</span><br><br><span class="hljs-comment"># 2024年9月29日</span><br>经测试，将 C:<span class="hljs-string">\Users\Fxy5750\AppData\Roaming\Blender</span> Foundation<span class="hljs-string">\Blender</span> 路径下的文件复制到新电脑上，即可实现用户配置无缝复制/迁移。<br>测试环境：<br>- win10 ltsc<br>- blender <span class="hljs-number">3.6</span>.<span class="hljs-number">4</span> msi 安装版<br></code></pre></td></tr></table></figure></li>
 </ul>
 
                 
