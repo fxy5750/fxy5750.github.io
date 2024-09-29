@@ -19,9 +19,9 @@
           cover: 'https://y.gtimg.cn/music/photo_new/T002R500x500M00000012EpR22Be8H.jpg',
         },
 		{
-		  name: '春庭雪（0.8x）',
-		  artist: '小瑞',
-		  url: 'http://music.163.com/song/media/outer/url?id=2155773719.mp3',
+		  name: '春庭雪 (0.8x版) (DJ Wave版)',
+		  artist: '邓寓君(等什么君)',
+		  url: 'https://wsaudio2bssdlbig.kugou.com/202409291711/e79ab31d27af8dd6d955d99ecf508cf8/bss/extname/wsaudio/c3c78f0f82ba04c9737956497d1b00a4.mp3',
 		  cover: 'https://p2.music.126.net/ourVEuAU6mMOR4uhz5ygfg==/109951169607079525.jpg?param=130y130',
 		},
 		{

@@ -1,0 +1,1066 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
+  <link rel="icon" href="/img/avatar-2.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="fxy5750">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="从小一直用的安卓手机到现在，安卓手机好在自由，方便的文件管理，人性化的操作和实惠的价格，臃肿在很多APP喜欢自启，常驻后台，摇一摇，开屏广告，通知推送等，就比如MIUI、澎湃OS，现在root越来越难获取，所以出一期在不root的情况下尽可能优化手机，减少内存占用，提高运行效率和手机续航时间。（其它安卓手机大同小异，也可以参考）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android优化&#x2F;MIUI优化">
+<meta property="og:url" content="https://fxy5750.github.io/2024/09/29/38-Android%E4%BC%98%E5%8C%96/index.html">
+<meta property="og:site_name" content="小晓de雨滴">
+<meta property="og:description" content="从小一直用的安卓手机到现在，安卓手机好在自由，方便的文件管理，人性化的操作和实惠的价格，臃肿在很多APP喜欢自启，常驻后台，摇一摇，开屏广告，通知推送等，就比如MIUI、澎湃OS，现在root越来越难获取，所以出一期在不root的情况下尽可能优化手机，减少内存占用，提高运行效率和手机续航时间。（其它安卓手机大同小异，也可以参考）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fxy5750.github.io/img/images/Android%E4%BC%98%E5%8C%96%E9%85%8D%E5%9B%BE.png">
+<meta property="og:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-09-29_20-22-18.png">
+<meta property="og:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-09-29_20-22-53.png">
+<meta property="article:published_time" content="2024-09-29T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-09-29T13:45:54.540Z">
+<meta property="article:author" content="fxy5750">
+<meta property="article:tag" content="实用工具">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fxy5750.github.io/img/images/Android%E4%BC%98%E5%8C%96%E9%85%8D%E5%9B%BE.png">
+  
+  
+  
+  <title>Android优化/MIUI优化 - 小晓de雨滴</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"fxy5750.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":40,"cursorChar":" | ","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小晓de雨滴</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/photo/" target="_self">
+                <i class="iconfont icon-images"></i>
+                <span>相册</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/" target="_self">
+                    
+                    <span>此博客</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/i/" target="_self">
+                    
+                    <span>本人</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/view360/" target="_self">
+                    
+                    <span>全景图容器</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/../img/images/white_paper_pc_5000x.webp') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">Android优化/MIUI优化</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-09-29 12:00" pubdate>
+          2024年9月29日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          31 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Android优化/MIUI优化</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <blockquote>
+<p>从小一直用的安卓手机到现在，安卓手机好在自由，方便的文件管理，人性化的操作和实惠的价格，臃肿在很多APP喜欢自启，常驻后台，摇一摇，开屏广告，通知推送等，就比如MIUI、澎湃OS，现在root越来越难获取，所以出一期在不root的情况下尽可能优化手机，减少内存占用，提高运行效率和手机续航时间。（其它安卓手机大同小异，也可以参考）</p>
+</blockquote>
+<h1 id="Ice-Box-冰箱"><a href="#Ice-Box-冰箱" class="headerlink" title="Ice Box 冰箱"></a>Ice Box 冰箱</h1><blockquote>
+<p>冰箱简介：通过停用软件的方式，来冻结应用，可以避免应用后台自启，从而实现省电的目的。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.catchingnow.icebox">冰箱 IceBox：自动冻结・省电神器(com.catchingnow.icebox) - 3.25.3 C - 应用 - 酷安 (coolapk.com)</a></p>
+<h2 id="普通-ADB-激活"><a href="#普通-ADB-激活" class="headerlink" title="普通 ADB 激活"></a>普通 ADB 激活</h2><p>这期主要是免 Root 和设备管理员的情况下，如何使用冰箱。</p>
+<p><img src="/../img/images/Android%E4%BC%98%E5%8C%96%E9%85%8D%E5%9B%BE.png" alt="Android优化配图"></p>
+<h3 id="前期准备软件："><a href="#前期准备软件：" class="headerlink" title="前期准备软件："></a>前期准备软件：</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.catchingnow.icebox">冰箱 IceBox</a></li>
+<li><a target="_blank" rel="noopener" href="https://shizuku.rikka.app/">Shizuku (rikka.app)</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/didjdk/adbhelper/blob/main/README.md">甲壳虫 ADB</a></li>
+<li>准备一点耐心，分别安装它们</li>
+<li>如果你对文字教程不感冒，也可以观看相似的 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gp4y1m7i5/">视频教程</a></li>
+</ul>
+<h4 id="一、通过无线调试激活Shizuku的步骤"><a href="#一、通过无线调试激活Shizuku的步骤" class="headerlink" title="一、通过无线调试激活Shizuku的步骤"></a>一、通过无线调试激活Shizuku的步骤</h4><ol>
+<li>手机需要连接到一个 Wi-Fi</li>
+<li>打开 Shizuku 将需要的权限授权给它，来完成初始化。</li>
+<li>手机打开设置 - 我的设备 - 全部参数 - OS版本，连续点击它，直到出现开发者模式。（示例为澎湃OS）</li>
+<li>回到设置 - 更多设置 - 开发者选项。</li>
+<li>先划到最下方找到系统优化 &#x2F; MIUI优化 （将它关闭）。</li>
+<li>在开发者选项中开启 USB 调试（包括 USB 安全调试）。</li>
+<li>在开发者选项中开启 无线调试。</li>
+<li>切换到 Shizuku ，点击 “配对” ，</li>
+<li>在 无线调试下，点击 “使用配对码配对”，此时会弹出一个随机的配对码，例如： ”851313“（仅为演示，实际需要输入你手机上生成的一次性配对码）。</li>
+<li>下拉通知栏，点击右侧的展开选项，然后在点击 “输入配对码”</li>
+<li>将你得到的配对码输入上去 ：”851313”，完成配对。</li>
+</ol>
+<h4 id="二、使用Shizuku激活冰箱"><a href="#二、使用Shizuku激活冰箱" class="headerlink" title="二、使用Shizuku激活冰箱"></a>二、使用Shizuku激活冰箱</h4><ol>
+<li>打开冰箱</li>
+<li>选择激活方式为 “Shizuku”</li>
+<li>此时如果你的 Shizuku 激活成功则会弹出一个授权提示框，点击：“允许”，冰箱则激活成功。</li>
+</ol>
+<p class="note note-secondary">
+    请注意：每次重启手机都需要使用无线调试重新激活Shizuku，因为这个是 Shizuku 通过调用系统API来运行的。<br/>
+    Shizuku是一个开源的Android框架，它允许应用直接调用系统API，从而绕过沙箱限制。通过使用Shizuku，开发者可以获得更高的权限和更强大的功能，实现一些传统方式下难以实现的任务。
+</p>
+
+
+
+
+
+<h2 id="设备管理员激活"><a href="#设备管理员激活" class="headerlink" title="设备管理员激活"></a>设备管理员激活</h2><p>MIUI 12.5 版本和之前的版本支持，后面的新版本似乎不能通过设备管理员激活。</p>
+<p>确定使用设备管理器模式激活冰箱后，请按下列步骤操作：</p>
+<ol>
+<li>确保手机上已安装冰箱，删除屏幕锁，索尼手机取出 SIM 卡，MIUI 开启「USB 调试（安全设置）」并关闭「MIUI 优化」</li>
+<li>在系统设置中，注销所有帐号，如小米帐号、华为帐号、Google 帐号等，激活后可以再登录回来。</li>
+<li><a target="_blank" rel="noopener" href="https://iceboxdoc.catchingnow.cn/files/%E5%86%B0%E7%AE%B1%E6%BF%80%E6%B4%BB%E5%99%A8-Windows.zip">电脑下载</a>并解压激活器，请解压到电脑，不要解压到手机 U 盘。</li>
+<li>数据线连接电脑和手机，再打开手机的 USB 调试，授权 USB 调试申请。</li>
+<li>点击激活器内的「激活冰箱」功能。</li>
+</ol>
+<h2 id="同类型软件区别"><a href="#同类型软件区别" class="headerlink" title="同类型软件区别"></a>同类型软件区别</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冰箱</td>
+<td>停用软件的形式，冻结APP（适用更广）、管理者模式和小黑屋冲突，root运行三者没有冲突 | <a target="_blank" rel="noopener" href="https://iceboxdoc.catchingnow.cn/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7">激活工具</a></td>
+</tr>
+<tr>
+<td>小黑屋</td>
+<td>停用软件的形式，冻结APP</td>
+</tr>
+<tr>
+<td>黑阈</td>
+<td>管理后台，限制后台软件运行（管理者模式和冰箱、小黑屋没有冲突）</td>
+</tr>
+</tbody></table>
+<h1 id="对软件进行限制"><a href="#对软件进行限制" class="headerlink" title="对软件进行限制"></a>对软件进行限制</h1><p>激活冰箱后，我们就可以开始对手机里的软件进行进一步限制了，可以阻止他们不老实行为，比如推送消息，常驻后台，关联启动等行为。</p>
+<h2 id="限制系统APP名单："><a href="#限制系统APP名单：" class="headerlink" title="限制系统APP名单："></a>限制系统APP名单：</h2><p>TIPS：需在右侧开启显示隐藏的 APP ，冻结列表仅为个人主观建议，如对您造成不适，请关闭此页，Thanks~</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>应用包名</th>
+<th>冻结原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>智能服务</td>
+<td>com.miui.systemAdSolution</td>
+<td>MIUI智能服务简单点讲就是广告服务，从应用包名可以看出来为MIUI系统广告解决方案，它会给系统软件和部分第三方app加一层开屏广告以及推送 <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv26086456/">开屏广告和推送的具体表现详见</a></td>
+</tr>
+<tr>
+<td>小米广告分析</td>
+<td>com.miui.analytics</td>
+<td>小米广告分析，冻冻冻！</td>
+</tr>
+<tr>
+<td>智能助理</td>
+<td>com.miui.personalassistant</td>
+<td>负一屏，如果你不喜欢负一屏，可直接冻结它</td>
+</tr>
+<tr>
+<td>Google Play 服务</td>
+<td>com.google.android.gms</td>
+<td>平时不用学术访问时，可以冻结它，以减少内存占用</td>
+</tr>
+<tr>
+<td>Google Play 商店</td>
+<td>com.android.vending</td>
+<td>同上，需要使用时一同激活</td>
+</tr>
+<tr>
+<td>游戏服务</td>
+<td>com.xiaomi.gamecenter.sdk.service</td>
+<td>按需冻结，冻结不影响游戏正常运行，是提供调整在游戏中性能释放的，一般用不着</td>
+</tr>
+<tr>
+<td>游戏中心</td>
+<td>com.xiaomi.gamecenter</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>售后支持</td>
+<td>com.xiaomi.ab</td>
+<td>一般来说，这个就是一个占空间的APP，手机真坏了直接在网上申请售后就行了。</td>
+</tr>
+<tr>
+<td>钱包</td>
+<td>com.mipay.wallet</td>
+<td>小米渠道服充值、主题壁纸付费等会用到这个软件，可以冻结</td>
+</tr>
+<tr>
+<td>米币支付</td>
+<td>com.xiaomi.payment</td>
+<td>主题商店付费主题的，基本用不着</td>
+</tr>
+<tr>
+<td>浏览器</td>
+<td>com.android.browser</td>
+<td>自带的浏览器不好用，总会莫名其妙弹出 ”根据法律法规 本页面禁止访问“ 特别影响用户体验。</td>
+</tr>
+<tr>
+<td>快应用服务框架</td>
+<td>com.miui.hybrid</td>
+<td>出这个快应用本意是好的，可以不用安装app就能使用，但是现在成了广告的聚集地，建议冻结。</td>
+</tr>
+<tr>
+<td>跨屏协同服务</td>
+<td>com.xiaomi.mirror</td>
+<td>只能说目前这个功能华而不实，没做好，除了小米笔记本以外的设备体验较差。</td>
+</tr>
+<tr>
+<td>小爱同学</td>
+<td>com.miui.voiceassist</td>
+<td>按需冻结，如果运行内存不够，可以考虑冻结，包括语音唤醒。</td>
+</tr>
+<tr>
+<td>用户反馈</td>
+<td>com.miui.bugreport</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>服务与反馈</td>
+<td>com.miui.miservice</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>小米商城</td>
+<td>com.xiaomi.shop</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>小米社区</td>
+<td>com.xiaomi.vipaccount</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>小米有品</td>
+<td>com.xiaomi.youpin</td>
+<td>基本用不着</td>
+</tr>
+<tr>
+<td>小米直播助手</td>
+<td>com.mi.liveassistant</td>
+<td>基本用不着</td>
+</tr>
+</tbody></table>
+<h2 id="其它需要冻结普通APP名单："><a href="#其它需要冻结普通APP名单：" class="headerlink" title="其它需要冻结普通APP名单："></a>其它需要冻结普通APP名单：</h2><p>*仅做示例，实际以你需要冻结的为主，讨厌哪些app给你发通知，就冻结谁，就这么简单。</p>
+<ul>
+<li>京东</li>
+<li>淘宝</li>
+<li>拼多多</li>
+<li>阿里巴巴</li>
+<li>阿里云盘</li>
+<li>百度翻译</li>
+<li>百度网盘</li>
+<li>哔哩哔哩</li>
+<li>哔哩哔哩漫画</li>
+<li>滴滴出行</li>
+<li>电子邮件</li>
+<li>懂车帝</li>
+<li>抖音&#x2F;tiktok</li>
+<li>多看阅读</li>
+<li>交警12123</li>
+<li>酷安</li>
+<li>慢慢买</li>
+<li>美团</li>
+<li>工商银行</li>
+<li>农业银行</li>
+<li>招商银行</li>
+<li>邮政银行</li>
+<li>什么值得买</li>
+<li>铁路12306</li>
+<li>网易云</li>
+<li>酷狗</li>
+</ul>
+<h2 id="可在电脑中联动的软件："><a href="#可在电脑中联动的软件：" class="headerlink" title="可在电脑中联动的软件："></a>可在电脑中联动的软件：</h2><ul>
+<li>搞机工具箱 <a target="_blank" rel="noopener" href="https://jamcz.com/gjgjx/">搞机工具箱 - 晨钟网络科技 (jamcz.com)</a></li>
+</ul>
+<details> <summary>搞机工具箱 - 软件介绍</summary>  
+<br/>
+
+<p>类型：PC软件</p>
+<p>由于ADB的权限介于用户与超级用户(Root)之间，因此本工具可在不Root的情况下实现一些手机自带设置中不具有的功能。</p>
+<p><img src="/../img/images/Snipaste_2024-09-29_20-22-18.png" alt="Snipaste_2024-09-29_20-22-18"></p>
+<p><img src="/../img/images/Snipaste_2024-09-29_20-22-53.png" alt="Snipaste_2024-09-29_20-22-53"></p>
+<p><strong>为什么选择《搞机工具箱》？</strong></p>
+<ul>
+<li><p>免ROOT:<br>所有功能均无需ROOT，Android全机型通用</p>
+</li>
+<li><p>简洁易用:<br>全图形化界面，一键操作，告别手打代码</p>
+</li>
+<li><p>通俗易懂:<br>各功能说明清晰，配合图文视频等教程，新手也能轻松入门</p>
+</li>
+<li><p>功能尽有:<br>功能多而强大，满足多种玩机场景</p>
+</li>
+<li><p>无需UAC:<br>自带驱动，无需管理员权限，可在网吧等公共机房完美使用</p>
+</li>
+<li><p>“小而美”:<br>超小体积，超快启动！</p>
+</li>
+</ul>
+</details>
+
+<p>使用冰箱冻结软件更安全一些，当然还有一种是用 ADB 的方法进行卸载预置软件，如果是国行版，请注意有的软件是不可以删的，如果删除了，则会造成开机卡米现象，因此，如果你是小白用户，请勿随意使用 ADB 进行卸载。</p>
+<p>ADB 的方法就是配合搞机工具箱，在手机上点击到对应的软件，然后在搞机工具箱 - 软件管理 - 卸载 - 即可完成卸载。</p>
+<p><strong>这里列出一个包名和软件列表：</strong><br>（按需删除，不是全删！！！使用冰箱一样可以冻结！！！小白千万别用 ADB 乱删预置软件！！！）</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs stylus">com<span class="hljs-selector-class">.miui</span>.systemAdSolution（MIUI智能服务，必删）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.analytics</span>  （小米广告分析，，必删）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.gamecenter</span><span class="hljs-selector-class">.sdk</span><span class="hljs-selector-class">.service</span>  （小米游戏中心服务）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.gamecenter</span>  （小米游戏中心）<br>com<span class="hljs-selector-class">.iflytek</span><span class="hljs-selector-class">.inputmethod</span><span class="hljs-selector-class">.miui</span>  （讯飞输入法小米版）<br>com<span class="hljs-selector-class">.sohu</span><span class="hljs-selector-class">.inputmethod</span><span class="hljs-selector-class">.sogou</span><span class="hljs-selector-class">.xiaomi</span>  （搜狗输入法小米版）<br>com<span class="hljs-selector-class">.baidu</span><span class="hljs-selector-class">.input_mi</span> （百度输入法小米版）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.ab</span> （电商助手, 无用）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.player</span>  （小米音乐）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.video</span>  （小米视频）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.notes</span>  （小米便签）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.translation</span><span class="hljs-selector-class">.youdao</span>  （有道翻译）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.translation</span><span class="hljs-selector-class">.kingsoft</span>  （金山翻译）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.email</span>  （邮件）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.scanner</span>  （小米扫描）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.hybrid</span>  （混合器）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.bugreport</span>  （bug 反馈）<br>com<span class="hljs-selector-class">.milink</span><span class="hljs-selector-class">.service</span>  （米连服务）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.browser</span>  （浏览器）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.gallery</span>  （相册）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.yellowpage</span>  （黄页, 卸载会导致来电标记失效）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.midrop</span>  （小米快传）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.virtualsim</span>  （小米虚拟器）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.payment</span>  （小米支付）<br>com<span class="hljs-selector-class">.mipay</span><span class="hljs-selector-class">.wallet</span>  （小米钱包）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.soundrecorder</span>  （录音机）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.screenrecorder</span>  （屏幕录制）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.wallpaper</span>  （壁纸）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.voiceassist</span>  （小爱同学）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.fm</span>  （收音机）<br>com<span class="hljs-selector-class">.miui</span><span class="hljs-selector-class">.touchassistant</span>  （悬浮球）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.cellbroadcastreceiver</span>  （小米广播）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.mitunes</span>  （小米助手）<br>com<span class="hljs-selector-class">.xiaomi</span><span class="hljs-selector-class">.pass</span>  （小米卡包）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.thememanager</span>  （个性主题管理）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.wallpaper</span>  （动态壁纸）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.wallpaper</span><span class="hljs-selector-class">.livepicker</span>  （动态壁纸获取）<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>不可以删除的软件，也不能冻结的软件列表</strong></p>
+<p>*国行系统，删除会造成卡米现象！！！千万不能 ADB 删除！！！如果删除了你手机又没解BL，就只能去售后刷机了！！！</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vim"># WARNING : Please <span class="hljs-keyword">do</span> not <span class="hljs-keyword">delete</span><br><span class="hljs-keyword">com</span>.miui.cloudservice  （小米云服务）<br><span class="hljs-keyword">com</span>.xiaomi.account  （小米账户）<br><span class="hljs-keyword">com</span>.android.updater （系统更新）<br><span class="hljs-keyword">com</span>.miui.cloudbackup  （云备份）<br><span class="hljs-keyword">com</span>.xiaomi.market  （应用市场）<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="更改语言"><a href="#更改语言" class="headerlink" title="更改语言"></a>更改语言</h1><p>某些大厂软件，它是同过判断你的系统语言来分辨你是哪里的人，例如将语言改为 “英语”、“繁体中文”，可以减少很多开屏广告或应用内广告。 </p>
+<p>部分软件可能是直接分开国际版来减去广告，而国内版则不管你是什么语言，广告统统塞进去，狠狠的给我看广告就是了。（某博、某吧）</p>
+<p><strong>MIUI&#x2F;澎湃OS 更改语言</strong><br>设置 - 更多设置 - 语言与输入法 - 语言 -  “选项需要更改的语言”</p>
+<h1 id="关闭MIUI广告-x2F-澎湃OS广告"><a href="#关闭MIUI广告-x2F-澎湃OS广告" class="headerlink" title="关闭MIUI广告&#x2F;澎湃OS广告"></a>关闭MIUI广告&#x2F;澎湃OS广告</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv7247200/">MIUI关闭广告完全攻略 （系统广告、20个系统APP、启动页广告） - 哔哩哔哩 (bilibili.com)</a></p>
+<p>速通：</p>
+<ul>
+<li><p><strong>小爱同学</strong></p>
+<p>召唤小爱同学，说：“关闭广告”，点击关闭广告选项。</p>
+</li>
+<li><p><strong>系统设置</strong></p>
+<p>系统设置 -&gt; 小米账号 -&gt; 隐私协议等 -&gt; 系统广告 -&gt; 系统工具广告</p>
+</li>
+<li><p><strong>天气</strong></p>
+<p>天气 -&gt; 设置 -&gt; 用户体验计划 -&gt; 天气服务推荐</p>
+</li>
+<li><p><strong>日历</strong></p>
+<p>日历 -&gt; 订阅服务 -&gt; 今日热播</p>
+<p>日历 -&gt; 设置 -&gt; 用户体验计划 -&gt; 内容推广</p>
+</li>
+<li><p><strong>应用商店</strong></p>
+<p>应用商店 -&gt; 设置 -&gt; 通知设置：新手帮助 &#x2F; 推送消息</p>
+<p>应用商店 -&gt; 设置 -&gt; 推荐：个性化推荐 &#x2F; 推荐相关</p>
+</li>
+<li><p><strong>音乐</strong></p>
+<p>方案一：音乐 -&gt; 设置 -&gt; 在线内容服务</p>
+<p>方案二：音乐 -&gt; 设置 -&gt; 个性化内容推荐</p>
+</li>
+<li><p><strong>桌面搜索框（首页底部搜索框）</strong></p>
+<p>桌面搜索框-&gt;首页展示模块：热搜榜单 &#x2F; 搜索提示词</p>
+<p>桌面搜索框-&gt;搜索项-&gt;搜索精选</p>
+</li>
+<li><p><strong>浏览器（在冻结名单中）</strong></p>
+<p>浏览器-&gt;设置-&gt;高级设置：简洁版主页 &#x2F; 个性化推荐</p>
+</li>
+<li><p><strong>应用包管理组件（可关闭MIUI优化就不会使用此组件）</strong></p>
+<p>随便打开一个APK文件-&gt;应用包管理组件-&gt;右上角设置-&gt;资源推荐</p>
+</li>
+<li><p><strong>主题壁纸</strong></p>
+<p>主题壁纸-&gt;设置：个性化推荐&amp;主题时钟入口</p>
+</li>
+<li><p><strong>负一屏</strong></p>
+<p>桌面最左侧进入负一屏-&gt;划至最下面有设置-&gt;服务管理-&gt;早晚头条</p>
+</li>
+<li><p><strong>阅读</strong></p>
+<p>阅读-&gt;设置-&gt;个性化：个性化推荐 &#x2F; 个性化广告</p>
+</li>
+<li><p><strong>万能遥控</strong></p>
+<p>（暂时无解，旧版无广告：<a target="_blank" rel="noopener" href="https://wws.lanzoui.com/ixGPQfupo2b">https://wws.lanzoui.com/ixGPQfupo2b</a> 密码：aqni ）</p>
+</li>
+<li><p><strong>小米画报</strong></p>
+<p>小米画报 -&gt; 设置 -&gt; 订阅管理 -&gt; 头条</p>
+</li>
+<li><p><strong>小米社区（在冻结名单中）</strong></p>
+<p>小米社区 -&gt; 高级设置 -&gt; 详情页相似推荐 &#x2F; 个性化推荐 &#x2F; 信息流广告</p>
+</li>
+<li><p><strong>下载管理</strong></p>
+<p>下载管理 -&gt; 设置 -&gt; 信息流设置 -&gt; 资源推荐</p>
+</li>
+<li><p><strong>小米视频</strong></p>
+<p>方案一：小米视频 -&gt; 设置 -&gt; 在线服务</p>
+<p>方案二：小米视频 -&gt; 设置 -&gt; 推送设置：接收小米推送 &#x2F; 接收置顶消息</p>
+</li>
+<li><p><strong>手机管家</strong></p>
+<p>手机管家 -&gt; 设置 -&gt; 垃圾清理设置 -&gt; 推荐内容</p>
+<p>手机管家 -&gt; 设置 -&gt; 推荐内容</p>
+</li>
+<li><p><strong>搜狗输入法小米版</strong></p>
+<p>系统设置-&gt;语言与输入发-&gt;输入法管理-&gt;设置:搜索候选&amp;节日活动提醒</p>
+</li>
+<li><p><strong>手机应用锁</strong></p>
+<p>手机管家 -&gt; 应用锁 -&gt; 设置 -&gt; 推荐内容</p>
+</li>
+<li><p><strong>小米画报</strong></p>
+<p>小米画报 -&gt; 设置 -&gt; 订阅管理 -&gt; 头条</p>
+</li>
+<li><p><strong>桌面文件夹</strong></p>
+<p>点击桌面应用文件夹 -&gt; 点击文件夹名称 -&gt; 关闭猜我喜欢 &#x2F; 今日推荐</p>
+</li>
+<li><p><strong>系统APP启动页广告（智能服务已在冻结名单中）</strong></p>
+<p>可关闭大部分系统APP的启动页广告 <a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7645354120">帖子参考</a></p>
+<p>方法步骤如下：</p>
+<ol>
+<li><p>在内部储存根目录新建一个文件，例如：新建文件.txt</p>
+</li>
+<li><p>在文件内写入一些文本，防止被当作空文件清理掉</p>
+</li>
+<li><p>删除部储存根目录下的miad文件夹</p>
+</li>
+<li><p>将刚才的空文件重命名为miad（不保留后缀名）</p>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><h6 id="部分信息来源鸣谢："><a href="#部分信息来源鸣谢：" class="headerlink" title="部分信息来源鸣谢："></a>部分信息来源鸣谢：</h6><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv7247200/">MIUI关闭广告完全攻略 （系统广告、20个系统APP、启动页广告） - 哔哩哔哩 (bilibili.com)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gp4y1m7i5/">ADB免root小白教学！！激活shizuku,冰箱，黑域等等各种玩机软件!!!_哔哩哔哩_bilibili</a><br><a target="_blank" rel="noopener" href="https://iceboxdoc.catchingnow.cn/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7">Ice-Box-Docs | 冰箱 Ice Box 应用在线文档 (catchingnow.cn)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv26086456/">如何简单关闭MIUI智能服务的开屏广告和推送？ - 哔哩哔哩 (bilibili.com)</a><br><a target="_blank" rel="noopener" href="https://jamcz.com/gjgjx/">jamcz.com&#x2F;gjgjx&#x2F;</a><br><a target="_blank" rel="noopener" href="https://blog.tomys.top/2021-08/miui_ad/">MIUI使用ADB彻底关闭系统级广告 - 荼蘼博客 (tomys.top)</a><br><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7645354120">https://tieba.baidu.com/p/7645354120</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" class="category-chain-item">技术文档</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" class="print-no-link">#实用工具</a>
+      
+        <a href="/tags/Android/" class="print-no-link">#Android</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Android优化/MIUI优化</div>
+      <div>https://fxy5750.github.io/2024/09/29/38-Android优化/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>fxy5750</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年9月29日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年9月29日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-cc-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-cc-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/08/24/37-%E8%8A%B1%E6%B5%B7%E5%9C%B0%E9%93%81/" title="Blender花海地铁">
+                        <span class="hidden-mobile">Blender花海地铁</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <p>本站使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.fluid-dev.com/docs/" data-pjax-state>Fluid</a> 作为主题 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/" data-pjax-state>Hexo</a> 框架驱动 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com" data-pjax-state>Github</a> 托管 &amp;  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dash.cloudflare.com/" data-pjax-state>Cloudflare</a> 提供加速服务</p>
+
+<div> <br/> <p><a target="_blank" rel="noopener" href="https://fxy5750.gitee.io/gps/"><span><i class="iconfont icon-map"></i> 查找我的站点</span></a> | <a href="../2024/07/25/35-个人隐私/"><span><i class="iconfont icon-plan"></i> 个人隐私防止开盒建议</span></a> </p>
+<br/> </div>
+<div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/outdate.js"></script>
+  <div id="aplayer"></div>
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+  <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+  <script defer src="/js/aplayer.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>
