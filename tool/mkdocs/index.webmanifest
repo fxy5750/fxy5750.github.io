@@ -1,0 +1,18 @@
+{
+  "name": "一份 Markdown 学习笔记",
+  "short_name": "一份 Markdown 学习笔记",
+  "lang": "en-us",
+  "theme_color": "#1565c0",
+  "background_color": "#1565c0",
+  "icons": [{
+    "src": "/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_192x192_fill_lanczos_center_2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_512x512_fill_lanczos_center_2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/tool/mkdocs/?utm_source=web_app_manifest"
+}

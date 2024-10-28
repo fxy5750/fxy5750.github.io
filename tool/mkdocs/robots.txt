@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://fxy5750.github.io/tool/mkdocs/sitemap.xml

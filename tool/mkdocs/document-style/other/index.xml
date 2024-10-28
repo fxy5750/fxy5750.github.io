@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>其他 | 一份 Markdown 学习笔记</title>
+    <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/</link>
+      <atom:link href="https://fxy5750.github.io/tool/mkdocs/document-style/other/index.xml" rel="self" type="application/rss+xml" />
+    <description>其他</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
+      <title>其他</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/</link>
+    </image>
+    
+    <item>
+      <title>选用合适的字体</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E9%80%89%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E5%AD%97%E4%BD%93/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E9%80%89%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E5%AD%97%E4%BD%93/</guid>
+      <description>&lt;span class=&#34;ebook&#34;&gt;
+&lt;p&gt;主要内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如何选择字体？&lt;/li&gt;
+&lt;li&gt;字体和字库&lt;/li&gt;
+&lt;li&gt;常见字体格式&lt;/li&gt;
+&lt;li&gt;衬线字体和非衬线字体&lt;/li&gt;
+&lt;li&gt;比例字体和等宽字体&lt;/li&gt;
+&lt;li&gt;免费字体和版权字体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;如何选择字体&#34;&gt;如何选择字体？&lt;/h2&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://www.fotor.com.cn/blog/userful-guide_6052/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字体使用指南｜如何选择字体？字体如何排版？&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;字体和字库&#34;&gt;字体和字库&lt;/h2&gt;
+&lt;p&gt;字库是外文字体、中文字体以及相关字符的电子文字字体集合库，被广泛用于计算机、网络及相关电子产品上。&lt;/p&gt;
+&lt;p&gt;所以字体是字库的子集。&lt;/p&gt;
+&lt;h2 id=&#34;常见字体格式&#34;&gt;常见字体格式&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://ziyouziti.com/art-23.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字体文件 ttf、otf、woff、ttc 等格式有什么区别？&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;字体格式类型主要有几个大分类：TrueType、Embedded Open Type 、OpenType、WOFF 、SVG。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TTF：TrueType&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 和 Mac 系统最常用的字体格式，其最大的特点就是它是由一种数学模式来进行定义的基于轮廓技术的字体，这使得它们比基于矢量的字体更容易处理，保证了屏幕与打印输出的一致性。同时，这类字体和矢量字体一样可以随意缩放、旋转而不必担心会出现锯齿。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EOT ：Embedded Open Type&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;EOT 是嵌入式字体，是微软开发的技术。允许 OpenType 字体用 @font-face 嵌入到网页并下载至浏览器渲染，存储在临时安装文件夹下。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTF：OpenType&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OpenType 是微软和 Adobe 共同开发的字体，微软的 IE 浏览器全部采用这种字体。致力于替代 TrueType 字体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WOFF：Web Open Font Format&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;WOFF（Web 开发字体格式）是一种专门为了 Web 而设计的字体格式标准，实际上是对于 TrueType/OpenType 等字体格式的封装，每个字体文件中含有字体以及针对字体的元数据（Metadata），字体文件被压缩，以便于网络传输。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SVG：Scalable Vector Graphics&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SVG 是由 W3C 制定的开放标准的图形格式。SVG 字体就是使用 SVG 技术来呈现字体，还有使用 gzip 压缩格式的 SVG 字体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;还有一种特别的 TTC（TrueType collection）格式字体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TTC 字体是 TrueType 字体集成文件（.TTC 文件），是在一单独文件结构中包含多种字体，以便更有效地共享轮廓数据,当多种字体共享同一笔画时，TTC技术可有效地减小字体文件的大小。&lt;/p&gt;
+&lt;p&gt;TTC 是几个 TTF 合成的字库，安装后字体列表中会看到两个以上的字体。两个字体中大部分字都一样时，可以将两种字体做成一个 TTC 文件，常见的 TTC 字体，因为共享笔划数据，所以大多这个集合中的字体区别只是字符宽度不一样，以便适应不同的版面排版要求。&lt;/p&gt;
+&lt;h4 id=&#34;ttf-和-otf-格式有什么区别&#34;&gt;TTF 和 OTF 格式有什么区别？&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://7rp.cn/533&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字体字库中 ttf 和 otf 格式有什么区别？&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;TTF 扩展名的 O 图标的表示 OpenType – TrueType 字体，采用的是 TrueType 曲线，不过支持 OpenType 的高级特性。&lt;/p&gt;
+&lt;p&gt;TTF 扩展名的 T 图标的表示 TrueType 字体，采用的是 TrueType 曲线，不支持 OpenType 特性。&lt;/p&gt;
+&lt;p&gt;OTF 扩展名的 O 图标的表示 OpenType – PostScript 字体，采用的是 PostScript 曲线，支持 OpenType 高级特性。&lt;/p&gt;
+&lt;p&gt;OpenType 是 Microsoft 与 Adobe 共同制定的标准，在此之前有两大字体格式：TrueType 和 Type 1，两家合作制定出的 OpenType 将之前的两大格式都包含了进去。&lt;/p&gt;
+&lt;p&gt;TrueType 进化成 OpenType – TrueType，在原有基础上增加了 OpenType 高级特性支持，扩展名不变 （TTF），图标由 T 变为 O。&lt;/p&gt;
+&lt;p&gt;Type 1 进化成 OpenType – PostScript，在原有基础上增加了 OpenType 高级特性支持，扩展名定位 OTF，图标为 O。&lt;/p&gt;
+&lt;p&gt;现在微软和 Adobe 都在努力干掉以往的 TrueType 和 Type 1 字体，比如 Windows 的系统字体在 Vista 以后全都由 TT 转换为 OT-TT（或许是向 OT-PS 的过渡），而 Adobe 则大力推广 OT-PS 字体。&lt;/p&gt;
+&lt;p&gt;OpenType 也叫 Type 2 字体，是由 Microsoft 和 Adobe 公司开发的另外一种字体格式。它也是一种轮廓字体，比 TrueType 更为强大，最明显的一个好处就是可以在把 PostScript 字体嵌入到 TrueType 的软件中。并且还支持多个平台，支持很大的字符集，还有版权保护。可以说它是 Type 1 和 TrueType 的超集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTF 主要优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1）增强的跨平台功能&lt;/p&gt;
+&lt;p&gt;2）更好的支持 Unicode 标准定义的国际字符集&lt;/p&gt;
+&lt;p&gt;3）支持高级印刷控制能力&lt;/p&gt;
+&lt;p&gt;4）生成的文件尺寸更小&lt;/p&gt;
+&lt;p&gt;5）支持在字符集中加入数字签名，保证文件的集成功能&lt;/p&gt;
+&lt;p&gt;总结：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTF——opentype 苹果机与 PC 机都能很好应用的兼容字体！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TTF——truetype PC 机应用较好，苹果机兼容性很差！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;衬线字体和非衬线字体&#34;&gt;衬线字体和非衬线字体&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sucaijishi.com/2018/worth_0418/239.html#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎样区分衬线字体与无衬线字体？&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;衬线体（serif）和无衬线体（sans-serif）的分类起源于英文字体界。&lt;/p&gt;
+&lt;h4 id=&#34;衬线体serif&#34;&gt;衬线体（serif）&lt;/h4&gt;
+&lt;p&gt;「衬线」指的是字形笔画在首位的装饰和笔画的粗细不同，所以「衬线」又被称为「字脚」。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;衬线体又可以根据衬线变化可以分成三类：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;具有特定曲线衬线的「支架衬线体」（bracket serif）&lt;/li&gt;
+&lt;li&gt;连接处为细直线的「发丝衬线体」（hairline serif）&lt;/li&gt;
+&lt;li&gt;厚粗四角形的「板状衬线体」（slab serif）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;无衬线体sans-serif&#34;&gt;无衬线体（sans-serif）&lt;/h4&gt;
+&lt;p&gt;而无衬线体则没有笔画首尾的装饰，所有笔画的粗细也相同。&lt;/p&gt;
+&lt;p&gt;如图：&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-衬线字体与无衬线字体&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93.png&#34; data-caption=&#34;衬线字体与无衬线字体&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    衬线字体与无衬线字体
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;因为无衬线的字体结构简单，在同等字号下，无衬线的字体看上去要比有衬线的更大，结构也更清晰，所以电子设备的屏幕上也偏好使用无衬线字体。&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-无衬线字体通常更加清晰&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%932.jpg&#34; data-caption=&#34;无衬线字体通常更加清晰&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%932.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    无衬线字体通常更加清晰
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h4 id=&#34;中文界的衬线体与无衬线体&#34;&gt;中文界的衬线体与无衬线体&lt;/h4&gt;
+&lt;p&gt;而在中文字体界，两个有代表性的分类——宋体和黑体，分别对应着衬线字体和无衬线字体。&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-中文界的衬线体与无衬线体&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%933.png&#34; data-caption=&#34;中文界的衬线体与无衬线体&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%93%e4%b8%8e%e6%97%a0%e8%a1%ac%e7%ba%bf%e5%ad%97%e4%bd%933.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    中文界的衬线体与无衬线体
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;比例字体与等宽字体&#34;&gt;比例字体与等宽字体&lt;/h2&gt;
+&lt;p&gt;比例字体（Monospaced Font）即每个字母宽度是按一定比例自动调整的，而等宽字体（Proportional font）则是固定宽度，固定间距，字体的每一个字母和字符所占的水平空间都是相同的。&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-比例字体与等宽字体&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%af%94%e4%be%8b%e5%ad%97%e4%bd%93%e4%b8%8e%e7%ad%89%e5%ae%bd%e5%ad%97%e4%bd%93.jpeg&#34; data-caption=&#34;比例字体与等宽字体&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%af%94%e4%be%8b%e5%ad%97%e4%bd%93%e4%b8%8e%e7%ad%89%e5%ae%bd%e5%ad%97%e4%bd%93.jpeg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    比例字体与等宽字体
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;两者的 &lt;strong&gt;关键差别&lt;/strong&gt; 主要是在阅读上，比例字体可以提高单词的可读性。&lt;/p&gt;
+&lt;h4 id=&#34;等宽字体monospaced-font&#34;&gt;等宽字体（Monospaced font）&lt;/h4&gt;
+&lt;p&gt;等宽字体是指字符宽度相同的电脑字体。字体的每一个字母和字符所占的水平空间都是相同的。  东亚语言中，方块字基本上都作为等宽字体处理，如各个地区的汉字、日语假名的全形字符、韩语谚文音节等字符都是等宽的。&lt;/p&gt;
+&lt;p&gt;在传统西文印刷中，比例字体可以提高单词的可读性。但因早期的&lt;a href=&#34;https://baike.baidu.com/item/%e7%94%b5%e8%84%91%e6%98%be%e7%a4%ba%e5%99%a8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;电脑显示器&lt;/a&gt;、&lt;a href=&#34;https://baike.baidu.com/item/%e6%89%93%e5%ad%97%e6%9c%ba&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;打字机&lt;/a&gt;，由于技术的局限，无法进行字母宽度的比例调整，因此将每个字元都制作成一样的宽度，从而形成了等宽字体。在等宽字体中，比如 &lt;code&gt;ｉｊｗｍ&lt;/code&gt;，字母 &lt;code&gt;i&lt;/code&gt; &lt;code&gt;j&lt;/code&gt; 显得两侧馀白较多，而字母 &lt;code&gt;w&lt;/code&gt; &lt;code&gt;m&lt;/code&gt; 等的笔画显得相当拥挤。&lt;/p&gt;
+&lt;p&gt;但是随着&lt;a href=&#34;https://baike.baidu.com/item/%e5%9b%be%e5%bd%a2%e7%94%a8%e6%88%b7%e7%95%8c%e9%9d%a2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;图形用户界面&lt;/a&gt;主流的更新和电脑技术的提高，处理比例字体的局限性得到了突破，因此现在排版上显得比较自然的比例字体的使用已经相当普及。&lt;/p&gt;
+&lt;p&gt;由于等宽字体的特点，当今的平面设计上也有特意使用等宽字体所具有的文化特征进行创作的风格，其中最具有代表性的就是 ASCII 艺术。ASCII 艺术所使用的字符都是等宽字体，如果改用比例字体，图片往往变形而无法表达创作者本意。在网页设计中，&lt;code&gt;&amp;lt;tt&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/tt&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/pre&amp;gt;&lt;/code&gt; HTML 标记通常都是使用等宽字体。在 &lt;a href=&#34;https://baike.baidu.com/item/LaTeX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX&lt;/a&gt; 中也是使用等宽字体。&lt;/p&gt;
+&lt;p&gt;另外，由于等宽字体的优势，常用于显示编程代码。&lt;/p&gt;
+&lt;h4 id=&#34;比例字体proportional-font&#34;&gt;比例字体（Proportional Font）&lt;/h4&gt;
+&lt;p&gt;比例字体是指字符宽度存在变化的字体。&lt;/p&gt;
+&lt;p&gt;比例字体的每个字母宽度是按一定比例自动调整的，如小写字母的 &lt;code&gt;ijwm&lt;/code&gt; 的字符宽度是不一样的，大大提高了单词的可读性，这在铅字制作设计上称为比例字体。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e4%b8%9c%e4%ba%9a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;东亚&lt;/a&gt;语言的电脑字体中，由于同时涵盖西文的&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e5%8d%8a%e8%a7%92&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;半角&lt;/a&gt;文字字符，因此通常是比例字体和等宽字体混杂使用。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/Windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows&lt;/a&gt; &lt;a href=&#34;https://zh.wikipedia.org/wiki/%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;简体中文&lt;/a&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;操作系统&lt;/a&gt;中，老版本的默认字体&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e4%b8%ad%e6%98%93%e5%ae%8b%e4%bd%93&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;中易宋体&lt;/a&gt;全部是等宽字体（因此用中易宋体进行西文排版看起来很不自然），而 &lt;a href=&#34;https://zh.wikipedia.org/wiki/Windows_Vista&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows Vista&lt;/a&gt; 的默认字体&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e5%be%ae%e8%bd%af%e9%9b%85%e9%bb%91&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;微软雅黑&lt;/a&gt;中，半角的西文部分是比例字体，全角字符是等宽字体。&lt;/p&gt;
+&lt;p&gt;近年来制作的数码版本的比例字体中，一般都含有较多的&lt;a href=&#34;https://zh.wikipedia.org/w/index.php?title=%e9%97%b4%e8%b7%9d%e8%b0%83%e6%95%b4&amp;amp;action=edit&amp;amp;redlink=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;间距调整&lt;/a&gt;（&lt;a href=&#34;https://zh.wikipedia.org/w/index.php?title=Kerning&amp;amp;action=edit&amp;amp;redlink=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kerning&lt;/a&gt;）、&lt;a href=&#34;https://zh.wikipedia.org/w/index.php?title=%e6%96%9c%e4%bd%93%e4%bf%ae%e6%ad%a3&amp;amp;action=edit&amp;amp;redlink=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;斜体修正&lt;/a&gt;、&lt;a href=&#34;https://zh.wikipedia.org/wiki/%e5%90%88%e4%bd%93%e5%ad%97&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;合体字&lt;/a&gt;等信息。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;常见字体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;常见比例字体：Times New Roman，Arial，Helvetica，微软雅黑（例外）……&lt;/p&gt;
+&lt;p&gt;常见等宽字体：Courier，Monaco，中文、日文、韩国的谚文等方块字……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;免费字体和版权字体&#34;&gt;免费字体和版权字体&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.uisdc.com/avoiding-pits-in-font-copyright&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;害怕字体侵权？来看这份超详细的字体版权避坑指南！&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;主要是商用时，先查一下字体是否有版权、是否可以免费商用。「版权字体」商用时需要获得授权，未经授权使用是违法行为。&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://baike.baidu.com/item/%e5%ad%97%e5%ba%93&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字库_百度百科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baike.baidu.com/link?url=mPZTNA1u22KJFQGRvVqCI7cIj7JH-3bNdU1qo-uXHnP3tVKNaxJ7Z7kd-JSNs1cOi2ReF6LoQUnD1_Fbd8gqzAvqa-PVyj071CVCGbyWZ8O&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字体_百度百科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/1009289&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;比例字体&amp;amp;等宽字体&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/38454677&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;为什么等宽字体是适用于程序员书写代码的字体？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/28569633&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字体01 | 3 分钟带你了解字体分类方法，保证一学就会！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>文字与背景间对比度的选择</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/</guid>
+      <description>&lt;h3 id=&#34;对比度的选择&#34;&gt;对比度的选择&lt;/h3&gt;
+&lt;p&gt;WCAG 2.0 中将颜色对比等级分为 3 种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A 级&lt;/strong&gt;：采用 3:1 的对比度，是普通观察者可接受的最低对比度。字号大，字重高的文字在较低的对比度下也易于阅读，这时就可以选择 3:1 的对比度。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AA 级&lt;/strong&gt;：采用 4.5:1 的对比度，是普通视力损失的人可接受的最低对比度。这个数据来自 80 岁老人的典型视力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AAA 级&lt;/strong&gt;：采用 7:1 的对比度，是严重视力损失的人可接受的最低对比度，超出这种视力损伤的用户就需要借助辅助技术帮助其进行信息识别了，所以不再考虑范围内。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;等级越高意味着颜色的对比度越高，呈现出来的视觉压力越大。&lt;/p&gt;
+&lt;p&gt;所以 MD 就是根据这 3 个颜色对比等级得出：对比度最低不小于 4.5:1，最佳对比度是 7:1，这样才可以保证最大的用户群体对内容进行识别。&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-文字与背景间对比度的选择&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%96%87%e5%ad%97%e4%b8%8e%e8%83%8c%e6%99%af%e9%97%b4%e5%af%b9%e6%af%94%e5%ba%a6%e7%9a%84%e9%80%89%e6%8b%a9.jpg&#34; data-caption=&#34;文字与背景间对比度的选择&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%96%87%e5%ad%97%e4%b8%8e%e8%83%8c%e6%99%af%e9%97%b4%e5%af%b9%e6%af%94%e5%ba%a6%e7%9a%84%e9%80%89%e6%8b%a9.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    文字与背景间对比度的选择
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;计算方式&#34;&gt;计算方式&lt;/h3&gt;
+&lt;p&gt;可以使用 &lt;a href=&#34;https://github.com/LeaVerou/contrast-ratio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contrast-ratio&lt;/a&gt; 快速获取对比度的数值：&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-快速获取对比度&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e5%bf%ab%e9%80%9f%e8%8e%b7%e5%8f%96%e5%af%b9%e6%af%94%e5%ba%a6.jpg&#34; data-caption=&#34;快速获取对比度&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e5%bf%ab%e9%80%9f%e8%8e%b7%e5%8f%96%e5%af%b9%e6%af%94%e5%ba%a6.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    快速获取对比度
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.2cto.com/kf/201902/796778.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文字与背景间对比度的选择教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>如何下载国内外标准</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/</link>
+      <pubDate>Fri, 26 Jul 2019 10:31:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/</guid>
+      <description>&lt;h2 id=&#34;各种标准的代号&#34;&gt;各种标准的代号&lt;/h2&gt;
+&lt;p&gt;国内代号取自汉字拼音的缩写：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;GB   强制性国家标准
+GB/T 推荐性国家标准
+GB/Z 国家标准指导性技术文件
+GJB  国家军用标准
+
+CY/T 推荐性新闻出版行业标准
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅百度百科词条「&lt;a href=&#34;https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86%E5%88%86%E7%B1%BB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国家标准分类&lt;/a&gt;」，以及搜索「&lt;a href=&#34;https://www.baidu.com/s?tn=se_chromelist&amp;amp;wd=%E5%90%84%E7%A7%8D%E6%A0%87%E5%87%86%E7%9A%84%E4%BB%A3%E5%8F%B7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;各种标准的代号&lt;/a&gt;」。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;国外代号取自英语的首字母：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;ISO  国家标准化组织（International Organization for Standardization）
+EN   欧盟标准（European Norm）
+ANSI 美国国家标准化组织（American National Standards Institute）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;在线阅读&#34;&gt;在线阅读&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://openstd.samr.gov.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国家标准全文公开系统&lt;/a&gt;提供了国家标准的题录信息和全文在线阅读，具有“分类检索”“热词搜索”等功能。任何企业和社会公众都可以通过国家标准委官方网站“国家标准全文公开系统”，或通过微信公众号“中国标准信息服务网”查阅国家标准文本。&lt;/p&gt;
+&lt;p&gt;举例：查阅「&lt;a href=&#34;http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=22EA6D162E4110E752259661E1A0D0A8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;标点符号用法&lt;/a&gt;」和「&lt;a href=&#34;http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F5DAC3377DA99C8D78AE66735B6359C7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;出版物上数字用法&lt;/a&gt;」。&lt;/p&gt;
+&lt;h2 id=&#34;文档下载&#34;&gt;文档下载&lt;/h2&gt;
+&lt;p&gt;比较简单的方法就是使用 &lt;a href=&#34;https://cn.bing.com/search?q=%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%94%A8%E6%B3%952011&amp;#43;filetype%3Apdf&amp;amp;PC=U316&amp;amp;FORM=CHROMN&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bing 搜索引擎&lt;/a&gt;直接搜索文件进行下载。比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;标点符号用法2011 filetype:pdf
+夹用英文的中文文本的标点符号用法 filetype:pdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/6e8cf6627ef3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;科研 | 如何下载国内外标准，看这篇文章就够了！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>为什么黑色主题伤眼？</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%BB%91%E8%89%B2%E4%B8%BB%E9%A2%98%E4%BC%A4%E7%9C%BC/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/other/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%BB%91%E8%89%B2%E4%B8%BB%E9%A2%98%E4%BC%A4%E7%9C%BC/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;原文：&lt;a href=&#34;https://ask.dcloud.net.cn/article/45&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;为什么黑色主题伤眼&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不知道从何时起，程序员界和电子书界脱节了。&lt;/p&gt;
+&lt;p&gt;都是长时间盯着电脑的人，所有读者看电子书，都使用泛黄色的背景，而程序员圈中却开始流行黑色背景。甚至误传液晶下黑色的发光量偏少，所以黑色更护眼。&lt;/p&gt;
+&lt;p&gt;那为什么还说黑色伤眼？&lt;/p&gt;
+&lt;p&gt;我们从色彩生理学和色彩心理学2个方面分析。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;就人眼肌肉的紧张度而言，高对比度的伤害大于光线量的伤害。
+在阳光明媚的草原上，虽然光线量非常大，但人眼很舒适。
+但在黑色屋子里，手机屏幕亮度调到最低，光线量远低于前者，但仍然刺眼。
+这是对比度的影响造成的。
+人眼看到的画面，高对比度会造成更大的伤害。
+尤其是程序员要看8个小时的屏幕，所以柔和、低对比度的界面能让人眼肌肉更放松。&lt;/li&gt;
+&lt;li&gt;暗适应的伤害。
+这里是百度百科对暗适应的解释：http://baike.baidu.com/view/344920.htm
+人眼看多了黑色界面，转头看自然光环境时，会晕眩。
+当你盯着黑色主题看了1个小时后，切屏到浏览器，或者转头看同事，都会发生晕眩，
+反之从明亮环境进入到黑色环境，眼球也需要分泌视紫红质来适应。
+人眼及大脑都要不停的调节。&lt;/li&gt;
+&lt;li&gt;视紫红质和维生素A和夜盲症
+暗适应会引发人眼增加分泌视紫红质，但视紫红质的合成需要维生素A，也就是长期看暗色界面会增加维生素A的消耗。
+夜盲症是由于维生素A不足，合成视紫红质不足而产生的。
+即使现在还没有夜盲症，也要预防。&lt;/li&gt;
+&lt;li&gt;人眼最喜欢的光是黄色和绿色
+黄色和绿色的波长，是人眼最放松的波长。
+绿柔的背景是暖黄色，前景的代码颜色，虽然多彩，但每种颜色的RGB中的G，即绿色值，都调大了。&lt;/li&gt;
+&lt;li&gt;从色彩心理学看，温暖的颜色比暗色更舒服。
+人眼看到的景色，大脑会产生联想，并进而影响心情。
+看到绿色就会联想到草原森林，心情不自觉的就好一点。
+而看久了暗色或刺激性颜色，心情会压抑。
+每天看8个小时屏幕不是小事，心情舒畅很重要。&lt;/li&gt;
+&lt;li&gt;绿柔设计不止是设计理论，是经过科学验证的结果
+我们在北京国奥心理医院专门为不同的开发者做过脑电波疲劳值测试。
+参与实验的程序员在充分休息后，分别使用绿柔和黑色主题的编程工具进行编码半小时，并监测脑电波的数据变化。
+通过对实验者的脑电波产生的17万条数据的分析，利用医院仪器打印出的疲劳值、紧张度和注意力集中程度数值，实验后测试者的疲劳度均上升，但， 使用绿柔工作的程序员疲劳值上升相对缓慢，紧张程度最低，注意力最集中。
+使用黑色主题编码后疲劳值的上升幅度达到使用绿柔上升幅度的700%!
+实验详情见这里https://ask.dcloud.net.cn/article/35112&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.shejidaren.com/examples/tools/aspect/index.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="16:9, 4:3, 21:9, 2:1">
+<meta name="description" content="16:9, 4:3, 21:9, 2:1 在线计算工具">
+<title>Aspect - 长宽比例换算工具，平面设计师、UI设计师、网页设计师必备</title>
+
+<link rel="stylesheet" href="./assets/style.css">
+<link rel="shortcut icon" href="https://www.shejidaren.com/examples/tools/aspect/favicon.png">
+<script src="./assets/jquery.min.js.下载"></script>
+<script type="text/javascript" src="./assets/main.js.下载"></script>
+<link rel="stylesheet" href="./assets/nav.css">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<style>
+a.shareCount:before {
+    content: '12';
+}
+.none {display:none;}
+
+body {padding-top:43px;}
+.share,.logo,.nav .r-link{position:relative;top:-5px;}
+</style>
+</head>
+
+<body onload="setupCommon(&#39;metallic&#39;);mtlcLoad1st();" style="">
+	
+	
+<!-- 原始导航栏 -->	
+<div class="nav">
+<!--  <a href="http://hao.shejidaren.com/" class="logo">设计导航</a> -->
+<!--  <a href="http://www.shejidaren.com/" class="r-link">设计达人</a> -->
+  <a href="../../" class="logo">小晓de雨滴</a>
+  <a href="https://www.shejidaren.com/examples/tools/aspect/index.html#nogo" class="r-link close">[X] 移除顶部</a>
+  
+<!--  <div class="share"> -->
+    <!-- Baidu Button BEGIN -->
+<!--    <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+      <a class="bds_tsina"></a>
+      <a class="bds_qzone"></a>
+      <a class="bds_tqq"></a>
+      <a class="bds_renren"></a>
+      <a class="bds_t163"></a>
+      <a class="bds_fbook"></a>
+      <span class="bds_more"></span>
+      <a class="shareCount"></a>
+    </div>
+    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6423977"></script>
+    <script type="text/javascript" id="bdshell_js" src="./assets/shell_v2.js.下载"></script>
+    <script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script> -->
+    <!-- Baidu Button END -->
+<!--  </div> -->
+
+</div>
+
+
+
+   <div style="display: none;" class="overlay">
+       <div class="box">
+          <img src="./assets/extension.png" alt="Extension">
+           <h3>Aspects Chrome Extension</h3>
+           <p>Quickly access the aspect ratio calculator straight from your toolbar</p>
+           <a href="https://chrome.google.com/webstore/detail/aspects/ocjdkkadhnfdogmbpbipcdcnaldebgpi" class="button">Install the extension</a>
+           <p class="close">Close</p>
+       </div>
+   </div>
+    <img style="display: block; position: absolute; right: 40px; bottom: 40px;" class="chrome" src="./assets/chrome.svg" alt="Chrome Icon">
+    <div class="ctnr">
+        <ul class="ratios">
+            <li id="1" class="current">16:9</li>
+            <li id="2">21:9</li>
+            <li id="3">4:3</li>
+            <li id="4">2:1</li>
+        </ul>
+        <div class="calculator">
+            <section id="width">
+                <h1 style="color: rgb(255, 255, 255); font-weight: 300;">Width - 宽度</h1>
+                <input style="opacity: 0.3;" name="width" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" value="Value" type="text">
+            </section>
+            <section id="height">
+                <h1 style="color: rgb(255, 255, 255); font-weight: 300;">Height - 高度</h1>
+                <input style="opacity: 0.3;" name="height" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" value="Value" type="text">
+            </section>
+            <img src="./assets/x.svg" alt="X">
+        </div>
+        <p>
+            A simple tool by <a href="http://dribbble.com/cosminn" target="_blank">Cosmin Negoita</a>
+            <br><a href="https://twitter.com/intent/tweet?text=A%20simple%20aspect%20ratio%20calculator%20by%20@csmnng:%20http://aspects.design" class="tweet">Show some love</a>
+			<br><br>免责声明:镜像站点仅提供内容展示和功能使用，如需访问原作者，请点击上方按钮，<u><a href="https://www.shejidaren.com/examples/tools/aspect/index.html">点击此处转跳克隆源站点</a></u>
+        </p>
+    </div>
+
+
+
+
+
+
+<script type="text/javascript">
+document.querySelector('.nav a.close').addEventListener('click', function(e){
+    e.preventDefault();
+    document.body.classList.add('nav-none');
+});
+</script>
+<span class="none"><script src="./assets/stat.php" language="JavaScript"></script></span>
+
+</body></html>

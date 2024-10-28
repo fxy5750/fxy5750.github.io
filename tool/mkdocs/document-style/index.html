@@ -1,0 +1,1663 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fxy5750.github.io/tool/mkdocs/document-style/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/tool/mkdocs/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/tool/mkdocs/css/wowchemy.aac103487f282235effb1d3aaf23a46d.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/tool/mkdocs/document-style/index.xml" type="application/rss+xml" title="一份 Markdown 学习笔记">
+  
+
+  
+  <link rel="manifest" href="/tool/mkdocs/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://fxy5750.github.io/tool/mkdocs/document-style/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="一份 Markdown 学习笔记">
+  <meta property="og:url" content="https://fxy5750.github.io/tool/mkdocs/document-style/">
+  <meta property="og:title" content="Markdown 写作规范 | 一份 Markdown 学习笔记">
+  <meta property="og:description" content=""><meta property="og:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2019-07-26T10:31:29&#43;08:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Markdown 写作规范 | 一份 Markdown 学习笔记</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/tool/mkdocs/js/wowchemy-init.min.285803d21d0d9cbb186d08eed0a1bc9d.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/introduction/"><span>介绍</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/software/"><span>Markdown 编辑器</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/syntax/"><span>Markdown 语法</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/tool/mkdocs/document-style/"><span>Markdown 写作规范</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/info/"><span>相关说明</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class="active"><a href="/tool/mkdocs/document-style/">Markdown 写作规范</a></li>
+    
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/markdown-document-layout/">Markdown 文档布局</a></li>
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/tool/mkdocs/document-style/aboutwriting/"><i class="fas fa-book-reader pr-1"></i>写作相关</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/article-layout/">Article Layout</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%A4%9A%E5%B0%91%E5%AD%97%E6%9C%80%E5%90%88%E9%80%82/">文章标题多少字最合适？</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E4%B8%AD%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%9A%84%E7%94%A8%E6%B3%95/">文章标题中标点符号的用法</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%BB%AC%E5%B0%B1%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%B8%AA%E7%A9%BA%E6%A0%BC%E5%91%A2/">为什么你们就是不能加个空格呢？</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7%E7%9A%84%E4%B8%83%E4%B8%AA%E5%B1%82%E7%BA%A7/">数字序号的七个层级</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%80%8E%E6%A0%B7%E4%B8%BA%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE/">怎样为文章「配图」</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E5%B8%B8%E7%94%A8%E5%9B%BE%E7%89%87%E6%AF%94%E4%BE%8B/">常用图片比例</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/tool/mkdocs/document-style/other/"><i class="fas fa-book-reader pr-1"></i>其他</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E9%80%89%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E5%AD%97%E4%BD%93/">选用合适的字体</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/">文字与背景间对比度的选择</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/">如何下载国内外标准</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%BB%91%E8%89%B2%E4%B8%BB%E9%A2%98%E4%BC%A4%E7%9C%BC/">为什么黑色主题伤眼？</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#选择合适的网页字体">选择合适的网页字体</a></li>
+    <li><a href="#统一-markdown-语法的书写">统一 Markdown 语法的书写</a>
+      <ul>
+        <li><a href="#标题">标题</a></li>
+        <li><a href="#格式化">格式化</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#其他">其他</a></li>
+      </ul>
+    </li>
+    <li><a href="#规范文章内容的书写">规范文章内容的书写</a>
+      <ul>
+        <li><a href="#标题-1">标题</a></li>
+        <li><a href="#空格">空格</a></li>
+        <li><a href="#标点符号">标点符号</a></li>
+        <li><a href="#符号异常">符号异常</a></li>
+        <li><a href="#链接">链接</a></li>
+        <li><a href="#规范用词">规范用词</a></li>
+        <li><a href="#数字用法">数字用法</a></li>
+        <li><a href="#写作风格">写作风格</a></li>
+        <li><a href="#纯英文排版">纯英文排版</a></li>
+      </ul>
+    </li>
+    <li><a href="#see-also">See also</a></li>
+  </ul>
+</nav>
+
+      <div class="connect-widget">
+  <ul class="connect-links fa-ul">
+    <li><i class="fa-li fas fa-bug"></i><a href="https://gitee.com/keatonlao/a-study-note-for-markdown/issues" target="_blank">Report issues</a></li>
+  </ul>
+</div>
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Markdown 写作规范</h1>
+
+          <div class="article-style">
+            <p>该规范主要针对<span class="accentTextColor">中英文混排</span>的情况，并尽量遵守相关国家标准与行业标准。</p>
+<span class="ebook">
+<ul>
+<li>
+<p>中华人民共和国新闻出版行业标准：《中文出版物夹用英文的编辑标准》（<a href="https://wenku.baidu.com/view/00216ed0571252d380eb6294dd88d0d232d43cd2.html" target="_blank" rel="noopener">下载地址一</a> / <a href="http://hbba.sacinfo.org.cn/attachment/downloadStdFile?pk=e3ef82e93dd272792f5aacb0f582e62f" target="_blank" rel="noopener">下载地址二</a>）</p>
+</li>
+<li>
+<p>草案：《夹用英文的中文文本的标点符号用法》（<a href="https://wenku.baidu.com/view/3eeb84919f3143323968011ca300a6c30d22f153.html" target="_blank" rel="noopener">在线阅读</a> / <a href="https://hudong.moe.gov.cn/sousuo/web/search?searchword=%E5%A4%B9%E7%94%A8%E8%8B%B1%E6%96%87%E7%9A%84%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E7%9A%84%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%94%A8%E6%B3%95&amp;btn_search=&amp;channelid=244081&amp;timescope=&amp;timescopecolumn=&amp;orderby=-DOCRELTIME&amp;perpage=20&amp;searchscope=" target="_blank" rel="noopener">下载地址一</a> / <a href="http://www.china-language.edu.cn/fw/zwxxhpt/201612/t20161215_4082.html" target="_blank" rel="noopener">下载地址二</a>）</p>
+</li>
+<li>
+<p>中华人民共和国国家标准：</p>
+<ul>
+<li>GB/T 15834—2011《标点符号用法》（<a href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=22EA6D162E4110E752259661E1A0D0A8" target="_blank" rel="noopener">在线阅读</a> / <a href="http://www.ahstu.edu.cn/__local/B/18/C7/BC902F10AAF7C4CFA113EC1F439_5CFBD941_C66A82.rar" target="_blank" rel="noopener">下载地址一</a>）</li>
+<li>GB/T 15835—2011《出版物上数字用法》（<a href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F5DAC3377DA99C8D78AE66735B6359C7" target="_blank" rel="noopener">在线阅读</a> / <a href="http://sxqx.alljournal.cn/uploadfile/sxqx/20171205/GBT%2015835%E2%80%942011%20%E5%87%BA%E7%89%88%E7%89%A9%E4%B8%8A%E6%95%B0%E5%AD%97%E7%94%A8%E6%B3%95.pdf" target="_blank" rel="noopener">下载地址一</a>）</li>
+<li>GB/T 3101—1993《有关量、单位和符号的一般原则》</li>
+<li>GB/T 9704—2012 《党政机关公文格式》（<a href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F3CC9BEF482524C895FDA7A08BB4A70E" target="_blank" rel="noopener">在线阅读</a>）</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>温馨提示：为了提升自身写作素养，需要学会运用这些「标准」。<br>扩展阅读：<a href="https://fxy5750.github.io/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/">如何下载国内外标准</a>。</p>
+</blockquote>
+</span>
+<p>主要内容：</p>
+<ul>
+<li>选择合适的网页字体</li>
+<li>统一 Markdown 语法的书写（比如标题统一使用 <code>#</code> 来书写）</li>
+<li>规范文章内容的书写（包括标点符号、语法等）</li>
+</ul>
+<h2 id="选择合适的网页字体">选择合适的网页字体</h2>
+<p>合适的字体让文章的排版更加整洁美观，提升阅读体验。这里使用开源免费的 <a href="https://www.google.com/get/noto/" target="_blank" rel="noopener">Google Noto Fonts</a> 中的中文字体：</p>
+<ul>
+<li>文章标题：<a href="https://fonts.google.com/specimen/Noto&#43;Serif&#43;SC?subset=chinese-simplified" target="_blank" rel="noopener">Noto Serif SC</a></li>
+<li>文章内容：<a href="https://fonts.google.com/specimen/Noto&#43;Sans&#43;SC?subset=chinese-simplified" target="_blank" rel="noopener">Noto Sans SC</a></li>
+</ul>
+<blockquote>
+<p>文章内容使用适用性较广的无衬线字体，而标题使用衬线字体与内容区别开来。<br>关于衬线体（Serif）和无衬线体（Sans Serif）的区别，请访问百度百科词条：<a href="https://baike.baidu.com/item/%E8%A1%AC%E7%BA%BF%E5%AD%97%E4%BD%93" target="_blank" rel="noopener">衬线字体</a>。</p>
+</blockquote>
+<h2 id="统一-markdown-语法的书写">统一 Markdown 语法的书写</h2>
+<h3 id="标题">标题</h3>
+<p>标题分为四级，统一使用 <code>#</code> 来书写：</p>
+<pre><code class="language-markdown"># 一级标题
+
+## 二级标题
+
+### 三级标题
+
+#### 四级标题
+
+</code></pre>
+<blockquote>
+<p>注意事项：<br>
+❶ 标记符后面必须有空格；<br>
+❷ 下级标题不重复上一级标题的名字；<br>
+❸ 保持标题之间的层级关系，比如二级标题下面是三级标题。不得在二级标题下直接使用四级标题。</p>
+</blockquote>
+<p>标题和内容之间必须空一行：</p>
+<pre><code class="language-markdown">...text before.
+
+## 二级标题
+
+Text after...
+</code></pre>
+<blockquote>
+<p>缺少间距使得源代码难于阅读。</p>
+</blockquote>
+<p>各级标题的用途和书写要求：</p>
+<pre><code>.
+└── 一级标题（文章标题）
+    ├── 二级标题（文章内容的大框架）
+    │   ├── 三级标题（多个方面阐述二级标题）
+    │   ├── 三级标题
+    │   └── 三级标题
+    │       ├── 四级标题（谨慎使用四级标题，尽量避免出现，保持层级的简单，防止出现过于复杂的章节）
+    │       └── 四级标题
+    ├── 二级标题
+    │   ├── 段落一（避免孤立编号，即同级标题只有一个。假如二级标题下只有一个三级标题，则省略，改用段落）
+    │   ├── 段落二
+    │   └── 段落三
+    └── 二级标题
+</code></pre>
+<p>如果三级标题下有并列性的内容，建议只使用项目列表（Item list）：</p>
+<pre><code class="language-markdown">### 三级标题
+
+**（1）A**
+
+**（2）B**
+
+**（3）C**
+
+### 三级标题
+
+* 111
+* 222
+* 333
+
+### 三级标题
+
+1. 111
+2. 222
+3. 333
+</code></pre>
+<h3 id="格式化">格式化</h3>
+<p>加粗倾斜统一使用 <code>*</code> 来标记，前后无需增加多余的空格：</p>
+<pre><code class="language-markdown">**学习秘诀**：要成为学霸，有效的课堂时间必须用来**听重点、听难点、听方法思路**，
+而要做到这一点，有目的的*提前预习*非常重要，必须要带着问题听讲。
+</code></pre>
+<blockquote>
+<p><strong>学习秘诀</strong>：要成为学霸，有效的课堂时间必须用来<strong>听重点、听难点、听方法思路</strong>，<br>
+而要做到这一点，有目的的<em>提前预习</em>非常重要，必须要带着问题听讲。</p>
+</blockquote>
+<p>使用 <a href="https://spec.commonmark.org/" target="_blank" rel="noopener">CommonMark</a> 规范时，格式化内容的末尾通常不得含有中文标点符号。否则会报错：</p>
+<pre><code>**水温适度。**水的温度与室温相同，可以有效的**减少对胃肠道的刺激**，白开水具有生物活性，可以透过细胞膜促进人体的新陈代谢。
+
+~~水温适度。~~水的温度与室温相同，可以有效的**减少对胃肠道的刺激**，白开水具有生物活性，可以透过细胞膜促进人体的新陈代谢。
+</code></pre>
+<blockquote>
+<p><strong>水温适度。<strong>水的温度与室温相同，可以有效的</strong>减少对胃肠道的刺激</strong>，白开水具有生物活性，可以透过细胞膜促进人体的新陈代谢。</p>
+<p>~~水温适度。~~水的温度与室温相同，可以有效的<strong>减少对胃肠道的刺激</strong>，白开水具有生物活性，可以透过细胞膜促进人体的新陈代谢。</p>
+</blockquote>
+<div class="alert alert-note">
+  <div>
+    通常加粗一句话应该带上句末标点符号。但是  <a href="https://spec.commonmark.org/">CommonMark</a> 规范当前的 <a href="https://spec.commonmark.org/0.29/">0.29</a> 版本无法同时处理中英文标点符号，所以加粗时不得带上句末的中文标点。流行的开源论坛项目 <a href="https://try.discourse.org/">Discourse</a> 以及用 Go 语言编写的 Markdown 解析器 <a href="https://github.com/yuin/goldmark">goldmark</a> 等都采用该规范。
+  </div>
+</div>
+<h3 id="代码">代码</h3>
+<p>行内代码前后需要增加半角空格，遇到全角标点则省略：</p>
+<pre><code class="language-markdown">执行命令 `source /etc/profile.d/alias.sh` 使别名生效，并将其添加到 Shell 运行控制文件中：`~/.bashrc` 或者 `~/.zshrc`。
+</code></pre>
+<blockquote>
+<p>执行命令 <code>source /etc/profile.d/alias.sh</code> 使别名生效，并将其添加到 Shell 运行控制文件中：<code>~/.bashrc</code> 或者 <code>~/.zshrc</code>。</p>
+</blockquote>
+<p>代码块前后必须空一行：</p>
+<pre><code class="language-markdown">...text before.
+
+```bash
+echo &quot;hello world&quot;
+```
+
+Text after...
+</code></pre>
+<h3 id="其他">其他</h3>
+<p>为了避免 HTML 黑客入侵，请尽可能选择标准 Markdown 语法。</p>
+<h2 id="规范文章内容的书写">规范文章内容的书写</h2>
+<h3 id="标题-1">标题</h3>
+<p>控制文章标题的字数：文章标题一般不要超过 23 字，字数在 10-20 之间都是合理的选择。切忌标题中用词累赘。参阅<a href="https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%A4%9A%E5%B0%91%E5%AD%97%E6%9C%80%E5%90%88%E9%80%82/">文章标题多少字最合适</a>。</p>
+<blockquote>
+<p>（由于某些网站标题有长度限制，特殊情况特殊处理）<br>比如 <a href="https://www.cnbeta.com/" target="_blank" rel="noopener">cnBeta</a> 和 <a href="https://36kr.com/" target="_blank" rel="noopener">36氪</a> 上的文章：<br>
+华为揭晓EMUI10.0系统 承诺30个月性能劣化低于6%<br>
+华为Mate 30 Pro外形曝光：预装EMUI10、或10月发布<br></p>
+</blockquote>
+<p>标题中标点符号的用法：使用中文标点符号，中英文之间应有一个半角空格。参阅<a href="https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E4%B8%AD%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%9A%84%E7%94%A8%E6%B3%95/">文章标题中标点符号的用法</a>。</p>
+<blockquote>
+<p>比如：<a href="https://blog.csdn.net/csdnsevenn/article/details/96658196" target="_blank" rel="noopener">Linux 之父拒绝 996，Swift、Python 之父痴迷深夜编程，程序员之神的 24 小时！</a></p>
+</blockquote>
+<h3 id="空格">空格</h3>
+<blockquote>
+<p><a href="https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%BB%AC%E5%B0%B1%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%B8%AA%E7%A9%BA%E6%A0%BC%E5%91%A2/">为什么你们就是不能加个空格呢？</a></p>
+</blockquote>
+<p>中英文之间需要增加空格：</p>
+<pre><code class="language-markdown">正确：在 LeanCloud 上，数据存储是围绕 `AVObject` 进行的。
+
+错误：在LeanCloud上，数据存储是围绕`AVObject`进行的。
+
+例外：「豆瓣FM」等产品名词，按照官方所定义的格式书写。
+</code></pre>
+<p>中文与数字（日期）之间需要增加空格：</p>
+<pre><code class="language-markdown">正确：今天出去买菜花了 5000 元。
+
+错误：今天出去买菜花了5000元。
+
+中华人民共和国位于亚洲东部，太平洋西岸，是工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家。
+1949 年（己丑年）10 月 1 日成立，以五星红旗为国旗，《义勇军进行曲》为国歌，国徽内容包括国旗、天安门、齿轮和麦稻穗，首都北京，
+是一个以汉族为主体，由 56 个民族构成的统一多民族国家。
+</code></pre>
+<p>数字使用半角字符：</p>
+<pre><code class="language-markdown">正确：这个蛋糕只卖 1000 元。
+
+错误：这个蛋糕只卖 １０００ 元。
+
+例外：在设计稿、宣传海报中如出现极少量数字的情形时，为方便文字对齐，是可以使用全角数字的。
+</code></pre>
+<p>数字与单位之间需要增加空格：</p>
+<pre><code class="language-markdown">我家的光纤入屋宽带有 10 Gbps，SSD 一共有 20 TB。
+
+例外：
+度/百分号，与数字之间不需要增加空格。
+　　今天是 233° 的高温。
+　　新 MacBook Pro 有 15% 的 CPU 性能提升。
+
+货币标志、表正负数符号等，与数字之间不需要增加空格。
+　　RMB ¥100
+　　Under $10
+　　-23 ℃
+</code></pre>
+<p>全角标点与其他字符之间不加空格：</p>
+<pre><code class="language-markdown">刚刚买了一部 iPhone，好开心！
+</code></pre>
+<p>「at」标志（电子邮件除外）、版权标识、项目符号等特殊符号后加空格：</p>
+<pre><code>示例：@ Hindy, © Hindy
+
+除外：markdown@163.com
+</code></pre>
+<p>A + B 之间需要增加空格：</p>
+<pre><code class="language-markdown">HUAWEI Mate 40 Pro 和 HUAWEI Mate 40 Pro + 均采用 6.76 英寸 88° 超曲环幕屏，
+搭载麒麟 9000 处理器，前置 1300 万超感知摄像头 + 3D 深感摄像头，电池为 4400 mAh，支持 66 W 快充和 50 W 无线快充。
+</code></pre>
+<p>通常链接前后不加空格（如果想突出链接部分的内容，可以统一加空格）：</p>
+<pre><code class="language-markdown">不加空格：
+在计算机上打开 [Google 地图](URL)，并确保您已登录帐号。
+如果您在地图上未看到家或单位，请了解如何启用[网络与应用活动记录](URL)。
+
+加空格：
+请 [提交一个 issue](URL) 并分配给相关同事。
+想了解网站的最新动态，请 [订阅](URL) 本站。
+</code></pre>
+<h3 id="标点符号">标点符号</h3>
+<p>除了特殊情况，全部使用全角中文标点：</p>
+<pre><code class="language-markdown">嗨！你知道嘛？今天前台的小妹跟我说「喵」了哎！
+
+核磁共振成像（NMRI）是什么原理都不知道？JFGI！
+</code></pre>
+<blockquote>
+<p><strong>全角</strong>和<strong>半角</strong>是文字的两种显示形式，其中「角」是<strong>方块</strong>的意思。「全角」指文字字身长宽比为一比一的正方形，而「半角」指宽度为全角一半的文字。——维基百科词条：<a href="https://zh.wikipedia.org/wiki/%e5%85%a8%e5%bd%a2%e5%92%8c%e5%8d%8a%e5%bd%a2" target="_blank" rel="noopener">全角和半角</a></p>
+</blockquote>
+<p>遇到完整的英文整句、特殊名词，其内容使用半角标点：</p>
+<pre><code class="language-markdown">贾伯斯那句话是怎么说的？「Stay hungry, stay foolish.」
+
+推荐你阅读《Hackers &amp; Painters: Big Ideas from the Computer Age》，非常的有趣。
+</code></pre>
+<p>不重复使用标点符号：</p>
+<pre><code class="language-markdown">正确：德国队竟然战胜了巴西队！
+
+错误：德国队竟然战胜了巴西队！！！！！！！！
+</code></pre>
+<p>使用半角斜杠「/」，前后可以加空格：</p>
+<pre><code class="language-markdown">示例1 现在完成时的谓语形式是「have / has + 过去分词」。
+
+示例2 在回答“Is she coming with us?”这类问题时，可以说“I hope so（肯定）/ I hope not.（否定）”。
+
+正斜杠“/”在某些文档里面表示“顿号”，如通讯方式 GSM/GPRS/3G。
+</code></pre>
+<p>推荐使用直角引号：</p>
+<pre><code class="language-markdown">港澳台：「老师，『有条不紊』的『紊』是什么意思？」
+
+中国内地（推荐性国家标准）：“老师，‘有条不紊’的‘紊’是什么意思？”
+</code></pre>
+<blockquote>
+<p>《标点符号用法》中「引号」的定义为：标号的一种，标示语段中直接引用的内容或需要特别指出的成分。</p>
+<p>当使用直角引号时，表达反语、讽刺、不真正等含义时，必须使用弯引号。示例：说真的，我也很 “喜欢”「苹果表」哦。/ 你可真“聪明”。</p>
+<p>「直角引号」作为一个纯粹的全角标点符号，在<span class="accentTextColor">中英文混排</span>中兼容性更强，更加实用。弯引号有全角和半角之分，在中文里面应当使用全角引号，在英文里面应当使用半角引号，而在<span class="accentTextColor">中英文混排</span>中就比较容易错乱，因为像 Noto Sans SC 这样的中文字体只有全角引号，没有半角引号。还有全角单引号和<a href="https://zh.wikipedia.org/wiki/%E6%92%87%E5%8F%B7" target="_blank" rel="noopener">撇号</a>也容易错乱。另请参阅相关百度百科词条：<a href="https://baike.baidu.com/item/%E5%BC%95%E5%8F%B7" target="_blank" rel="noopener">引号</a>、<a href="https://baike.baidu.com/item/%E5%8F%8C%E5%BC%95%E5%8F%B7/10758658" target="_blank" rel="noopener">双引号</a>。</p>
+</blockquote>
+<p>引号之间、书名号之间不用顿号（参阅：GB/T 15834—2011 标点符号用法）：</p>
+<pre><code class="language-text">推荐：要区分“新媒体”“社会化媒体”“自媒体”等概念。
+
+对比：要区分“新媒体”、“社会化媒体”、“自媒体”等概念。
+
+推荐：本文参考了《标点符号用法》《党政机关公文格式》《出版物上的数字用法》《有关量、单位和符号的一般原则》等国家标准。
+
+对比：本文参考了《标点符号用法》、《党政机关公文格式》、《出版物上的数字用法》、《有关量、单位和符号的一般原则》等国家标准。
+
+例外：有其他成分插在并列的引号或书名号之间时，用顿号。
+
+正：本文参考了《标点符号用法》（GB/T 15834—2011）、《党政机关公文格式》（GB/T 9704—2012）、《出版物上的数字用法》（GB/T 15835—2011）、
+《有关量、单位和符号的一般原则》（GB 3101—1993）等国家标准。
+</code></pre>
+<p>行首行尾排版禁则：</p>
+<ul>
+<li>点号（顿号、逗号、句号等）、结束引号、结束括号等，不能出现在一行的开头。</li>
+</ul>
+<pre><code class="language-bash">错误：
+排版时注意某些
+符号不能在行首
+，别弄错了。
+
+正确：
+排版时注意某些
+符号不能在行首，
+别弄错了。
+</code></pre>
+<ul>
+<li>开始引号、开始括号、开始双书名号等，不能出现在一行的结尾。</li>
+</ul>
+<pre><code class="language-bash">错误：
+她对我们说：「
+这书太赞了。」
+
+正确：
+她对我们说：
+「这书太赞了。」
+</code></pre>
+<h3 id="符号异常">符号异常</h3>
+<p>使用 Noto Sans SC 字体时，Markdown 文档中的英文标点被渲染为中文标点，比如双引号/撇号：</p>
+<pre><code>Learning any language takes &quot;a lot of effort&quot;. but don't give up. 
+</code></pre>
+<blockquote>
+<p>Learning any language takes &ldquo;a lot of effort&rdquo;. but don&rsquo;t give up.</p>
+</blockquote>
+<p>可通过反斜杠 <code>\</code> 来插入英文标点：</p>
+<pre><code>Learning any language takes \&quot;a lot of effort\&quot;. but don\'t give up. 
+</code></pre>
+<blockquote>
+<p>Learning any language takes &quot;a lot of effort&quot;. but don't give up.</p>
+</blockquote>
+<p>其他符号也会有问题，比如输入真减号（<code>−</code> / <code>&amp;minus;</code>）实际显示为全角减号「－」，这是由于半角减号与全角减号共用一个编码导致的。所以，实际使用过程中，要么全角减号和全角加号（－＋）一起使用，要么使用 <a href="https://baike.baidu.com/item/%E8%BF%9E%E5%AD%97%E6%9A%A8%E5%87%8F%E5%8F%B7/15674974?fr=aladdin" target="_blank" rel="noopener">Hyphen-minus</a>（-）代替真减号。</p>
+<blockquote>
+<p>但是读者要知道，Hyphen 和减号本质上是两种不同的符号，只是在现实应用过程中出现了混乱。</p>
+</blockquote>
+<h3 id="链接">链接</h3>
+<p><a href="https://github.com/google/styleguide/blob/gh-pages/docguide/style.md#Links" target="_blank" rel="noopener">链接</a>文字不要使用“链接 / 这里”或者“link / here”，链接文字要表明链接文章所讲内容：</p>
+<blockquote>
+<p>错误：</p>
+<p>See the syntax guide for more info: <a href="syntax_guide.md">link</a>.<br>
+Or, check out the style guide <a href="style_guide.md">here</a>.</p>
+<p>正确：</p>
+<p>See the <a href="syntax_guide.md">syntax guide</a> for more info.<br>
+Or, check out the <a href="style_guide.md">style guide</a>..</p>
+<p>可以先写好一个句子或者段落后，再为其中的内容添加必要的外部链接。</p>
+</blockquote>
+<p>表格中不要使用过长 URI 的链接：</p>
+<pre><code class="language-markdown">Fruit | Attribute | Notes
+--- | --- | --- | ---
+Apple | [Juicy](https://example.com/SomeReallyReallyReallyReallyReallyReallyReallyReallyLongQuery), Firm, Sweet | Apples keep doctors away.
+Banana | [Convenient](https://example.com/SomeDifferentReallyReallyReallyReallyReallyReallyReallyReallyLongQuery), Soft, Sweet | Contrary to popular belief, most apes prefer mangoes.
+
+DO NOT DO THIS
+</code></pre>
+<p>通常<a href="https://github.com/google/styleguide/blob/gh-pages/docguide/style.md#lists" target="_blank" rel="noopener">列表</a>和副标题能够以稍微不那么紧凑的方式呈现相同的信息，但更易于编辑：</p>
+<pre><code>## Fruits
+
+### Apple
+
+* [Juicy](https://SomeReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyLongURL)
+* Firm
+* Sweet
+
+Apples keep doctors away.
+
+### Banana
+
+* [Convenient](https://example.com/SomeDifferentReallyReallyReallyReallyReallyReallyReallyReallyLongQuery)
+* Soft
+* Sweet
+
+Contrary to popular belief, most apes prefer mangoes.
+</code></pre>
+<h3 id="规范用词">规范用词</h3>
+<p>专有名词使用正确的「大小写」：</p>
+<blockquote>
+<p>大小写相关用法原属于英文书写范畴，这里只对部分易错用法进行简述。</p>
+</blockquote>
+<pre><code class="language-markdown">正确：I like iPhone and iMac. 
+
+错误：l like iphone and IMAC.
+
+我们的客户有 GitHub、Foursquare、Microsoft Corporation、Google、Facebook, Inc.。
+
+the white house 是白色房子，the White House 则是美国白宫。 
+</code></pre>
+<p>不要使用不地道的「缩写」：</p>
+<pre><code class="language-markdown">
+正确：我们需要一位熟悉 JavaScript、HTML5，至少理解一种框架（如 Backbone.js、AngularJS、React 等）的前端开发者。
+
+错误：我们需要一位熟悉 Js、h5，至少理解一种框架（如 backbone、angular、RJS 等）的 FED。
+</code></pre>
+<p>使用书面语，而非网络流行语：</p>
+<pre><code>程序员不得写为程序猿；
+同学不得写为童靴。
+</code></pre>
+<h3 id="数字用法">数字用法</h3>
+<p>正确使用数字序号的层级：<a href="https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7%E7%9A%84%E4%B8%83%E4%B8%AA%E5%B1%82%E7%BA%A7/">数字序号的七个层级</a>。</p>
+<p>数字大小写对照表：</p>
+<table>
+<thead>
+<tr>
+<th>阿拉伯数字</th>
+<th>中文小写数字</th>
+<th>中文大写数字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>〇</td>
+<td>零</td>
+</tr>
+<tr>
+<td>1</td>
+<td>一</td>
+<td>壹</td>
+</tr>
+<tr>
+<td>2</td>
+<td>二</td>
+<td>贰</td>
+</tr>
+<tr>
+<td>3</td>
+<td>三</td>
+<td>叁</td>
+</tr>
+<tr>
+<td>4</td>
+<td>四</td>
+<td>肆</td>
+</tr>
+<tr>
+<td>5</td>
+<td>五</td>
+<td>伍</td>
+</tr>
+<tr>
+<td>6</td>
+<td>六</td>
+<td>陆</td>
+</tr>
+<tr>
+<td>7</td>
+<td>七</td>
+<td>柒</td>
+</tr>
+<tr>
+<td>8</td>
+<td>八</td>
+<td>捌</td>
+</tr>
+<tr>
+<td>9</td>
+<td>九</td>
+<td>玖</td>
+</tr>
+<tr>
+<td>10</td>
+<td>十</td>
+<td>拾</td>
+</tr>
+<tr>
+<td>100</td>
+<td>一百</td>
+<td>壹佰</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>一千</td>
+<td>壹仟</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>一万（十千）</td>
+<td>壹万（十千）</td>
+</tr>
+<tr>
+<td>100000000</td>
+<td>一亿</td>
+<td>壹亿</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>参阅百度百科词条：<a href="https://baike.baidu.com/item/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%97/2921705?fr=aladdin" target="_blank" rel="noopener">中文数字</a>。</p>
+</blockquote>
+<p>选用阿拉伯数字：</p>
+<pre><code class="language-bash"># 用于计量的数字
+　　　63%～68%
+　　　100～150 kg
+　　　34～39 ℃
+
+# 用于编号的数字
+## 在使用数字进行编号的场合，为达到醒目、易于辨识的效果，应采用阿拉伯数字。
+示例：电话号码：98888
+　　　邮政编码：100871
+　　　通信地址：北京市海淀区复兴路 11 号
+　　　汽车号牌：京 A00001
+　　　公交车号：302 路公交车
+　　　道路编号：101 国道
+　　　……
+</code></pre>
+<p>选用汉字数字：</p>
+<pre><code class="language-bash"># 非公历纪年
+## 干支纪年、农历月日、历史朝代纪年及其他传统上采用汉字形式的非公历纪年等等，应采用汉字数字。
+　　　　秦文公四十四年
+　　　　太平天国庚申十年九月二十四日
+
+# 概数
+## 数字连用表示的概数、含“几”的概数，应采用汉字数字。
+　　　　三四个月
+　　　　一二十个
+　　　　四十五六岁
+　　　　五六十年前
+</code></pre>
+<p>选用阿拉伯数字与汉字数字均可：</p>
+<pre><code class="language-bash"># 如果表达计量或编号所需要用到的数字个数不多，选择汉字数字还是阿拉伯数字在书写的简洁性和辨识的清晰性两方面没有明显差异时，两种形式均可使用
+示例 1：17 号楼（十七号楼）
+　　　　3 倍（三倍）
+　　　　100 多件（一百多件）
+　　　　20 余次（二十余次）
+　　　　约 300 人（约三百人）
+　　　　40 左右（四十左右）
+　　　　第 25 页（第二十五页）
+　　　　第 8 天（第八天）
+　　　　第 4 季度（第四季度）
+
+# 如果要突出简洁醒目的表达效果，应使用阿拉伯数字；如果要突出庄重典雅的表达效果，应使用汉字数字。
+示例 2：北京时间 2008 年 5 月 12 日 14 时 28 分
+　　　　十一届全国人大一次会议（不写为“11 届全国人大 1 次会议”）
+　　　　六方会谈（不写为“6 方会谈”）
+</code></pre>
+<h3 id="写作风格">写作风格</h3>
+<p>1）尽量不使用被动语态，改为使用主动语态。</p>
+<pre><code>错误：假如此软件尚未被安装，
+
+正确：假如尚未安装这个软件，
+</code></pre>
+<p>2）不使用非正式的语言风格。</p>
+<pre><code>错误：Lady Gaga 的演唱会真是酷毙了，从没看过这么给力的表演！！！
+
+正确：无法参加本次活动，我深感遗憾。
+</code></pre>
+<p>3）不使用冷僻、生造或者文言文的词语，而要使用现代汉语的常用表达方式。</p>
+<pre><code>错误：这是唯二的快速启动的方法。
+
+正确：这是仅有的两种快速启动的方法。
+</code></pre>
+<p>4）用对“的”、“地”、“得”。</p>
+<pre><code>她露出了开心的笑容。
+（形容词＋的＋名词）
+
+她开心地笑了。
+（副词＋地＋动词）
+
+她笑得很开心。
+（动词＋得＋副词）
+</code></pre>
+<p>5）使用代词时（比如“其”、“该”、“此”、“这”等词），必须明确指代的内容，保证只有一个含义。</p>
+<pre><code>错误：从管理系统可以监视中继系统和受其直接控制的分配系统。
+
+正确：从管理系统可以监视两个系统：中继系统和受中继系统直接控制的分配系统。
+</code></pre>
+<p>6）名词前不要使用过多的形容词。</p>
+<pre><code>错误：此设备的使用必须在接受过本公司举办的正式的设备培训的技师的指导下进行。
+
+正确：此设备必须在技师的指导下使用，且指导技师必须接受过由本公司举办的正式设备培训。
+</code></pre>
+<p>7）不包含任何标点符号的单个句子，或者以逗号分隔的句子构件，长度尽量保持在 20 个字以内；20～29 个字的句子，可以接受；30～39 个字的句子，语义必须明确，才能接受；多于 40 个字的句子，在任何情况下都不能接受。</p>
+<pre><code>错误：本产品适用于从由一台服务器进行动作控制的单一节点结构到由多台服务器进行动作控制的并行处理程序结构等多种体系结构。
+
+正确：本产品适用于多种体系结构。无论是由一台服务器（单一节点结构），还是由多台服务器（并行处理结构）进行动作控制，均可以使用本产品。
+</code></pre>
+<p>8）同样一个意思，尽量使用肯定句表达，不使用否定句表达。</p>
+<pre><code>错误：请确认没有接通装置的电源。
+
+正确：请确认装置的电源已关闭。
+</code></pre>
+<p>9）避免使用双重否定句。</p>
+<pre><code>错误：没有删除权限的用户，不能删除此文件。
+
+正确：用户必须拥有删除权限，才能删除此文件。
+</code></pre>
+<h3 id="纯英文排版">纯英文排版</h3>
+<p>1）基础原则：句首字母大写。单词间留空格。</p>
+<pre><code class="language-text">Learning any language takes a lot of effort. but don’t give up. 
+</code></pre>
+<p>２）英文标点相关</p>
+<p>点号后加一个空格（如逗号、句号等）：</p>
+<pre><code class="language-text">示例：Hello everyone! Welcome to my blog.
+</code></pre>
+<p>括号、引号前后加空格，中间内容无空格：</p>
+<pre><code class="language-text">示例 1：5.04 ounces (143 grams)
+示例 2：Did you say “I love that”?
+</code></pre>
+<p>连字符 Hyphen（-）将两个相关单词组合成一个单词：</p>
+<pre><code class="language-text">示例：Multi‑Touch, Jean-Jacques Rousseau
+</code></pre>
+<p>Em dash（—）常表示文章中断、转折或说明：</p>
+<blockquote>
+<p>And yet, when the car was finally delivered⁠—nearly three months after it was ordered⁠—she decided she no longer wanted it, leaving the dealer with an oddly equipped car that would be difficult to sell.</p>
+</blockquote>
+<p>3）斜体的用法</p>
+<ul>
+<li>用来强调文中某个词或某句话。</li>
+<li>用来标记外来语以及读者不习惯的单词。</li>
+<li>文中出现的书名、剧名、美术作品的题目等等。</li>
+</ul>
+<p>4）标题可单用大写字母来排：</p>
+<pre><code class="language-text">示例：JUST DO IT.
+</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://github.com/sparanoid/chinese-copywriting-guidelines" target="_blank" rel="noopener">chinese-copywriting-guidelines</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/20506092" target="_blank" rel="noopener">写给大家看的中文排版指南</a></li>
+<li><a href="https://www.jianshu.com/p/3b638180e42c" target="_blank" rel="noopener">技术文档写作规范 (Markdown)</a></li>
+<li><a href="https://www.jianshu.com/p/84481d344a3f" target="_blank" rel="noopener">Markdown 编写规范</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODE5ODEwMA==&amp;mid=2653036204&amp;idx=1&amp;sn=57e71d36fbc4615febf851f86db3f642&amp;chksm=80a43c17b7d3b5019aa28c381ef02c333e65a7acd7560ff3503d0bd82d7176a820e5b75202e7&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">中文书写的 24 条规则：纠正那些被忽视的错误用法</a></li>
+<li><a href="http://www.stdresearch.com/ywlwbdfhdsy_jh" target="_blank" rel="noopener">英文论文中的标点符号的使用</a></li>
+<li><a href="https://old.pep.com.cn/xiaoyu/jiaoshi/study/jszy/bdfhyf/" target="_blank" rel="noopener">标点符号用法_小学语文·人民教育出版社·课程教材研究所</a></li>
+<li><a href="https://www.thetype.com/kongque" target="_blank" rel="noopener">孔雀计划：中文字体排印的思路</a></li>
+</ul>
+<blockquote>
+<p>可参考相关技术书电子版的排版：</p>
+<ul>
+<li>
+<p>《HTTP权威指南 (图灵程序设计丛书)》</p>
+</li>
+<li>
+<p>《Java编程思维 (图灵程序设计丛书)》</p>
+</li>
+<li>
+<p>《父与子的编程之旅：与小卡特一起学Python (图灵程序设计丛书) - [美] Warren Sande》</p>
+</li>
+</ul>
+<p>也可以翻看纸质教材。没有的话，可以去图书馆里面看。</p>
+</blockquote>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 28, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/tool/mkdocs/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/tool/mkdocs/js/wowchemy.min.fcc8d435fe4f5be7ec14875ba78d690a.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

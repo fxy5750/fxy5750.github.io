@@ -1,0 +1,1119 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="对比度的选择 WCAG 2.0 中将颜色对比等级分为 3 种： A 级：采用 3:1 的对比">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fxy5750.github.io/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/tool/mkdocs/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/tool/mkdocs/css/wowchemy.aac103487f282235effb1d3aaf23a46d.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/tool/mkdocs/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://fxy5750.github.io/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="一份 Markdown 学习笔记">
+  <meta property="og:url" content="https://fxy5750.github.io/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/">
+  <meta property="og:title" content="文字与背景间对比度的选择 | 一份 Markdown 学习笔记">
+  <meta property="og:description" content="对比度的选择 WCAG 2.0 中将颜色对比等级分为 3 种： A 级：采用 3:1 的对比"><meta property="og:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-06-12T21:35:29&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-10-13T21:35:29&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>文字与背景间对比度的选择 | 一份 Markdown 学习笔记</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/tool/mkdocs/js/wowchemy-init.min.285803d21d0d9cbb186d08eed0a1bc9d.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/introduction/"><span>介绍</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/software/"><span>Markdown 编辑器</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/syntax/"><span>Markdown 语法</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/tool/mkdocs/document-style/"><span>Markdown 写作规范</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/info/"><span>相关说明</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/tool/mkdocs/document-style/">Markdown 写作规范</a></li>
+    
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/markdown-document-layout/">Markdown 文档布局</a></li>
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/tool/mkdocs/document-style/aboutwriting/"><i class="fas fa-book-reader pr-1"></i>写作相关</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/article-layout/">Article Layout</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%A4%9A%E5%B0%91%E5%AD%97%E6%9C%80%E5%90%88%E9%80%82/">文章标题多少字最合适？</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E4%B8%AD%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%9A%84%E7%94%A8%E6%B3%95/">文章标题中标点符号的用法</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%BB%AC%E5%B0%B1%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%B8%AA%E7%A9%BA%E6%A0%BC%E5%91%A2/">为什么你们就是不能加个空格呢？</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7%E7%9A%84%E4%B8%83%E4%B8%AA%E5%B1%82%E7%BA%A7/">数字序号的七个层级</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E6%80%8E%E6%A0%B7%E4%B8%BA%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE/">怎样为文章「配图」</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/aboutwriting/%E5%B8%B8%E7%94%A8%E5%9B%BE%E7%89%87%E6%AF%94%E4%BE%8B/">常用图片比例</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/tool/mkdocs/document-style/other/"><i class="fas fa-book-reader pr-1"></i>其他</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E9%80%89%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E5%AD%97%E4%BD%93/">选用合适的字体</a></li>
+
+
+
+  <li class="active"><a href="/tool/mkdocs/document-style/other/%E6%96%87%E5%AD%97%E4%B8%8E%E8%83%8C%E6%99%AF%E9%97%B4%E5%AF%B9%E6%AF%94%E5%BA%A6%E7%9A%84%E9%80%89%E6%8B%A9/">文字与背景间对比度的选择</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/">如何下载国内外标准</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/document-style/other/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%BB%91%E8%89%B2%E4%B8%BB%E9%A2%98%E4%BC%A4%E7%9C%BC/">为什么黑色主题伤眼？</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>文字与背景间对比度的选择</h1>
+
+          <div class="article-style">
+            <h3 id="对比度的选择">对比度的选择</h3>
+<p>WCAG 2.0 中将颜色对比等级分为 3 种：</p>
+<ul>
+<li><strong>A 级</strong>：采用 3:1 的对比度，是普通观察者可接受的最低对比度。字号大，字重高的文字在较低的对比度下也易于阅读，这时就可以选择 3:1 的对比度。</li>
+<li><strong>AA 级</strong>：采用 4.5:1 的对比度，是普通视力损失的人可接受的最低对比度。这个数据来自 80 岁老人的典型视力。</li>
+<li><strong>AAA 级</strong>：采用 7:1 的对比度，是严重视力损失的人可接受的最低对比度，超出这种视力损伤的用户就需要借助辅助技术帮助其进行信息识别了，所以不再考虑范围内。</li>
+</ul>
+<p>等级越高意味着颜色的对比度越高，呈现出来的视觉压力越大。</p>
+<p>所以 MD 就是根据这 3 个颜色对比等级得出：对比度最低不小于 4.5:1，最佳对比度是 7:1，这样才可以保证最大的用户群体对内容进行识别。</p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-文字与背景间对比度的选择">
+
+
+  <a data-fancybox="" href="/tool/mkdocs/media/%e6%96%87%e5%ad%97%e4%b8%8e%e8%83%8c%e6%99%af%e9%97%b4%e5%af%b9%e6%af%94%e5%ba%a6%e7%9a%84%e9%80%89%e6%8b%a9.jpg" data-caption="文字与背景间对比度的选择">
+
+
+  <img src="/tool/mkdocs/media/%e6%96%87%e5%ad%97%e4%b8%8e%e8%83%8c%e6%99%af%e9%97%b4%e5%af%b9%e6%af%94%e5%ba%a6%e7%9a%84%e9%80%89%e6%8b%a9.jpg" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    文字与背景间对比度的选择
+  </figcaption>
+
+
+</figure>
+
+<h3 id="计算方式">计算方式</h3>
+<p>可以使用 <a href="https://github.com/LeaVerou/contrast-ratio" target="_blank" rel="noopener">contrast-ratio</a> 快速获取对比度的数值：</p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-快速获取对比度">
+
+
+  <a data-fancybox="" href="/tool/mkdocs/media/%e5%bf%ab%e9%80%9f%e8%8e%b7%e5%8f%96%e5%af%b9%e6%af%94%e5%ba%a6.jpg" data-caption="快速获取对比度">
+
+
+  <img src="/tool/mkdocs/media/%e5%bf%ab%e9%80%9f%e8%8e%b7%e5%8f%96%e5%af%b9%e6%af%94%e5%ba%a6.jpg" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    快速获取对比度
+  </figcaption>
+
+
+</figure>
+
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://www.2cto.com/kf/201902/796778.html" target="_blank" rel="noopener">文字与背景间对比度的选择教程</a></li>
+</ul>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/tool/mkdocs/document-style/other/%E9%80%89%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E5%AD%97%E4%BD%93/" rel="next">选用合适的字体</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/tool/mkdocs/document-style/other/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E5%9B%BD%E5%86%85%E5%A4%96%E6%A0%87%E5%87%86/" rel="prev">如何下载国内外标准</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 13, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/tool/mkdocs/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/tool/mkdocs/js/wowchemy.min.fcc8d435fe4f5be7ec14875ba78d690a.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

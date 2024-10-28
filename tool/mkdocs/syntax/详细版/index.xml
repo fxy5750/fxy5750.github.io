@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>详细版 | 一份 Markdown 学习笔记</title>
+    <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/</link>
+      <atom:link href="https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
+    <description>详细版</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
+      <title>详细版</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/</link>
+    </image>
+    
+    <item>
+      <title>Markdown 标题</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%A0%87%E9%A2%98/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%A0%87%E9%A2%98/</guid>
+      <description>&lt;p&gt;Markdown 支持两种标题的语法，类 &lt;a href=&#34;http://www.aaronsw.com/2002/atx/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Atx&lt;/a&gt; 和类 &lt;a href=&#34;http://docutils.sourceforge.net/mirror/setext.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Setext&lt;/a&gt; 形式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;类 Atx 形式使用 &lt;code&gt;#&lt;/code&gt; 数量表示标题的阶数&lt;/strong&gt;（标准写法）&lt;/p&gt;
+&lt;p&gt;在行首插入 1 到 6 个 &lt;code&gt;#&lt;/code&gt;，对应到标题 1 到 6 阶，例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# 这是 H1        # typora 快捷键 Ctrl + 1
+## 这是 H2       # typora 快捷键 Ctrl + 2（常用）
+### 这是 H3      # typora 快捷键 Ctrl + 3
+#### 这是 H4     # typora 快捷键 Ctrl + 4（常用）
+##### 这是 H5    # 一般不作使用
+###### 这是 H6   # 一般不作使用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;类 Setext 形式则是用底线的形式&lt;/strong&gt;（认识就行，不作使用）&lt;/p&gt;
+&lt;p&gt;利用 &lt;code&gt;=&lt;/code&gt;（最高阶标题）和 &lt;code&gt;-&lt;/code&gt;（第二阶标题），例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;This is an H1
+=============
+
+This is an H2
+-------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;任何数量的 &lt;code&gt;=&lt;/code&gt; 和 &lt;code&gt;-&lt;/code&gt; 都可以有效果。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 引用</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%BC%95%E7%94%A8/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%BC%95%E7%94%A8/</guid>
+      <description>&lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
+&lt;p&gt;使用标记符 &lt;code&gt;&amp;gt;&lt;/code&gt; 对内容进行引用。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; 引用一段内容
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用一段内容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;引用的多层嵌套&#34;&gt;引用的多层嵌套&lt;/h2&gt;
+&lt;p&gt;只要根据层次加上不同数量的 &amp;gt; 。&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;  请问 Markdown 怎么用？  -  小白
+&amp;gt;
+&amp;gt;&amp;gt;  自己看教程！  -  愤青
+&amp;gt;&amp;gt;  
+&amp;gt;&amp;gt;&amp;gt;  教程在哪？  -  小白
+&amp;gt;&amp;gt;  
+&amp;gt;&amp;gt;  我也不知道在哪！  -  愤青
+&amp;gt;
+&amp;gt;  那你回答个屁。  -  小白
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请问  Markdown  怎么用？  -  小白&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自己看教程！  -  愤青&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;教程在哪？  -  小白&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我也不知道在哪！  -  愤青&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那你回答个屁。  -  小白&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;引用其它要素&#34;&gt;引用其它要素&lt;/h2&gt;
+&lt;p&gt;引用的区块内也可以使用其他的语法，包括标题、列表、代码区块等。&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; 1.1 这是第一行列表项。
+&amp;gt; 
+&amp;gt;&amp;gt; 2.1 这是第二行列表项。
+&amp;gt;&amp;gt;
+&amp;gt;&amp;gt;- 这是无序列表项。
+&amp;gt;
+&amp;gt; #### 给出一些例子代码：
+&amp;gt; ```bash
+&amp;gt; return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);
+&amp;gt; ```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.1 这是第一行列表项。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2.1 这是第二行列表项。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这是无序列表项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;给出一些例子代码&#34;&gt;给出一些例子代码：&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;  return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;引用中内容换行&#34;&gt;引用中内容换行&lt;/h2&gt;
+&lt;p&gt;有时候引用的内容太长，需要分段落层次，可以使用 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 实现换行。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;知识点&lt;/strong&gt;　HTML &lt;code&gt; &amp;lt;br&amp;gt;&lt;/code&gt; 元素在文本中生成一个换行（回车）符号。此元素在写诗和地址时很有用，这些地方的换行都非常重要。&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/br&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;了解更多&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; &amp;lt;u&amp;gt;幽默小故事，笑死人不偿命&amp;lt;/u&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; 我：“老板，你这清炒油麦菜是荤菜还是素菜？ &amp;lt;br&amp;gt;老板：“当然是素菜了” &amp;lt;br&amp;gt; 我：“那这条虫是怎么回事” &amp;lt;br&amp;gt;老板：“呃……它也是来吃饭的。” &amp;lt;br&amp;gt; 我：“它吃饭凭什么我付钱？我又不认识它！” &amp;lt;br&amp;gt;老板哭着说：“它为了这顿饭，把命都丢了，你还能要求它AA制吗？”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;u&gt;幽默小故事，笑死人不偿命&lt;/u&gt; &lt;br&gt;&lt;br&gt; 我：“老板，你这清炒油麦菜是荤菜还是素菜？ &lt;br&gt;老板：“当然是素菜了” &lt;br&gt; 我：“那这条虫是怎么回事” &lt;br&gt;老板：“呃……它也是来吃饭的。” &lt;br&gt; 我：“它吃饭凭什么我付钱？我又不认识它！” &lt;br&gt;老板哭着说：“它为了这顿饭，把命都丢了，你还能要求它AA制吗？”&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 加粗倾斜下划线等</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%8A%A0%E7%B2%97%E5%80%BE%E6%96%9C%E4%B8%8B%E5%88%92%E7%BA%BF%E7%AD%89/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%8A%A0%E7%B2%97%E5%80%BE%E6%96%9C%E4%B8%8B%E5%88%92%E7%BA%BF%E7%AD%89/</guid>
+      <description>&lt;h2 id=&#34;加粗倾斜删除&#34;&gt;加粗倾斜删除&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;**粗体**
+
+***加粗斜体***
+
+*斜体*或_斜体_
+
+~~删除线~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;强调也可以直接插在文字中间：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;un**frigging**believable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;un&lt;strong&gt;frigging&lt;/strong&gt;believable&lt;/p&gt;
+&lt;p&gt;如果 * 和 _ 与强调文字之间有空格的话，它们就只会被当成普通的符号。比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;不是** 把学的东西用起来 **，
+而是** 为了用而学**！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不是** 把学的东西用起来 **，&lt;br&gt;
+而是** 为了用而学**！&lt;/p&gt;
+&lt;h2 id=&#34;上标--下标&#34;&gt;上标 / 下标&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;上标：O&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;
+下标：H&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;O
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上标：O&lt;sup&gt;2&lt;/sup&gt;&lt;br&gt;下标：H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;h2 id=&#34;下划线&#34;&gt;下划线&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;u&amp;gt;下划线 underline&amp;lt;/u&amp;gt;
+
+用数学公式：
+下划线 $\underline{X}$
+上划线 $\overline{X}$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;u&gt;下划线 underline&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;用数学公式：&lt;br&gt;下划线 $\underline{X}$&lt;br&gt;上划线 $\overline{X}$&lt;/p&gt;
+&lt;p&gt;另外，如果想要个性化下划线，可以使用 html 的 span 标签、设置行内 CSS 的 border-bottom 属性来添加下划线。这种方式自定义程度最高。&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php+HTML&#34;&gt;&amp;lt;span style=&amp;quot;border-bottom: 2px dashed red;&amp;quot;&amp;gt;下划虚线&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;border-bottom: 2px dashed red;&#34;&gt;下划虚线&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其他下划线格式：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php+HTML&#34;&gt;&amp;lt;span style=&amp;quot;border-bottom: 1px solid red;&amp;quot;&amp;gt;单下划线&amp;lt;/span&amp;gt;
+
+&amp;lt;span style=&amp;quot;border-bottom: thick double #32a1ce;&amp;quot;&amp;gt;双下划线&amp;lt;/span&amp;gt;
+
+&amp;lt;span style=&amp;quot;border-bottom: 2px dotted red;&amp;quot;&amp;gt;下划虚线&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;border-bottom: 1px solid red;&#34;&gt;单下划线&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;border-bottom: thick double #32a1ce;&#34;&gt;双下划线&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;border-bottom: 2px dotted red;&#34;&gt;下划虚线&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Markdown 无法表现中文的着重号 &lt;code&gt;．&lt;/code&gt;，实在是没有办法的办法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php+HTML&#34;&gt;&amp;lt;span style=&amp;quot;border-bottom: 8px dotted red;&amp;quot;&amp;gt;假冒着重号&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;border-bottom: 8px dotted red;&#34;&gt;假冒着重号&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更多 &lt;code&gt;border-style&lt;/code&gt; 参阅 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;border-bottom - CSS_ Cascading Style Sheets _ MDN&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;插入普通的符号&#34;&gt;插入普通的符号&lt;/h2&gt;
+&lt;p&gt;如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\*this text is surrounded by literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;*this text is surrounded by literal asterisks*&lt;/p&gt;
+&lt;p&gt;Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;html-kbd-标签&#34;&gt;HTML &lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; 标签&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; 标签定义键盘文本。HTML 键盘输入元素（&lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt;）用于表示用户输入，它将产生一个行内元素，以浏览器的默认 monospace 字体显示。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;Please press 
+&amp;lt;kbd&amp;gt;Ctrl&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;Shift&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;R&amp;lt;/kbd&amp;gt; 
+to re-render an MDN page.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+&lt;p&gt;Please press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;R&lt;/kbd&gt; to re-render an MDN page.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参见 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/kbd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;kbd&lt;/strong&gt; The Keyboard Input element - HTML_ Hypertext Markup Language&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;添加注音&#34;&gt;添加注音&lt;/h2&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;ruby&amp;gt;
+我&amp;lt;rp&amp;gt;（&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;wǒ&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;）&amp;lt;/rp&amp;gt;
+爱&amp;lt;rp&amp;gt;（&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;ài&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;）&amp;lt;/rp&amp;gt;
+你&amp;lt;rp&amp;gt;（&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;nǐ&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;）&amp;lt;/rp&amp;gt;
+中&amp;lt;rp&amp;gt;（&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;zhōng&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;）&amp;lt;/rp&amp;gt;
+国&amp;lt;rp&amp;gt;（&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;guó&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;）&amp;lt;/rp&amp;gt;
+&amp;lt;/ruby&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+&lt;ruby&gt;
+我&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;wǒ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;
+爱&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;ài&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;
+你&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;nǐ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;
+中&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;zhōng&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;
+国&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;guó&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;
+&lt;/ruby&gt;
+&lt;h4 id=&#34;ruby-语法说明&#34;&gt;ruby 语法说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ruby&amp;gt;&lt;/code&gt; — 用它将需要注释或注音标的文字内容包围住。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;rt&amp;gt;&lt;/code&gt; — 这里面放置音标或注释，这个标记要跟在需要注释的文本后边。&lt;code&gt;rt&lt;/code&gt; 里的文字，对于横向显示的文章，它会显示在上方。对于竖向显示的文字，它会显示到右边。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;rp&amp;gt;&lt;/code&gt; — 这个标记是防备那些不支持 &lt;code&gt;ruby&lt;/code&gt; 标记的浏览器，主要用来放置括弧。对于支持这个标记的浏览器，&lt;code&gt;rp&lt;/code&gt; 标记的 CSS 样式是 &lt;code&gt;{display:none;}&lt;/code&gt;，也就是不可见。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;偷懒的写法：&lt;/p&gt;
+&lt;ruby&gt;
+我爱你中国&lt;rt&gt;wǒàinǐzhōngguó&lt;/rt&gt;
+&lt;/ruby&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ruby&amp;gt;
+我爱你中国&amp;lt;rt&amp;gt;wǒàinǐzhōngguó&amp;lt;/rt&amp;gt;
+&amp;lt;/ruby&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中带音标的字母可通过输入法中的特殊字符输入。也可查看 &lt;a href=&#34;http://www.fhdq.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;符号大全-特殊符号&lt;/a&gt; 中的汉语拼音部分。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参见 &lt;a href=&#34;https://blog.csdn.net/chs_jdmdr/article/details/51622360&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML 拼音/音标注释标记 ruby 和它的子元素 rt/rp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 链接</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E9%93%BE%E6%8E%A5/</guid>
+      <description>&lt;p&gt;Markdown 支持两种形式的链接语法： &lt;strong&gt;行内链接&lt;/strong&gt; 和 &lt;strong&gt;参考链接&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;行内形式&#34;&gt;行内形式&lt;/h2&gt;
+&lt;p&gt;链接文字都是用 &lt;code&gt;[方括号]&lt;/code&gt; 来标记，使用 &lt;code&gt;(圆括号)&lt;/code&gt; 来把文字转成链接。还可以为链接文字配个Title，当然 Title 属性是可选项，加不加看心情咯。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;[链接文字](链接网址 &amp;quot;标题&amp;quot;)
+This is an [example link](http://example.com/ &amp;quot;With a Title&amp;quot;). 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is an &lt;a href=&#34;http://example.com/&#34; title=&#34;With a Title&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;example link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;在 Typora 软件中，复制一个链接，选中文字按 &lt;kbd&gt;ctrl-K&lt;/kbd&gt; 快速插入链接。&lt;/p&gt;
+&lt;h2 id=&#34;参考形式&#34;&gt;参考形式&lt;/h2&gt;
+&lt;p&gt;为参考形式的链接定一个 &lt;code&gt;[name]&lt;/code&gt; 方便我们在文章中多次引用（name 可以用字母、数字和空格，且不分大小写）。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;[链接文字][name]
+
+[name]: link &amp;quot;Title&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;p&gt;早饭后，我打开 &lt;a href=&#34;https://dict.eudic.net/ting&#34; title=&#34;每日英语听力 - 欧路词典&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;每日英语听力&lt;/a&gt; 学习英语。遇到不懂的英语单词，我借助 &lt;a href=&#34;https://dict.eudic.net/&#34; title=&#34;《欧路词典》在线版&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;欧路在线词典&lt;/a&gt;
+查看释义并加入生词本，方便使用 &lt;a href=&#34;https://www.eudic.net/v4/en/app/eudic&#34; title=&#34;《欧路词典》英语翻译软件官方主页&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;客户端&lt;/a&gt; 随时记忆单词。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;早饭后，我打开 [每日英语听力][1] 学习英语。遇到不懂的英语单词，我借助 [欧路在线词典][2] 
+查看释义并加入生词本，方便使用 [客户端][3] 随时记忆单词。
+
+[1]: https://dict.eudic.net/ting &amp;quot;每日英语听力&amp;quot;
+[2]: https://dict.eudic.net/ &amp;quot;《欧路词典》在线版&amp;quot;
+[3]: https://www.eudic.net/v4/en/app/eudic &amp;quot;《欧路词典》英语翻译软件&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一直用 &lt;a href=&#34;https://www.baidu.com/&#34; title=&#34;Baidu Search&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度&lt;/a&gt;，当知道 &lt;a href=&#34;https://www.sogou.com/&#34; title=&#34;Sogou&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;搜狗&lt;/a&gt; 可以搜索微信和知乎时，我慢慢爱上了 &lt;a href=&#34;https://www.sogou.com/&#34; title=&#34;Sogou&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;搜狗&lt;/a&gt; 这个功能。学术搜索还是用 &lt;a href=&#34;https://www.google.com/&#34; title=&#34;Google&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google&lt;/a&gt;。平时也会用 &lt;a href=&#34;https://cn.bing.com/&#34; title=&#34;Bing Search&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bing&lt;/a&gt;，毕竟各有所长。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;一直用 [百度][bd]，当知道 [搜狗][s] 可以搜索微信和知乎时，我慢慢爱上了 [搜狗][s] 这个功能。
+学术搜索还是用 [Google][g]。平时也会用 [Bing][b]，毕竟各有所长。
+
+[G]: https://www.google.com/ &amp;quot;Google&amp;quot;
+[BD]: https://www.baidu.com/ &amp;quot;Baidu Search&amp;quot;
+[S]: https://www.sogou.com/ &amp;quot;Sogou&amp;quot;
+[B]: https://cn.bing.com/ &amp;quot;Bing Search&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;自动链接&#34;&gt;自动链接&lt;/h2&gt;
+&lt;p&gt;Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只需用 &lt;code&gt;&amp;lt; &amp;gt;&lt;/code&gt; 包起来，Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，邮址的自动链接也很类似，例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;http://example.com/&amp;gt;
+&amp;lt;address@example.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;http://example.com/&#34;&gt;http://example.com/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;mailto:address@example.com&#34;&gt;address@example.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 图片</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</guid>
+      <description>&lt;p&gt;图片的语法和链接很像。
+alt text 是替换文本；alt 属性规定在图像无法显示时的替代文本。虽然 alt text 可以不填，但推荐还是填上。
+Title 是可选项。&lt;/p&gt;
+&lt;h2 id=&#34;行内形式&#34;&gt;行内形式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![alt text](/path/to/img.jpg &amp;quot;Title&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;参考形式&#34;&gt;参考形式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![alt text][id]
+
+[id]: /path/to/img.jpg &amp;quot;Title&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;插入互联网上图片&#34;&gt;插入互联网上图片&lt;/h2&gt;
+&lt;p&gt;(右键 copy 图片地址)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;我在我的笔记本上装了 openSUSE Leap: 
+![opensuse-laptop](https://www.opensuse.org/build/images/opensuse-laptop.gif)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我在我的笔记本上装了 openSUSE Leap: &lt;img src=&#34;https://www.opensuse.org/build/images/opensuse-laptop.gif&#34; alt=&#34;opensuse-laptop&#34;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 Typora 软件中，复制图像的链接，选中文字按 &lt;kbd&gt;ctrl-shift-I&lt;/kbd&gt; 快速插入图像。&lt;/p&gt;
+&lt;p&gt;尽管互联网上有大量资源，为了确保文章图片不丢失，同时避免侵权，尽量上传自己的图片。&lt;/p&gt;
+&lt;h2 id=&#34;控制图片的大小-对齐方式&#34;&gt;控制图片的大小 对齐方式&lt;/h2&gt;
+&lt;p&gt;MarkDown 中显示图片的语法是 &lt;code&gt;![图片描述](图片地址)&lt;/code&gt; 。但是有时候我们需要更改图片大小和位置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通过 img 标签控制宽高&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;img src=&amp;quot;http://pic15.photophoto.cn/20100615/0006019058815826_b.jpg&amp;quot;  height=&amp;quot;330&amp;quot; width=&amp;quot;495&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;通过 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; 标签和 &lt;code&gt;align&lt;/code&gt; 属性控制对齐方式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单张图片：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;div align=center&amp;gt;![alt text](/path/to/img.jpg &amp;quot;Title&amp;quot;)
+&amp;lt;div align=right&amp;gt;![alt text](/path/to/img.jpg &amp;quot;Title&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;多张图片可以这样写：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;lt;div align=&amp;quot;center&amp;quot;&amp;gt;
+
+&amp;lt;img src=&amp;quot;http://pp.myapp.com/ma_pic2/0/shot_42391053_1_1488499316/550&amp;quot; height=&amp;quot;330&amp;quot; width=&amp;quot;190&amp;quot; &amp;gt;
+&amp;lt;img src=&amp;quot;http://pp.myapp.com/ma_pic2/0/shot_42391053_2_1488499316/550&amp;quot; height=&amp;quot;330&amp;quot; width=&amp;quot;190&amp;quot; &amp;gt;
+&amp;lt;img src=&amp;quot;http://pp.myapp.com/ma_pic2/0/shot_42391053_3_1488499316/550&amp;quot; height=&amp;quot;330&amp;quot; width=&amp;quot;190&amp;quot; &amp;gt;
+
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;其他属性&#34;&gt;其他属性&lt;/h4&gt;
+&lt;p&gt;根据 MarkDown 编辑器解析语法的方式不同，有些编辑器还支持别的属性&lt;/p&gt;
+&lt;p&gt;比如在 img 标签中增加 style=&amp;ldquo;margin-left:45px&amp;rdquo; ，在 atom 中配合 GitHub MarkDown 有效。&lt;/p&gt;
+&lt;p&gt;&lt;font color=red&gt;甚至相同的 html 属性在不同的编辑器内展示效果也不一样。如果想传递一个 md 文件给别人的话， 尽量不要加别的 html 属性进去，最好是测试满意后转换为 pdf 格式发给对方。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/sunsteam/article/details/73112787&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown 中控制图片的大小 对齐方式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/qq_35451572/article/details/79443467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown-图片设置（大小，居中）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 列表</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%97%E8%A1%A8/</guid>
+      <description>&lt;p&gt;Markdown 支持 &lt;strong&gt;有序列表&lt;/strong&gt; 和 &lt;strong&gt;无序列表&lt;/strong&gt;。&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;无序列表&#34;&gt;无序列表&lt;/h2&gt;
+&lt;p&gt;使用星号 &lt;code&gt;*&lt;/code&gt;、加号 &lt;code&gt;+&lt;/code&gt; 或是减号 &lt;code&gt;-&lt;/code&gt; 作为列表标记，标记符号后至少一个空格或制表符（Tab）。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;* Green （比较推荐）
+- Red  （比较好用）
++   Blue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green （比较推荐）&lt;/li&gt;
+&lt;li&gt;Red  （比较好用）&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;无序列表标记符前每增加 2 个空格或是 4 个空格，增加一个层级：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- 伟大始于渺小。
+  - 说和做是迥然不同的两回事。
+      - 行动比语言更响亮。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;伟大始于渺小。
+&lt;ul&gt;
+&lt;li&gt;说和做是迥然不同的两回事。
+&lt;ul&gt;
+&lt;li&gt;行动比语言更响亮。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;有序列表&#34;&gt;有序列表&lt;/h2&gt;
+&lt;p&gt;则使用数字接着一个英文句点。标记符号后面也要接着至少一个空格或制表符（Tab）。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. First paragraph
+2. Second paragraph
+3. Third paragraph
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;First paragraph&lt;/li&gt;
+&lt;li&gt;Second paragraph&lt;/li&gt;
+&lt;li&gt;Third paragraph&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在列表标记上使用的数字并不会影响输出的 HTML 结果，这意味着，你可以 Use lazy numbering for long lists：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.  Foo.
+1.  Bar.
+    1.  Foofoo.
+    1.  Barbar.
+1.  Baz.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Foo.&lt;/li&gt;
+&lt;li&gt;Bar.
+&lt;ol&gt;
+&lt;li&gt;Foofoo.&lt;/li&gt;
+&lt;li&gt;Barbar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Baz.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有序列表标记符前每增加一个 Tab，增加一个层级：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 他是猪吗？
+	1.1 是的，他情商太低
+	1.2 不是，他智商很高
+2. 我是狗吗？
+	2.1 是的，每天忙的累死累活(有序列表标记符号前有一个 Tab)
+	2.2 不是，要求高累点我乐意
+		2.2.1 不要想太多(有序列表标记符号前有两个 Tab)
+		2.2.2 成功有方法
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;他是猪吗？
+1.1 是的，他情商太低
+1.2 不是，他智商很高&lt;/li&gt;
+&lt;li&gt;我是狗吗？
+2.1 是的，每天忙的累死累活(有序列表标记符号前有一个 Tab)
+2.2 不是，要求高累点我乐意
+2.2.1 不要想太多(有序列表标记符号前有两个 Tab)
+2.2.2 成功有方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;列表项目中的段落&#34;&gt;列表项目中的段落&lt;/h2&gt;
+&lt;p&gt;列表项目可以包含多个段落，段落都必须缩进 4 个空格或是 1 个制表符（Tab）。&lt;/p&gt;
+&lt;p&gt;无序列表：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Every man is his own worst enemy. Wisdom in the mind is better than money in the hand. Every man is his own worst enemy. Wisdom in the mind is better than money in the hand.
+    
+    From small beginnings comes great things.(列表项目中的段落)
+
+- Saying and doing are two different things. Actions speak louder than words. Saying and doing are two different things. Actions speak louder than words. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Every man is his own worst enemy. Wisdom in the mind is better than money in the hand. Every man is his own worst enemy. Wisdom in the mind is better than money in the hand.&lt;/p&gt;
+&lt;p&gt;From small beginnings comes great things. (列表项目中的段落)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Saying and doing are two different things. Actions speak louder than words. Saying and doing are two different things. Actions speak louder than words.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Every man is his own worst enemy. Wisdom in the mind is better than money in the hand. Every man is his own worst enemy. Wisdom in the mind is better than money in the hand.
+	
+	From small beginnings comes great things. (列表项目中的段落)
+
+2. Saying and doing are two different things. Actions speak louder than words. Saying and doing are two different things. Actions speak louder than words. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Every man is his own worst enemy. Wisdom in the mind is better than money in the hand. Every man is his own worst enemy. Wisdom in the mind is better than money in the hand.&lt;/p&gt;
+&lt;p&gt;From small beginnings comes great things. (列表项目中的段落)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Saying and doing are two different things. Actions speak louder than words. Saying and doing are two different things. Actions speak louder than words.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;列表项目内引用&#34;&gt;列表项目内引用&lt;/h2&gt;
+&lt;p&gt;在引用标记符 &lt;code&gt;&amp;gt;&lt;/code&gt; 前使用 2 / 4 个空格：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- A list item with a blockquote:
+
+	&amp;gt; This is a blockquote（上面空一行，标记符 &amp;gt; 前有 1 个 Tab）
+	&amp;gt; inside a list item.
+
+1. A list item with a blockquote:
+
+	&amp;gt; This is a blockquote（上面空一行，标记符 &amp;gt; 前有 4 个空格或者 1 个 Tab）
+	&amp;gt; inside a list item.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;列表项目内代码块&#34;&gt;列表项目内代码块&lt;/h2&gt;
+&lt;p&gt;要放代码块的话，中间空一行，然后缩进两次，也就是 8 个空格或者 2 个制表符（Tab）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- 一列表项包含一个代码块：
+
+        我是代码区块，我上方有一空行，前方有8个空格。
+        
+1. 一列表项包含一个代码块：
+
+        我是代码区块，我上方有一空行，前方有8个空格。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一列表项包含一个代码块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  我是代码区块，我上方有一空行，前方有8个空格。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;一列表项包含一个代码块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 我是代码区块，我上方有一空行，前方有8个空格。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;有序列表异常&#34;&gt;有序列表异常&lt;/h2&gt;
+&lt;p&gt;当然，项目列表很可能会不小心产生，像是下面这样的写法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;   1. Sweet osmanthus smells ten miles.
+1986. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1986 头怎么伸出去了？要避免这样的状况，你可以在&lt;strong&gt;句点前面加上反斜杠&lt;/strong&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;1986\. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 任务列表</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8/</guid>
+      <description>&lt;p&gt;代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [ ] a task list item
+  - [x] completed
+  - [ ] incomplete
+- [ ] list syntax required
+- [x] completed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a task list item
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; completed&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; incomplete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; list syntax required&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; completed&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 代码块与语法高亮</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%A3%E7%A0%81%E5%9D%97%E4%B8%8E%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%A3%E7%A0%81%E5%9D%97%E4%B8%8E%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/</guid>
+      <description>&lt;p&gt;插入程序代码的方式有两种：使用反引号 `（~ 键）、使用缩进（Tab）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;插入行内代码，即插入一个单词或者一句代码的情况，使用 `code` 这样的形式插入。&lt;/li&gt;
+&lt;li&gt;插入多行代码，分别使用三个反引号（```）包裹多行代码。或者使用缩进。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;行内代码&#34;&gt;行内代码&lt;/h2&gt;
+&lt;p&gt;在一般的段落文字中，可以使用反引号 ` 来标记或插入代码区段。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;C语言里的函数 `scanf()` 怎么使用？
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;C语言里的函数 &lt;code&gt;scanf()&lt;/code&gt; 怎么使用？&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;当然也可以标记 &lt;code&gt;文件名&lt;/code&gt; 、&lt;code&gt;关键词&lt;/code&gt; 等。&lt;/p&gt;
+&lt;h2 id=&#34;多行代码&#34;&gt;多行代码&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在需要高亮的代码块的前一行及后一行使用三个反引号 ```（~ 键）&lt;/li&gt;
+&lt;li&gt;同时第一行反引号后面，输入代码块所使用的语言，实现代码高亮。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如高亮 &lt;code&gt;python3&lt;/code&gt; 代码块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python
+#!/usr/bin/env python3
+print(&amp;quot;Hello, World!&amp;quot;);
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python3
+print(&amp;quot;Hello, World!&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;缩进式插入多行代码&#34;&gt;缩进式插入多行代码&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：&lt;br&gt;
+缩进式插入前方必须有空行；&lt;br&gt;
+缩进 4 个空格或是 1 个制表符；&lt;br&gt;
+一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;此处有空行
+    #include  &amp;lt;stdio.h&amp;gt;`
+    int main(void)`
+    {
+        printf(&amp;quot;Hello world\n&amp;quot;);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示效果：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include  &amp;lt;stdio.h&amp;gt;`
+int main(void)`
+{
+    printf(&amp;quot;Hello world\n&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;代码区块中的内容&#34;&gt;代码区块中的内容&lt;/h2&gt;
+&lt;p&gt;代码区块中，一般的 Markdown 语法不会被转换，像是 * 便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```markdown
+Markdown 语法展示
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;比如下面展示 Markdown 常用语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;Markdown 目录：
+[TOC]
+
+Markdown 标题：
+# 这是 H1
+## 这是 H2
+### 这是 H3
+
+Markdown 列表：
+- 列表项目
+1. 列表项目
+
+*斜体*或_斜体_
+**粗体**
+***加粗斜体***
+~~删除线~~
+
+Markdown 插入链接：
+[链接文字](链接网址 &amp;quot;标题&amp;quot;)
+
+Markdown 插入图片：
+![alt text](/path/to/img.jpg &amp;quot;Title&amp;quot;)
+
+Markdown 插入代码块：
+
+    ```python
+    #!/usr/bin/python3
+    print(&amp;quot;Hello, World!&amp;quot;);
+    ```
+
+Markdown 引用：
+&amp;gt; 引用内容
+
+Markdown 分割线：
+---
+
+Markdown 换行：
+&amp;lt;br&amp;gt;
+
+Markdown 段首缩进：
+&amp;amp;ensp; or &amp;amp;#8194; 表示一个半角的空格
+&amp;amp;emsp; or &amp;amp;#8195;  表示一个全角的空格
+&amp;amp;emsp;&amp;amp;emsp; 两个全角的空格（用的比较多）
+&amp;amp;nbsp; or &amp;amp;#160; 不断行的空白格
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 换行与段首缩进</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8D%A2%E8%A1%8C%E4%B8%8E%E6%AE%B5%E9%A6%96%E7%BC%A9%E8%BF%9B/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8D%A2%E8%A1%8C%E4%B8%8E%E6%AE%B5%E9%A6%96%E7%BC%A9%E8%BF%9B/</guid>
+      <description>&lt;h2 id=&#34;换行&#34;&gt;换行&lt;/h2&gt;
+&lt;p&gt;Markdown 中，段落之间的换行是通过在段落之间留空行的方式来实现。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;段落一
+
+段落二
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但我们会有其他的换行需求，可以这样实现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;键入 HTML 语言换行标签：&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;（通用）&lt;/li&gt;
+&lt;li&gt;段落内换行使用换行符 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;，或者 &lt;code&gt;两个空格&lt;/code&gt; + &lt;code&gt;shift-Enter&lt;/code&gt;。不推荐使用  &lt;code&gt;\&lt;/code&gt; + &lt;code&gt;shift-Enter&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;Typora 中，空行中使用四个空格（一个 Tab）可以快速增大段落之间的间距&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了演示效果，举例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;春望&amp;lt;br&amp;gt;唐代：杜甫
+
+国破山河在，城春草木深。  
+感时花溅泪，恨别鸟惊心。  
+烽火连三月，家书抵万金。  
+白头搔更短，浑欲不胜簪。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;春望&lt;br&gt;唐代：杜甫&lt;/p&gt;
+&lt;p&gt;国破山河在，城春草木深。&lt;br&gt;
+感时花溅泪，恨别鸟惊心。&lt;br&gt;
+烽火连三月，家书抵万金。&lt;br&gt;
+白头搔更短，浑欲不胜簪。&lt;/p&gt;
+&lt;p&gt;（没有换行符，内容会在一行显示）&lt;/p&gt;
+&lt;h2 id=&#34;段首缩进&#34;&gt;段首缩进&lt;/h2&gt;
+&lt;p&gt;使用 Markdown 写文章不需要段首缩进。但如果你需要的话，可以在段落前面使用：&lt;/p&gt;
+&lt;h4 id=&#34;1两个全角空格&#34;&gt;1）两个全角空格&lt;/h4&gt;
+&lt;p&gt;因为一个全角空格（space）的宽度是整整一个汉字，输入两个全角空格正好是两个汉字的宽度。&lt;/p&gt;
+&lt;p&gt;全角空格的输入方法为：一般的中文输入法都是按 shift + space，可以切换到全角模式下，输完后再次按 shift + space 切换回正常输入状态。&lt;/p&gt;
+&lt;h4 id=&#34;2使用特殊占位符&#34;&gt;2）使用特殊占位符&lt;/h4&gt;
+&lt;p&gt;使用特殊占位符，不同占位符所占空白是不一样大的。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;amp;ensp; or &amp;amp;#8194;  表示一个半角的空格
+&amp;amp;emsp; or &amp;amp;#8195;  表示一个全角的空格
+&amp;amp;emsp;&amp;amp;emsp;       两个全角的空格（用的比较多）
+&amp;amp;nbsp; or &amp;amp;#160;   不断行的空白格
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;   表示一个半角的空格&lt;br&gt;   表示一个全角的空格&lt;br&gt;    两个全角的空格（用的比较多）&lt;br&gt;   不断行的空白格&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/thither_shore/article/details/52205748&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSDN-markdown 首行缩进的快捷实现：全角空格配合&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/zdx1996/article/details/86590864&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown 添加空格缩进[全]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 表格</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%A1%A8%E6%A0%BC/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%A1%A8%E6%A0%BC/</guid>
+      <description>&lt;h2 id=&#34;语法说明&#34;&gt;语法说明&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行；&lt;/li&gt;
+&lt;li&gt;列与列之间用管道符 | 隔开。原生方式的表格每一行的两边也要有管道符；&lt;/li&gt;
+&lt;li&gt;第二行还可以为不同的列指定对齐方向。默认为左对齐，可以&lt;strong&gt;使用冒号 : 来定义表格的对齐方式&lt;/strong&gt;。冒号在分隔符 - 右边右对齐，在两边居中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;简单方式写表格&#34;&gt;简单方式写表格&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;学号|姓名|分数
+-|:-:|-:
+小明|男|75
+小红|女|79
+小陆|男|92
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;学号&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;姓名&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;分数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;小明&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;男&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;75&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小红&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;女&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;79&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小陆&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;男&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;92&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;原生方式写表格&#34;&gt;原生方式写表格&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;|学号|姓名|分数|
+|---|---|---|
+|小明|男|75|
+|小红|女|79|
+|小陆|男|92|
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;学号&lt;/th&gt;
+&lt;th&gt;姓名&lt;/th&gt;
+&lt;th&gt;分数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;小明&lt;/td&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td&gt;75&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小红&lt;/td&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td&gt;79&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小陆&lt;/td&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td&gt;92&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 折叠内容</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8A%98%E5%8F%A0%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8A%98%E5%8F%A0%E5%86%85%E5%AE%B9/</guid>
+      <description>&lt;p&gt;HTML &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; 标签指定了用户可以根据需要打开和关闭的额外细节。&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title&amp;lt;/summary&amp;gt;
+contents ...
+&amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;内容里面可以嵌套使用 Markdown 语法和 HTML 语法。&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;details&gt; &lt;summary&gt;Title&lt;/summary&gt;
+contents ...
+&lt;/details&gt;
+&lt;p&gt;在博客园的 Markdown 中，&lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; 标签前面不能为空，要有字符或者空格：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;View Code&amp;lt;/summary&amp;gt;
+code ...
+&amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;有的 Markdown 中，可能 &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; 标签与正文间要空一行。比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;View Code&amp;lt;/summary&amp;gt;
+
+code ...
+
+&amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当然，有空行的话比较方便阅读源码。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 目录</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%9B%AE%E5%BD%95/</guid>
+      <description>&lt;p&gt;在文章摘要或者文章简介之后，填写 &lt;code&gt; [TOC]&lt;/code&gt; 以显示全文内容的目录结构。&lt;/p&gt;
+&lt;p&gt;TOC 是 Table of Contents 的简写。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 分割线</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%86%E5%89%B2%E7%BA%BF/</link>
+      <pubDate>Wed, 12 Jun 2019 21:39:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%86%E5%89%B2%E7%BA%BF/</guid>
+      <description>&lt;p&gt;可用三个以上的&lt;strong&gt;减号、星号、底线&lt;/strong&gt;在一空行中建立一条分隔线，中间可以插入空格，但行内不能有其他东西。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+***
+___
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;在 &lt;a href=&#34;https://www.typora.io/&#34;&gt;Typora&lt;/a&gt; 中，文章开头的空行里：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;---Enter&lt;/code&gt; 可快速配置 YAML 的 Front Matter；（文章开头不会用分割线，心中有数就行了）&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 注脚</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%B7%BB%E5%8A%A0%E6%B3%A8%E8%84%9A/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%B7%BB%E5%8A%A0%E6%B3%A8%E8%84%9A/</guid>
+      <description>&lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;在这段文字后添加一个脚注[^footnote].
+
+[^footnote]:这里是脚注的内容.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;footnote 可以是任意英文字符；&lt;br&gt;脚注的内容可以放在文章的任意位置（一般放最后）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;举例&#34;&gt;举例&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;使用 Markdown[^1] 可以效率的书写文档，直接转换成 HTML[^2], 你可以使用 Typora[^T] 软件。
+
+[^1]:Markdown 是一种纯文本标记语言。
+[^2]:HyperText Markup Language 超文本标记语言。
+[^T]:Typora 官网 &amp;lt;https://typora.io/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;使用 Markdown&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 可以效率的书写文档，直接转换成 HTML&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，你可以使用 Typora&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 软件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;脚注显示在文章末尾；脚注后方的链接可以直接跳转回到加注的地方。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Markdown 是一种纯文本标记语言。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;HyperText Markup Language 超文本标记语言。 &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Typora 官网 &lt;a href=&#34;https://typora.io/&#34;&gt;https://typora.io/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 音频</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/</guid>
+      <description>&lt;p&gt;音频文件可以用 HTML 的方式嵌入到 Markdown 中。&lt;/p&gt;
+&lt;h3 id=&#34;使用-html5-audio-元素&#34;&gt;使用 HTML5 &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; 元素&lt;/h3&gt;
+&lt;p&gt;下面是一个将音频嵌入到 HTML 文档的例子。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;audio src=&amp;quot;/test/audio.ogg&amp;quot;&amp;gt;
+  你的浏览器不支持 audio 标签。
+&amp;lt;/audio&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;src 属性可以设置为一个音频文件的 URL 或者本地文件的路径。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;audio src=&amp;quot;audio.mp3&amp;quot; preload=&amp;quot;none&amp;quot; controls loop&amp;gt;
+  你的浏览器不支持 audio 标签。
+&amp;lt;/audio&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个例子的代码中使用了 HTML 的“audio”元素的一些属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;controls&amp;rsquo;&amp;rsquo; : 为网页中的音频显示标准的 HTML5 控制器。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;loop&amp;rsquo;&amp;rsquo; : 使音频自动重复播放。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;preload&amp;rsquo;&amp;rsquo; : 属性用来缓冲 audio 元素的大文件，有三个属性值可供设置：
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;none&amp;rdquo; 不缓冲文件&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;auto&amp;rdquo; 缓冲音频文件&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;metadata&amp;rdquo; 仅仅缓冲文件的元数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML5 &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; 元素&lt;/a&gt;，和 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Using_HTML5_audio_and_video&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;使用 HTML5 音频和视频&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;在线音乐&#34;&gt;在线音乐&lt;/h3&gt;
+&lt;p&gt;进入 &lt;a href=&#34;https://music.163.com/#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;网易云音乐&lt;/strong&gt;&lt;/a&gt; 歌曲界面，点击光碟下方的生成外链播放器：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe
+    frameborder=&amp;quot;no&amp;quot;
+    border=&amp;quot;0&amp;quot;
+    marginwidth=&amp;quot;0&amp;quot;
+    marginheight=&amp;quot;0&amp;quot;
+    width=330
+    height=86
+    src=&amp;quot;//music.163.com/outchain/player?type=2&amp;amp;id=393697&amp;amp;auto=1&amp;amp;height=66&amp;quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe
+    frameborder=&#34;no&#34;
+    border=&#34;0&#34;
+    marginwidth=&#34;0&#34;
+    marginheight=&#34;0&#34;
+    width=330
+    height=86
+    src=&#34;//music.163.com/outchain/player?type=2&amp;id=393697&amp;auto=1&amp;height=66&#34;&gt;
+&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown 视频</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</guid>
+      <description>&lt;p&gt;视频文件可以用 HTML 的方式嵌入到 Markdown 中。&lt;/p&gt;
+&lt;h2 id=&#34;html5-video-元素&#34;&gt;HTML5 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; 元素&lt;/h2&gt;
+&lt;p&gt;原生仅支持播放 ogg/mp4/webm 格式。不支持播放 FLV 格式视频。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Filename Extension&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;video/ogg&lt;/td&gt;
+&lt;td&gt;ogg /ogv /ogm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;video/webm&lt;/td&gt;
+&lt;td&gt;webm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;video/mp4&lt;/td&gt;
+&lt;td&gt;mp4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;在 HTML 中嵌入视频：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;video src=&amp;quot;http://v2v.cc/~j/theora_testsuite/320x240.ogg&amp;quot; controls&amp;gt;
+  你的浏览器不支持 &amp;lt;code&amp;gt;video&amp;lt;/code&amp;gt; 标签。
+&amp;lt;/video&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;video src=&#34;http://v2v.cc/~j/theora_testsuite/320x240.ogg&#34; controls&gt;
+  你的浏览器不支持 &lt;code&gt;video&lt;/code&gt; 标签。
+&lt;/video&gt;
+&lt;p&gt;这个例子展示了一个带有回放控制器的可播放视频，视频来源于 Theora 网站。&lt;/p&gt;
+&lt;p&gt;然而，浏览器并不是都支持相同的&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Supported_media_formats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;视频格式&lt;/a&gt;，所以你可以在 &lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt; 元素里提供多个视频源，然后浏览器将会使用它所支持的第一个源。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;video width=&amp;quot;320&amp;quot; controls loop&amp;gt;
+  &amp;lt;source src=&amp;quot;myVideo.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;
+  &amp;lt;source src=&amp;quot;myVideo.webm&amp;quot; type=&amp;quot;video/webm&amp;quot;&amp;gt;
+  &amp;lt;source src=&amp;quot;myVideo.ogv&amp;quot; type=&amp;quot;video/ogg&amp;quot; /&amp;gt;
+  &amp;lt;p&amp;gt;Your browser doesn&#39;t support HTML5 video. Here is
+     a &amp;lt;a href=&amp;quot;myVideo.mp4&amp;quot;&amp;gt;link to the video&amp;lt;/a&amp;gt; instead.&amp;lt;/p&amp;gt;
+&amp;lt;/video&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;controls&amp;rsquo;&amp;rsquo; : 允许用户控制视频的播放，包括音量，跨帧，暂停/恢复播放。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;width&amp;rsquo;&amp;rsquo; : 视频显示区域的宽度，单位是CSS像素。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;height&amp;rsquo;&amp;rsquo; : 展示区域的高度，单位是CSS像素。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;loop&amp;rsquo;&amp;rsquo; : 布尔属性；指定后，会在视频结尾的地方，自动返回视频开始的地方。&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;lsquo;src&amp;rsquo;&amp;rsquo; : 要嵌到页面的视频的URL。可选；你也可以使用video块内的 &lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt; 元素来指定需要嵌到页面的视频。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML5 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; 元素&lt;/a&gt;， 和 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Using_HTML5_audio_and_video&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;使用 HTML5 音频和视频&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;html-内联框架元素-iframe&#34;&gt;HTML 内联框架元素 &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; 能够将另一个 HTML 页面嵌入到当前页面中。&lt;/p&gt;
+&lt;p&gt;嵌入网络视频：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe 
+    src=&amp;quot;https://v.miaopai.com/iframe?scid=SvyHaHOczsp7B6ftW86oqMMz62-h5ai6~Fwp8A__&amp;quot;
+    width=&amp;quot;800&amp;quot; 
+    height=&amp;quot;450&amp;quot; 
+    frameborder=&amp;quot;0&amp;quot; 
+    allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe 
+    src=&#34;https://v.miaopai.com/iframe?scid=SvyHaHOczsp7B6ftW86oqMMz62-h5ai6~Fwp8A__&#34;
+    width=&#34;800&#34; 
+    height=&#34;450&#34; 
+    frameborder=&#34;0&#34; 
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML 内联框架元素 (&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;嵌入线上视频&#34;&gt;嵌入线上视频&lt;/h2&gt;
+&lt;p&gt;举例：进入 &lt;a href=&#34;http://tv.cctv.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CCTV&lt;/a&gt; 网站，选择视频，点击视频右侧的 &lt;strong&gt;分享&lt;/strong&gt; 按钮，点击 &lt;strong&gt;复制外嵌代码&lt;/strong&gt; 粘贴到文档中：&lt;/p&gt;
+&lt;embed id=&#39;v_player_cctv&#39; width=&#39;730&#39; height=&#39;545&#39; flashvars=&#39;adCalls=http%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D265%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199%7B%21@%23%7Dhttp%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D266%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199%7B%21@%23%7Dhttp%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D267%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199%7B%21@%23%7Dhttp%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D268%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199%7B%21@%23%7Dhttp%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D269%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199%7B%21@%23%7Dhttp%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D270%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199&amp;adAfter=http%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D271%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199&amp;adPause=http%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D274%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199&amp;adBanner=http%3A//galaxy.bjcathay.com/s%3Fz%3Dcathay%26c%3D276%26op%3D1%26_page_group%3Ddianbo%26_subsite%3Dtvcctv%26_CHANNEL%3DPAGEKXC0xLPAnP9J56RRrh6i160121%26_sorts%3D%26_tvcctvpindao%3DCHAL1450953156045404%26_shipinji%3D%26_videoid%3D82debf490d9645e38d650a2823a40199&amp;videoId=YQYbpA0PAhIUszf3jS5190929&amp;filePath=/flvxml/2009/10/14/&amp;isAutoPlay=true&amp;url=http://tv.cctv.com/2019/09/29/VIDE6YQYbpA0PAhIUszf3jS5190929.shtml?spm=C28340.P9dhkRStLqPh.E8KuwdzHZQNM.4&amp;tai=news&amp;configPath=http://js.player.cntv.cn/xml/config/outside.xml&amp;widgetsConfig=http://js.player.cntv.cn/xml/widgetsConfig/common.xml&amp;languageConfig=&amp;hour24DataURL=VodCycleData.xml&amp;outsideChannelId=channelBugu&amp;videoCenterId=82debf490d9645e38d650a2823a40199&#39; allowscriptaccess=&#39;always&#39; allowfullscreen=&#39;true&#39; menu=&#39;false&#39; quality=&#39;best&#39; bgcolor=&#39;#000000&#39; name=&#39;v_player_cctv&#39; src=&#39;http://player.cntv.cn/standard/cntvOutSidePlayer.swf&#39; type=&#39;application/x-shockwave-flash&#39; lk_mediaid=&#39;lk_juiceapp_mediaPopup_1257416656250&#39; lk_media=&#39;yes&#39;/&gt;
+&lt;p&gt;​&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 地图</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%B5%8C%E5%85%A5%E5%9C%B0%E5%9B%BE/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%B5%8C%E5%85%A5%E5%9C%B0%E5%9B%BE/</guid>
+      <description>&lt;h3 id=&#34;嵌入百度地图&#34;&gt;嵌入百度地图&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://api.map.baidu.com/lbsapi/creatmap/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度地图 API 定制工具&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe
+    src=&amp;quot;http://118.25.75.221/map2.html&amp;quot; 
+    width=&amp;quot;600&amp;quot; 
+    height=&amp;quot;300&amp;quot; 
+    frameborder=&amp;quot;0&amp;quot; 
+    scrolling=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe
+    src=&#34;http://118.25.75.221/map2.html&#34; 
+    width=&#34;600&#34; 
+    height=&#34;300&#34; 
+    frameborder=&#34;0&#34; 
+    scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;参考文章 &lt;a href=&#34;https://www.jianshu.com/p/4475b9d8810f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;二十分钟精通排版神器 Markdown&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 特殊符号</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/</guid>
+      <description>&lt;p&gt;特殊字符是相对于传统或常用的符号外，使用频率较少字符且难以直接输入的符号。比如数学符号；单位符号；&lt;a href=&#34;https://baike.baidu.com/item/%e5%88%b6%e8%a1%a8%e7%ac%a6/7337607&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;制表符&lt;/a&gt;等。&lt;/p&gt;
+&lt;h2 id=&#34;使用特殊符号&#34;&gt;使用特殊符号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fhdq.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;常用符号大全&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://emojipedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Emoji&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果不嫌麻烦，写作时可以灵活运用一些特殊符号，以增加文档的趣味性：&lt;/p&gt;
+&lt;p&gt;常用排版： ▌▍◆★☆☁➤➜❤➊➋➌&lt;/p&gt;
+&lt;p&gt;TodoList： ✅☑✓✔√☓☒✘ㄨ✕✖✗❌❎&lt;/p&gt;
+&lt;p&gt;emoji：🌹🍀🌙🍂🍃🌷💎🔥⭐🍄🏆&lt;/p&gt;
+&lt;h2 id=&#34;使用-html-符号&#34;&gt;使用 HTML 符号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.w3school.com.cn/tags/html_ref_symbols.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML 支持的特殊符号：数学符号 / 希腊字母 / 其他&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HTML 符号也都可以用到 Markdown 中。比如：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;结果&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;描述&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;实体名称&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;实体编号&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;←&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;left arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;larr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8592;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;↑&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;up arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;uarr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8593;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;→&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;right arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;rarr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8594;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;↓&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;down arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;darr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8595;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;↔&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;left right arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;harr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8596;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;↵&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;carriage return arrow&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;crarr;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;&amp;amp;#8629;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 数学公式</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
+      <description>&lt;p&gt;当你需要在编辑器中插入数学公式时，可以使用两个美元符 &lt;code&gt;$$&lt;/code&gt; 包裹 TeX 或 LaTeX 格式的数学公式来实现。如：&lt;/p&gt;
+&lt;p&gt;一个简单的数学公式，求圆的面积：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$
+S=\pi r^2
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$
+S=\pi r^2
+$$&lt;/p&gt;
+&lt;p&gt;其他公式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$
+x \href{why-equal.html}{=} y^2 + 1
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$
+x \href{why-equal.html}{=} y^2 + 1
+$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$ 
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}. 
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+$$&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;$$
+\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$
+\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+$$&lt;/p&gt;
+&lt;p&gt;Alternatively, inline math can be written by wrapping the formula with only a single &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$&lt;/p&gt;
+&lt;p&gt;Note that Markdown special characters need to be escaped with a backslash so they are treated as math rather than Markdown. For example, &lt;code&gt;*&lt;/code&gt; and &lt;code&gt;_&lt;/code&gt; become &lt;code&gt;\*&lt;/code&gt; and &lt;code&gt;\_&lt;/code&gt; respectively.&lt;/p&gt;
+&lt;p&gt;同时也支持 HTML 属性，如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$ 
+(x+1)^2 = \class{hidden}{(x+1)(x+1)} 
+$$
+
+$$
+(x+1)^2 = \cssId{step1}{\style{visibility:hidden}{(x+1)(x+1)}}
+$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$
+(x+1)^2 = \class{hidden}{(x+1)(x+1)}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+(x+1)^2 = \cssId{step1}{\style{visibility:hidden}{(x+1)(x+1)}}
+$$&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zsweety.blog.csdn.net/article/details/78341085&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown 之表格 &amp;amp; MathJax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 流程图</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%B5%81%E7%A8%8B%E5%9B%BE/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%B5%81%E7%A8%8B%E5%9B%BE/</guid>
+      <description>&lt;h2 id=&#34;横向流程图&#34;&gt;横向流程图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;graph LR;
+A[Hard edge] --&amp;gt;|Label| B(Round edge)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result one]
+C --&amp;gt;|Two| E[Result two]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+graph LR;
+A[Hard edge] --&gt;|Label| B(Round edge)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result one]
+C --&gt;|Two| E[Result two]
+&lt;/div&gt;
+&lt;h2 id=&#34;纵向流程图&#34;&gt;纵向流程图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;graph TD;
+
+A[christmas] --&amp;gt;B(Go shopping)
+
+B --&amp;gt; C{Let me think}
+
+C --&amp;gt;|One| D[Laptop]
+
+C --&amp;gt;|Two| E[iPhone]
+
+C --&amp;gt;|Three|F[Car]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+
+graph TD;
+
+A[christmas] --&gt;B(Go shopping)
+
+B --&gt; C{Let me think}
+
+C --&gt;|One| D[Laptop]
+
+C --&gt;|Two| E[iPhone]
+
+C --&gt;|Three|F[Car]
+
+&lt;/div&gt;
+&lt;h2 id=&#34;控制图&#34;&gt;控制图&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;st=&amp;gt;start: Start
+op=&amp;gt;operation: Your Operation
+cond=&amp;gt;condition: Yes or No?
+e=&amp;gt;end
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;序列图&#34;&gt;序列图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sequenceDiagram
+
+loop every day
+
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+
+John--&amp;gt;&amp;gt; Alice: Great!
+
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;甘特图&#34;&gt;甘特图&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;gantt
+
+dateFormat YYYY-MM-DD
+
+title 产品计划表
+
+section 初期阶段
+
+明确需求: 2016-03-01, 10d
+
+section 中期阶段
+
+跟进开发: 2016-03-11, 15d
+
+section 后期阶段
+
+走查测试: 2016-03-20, 9d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/lzuacm/article/details/81107109&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有道云笔记 - Markdown 模板&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 设置字体、字号与颜色</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%AD%97%E5%8F%B7%E4%B8%8E%E9%A2%9C%E8%89%B2/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%AD%97%E5%8F%B7%E4%B8%8E%E9%A2%9C%E8%89%B2/</guid>
+      <description>&lt;p&gt;Markdown 本身不支持修改字体、字号与颜色等，还好 Markdown 支持 HTML 语言，所以我们采用 HTML 语法格式即可。&lt;/p&gt;
+&lt;h2 id=&#34;设置字体字号和颜色&#34;&gt;设置字体、字号和颜色&lt;/h2&gt;
+&lt;p&gt;编辑字体、字号和颜色的代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;font face=&amp;quot;黑体&amp;quot;&amp;gt; 我是黑体字 &amp;lt;/font&amp;gt;
+&amp;lt;font face=&amp;quot;微软雅黑&amp;quot;&amp;gt; 我是微软雅黑 &amp;lt;/font&amp;gt;
+
+&amp;lt;font color=gray size=7&amp;gt; color=gray &amp;lt;/font&amp;gt;
+&amp;lt;font color=#00ffff size=7&amp;gt; color=#00ffff &amp;lt;/font&amp;gt;
+&amp;lt;font color=#0099ff size=7 face=&amp;quot;黑体&amp;quot;&amp;gt; color=#0099ff size=7 face=&amp;quot;黑体&amp;quot; &amp;lt;/font&amp;gt;
+
+// Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;font 是一对常规标签，font 标签内设置 &lt;code&gt;color=&amp;quot;对应颜色值&amp;quot;&lt;/code&gt; 即可设置对象内字体的颜色：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php+HTML&#34;&gt;&amp;lt;font color=&amp;quot;red&amp;quot;&amp;gt; 我是红色字体 &amp;lt;/font&amp;gt; 或者 &amp;lt;font color=&amp;quot;#FF0000&amp;quot;&amp;gt; 我也是红色字体 &amp;lt;/font&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;我是红色字体&lt;/font&gt; 或者
+&lt;font color=&#34;#FF0000&#34;&gt;我也是红色字体&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;另外，还可以这样设置字体颜色：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;$\color{green}{绿色} $
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$\color{green}{绿色} $&lt;/p&gt;
+&lt;h2 id=&#34;文字居中&#34;&gt;文字居中&lt;/h2&gt;
+&lt;p&gt;对于标准的 Markdown 文本，默认左对齐，是不支持居中对齐的。我们采用 HTML 语法格式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;文字居中&amp;lt;/center&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;center&gt;文字居中&lt;/center&gt;
+&lt;h2 id=&#34;添加背景色&#34;&gt;添加背景色&lt;/h2&gt;
+&lt;p&gt;Markdown 本身不支持背景色设置，需要借助 table、tr、td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#FF4500&amp;gt;
+    这里的背景色是：OrangeRed，十六进制颜色值：#FF4500，rgb(255, 69, 0)
+&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;呈现效果如下：&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF4500&gt;
+    这里的背景色是：OrangeRed，十六进制颜色值：#FF4500，rgb(255, 69, 0)
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

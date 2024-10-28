@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一份 Markdown 学习笔记</title>
+    <link>https://fxy5750.github.io/tool/mkdocs/info/</link>
+      <atom:link href="https://fxy5750.github.io/tool/mkdocs/info/index.xml" rel="self" type="application/rss+xml" />
+    <description>一份 Markdown 学习笔记</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
+      <title>一份 Markdown 学习笔记</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/info/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown 写作规范 | 一份 Markdown 学习笔记</title>
+    <link>https://fxy5750.github.io/tool/mkdocs/document-style/</link>
+      <atom:link href="https://fxy5750.github.io/tool/mkdocs/document-style/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markdown 写作规范</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jul 2019 10:31:29 +0800</lastBuildDate>
+    <image>
+      <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
+      <title>Markdown 写作规范</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/</link>
+    </image>
+    
+    <item>
+      <title>Markdown 文档布局</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/markdown-document-layout/</link>
+      <pubDate>Tue, 16 Jul 2019 10:31:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/markdown-document-layout/</guid>
+      <description>&lt;p&gt;无论是写文章还是写文档，写前都要想清楚内容的框架结构，这是非常重要的。可以用思维导图来规划内容的框架，然后根据框架来书写。还有，写完别忘了检查两遍。&lt;/p&gt;
+&lt;h2 id=&#34;文档布局&#34;&gt;文档布局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来自 Google 的 &lt;a href=&#34;https://github.com/google/styleguide/blob/gh-pages/docguide/style.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown 样式指南&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In general, most documents benefit from some variation of the following layout:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# Document Title
+
+![theme picture](URL)
+
+Short introduction.
+
+[TOC]
+
+## Topic
+
+Content.
+
+## See also
+
+* https://link-to-more-info
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# Document Title&lt;/code&gt;: The first heading should be a level one heading, and should ideally be the same or nearly the same as the filename. The first level one heading is used as the page &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;author&lt;/code&gt;: &lt;em&gt;Optional&lt;/em&gt;. If you&amp;rsquo;d like to claim ownership of the document or if you are very proud of it, add yourself under the title. However, revision history generally suffices.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Short introduction.&lt;/code&gt; 1-3 sentences providing a high-level overview of the topic. Imagine yourself as a complete newbie, who landed on your &amp;quot;Extending Foo&amp;quot; doc and needs to know the most basic assumptions you take for granted. &amp;quot;What is Foo? Why would I extend it?&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[TOC]&lt;/code&gt;: if you use hosting that supports table of contents, such as Gitiles, put &lt;code&gt;[TOC]&lt;/code&gt; after the short introduction. See &lt;a href=&#34;https://gerrit.googlesource.com/gitiles/&amp;#43;/master/Documentation/markdown.md#Table-of-contents&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[TOC]&lt;/code&gt; documentation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;## Topic&lt;/code&gt;: The rest of your headings should start from level 2.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;## See also&lt;/code&gt;: Put miscellaneous links at the bottom for the user who wants to know more or didn&amp;rsquo;t find what she needed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;文章布局&#34;&gt;文章布局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参阅 &lt;a href=&#34;https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/article-layout/&#34;&gt;Article Layout&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# 文章标题
+
+![题图 Article banner](URL)
+
+简介。
+适宜读者。
+
+## 主题
+
+内容。
+
+## 总结
+
+内容。
+
+## 行动号召（可选）
+
+内容。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;标题&lt;/strong&gt; - 这应该是引人注目的，并鼓励读者继续阅读。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;介绍&lt;/strong&gt; - 文章介绍应该提供你将在文章正文中更详细讨论的要点的简要概述。在这里谈谈你的每一个要点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;正文部分&lt;/strong&gt; - 这些内容的数量将取决于你必须提出的观点或你需要涵盖的主题的数量。每个介绍中提到的观点都应该有一到两个段落。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt; - 结论应该是一个简短的段落，重复你的主要观点。如果这是一篇营销文章，你也应该添加接下来的部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;行动号召（可选）&lt;/strong&gt; - 对于纯信息性的文章，这是没有必要的，因为你只是想教育你的读者。然而，如果你的文章是出于市场目的，那么你应该希望你的读者在读完文章后采取行动，比如购买。&lt;/p&gt;
+&lt;p&gt;这就是所谓的“你最想要的回应”。在文章的结尾，你应该号召读者采取行动，提醒读者，应该根据他们刚刚从你的文章中学到的东西采取的下一步行动。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

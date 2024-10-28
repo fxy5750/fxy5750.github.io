@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写作相关 | 一份 Markdown 学习笔记</title>
+    <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/</link>
+      <atom:link href="https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/index.xml" rel="self" type="application/rss+xml" />
+    <description>写作相关</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
+      <title>写作相关</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/</link>
+    </image>
+    
+    <item>
+      <title>Article Layout</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/article-layout/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/article-layout/</guid>
+      <description>&lt;h2 id=&#34;article-writing-templates-and-layouts&#34;&gt;Article Writing Templates and Layouts&lt;/h2&gt;
+&lt;p&gt;Article writing templates are an excellent tool for those who are not confident about creating their own articles. An article layout gives you a structure for your article, helping you save time on planning and writing.&lt;/p&gt;
+&lt;p&gt;Here are a few article templates to help you get started. The first is the classic article structure taught in many schools. The second one provides an alternative that is more suited to article writing for SEO (search engine optimization).&lt;/p&gt;
+&lt;h3 id=&#34;informative-article-writing-format&#34;&gt;Informative Article Writing Format&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Headline/Title&lt;/strong&gt; - This should be eye catching and encourage the reader to keep reading.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt; - The article introduction should provide a brief overview of the points you&amp;rsquo;ll be discussing in greater detail within the body of the article. Touch on each of your main points here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Body Paragraphs&lt;/strong&gt; - The number of these will depend on how many points you have to make or topics you need to cover. There should be a paragraph or two for each of the points mentioned in your introduction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt; - The conclusion should be a short paragraph that re-iterates your main points. If this is a marketing article, you should also add in the next part.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Call to Action (Optional)&lt;/strong&gt; - For purely informative articles, this won&amp;rsquo;t be necessary, as you&amp;rsquo;re just trying to educate your reader. However, if your article is for marketing purposes then there should be an action you want your reader to take after reading the article, such as making a purchase.&lt;/p&gt;
+&lt;p&gt;This is called your Most Wanted Response (MWR). The end of the article is the point where you should provide a call to action, reminding the reader of why your MWR is the next step they should take based on what they have just learned from your article.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-article-layout&#34;&gt;How-To Article Layout&lt;/h3&gt;
+&lt;p&gt;The How-To article is a little different in structure from the informative article we covered above. It&amp;rsquo;s a form of article often employed on websites and blogs, because typically these articles are easy to read and teach a specific skill in a very clear way - all excellent points for effective web writing. How-To articles can also come in handy for article marketing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Brief Outline&lt;/strong&gt; - A How-To article should begin with a brief outline of the skill you&amp;rsquo;re going to teach, why the skill is useful and a few of the benefits of learning it. You don&amp;rsquo;t have to touch on each of the steps as you would with the above template.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step-by-Step Guide&lt;/strong&gt; - A How-To article should be divided into steps. This can be done using bullet points, but more commonly you&amp;rsquo;ll use a numbered list to indicate the order in which each thing should be done. Try to keep each step as clear and brief as possible, without leaving out any essential information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion and Extra Points&lt;/strong&gt; - Again it&amp;rsquo;s good to re-iterate at the end the benefits of learning the skill, although this is not necessary. However, you should always mention any hazards or dangers involved in learning the skill that the reader should be aware of.&lt;/p&gt;
+&lt;h3 id=&#34;more-help-with-article-writing-for-seo&#34;&gt;More Help with Article Writing for SEO&lt;/h3&gt;
+&lt;p&gt;If article writing still proves to be a challenge even with the help of these article writing templates, or you simply want to outsource this task to focus on your other business strengths, there is a solution. &lt;a href=&#34;http://www.premium-online-writing.com/contact-us.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contact Us&lt;/a&gt; for more information on writing services to help boost your business.&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.premium-online-writing.com/article-writing-templates.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Article Writing Templates and Layouts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>文章标题多少字最合适？</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%A4%9A%E5%B0%91%E5%AD%97%E6%9C%80%E5%90%88%E9%80%82/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%A4%9A%E5%B0%91%E5%AD%97%E6%9C%80%E5%90%88%E9%80%82/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    从理性的角度讲，标题字数控制在 60 个字节内，推荐 &amp;lt;= 50 字节。从感性的角度来讲，文章标题字数在 10-20 之间都是合理的选择，一般不要超过 23 字。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;对搜索用户来说，标题是一个网页最直观的认知渠道和展现方式，也是吸引用户点击搜索结果进入落地页的关键因素。&lt;/p&gt;
+&lt;p&gt;标题是文章的眼睛，它要求&lt;strong&gt;简洁明了、新颖别致、醒目夺人&lt;/strong&gt;。换句话说，文章的标题其实就是&lt;a href=&#34;https://wiki.mbalib.com/wiki/%E8%BD%AF%E6%96%87&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;软文&lt;/a&gt;的窗口，只有窗口打开了，用户才能看得见。&lt;/p&gt;
+&lt;p&gt;文章的标题字数的多少对于 SEO 优化、搜索引擎的收录、标题的吸引、阅读的美观度等等都有影响，因此一个优秀的文章的标题一定是非常吸引人的、有概括性的而且标题不太长也不太短的。&lt;/p&gt;
+&lt;p&gt;从以往的经验看，检索用户比较喜欢 50 个字节左右的标题；对于产品人员和编辑来说，过短的标题有可能无法全面表达网页主题；对于搜索引擎来说，标题过长意味着“超标”，（百度）只会保留前 60 个字节的内容。超过的部分用省略号表示，省略号部分如果有关键词，搜素引擎是不会识别的，用户在搜索这个关键词时，百度也就不会把你的文章推荐给用户。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;搜索引擎中字符的大小&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;占一个字节：一个英文字符，比如英文字母、半角空格、英文标点、数字；&lt;br&gt;
+占二个字节：一个中文（含繁体）字符，比如汉字、全角空格、全角标点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;经过实际考察，百度搜索结果最多只显示 50 个字节，超过的部分用省略号「&amp;hellip;」表示。算下来也就是最多显示 25 个汉字（不含标点与空格）。&lt;/p&gt;
+&lt;p&gt;可以将写好的标题放到&lt;a href=&#34;https://www.sojson.com/convert/zishutongji.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;字数统计&lt;/a&gt;里面，查看标题是否过长。熟练以后可直接口算标题占用的字节数，精简到 50 字节以内。&lt;/p&gt;
+&lt;p&gt;应该参考&lt;a href=&#34;https://ziyuan.baidu.com/college/articleinfo?id=2728&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索网页标题规范&lt;/a&gt; /&lt;a href=&#34;https://ziyuan.baidu.com/college/articleinfo?id=102&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【网站优化】产品、编辑必看：撰写搜索引擎喜爱的标题&lt;/a&gt;，科学合理的设置标题。特别注意，文章标题要包含目标&lt;strong&gt;关键词&lt;/strong&gt;，且关键词的位置尽量靠前。&lt;/p&gt;
+&lt;h2 id=&#34;文章标题字数过短的弊端&#34;&gt;文章标题字数过短的弊端&lt;/h2&gt;
+&lt;p&gt;从用户体验的角度上讲，言简意赅，能够概括出文章的中心思想的标题就是好标题，至于字数，不是侧重的方面。但站在站长的角度去看，为了增加收录、获得访问量，标题字数过短绝对会让你错失很多机会。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;字数过短导致文章标题重复率高，新鲜度不够，收录不佳；&lt;/li&gt;
+&lt;li&gt;字数过短导致收录后的排名靠后，丢掉长尾关键词搜索用户；&lt;/li&gt;
+&lt;li&gt;标题字数太短难以添加长尾关键词；&lt;/li&gt;
+&lt;li&gt;标题字数过短不好做标题党，也不容易在推广的时候引起注意；&lt;/li&gt;
+&lt;li&gt;标题过短导致 CMS 类网站界面空白太多，不美观，对推广不利。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sohu.com/a/316546313_120142897&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章标题一般多少字最合适&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jingyan.baidu.com/article/0a52e3f47c4a2abf62ed72ae.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章标题字数过短的弊端&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%A0%87%E9%A2%98%E6%A0%87%E7%AD%BE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;标题标签&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tangmengyun.com/seo/705.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;网站文章标题有字数限制吗&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>文章标题中标点符号的用法</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E4%B8%AD%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E4%B8%AD%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;文章的标题不管是一个词语、单句还是复句，句末都不加句号。因为句号表示一句话完了，而标题是作者对全文内容的概括，没有用句号的必要。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题是复句，中间可加逗号，句末仍然不用句号。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题中间可以加顿号 &lt;code&gt;、&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题表示疑问或感叹语气的，可以加问号或感叹号，也可以不加。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题中可以用破折号 &lt;code&gt;——&lt;/code&gt;、省略号 &lt;code&gt;……&lt;/code&gt; / &lt;code&gt;...&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题中可以用冒号 &lt;code&gt;：&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题中可以用引号、书名号。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引号表示文中引用的部分。有双引号 &lt;code&gt;“”&lt;/code&gt; &lt;code&gt;『』&lt;/code&gt; 和单引号 &lt;code&gt;‘’&lt;/code&gt; &lt;code&gt;「」&lt;/code&gt; 两种。&lt;br&gt;
+书名号分为双书名号 &lt;code&gt;《》&lt;/code&gt; 和单书名号 &lt;code&gt;〈〉&lt;/code&gt;，用于标明书名、篇名、报刊名、文件名、戏曲名、歌曲名、图画名等，亦用于歌曲、电影、电视剧等与书面媒介紧密相关的文艺作品。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章标题中可以用间隔号。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由两句话或两个短语构成文章的标题，除上面说的用逗号或间隔号外，也可以在中间空一格。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果文章标题有副标题，在副标题前要用破折号。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;标点符号是文化发展的产物。郭沫若曾说过：“标点之于言文有同等的重要，甚至有时还在其上。言文而无标点，在现今是等于而无眉目。”文章的标题更是如此，正确标题，才能更好地发挥其的概括、综合、提示的作用。&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sohu.com/a/15727604_128501&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;关于文章标题中标点符号的用法，你用对了吗？ &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.360doc.com/content/16/1012/09/20909833_597781815.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章标题标点符号使用规则&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.xuewangzhan.com/why/seo/15970.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SEO文章标题标点符号的正确使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rockyenglish.com/Ziliao/detail/4486&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;英语文章标题的标点符号用法初探&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dnsoso.com/baijiahao-biaoti-biaodian-guifan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最新百家号标题标点符号规范大全&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hack520.com/629.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;关于文章标题及标题中标点符号的最正确写法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>为什么你们就是不能加个空格呢？</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%BB%AC%E5%B0%B1%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%B8%AA%E7%A9%BA%E6%A0%BC%E5%91%A2/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E4%BB%AC%E5%B0%B1%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%B8%AA%E7%A9%BA%E6%A0%BC%E5%91%A2/</guid>
+      <description>&lt;p&gt;根据中华人民共和国新闻出版行业标准：&lt;a href=&#34;https://wenku.baidu.com/view/00216ed0571252d380eb6294dd88d0d232d43cd2.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CY/T 154—2017 中文出版物夹用英文的编辑规范&lt;/a&gt;（ &lt;a href=&#34;http://hbba.sacinfo.org.cn/attachment/downloadStdFile?pk=e3ef82e93dd272792f5aacb0f582e62f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下载地址二&lt;/a&gt;）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;8　空格的规则&lt;/p&gt;
+&lt;p&gt;8.1　中文文本中夹用英文词句时，应根据所选用的中英文字体、字符间距以及排版的视觉效果决定英文词句与中文文字之间是否留有空格间距。如留空格，应保证体例的统一。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;示例 1：用 yes 或 no 回答的问句，可以称为 yes-no 疑问句。 &lt;br&gt;
+示例 2：在此句中，the little girl in white 是名词短语。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;8.2　中文文本中夹用英文词句时，如英文部分之前或之后有中文标点符号，则英文部分与中文标点之间不设空格。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;示例：介词 at 常与表示较小地点的名词连用，如：at the bus stop、at the railway station。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;8.3　中文文本中夹用英文句子或段落时，英文句子或段落内部应按英文排版规则留空。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;示例：在例句“It is always the best to be on the safe side.”中，it 是形式主语。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;关于排版中运用空格的项目：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vinta/pangu.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;为什么你们就是不能加个空格呢&lt;/a&gt;——插件会在网页中所有的中文字与半角的英文、数字、符号之间插入空格。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ethantw/Han&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;汉字标准格式&lt;/a&gt;——一套支援各种印刷效果的 Sass + JavaScript 排版框架，包含相邻文字装饰线跳脱、汉字标音、着重号、标点符号修正、中文四大印刷体、汉字－西文 mixed 间隙、「标点『挤压』与『悬挂』」、章节边界调整等功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>数字序号的七个层级</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7%E7%9A%84%E4%B8%83%E4%B8%AA%E5%B1%82%E7%BA%A7/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7%E7%9A%84%E4%B8%83%E4%B8%AA%E5%B1%82%E7%BA%A7/</guid>
+      <description>&lt;h2 id=&#34;一数字序号的层级&#34;&gt;一、数字序号的层级&lt;/h2&gt;
+&lt;p&gt;（一）数字序号的七个级别顺序为：&lt;/p&gt;
+&lt;p&gt;　　第一层为汉字数字加顿号，例如：“一、”“二、”“三、”；&lt;/p&gt;
+&lt;p&gt;　　第二层为括号中包含汉字数字，例如：“（一）”“（二）”“（三）”；&lt;/p&gt;
+&lt;p&gt;　　第三层为阿拉伯数字加下脚点，例如：“1． ”“2．”“3．”；&lt;/p&gt;
+&lt;p&gt;　　第四层为括号中包含阿拉伯数字，例如：“（1）”“（2）”“（3）”；&lt;/p&gt;
+&lt;p&gt;　　第五层为带圈的阿拉伯数字，例如：“①”“②”“③”或者“1）”“2）”“3）”；&lt;/p&gt;
+&lt;p&gt;　　第六层为大写英文字母，例如：“A．”“B．”“C．”或者“（A）”“（B）”“（C）”；&lt;/p&gt;
+&lt;p&gt;　　第七层为小写英文字母，例如： “a．”“b．”“c．”或者“（a)”“（b）”“（c）”；&lt;/p&gt;
+&lt;p&gt;　　……&lt;/p&gt;
+&lt;p&gt;　　（前两层为汉字数字，中间三层为阿拉伯数字，后面两层为阿拉伯字母）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;根据场景，优先遵循相关网站期刊的论文排版格式要求。&lt;span class=&#34;accentTextColor&#34;&gt;没有要求的情况下，序号中的标点符号建议使用全角标点，带圈的数字与内容之间留一个半角空格。&lt;/span&gt;请参考&lt;a href=&#34;https://yuedu.baidu.com/ebook/7a627ca2e109581b6bd97f19227916888486b93f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;科技论文规范写作与编辑（第3版）电子书&lt;/a&gt;中序号的使用。&lt;/p&gt;
+&lt;p&gt;所谓全角标点，就是标点符号占一个汉字的宽度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用法示例：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2．比较下列两组句子中加点的词的用法，选出判断正确的一项（2 分）&lt;br&gt;
+① 坡问妪何为哀伤至&lt;strong&gt;是&lt;/strong&gt; / &lt;strong&gt;是&lt;/strong&gt;岁七月&lt;br&gt;
+② 保守不敢动，&lt;strong&gt;以&lt;/strong&gt;至于我 / 今当&lt;strong&gt;以&lt;/strong&gt;是屋还妪&lt;br&gt;
+&lt;br&gt;
+A．① 用法相同  ② 用法不同　　B．① ② 用法都不同&lt;br&gt;
+C．① ② 用法都相同　　　　 　D．① 用法不相同 ② 用法相同&lt;br&gt;
+&lt;br&gt;
+选 A&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（二）数字序号级别一览表：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;第一层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第二层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第三层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第四层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第五层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第六层&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;第七层&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;一、&lt;/td&gt;
+&lt;td&gt;（一）&lt;/td&gt;
+&lt;td&gt;1．&lt;/td&gt;
+&lt;td&gt;（1）&lt;/td&gt;
+&lt;td&gt;①&lt;/td&gt;
+&lt;td&gt;A．&lt;/td&gt;
+&lt;td&gt;a．&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;二、&lt;/td&gt;
+&lt;td&gt;（二）&lt;/td&gt;
+&lt;td&gt;2．&lt;/td&gt;
+&lt;td&gt;（2）&lt;/td&gt;
+&lt;td&gt;②&lt;/td&gt;
+&lt;td&gt;B．&lt;/td&gt;
+&lt;td&gt;b．&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;三、&lt;/td&gt;
+&lt;td&gt;（三）&lt;/td&gt;
+&lt;td&gt;3．&lt;/td&gt;
+&lt;td&gt;（3）&lt;/td&gt;
+&lt;td&gt;③&lt;/td&gt;
+&lt;td&gt;C．&lt;/td&gt;
+&lt;td&gt;c．&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;（A）&lt;/td&gt;
+&lt;td&gt;（a）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;（B）&lt;/td&gt;
+&lt;td&gt;（b）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;（C）&lt;/td&gt;
+&lt;td&gt;（c）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;第一，&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;第二，&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;首先，&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;其次，&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;（三）理科类论文的正文层次标题序号&lt;/p&gt;
+&lt;p&gt;理科类论文的各层次标题还可用阿拉伯数字连续编码，不同层次的 2 个数字之间用半角圆点（.）分隔开，末位数字后面不加点号。如“1”，“1.2”，“1.2.1”等；各层次的标题序号均左顶格排写，最后一个序号之后空一个字距（一个全角空格）接排标题。比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;1　科技论文基础知识
+1.1　科学研究与科技论文的概念
+1.1.1　科学研究的概念
+1.1.2　科技论文的概念
+1.2　科技论文的特点
+　　1．创新性
+　　2．理论性
+　　3．科学性
+　　4．规范性
+1.3　科技论文的分类
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;二序号后正确使用标点空格&#34;&gt;二、序号后正确使用标点、空格&lt;/h2&gt;
+&lt;p&gt;（一）“第一”“第二”“第三”或“首先”“其次”等后面用顿号不规范，应该用逗号，即“第一，”“第二，”“第三，”“首先，”“其次，”等。&lt;/p&gt;
+&lt;p&gt;（二）“第一编”“第一章”“第一节”或“壹”的后面不用标点，与后面的文字之间空一个汉字位置（一个全角空格）即可。如“第一节　测量的方法”。&lt;/p&gt;
+&lt;p&gt;（三）汉字数字“一”“二”“三”等后面用逗号不规范，应该用顿号“、”，即“一、”“二、”“三、”。&lt;/p&gt;
+&lt;p&gt;（四）阿拉伯数字“1”“2”“3”和字母“A”“B”“C”等后面用顿号（“、”）或其它不规范，应该使用实心小圆点“．”，即“ 1．”“ 2．”“ 3.” 或“ A．”“ B．”“ C．”。&lt;/p&gt;
+&lt;p&gt;（五）带括号的序号和带圆圈的序号，如（一）（二）（三）、（1）（2）（3）、①②③ 等后面不再加顿号、逗号之类的标点符号。带圈的数字与内容之间留一个半角空格。&lt;/p&gt;
+&lt;p&gt;（六）用“一是”“二是”“三是”表示顺序时，可在“一是”“二是”“三是”之后分别用逗号。例如：“一是，”“二是，”“三是，”。也可以不用标点符号，直接连接下文。&lt;/p&gt;
+&lt;p&gt;（七）用“甲”“乙”“丙”“丁”表示顺序时，在“甲”“乙”“丙”“丁”之后分别用顿号“、”。例如：“甲、”“乙、”“丙、”“丁、”。&lt;/p&gt;
+&lt;p&gt;（八）在“一方面”“另一方面”之后，可以分别用逗号，也可以不用标点符号，直接连接下文。&lt;/p&gt;
+&lt;p&gt;（九）数字序号前后一般不再用其他项目符号。&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/zhangj95/p/5020357.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;关于常用序号的几点说明（数字序号顺序）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wenku.baidu.com/view/6d28774fcd7931b765ce0508763231126edb77fe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公文序号的结构层次顺序(全)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F3CC9BEF482524C895FDA7A08BB4A70E&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GB/T 9704—2012 党政机关公文格式&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>怎样为文章「配图」</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%80%8E%E6%A0%B7%E4%B8%BA%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E6%80%8E%E6%A0%B7%E4%B8%BA%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE/</guid>
+      <description>&lt;h2 id=&#34;配图的目的&#34;&gt;配图的目的&lt;/h2&gt;
+&lt;p&gt;配图最主要的目的是为了用更直观的方式展示文字表达困难的内容，优秀的配图往往可以提升阅读的体验，让读者抛离晦涩难懂的文字来了解文章内容。亦或是一两个彩蛋，给读者惊喜。&lt;/p&gt;
+&lt;p&gt;于此同时，图片的存在也给读者一定的「休息空间」，从而让读者视觉上从密集的文字中脱离出来稍作休息，继续阅读。&lt;/p&gt;
+&lt;p&gt;在文章中的每一张图片，都要有考虑存在的意义。能够通过文字清楚直接表述的，没有必要添加图片。过多的图片，尤其是和文字关联不大甚至是没有关联的图片和文字交叉重叠时，会打断阅读的进程。反而严重影响阅读体验。这种做法主要泛滥于微信公众号的文章，好在那里面绝大多数文章本来就没有任何价值。&lt;/p&gt;
+&lt;p&gt;说到底，一篇文章的质量最终还是要回到文字的本身，去评判文章的优劣时，相比于图片的质量，文字的质量显然占更高的比重。为图片花费几个小时无可厚非，但同样的，也要花费更多时间对的文字进行打磨。&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sspai.com/post/39028&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;常用图我是怎样为文章选择配图的&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>常用图片比例</title>
+      <link>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E5%B8%B8%E7%94%A8%E5%9B%BE%E7%89%87%E6%AF%94%E4%BE%8B/</link>
+      <pubDate>Wed, 12 Jun 2019 21:35:29 +0800</pubDate>
+      <guid>https://fxy5750.github.io/tool/mkdocs/document-style/aboutwriting/%E5%B8%B8%E7%94%A8%E5%9B%BE%E7%89%87%E6%AF%94%E4%BE%8B/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;长宽比（→↑）&lt;/th&gt;
+&lt;th&gt;2:1&lt;/th&gt;
+&lt;th&gt;16:9&lt;/th&gt;
+&lt;th&gt;3:2&lt;/th&gt;
+&lt;th&gt;4:3&lt;/th&gt;
+&lt;th&gt;1:1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;单位长度的宽度值&lt;br /&gt;（比较长度固定时，宽度的大小）&lt;/td&gt;
+&lt;td&gt;0.50&lt;/td&gt;
+&lt;td&gt;0.56&lt;/td&gt;
+&lt;td&gt;0.67&lt;/td&gt;
+&lt;td&gt;0.75&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;常用尺寸&lt;/td&gt;
+&lt;td&gt;800*400&lt;/td&gt;
+&lt;td&gt;1280*720&lt;br /&gt;1560*1440&lt;/td&gt;
+&lt;td&gt;600*400&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;320*320&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;宽高比（→↑）&lt;/th&gt;
+&lt;th&gt;1:2&lt;/th&gt;
+&lt;th&gt;9:16&lt;/th&gt;
+&lt;th&gt;2:3&lt;/th&gt;
+&lt;th&gt;3:4&lt;/th&gt;
+&lt;th&gt;1:1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;单位宽度的高度值&lt;br /&gt;（比较宽度固定时，高度的大小）&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;1.78&lt;/td&gt;
+&lt;td&gt;1.50&lt;/td&gt;
+&lt;td&gt;1.33&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;常用尺寸&lt;/td&gt;
+&lt;td&gt;400*800&lt;/td&gt;
+&lt;td&gt;720*1280&lt;/td&gt;
+&lt;td&gt;400*600&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;320*320&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;11-比例&#34;&gt;1:1 比例&lt;/h2&gt;
+&lt;p&gt;1:1 比例是一种能让图片展示最大化的比例，所以，诸如电商类应用的产品主图，都是采用的这种比例。&lt;/p&gt;
+&lt;h2 id=&#34;1--1--2--3--5--8--13-黄金比例&#34;&gt;1 : 1 : 2 : 3 : 5 : 8 : 13 黄金比例&lt;/h2&gt;
+&lt;p&gt;黄金比例（亦称斐波那契系列）&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-斐波那契系列&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%96%90%e6%b3%a2%e9%82%a3%e5%a5%91%e7%b3%bb%e5%88%97.jpg&#34; data-caption=&#34;斐波那契系列&#34;&gt;
+
+
+  &lt;img src=&#34;https://fxy5750.github.io/tool/mkdocs/tool/mkdocs/media/%e6%96%90%e6%b3%a2%e9%82%a3%e5%a5%91%e7%b3%bb%e5%88%97.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    斐波那契系列
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;在自然界中，像贝壳、飓风、花和星系，都遵循着斐波那契数列比例。&lt;/p&gt;
+&lt;p&gt;但在 UI 设计中，我们常常用 2:1 比例，也有时候会用 5:3 比例。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;斐波那契数列比例，是一个黄金比例，当我们在做设计的时候，如果实在是不知道该用什么比例，用斐波那契数列比例，也许是没有错的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;43-比例&#34;&gt;4:3 比例&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;4:3 的比例是因为很多小型相机和我们现在使用的手机拍出的很多照片，长宽比是 4:3 的&lt;/strong&gt;。至于为什么是 4:3，这是由相机的很多物理技术因素决定的，大家可以自行查阅这方面的资料。&lt;/p&gt;
+&lt;p&gt;像类似于新闻等需要大量使用真实照片应用，采用这种比例，照片就不需要进行裁剪等加工工序，可以减少一些不必要的工作量。&lt;/p&gt;
+&lt;p&gt;4:3 图形、图像界面比例大多出现在诸如新闻类，有大量真实拍摄照片的 APP 中。&lt;/p&gt;
+&lt;h2 id=&#34;169-比例人体工程学比例&#34;&gt;16:9 比例（人体工程学比例）&lt;/h2&gt;
+&lt;p&gt;根据人体工程学的研究，发现&lt;strong&gt;人的两只眼睛的视野范围并不是方的，而是一个长宽比例为 16:9 的长方形&lt;/strong&gt;。所以，我们现在诸如电视、电影院屏幕，都是采用的 16:9 的比例。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;16:9 的图片比例，诸如视频播放类的 APP 中，应用得比较多。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在平时的工作中，我们要根据实际的情况，运用适当的图形、图像比例，让我们的作品，更具有和谐、平衡之美。&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/99752a024747&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;常用图片比例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zcool.com.cn/article/ZNzkzOTA0.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UI 设计中常用的一些图片比例&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

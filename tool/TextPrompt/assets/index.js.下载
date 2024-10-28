@@ -1,0 +1,32 @@
+function showimg()
+{
+    document.getElementById("floating").style.display="block";
+}
+function hideimg()
+{
+    document.getElementById("floating").style.display="none";
+}
+function showhint()
+{
+    document.getElementById("hint").style.display="block";
+}
+function closehint()
+{
+    document.getElementById("hint").style.display="none";
+}
+function showds()
+{
+    document.getElementById("ds").style.display="block";
+}
+function closeds()
+{
+    document.getElementById("ds").style.display="none";
+}
+function showjd()
+{
+    document.getElementById("jd").style.display="block";
+}
+function closejd()
+{
+    document.getElementById("jd").style.display="none";
+}

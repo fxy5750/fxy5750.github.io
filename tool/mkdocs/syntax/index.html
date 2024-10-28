@@ -1,0 +1,1418 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fxy5750.github.io/tool/mkdocs/syntax/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/tool/mkdocs/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/tool/mkdocs/css/wowchemy.aac103487f282235effb1d3aaf23a46d.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/tool/mkdocs/syntax/index.xml" type="application/rss+xml" title="一份 Markdown 学习笔记">
+  
+
+  
+  <link rel="manifest" href="/tool/mkdocs/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/tool/mkdocs/images/icon_huc33a74b4bb5e7b017b1d711c89f4fedb_5796_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://fxy5750.github.io/tool/mkdocs/syntax/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="一份 Markdown 学习笔记">
+  <meta property="og:url" content="https://fxy5750.github.io/tool/mkdocs/syntax/">
+  <meta property="og:title" content="Markdown 语法・简明版 | 一份 Markdown 学习笔记">
+  <meta property="og:description" content=""><meta property="og:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2018-09-19T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Markdown 语法・简明版 | 一份 Markdown 学习笔记</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/tool/mkdocs/js/wowchemy-init.min.285803d21d0d9cbb186d08eed0a1bc9d.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/tool/mkdocs/"><img src="/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_0x70_resize_lanczos_2.png" alt="一份 Markdown 学习笔记"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/introduction/"><span>介绍</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/software/"><span>Markdown 编辑器</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/tool/mkdocs/syntax/"><span>Markdown 语法</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/document-style/"><span>Markdown 写作规范</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tool/mkdocs/info/"><span>相关说明</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class="active"><a href="/tool/mkdocs/syntax/">Markdown 语法・简明版</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/"><i class="fas fa-book-reader pr-1"></i>详细版</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%A0%87%E9%A2%98/">Markdown 标题</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%BC%95%E7%94%A8/">Markdown 引用</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%8A%A0%E7%B2%97%E5%80%BE%E6%96%9C%E4%B8%8B%E5%88%92%E7%BA%BF%E7%AD%89/">Markdown 加粗倾斜下划线等</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E9%93%BE%E6%8E%A5/">Markdown 链接</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">Markdown 图片</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%97%E8%A1%A8/">Markdown 列表</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8/">Markdown 任务列表</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E4%BB%A3%E7%A0%81%E5%9D%97%E4%B8%8E%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/">Markdown 代码块与语法高亮</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8D%A2%E8%A1%8C%E4%B8%8E%E6%AE%B5%E9%A6%96%E7%BC%A9%E8%BF%9B/">Markdown 换行与段首缩进</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%A1%A8%E6%A0%BC/">Markdown 表格</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8A%98%E5%8F%A0%E5%86%85%E5%AE%B9/">Markdown 折叠内容</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%9B%AE%E5%BD%95/">Markdown 目录</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%88%86%E5%89%B2%E7%BA%BF/">Markdown 分割线</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%B7%BB%E5%8A%A0%E6%B3%A8%E8%84%9A/">Markdown 注脚</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/">Markdown 音频</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/">Markdown 视频</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%B5%8C%E5%85%A5%E5%9C%B0%E5%9B%BE/">Markdown 地图</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/">Markdown 特殊符号</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">Markdown 数学公式</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E6%8F%92%E5%85%A5%E6%B5%81%E7%A8%8B%E5%9B%BE/">Markdown 流程图</a></li>
+
+
+
+  <li class=""><a href="/tool/mkdocs/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%AD%97%E5%8F%B7%E4%B8%8E%E9%A2%9C%E8%89%B2/">Markdown 设置字体、字号与颜色</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#区块元素">区块元素</a>
+      <ul>
+        <li><a href="#标题">标题</a></li>
+        <li><a href="#段落和换行符">段落和换行符</a></li>
+        <li><a href="#段首缩进">段首缩进</a></li>
+        <li><a href="#引用">引用</a></li>
+        <li><a href="#列表">列表</a></li>
+        <li><a href="#任务列表">任务列表</a></li>
+        <li><a href="#代码块">代码块</a></li>
+        <li><a href="#数学公式">数学公式</a></li>
+        <li><a href="#表格">表格</a></li>
+        <li><a href="#流程图">流程图</a></li>
+        <li><a href="#脚注">脚注</a></li>
+        <li><a href="#水平分隔线">水平分隔线</a></li>
+        <li><a href="#yaml-front-matter">YAML Front Matter</a></li>
+        <li><a href="#目录">目录</a></li>
+      </ul>
+    </li>
+    <li><a href="#区段元素">区段元素</a>
+      <ul>
+        <li><a href="#链接">链接</a></li>
+        <li><a href="#图片">图片</a></li>
+        <li><a href="#强调">强调</a></li>
+        <li><a href="#粗体">粗体</a></li>
+        <li><a href="#加粗斜体">加粗斜体</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#删除线">删除线</a></li>
+        <li><a href="#下划线">下划线</a></li>
+        <li><a href="#emoji-">Emoji 😄</a></li>
+        <li><a href="#下标">下标</a></li>
+        <li><a href="#上标">上标</a></li>
+      </ul>
+    </li>
+    <li><a href="#html">HTML</a>
+      <ul>
+        <li><a href="#折叠内容">折叠内容</a></li>
+        <li><a href="#嵌入内容">嵌入内容</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#其他-html-支持">其他 HTML 支持</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      <div class="connect-widget">
+  <ul class="connect-links fa-ul">
+    <li><i class="fa-li fas fa-bug"></i><a href="https://gitee.com/keatonlao/a-study-note-for-markdown/issues" target="_blank">Report issues</a></li>
+  </ul>
+</div>
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Markdown 语法・简明版</h1>
+
+          <div class="article-style">
+            <span class="ebook">
+<p>Markdown 遍地开花流行世界，是因为 Markdown 可快速成文且语法简单。当然，新手要多写文章才能掌握语法的运用，同时必须整理一份学习笔记用于回看。</p>
+<p><a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> / CSDN-Markdown 这两款编辑器比较强悍，功能十分丰富。其他 Markdown 编辑器可能比较简洁，也有一些网站比较「克制」，有意砍掉一些语法。</p>
+<p>此文档可以带你快速上手 Markdown 写作，但如果要成为资深 Markdown 玩家，还需要学习更多知识，比如去看 <a href="https://www.markdownguide.org/basic-syntax/#overview" target="_blank" rel="noopener">Markdown Guide</a> 或者 Markdown 书籍，甚至 <a href="https://spec.commonmark.org/" target="_blank" rel="noopener">Markdown 规范</a>。</p>
+</span>
+<p>该简明版主要参照 Typora 的 <a href="https://support.typora.io/Markdown-Reference/" target="_blank" rel="noopener">Markdown Reference</a>。更详细的语法，可参考左侧相关条目。</p>
+<h2 id="区块元素">区块元素</h2>
+<h3 id="标题">标题</h3>
+<p>在行首使用 1-6 个 <code>#</code> 字符，对应于标题级别 1-6。例如:</p>
+<pre><code class="language-markdown"># 这是 H1        # typora 快捷键 Ctrl-1
+
+## 这是 H2       # typora 快捷键 Ctrl-2（常用）
+
+### 这是 H3      # typora 快捷键 Ctrl-3（常用）
+
+#### 这是 H4     # typora 快捷键 Ctrl-4
+</code></pre>
+<h3 id="段落和换行符">段落和换行符</h3>
+<p>段落由一个或更多的空行分隔。</p>
+<p>段落内换行使用换行符 <code>&lt;br&gt;</code>，或者 <code>两个空格</code> + <code>shift-Enter</code>。不推荐使用  <code>\</code> + <code>shift-Enter</code>。</p>
+<blockquote>
+<p>Typora <strong>段落</strong>快捷键：<code>ctrl-0</code></p>
+</blockquote>
+<h3 id="段首缩进">段首缩进</h3>
+<p>使用 Markdown 写文章不需要段首缩进。但如果确实有需要的话，可以在段落前面使用两个全角空格（space）。因为一个全角空格的宽度是整整一个汉字，输入两个全角空格正好是两个汉字的宽度。</p>
+<p>一般的中文输入法都是按 <code>shift-Space</code> 切换到全角模式，输完两个空格后，再次按 <code>shift-Space</code> 回到正常输入状态。</p>
+<h3 id="引用">引用</h3>
+<p>使用标记符 <code>&gt;</code> 对内容进行引用。</p>
+<pre><code class="language-markdown">&gt; This is a blockquote with two paragraphs. This is first paragraph.
+&gt;
+&gt; This is second pragraph. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+
+
+&gt; This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
+（这是另一个只有一个段落的引用。用三个空行来分隔两个引用。）
+</code></pre>
+<blockquote>
+<p>Typora <strong>引用</strong>快捷键：<code>ctrl-shift-Q</code>。牢记：<span style="color:red">重按快捷键取消</span>。</p>
+</blockquote>
+<h3 id="列表">列表</h3>
+<p>使用 <code>*</code> 创建一个无序列表，标记符号 <code>*</code> 可以替换为 <code>+</code> 或 <code>-</code>。</p>
+<p>使用 <code>1. list item 1</code> 创建一个有序列表。</p>
+<pre><code class="language-markdown">## un-ordered list
+*   Red
+*   Green
+*   Blue
+
+## ordered list
+1.  Red
+2. 	Green
+3.	Blue
+</code></pre>
+<blockquote>
+<p>Typora 快捷键</p>
+<p><strong>有序列表</strong>快捷键：<code>ctrl-shift-[</code><br>
+<strong>无序列表</strong>快捷键：<code>ctrl-shift-]</code>。在 <strong>偏好设置 &gt; Markdown</strong> 中可设置偏好为符号 <code>*</code>。</p>
+</blockquote>
+<h3 id="任务列表">任务列表</h3>
+<p>任务列表是将项目标记为 <code>[]</code> 或 <code>[x]</code>（未完成或已完成）的列表。</p>
+<pre><code class="language-markdown">- [ ] a task list item
+  - [x] list syntax required
+  - [ ] normal **formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] completed
+</code></pre>
+<ul>
+<li><input disabled="" type="checkbox"> a task list item
+<ul>
+<li><input checked="" disabled="" type="checkbox"> list syntax required</li>
+<li><input disabled="" type="checkbox"> normal <strong>formatting</strong>, @mentions, #1234 refs</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> incomplete</li>
+<li><input checked="" disabled="" type="checkbox"> completed</li>
+</ul>
+<h3 id="代码块">代码块</h3>
+<p>在多行代码的前一行及后一行使用三个反引号（~ 键）将其标记为代码块。同时第一行反引号后面，输入所属语言实现代码高亮。</p>
+<pre><code class="language-markdown">Here's an example:
+
+​```
+function test() {
+  console.log(&quot;notice the blank line before this function?&quot;);
+}
+​```
+
+syntax highlighting:
+​```ruby
+require 'redcarpet'
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+​```
+</code></pre>
+<blockquote>
+<p>Typora <strong>代码块</strong>快捷键：<code>ctrl-shift-K</code></p>
+</blockquote>
+<h3 id="数学公式">数学公式</h3>
+<p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 <code>$$</code> 包裹 TeX 或 LaTeX 格式的数学公式来实现。</p>
+<p>如：一个简单的数学公式，求圆的面积。</p>
+<pre><code class="language-markdown">$$
+S=\pi r^2
+$$
+</code></pre>
+<p>$$
+S=\pi r^2
+$$</p>
+<blockquote>
+<p>Typora <strong>公式块</strong>快捷键：<code>ctrl-shift-M</code></p>
+</blockquote>
+<h3 id="表格">表格</h3>
+<pre><code class="language-markdown">|学号|姓名|分数|
+|---|---|---|
+|小明|男|75|
+|小红|女|79|
+|小陆|男|92|
+</code></pre>
+<p>通过在标题行中包含冒号（<code>：</code>），可以将该列中的文本定义为左对齐，右对齐或居中对齐：</p>
+<pre><code class="language-markdown">| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+</code></pre>
+<p>最左侧的冒号表示左对齐的列（默认即为左对齐）；最右边的冒号表示右对齐的列；两侧的冒号表示中心对齐的列。</p>
+<blockquote>
+<p>Typora <strong>表格</strong>快捷键：<code>ctrl-T</code></p>
+</blockquote>
+<h3 id="流程图">流程图</h3>
+<p><strong>横向流程图：</strong></p>
+<pre><code class="language-markdown">graph LR;
+A[Hard edge] --&gt;|Label| B(Round edge)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result one]
+C --&gt;|Two| E[Result two]
+</code></pre>
+<div class="mermaid">
+graph LR;
+A[Hard edge] -->|Label| B(Round edge)
+B --> C{Decision}
+C -->|One| D[Result one]
+C -->|Two| E[Result two]
+</div>
+<p><strong>纵向流程图：</strong></p>
+<pre><code class="language-markdown">graph TD;
+
+A[christmas] --&gt;B(Go shopping)
+
+B --&gt; C{Let me think}
+
+C --&gt;|One| D[Laptop]
+
+C --&gt;|Two| E[iPhone]
+
+C --&gt;|Three|F[Car]
+</code></pre>
+<div class="mermaid">
+
+graph TD;
+
+A[christmas] -->B(Go shopping)
+
+B --> C{Let me think}
+
+C -->|One| D[Laptop]
+
+C -->|Two| E[iPhone]
+
+C -->|Three|F[Car]
+
+</div>
+<h3 id="脚注">脚注</h3>
+<pre><code class="language-markdown">在这段文字后添加一个脚注[^footnote]。
+
+[^footnote]: 这里是脚注的内容。
+</code></pre>
+<blockquote>
+<p>footnote 可以是任意英文字符；
+脚注的内容可以放在文章的任意位置（一般放最后）。</p>
+</blockquote>
+<h3 id="水平分隔线">水平分隔线</h3>
+<p>可用三个以上的<strong>减号、星号、底线</strong>在一空行中建立一条分隔线，中间可以插入空格，但行内不能有其他东西。</p>
+<pre><code class="language-markdown">---
+***
+___
+</code></pre>
+<h3 id="yaml-front-matter">YAML Front Matter</h3>
+<p>Typora 现在支持 <a href="http://jekyllrb.com/docs/frontmatter/" target="_blank" rel="noopener">YAML Front Matter</a>。在文章顶部输入 <code>---</code>，然后按 <code>Return</code> 引入元数据块。</p>
+<h3 id="目录">目录</h3>
+<p>输入 <code>[toc]</code>，然后按 <code>Return</code> 键。这将创建一个“目录”部分。TOC 从文档中提取所有标题，其内容会随文档自动更新。</p>
+<h2 id="区段元素">区段元素</h2>
+<h3 id="链接">链接</h3>
+<p>Markdown 支持两种链接样式：<strong>行内链接</strong>和<strong>参考链接</strong>。在这两种样式中，链接文本都由 [方括号] 分隔。</p>
+<p><strong>行内链接</strong>：</p>
+<p>要创建行内链接，请在链接文本的右方括号后立即使用一组常规括号 <code>()</code>。在括号内，将您想要链接指向的 URL 以及链接的可选标题放在引号中。例如：</p>
+<pre><code class="language-markdown">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+</code></pre>
+<p>This is <a href="http://example.com/" title="Title" target="_blank" rel="noopener">an example</a> inline link.</p>
+<p><a href="http://example.net/" target="_blank" rel="noopener">This link</a> has no title attribute.</p>
+<blockquote>
+<p>Typora <strong>超链接</strong>快捷键：<code>ctrl-K</code>。通常先复制链接，然后选中文字按 <code>ctrl-K</code> 插入链接。</p>
+<p>单击链接将展开它进行编辑，<code>ctrl-Click</code> 将在 web 浏览器中打开超链接。</p>
+</blockquote>
+<p><strong>参考链接</strong>：</p>
+<p>参考链接使用第二组方括号，在方括号内放置一个您选择的标签来标识（identify）链接：</p>
+<pre><code class="language-markdown">This is [an example][id] reference-style link.
+
+Then, anywhere in the document, you define your link label on a line by itself like this:
+
+[id]: http://example.com/  &quot;Optional Title Here&quot;
+</code></pre>
+<blockquote>
+<p><code>id</code> name 可以用字母、数字和空格，且不分大小写。</p>
+</blockquote>
+<p>另外，隐式参考链接允许您省略链接的名称，在这种情况下，链接文本本身将用作名称。只需使用一组空的方括号——例如，将“ Google”一词链接到 google.com 网站，您可以简单地编写：</p>
+<pre><code class="language-markdown">[Google][]
+And then define the link:
+
+[Google]: http://google.com/
+</code></pre>
+<p><strong>自动链接</strong>：</p>
+<p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只需用 <code>&lt; &gt;</code> 包起来，Markdown 就会自动把它转成链接。例如：</p>
+<pre><code class="language-markdown">&lt;http://example.com/&gt;
+&lt;address@example.com&gt;
+</code></pre>
+<h3 id="图片">图片</h3>
+<p>图片的语法与链接相似，但需要一个额外的 <code> !</code> 字符，放在链接开始之前。插入图像的语法如下：</p>
+<pre><code class="language-markdown">![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+</code></pre>
+<blockquote>
+<p>Typora <strong>图片</strong>快捷键：<code>ctrl-shift-I</code></p>
+</blockquote>
+<p>您可以使用拖放功能从图像文件或 Web 浏览器中插入图片。您可以通过单击图片来修改 markdown 源代码。如果通过拖放添加的图像与您当前正在编辑的文档位于同一目录或子目录中，则将使用相对路径。</p>
+<h3 id="强调">强调</h3>
+<p>Markdown 把星号（*）和下划线（_）作为强调标示符。用一个 * 或 _ 包裹的文本将被一个 HTML <code>&lt;em&gt;</code> 标签包裹。例如：</p>
+<pre><code class="language-markdown">*斜体*
+_斜体_
+</code></pre>
+<p>推荐使用星号（*）。</p>
+<blockquote>
+<p>Typora <strong>斜体</strong>快捷键：<code>ctrl-I</code></p>
+</blockquote>
+<p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank" rel="noopener">GFM</a> (Github Flavored Markdown) 将忽略单词中的下划线，这通常在代码和名称中使用，如下所示：</p>
+<blockquote>
+<p>wow_great_stuff</p>
+<p>do_this_and_do_that_and_another_thing.</p>
+</blockquote>
+<p>要在原本会用作强调定界符的位置产生文字星号，您可以将其反斜杠转义：</p>
+<pre><code class="language-markdown">\*this text is surrounded by literal asterisks\*
+</code></pre>
+<h3 id="粗体">粗体</h3>
+<p>用两个 <code>*</code> 将使其包裹的内容被 HTML <code>&lt;strong&gt;</code> 标签包裹。例如：</p>
+<pre><code class="language-markdown">**double asterisks**
+</code></pre>
+<blockquote>
+<p>Typora <strong>粗体</strong>快捷键：<code>ctrl-B</code></p>
+</blockquote>
+<h3 id="加粗斜体">加粗斜体</h3>
+<pre><code class="language-markdown">***加粗斜体***
+</code></pre>
+<h3 id="代码">代码</h3>
+<p>要表明行内代码，请用反引号引起来（`）。与预格式化的代码块不同，行内代码指示正常段落中的代码。例如：</p>
+<pre><code class="language-markdown">Use the `printf()` function.
+</code></pre>
+<p>Use the <code>printf()</code> function.</p>
+<blockquote>
+<p>Typora <strong>代码</strong>快捷键：ctrl-shift-`</p>
+</blockquote>
+<h3 id="删除线">删除线</h3>
+<pre><code class="language-markdown">~~删除线~~
+</code></pre>
+<p><code>~~Mistaken text.~~</code> becomes <del>Mistaken text.</del></p>
+<blockquote>
+<p>Typora <strong>删除线</strong>快捷键：<code>alt-shift-5</code></p>
+</blockquote>
+<h3 id="下划线">下划线</h3>
+<p>下划线由原始 HTML 驱动。</p>
+<p><code>&lt;u&gt;Underline&lt;/u&gt;</code> becomes <u>Underline</u>.</p>
+<blockquote>
+<p>Typora <strong>下划线</strong>快捷键：<code>ctrl-U</code></p>
+</blockquote>
+<h3 id="emoji-">Emoji 😄</h3>
+<p>使用语法 :smile: 输入表情符号。</p>
+<h3 id="下标">下标</h3>
+<pre><code class="language-markdown">下标：H&lt;sub&gt;2&lt;/sub&gt;O
+</code></pre>
+<p>下标：H<sub>2</sub>O</p>
+<h3 id="上标">上标</h3>
+<pre><code class="language-markdown">上标：O&lt;sup&gt;2&lt;/sup&gt;
+</code></pre>
+<p>上标：O<sup>2</sup></p>
+<h2 id="html">HTML</h2>
+<p>您可以使用 HTML 样式化纯 Markdown 不支持的内容。例如，使用 <code>&lt;span style=&quot;color:red&quot;&gt;this text is red&lt;/span&gt;</code> 来添加<span style="color:red">红色文本</span>。</p>
+<h3 id="折叠内容">折叠内容</h3>
+<p>使用 HTML 5 <code>&lt;details&gt;</code> 标签，指定用户可以按需打开和关闭的其他详细信息。</p>
+<pre><code class="language-markdown">&lt;details&gt; &lt;summary&gt;Title&lt;/summary&gt;
+
+Contents ...
+
+&lt;/details&gt;
+</code></pre>
+<details> <summary>Title</summary>
+<p>Contents &hellip;</p>
+</details>
+<blockquote>
+<p>内容里面可以嵌套使用 Markdown 语法和 HTML 语法。</p>
+</blockquote>
+<p>折叠的用途：</p>
+<ul>
+<li>可用于<span style="color:red">折叠大段代码</span></li>
+<li>或者不重要的内容</li>
+</ul>
+<h3 id="嵌入内容">嵌入内容</h3>
+<p>某些网站提供了基于 iframe 的嵌入代码，您也可以将其粘贴到 Typora 中。例如：</p>
+<pre><code class="language-Markdown">&lt;iframe height='265'scrolling='no'
+title='Fancy Animated SVG Menu'
+src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2'
+frameborder='no'allowtransparency='true'allowfullscreen='true'
+style='width: 100%;'&gt;&lt;/iframe&gt;
+</code></pre>
+<iframe height='265'scrolling='no'
+title='Fancy Animated SVG Menu'
+src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2'
+frameborder='no'allowtransparency='true'allowfullscreen='true'
+style='width: 100%;'></iframe>
+<h3 id="audio">Audio</h3>
+<p>您可以使用 HTML <code>&lt;audio&gt;</code> 标签来嵌入音频。例如：</p>
+<pre><code class="language-Markdown">&lt;audio src=&quot;xxx.mp3&quot; /&gt;
+</code></pre>
+<p>src 属性可以设置为一个音频文件的 URL 或者本地文件的路径。</p>
+<h3 id="video">Video</h3>
+<p>您可以使用 HTML <code>&lt;video&gt;</code> 标签来嵌入视频。例如：</p>
+<pre><code class="language-Markdown">&lt;video src=&quot;xxx.mp4&quot; /&gt;
+</code></pre>
+<h3 id="其他-html-支持">其他 HTML 支持</h3>
+<p>You can find more details <a href="https://support.typora.io/HTML/" target="_blank" rel="noopener">here</a>.</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 5, 2019</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/tool/mkdocs/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/tool/mkdocs/js/wowchemy.min.fcc8d435fe4f5be7ec14875ba78d690a.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
