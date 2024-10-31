@@ -5,7 +5,7 @@
     <link>https://fxy5750.github.io/tool/mkdocs/</link>
       <atom:link href="https://fxy5750.github.io/tool/mkdocs/index.xml" rel="self" type="application/rss+xml" />
     <description>一份 Markdown 学习笔记</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0800</lastBuildDate>
     <image>
       <url>https://fxy5750.github.io/tool/mkdocs/images/logo_hu1a150c113258fe7d0b17f332648d3916_3476_300x300_fit_lanczos_2.png</url>
       <title>一份 Markdown 学习笔记</title>
@@ -2205,11 +2205,11 @@ ___
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;在 HTML 中嵌入视频：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;video src=&amp;quot;http://v2v.cc/~j/theora_testsuite/320x240.ogg&amp;quot; controls&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;video src=&amp;quot;https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4&amp;quot; controls&amp;gt;
   你的浏览器不支持 &amp;lt;code&amp;gt;video&amp;lt;/code&amp;gt; 标签。
 &amp;lt;/video&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;video src=&#34;http://v2v.cc/~j/theora_testsuite/320x240.ogg&#34; controls&gt;
+&lt;video src=&#34;https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4&#34; controls&gt;
   你的浏览器不支持 &lt;code&gt;video&lt;/code&gt; 标签。
 &lt;/video&gt;
 &lt;p&gt;这个例子展示了一个带有回放控制器的可播放视频，视频来源于 Theora 网站。&lt;/p&gt;
@@ -2237,7 +2237,7 @@ ___
 &lt;p&gt;&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; 能够将另一个 HTML 页面嵌入到当前页面中。&lt;/p&gt;
 &lt;p&gt;嵌入网络视频：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe 
-    src=&amp;quot;https://v.miaopai.com/iframe?scid=SvyHaHOczsp7B6ftW86oqMMz62-h5ai6~Fwp8A__&amp;quot;
+    src=&amp;quot;https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4&amp;quot;
     width=&amp;quot;800&amp;quot; 
     height=&amp;quot;450&amp;quot; 
     frameborder=&amp;quot;0&amp;quot; 
@@ -2245,7 +2245,7 @@ ___
 &amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;iframe 
-    src=&#34;https://v.miaopai.com/iframe?scid=SvyHaHOczsp7B6ftW86oqMMz62-h5ai6~Fwp8A__&#34;
+    src=&#34;https://vp-demo.u2sb.com/video/caminandes_03_llamigos_720p.mp4&#34;
     width=&#34;800&#34; 
     height=&#34;450&#34; 
     frameborder=&#34;0&#34; 

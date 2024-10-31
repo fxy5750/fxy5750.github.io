@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/moments/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Oct 2024 13:19:20 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/moments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/moments/1-hello/</link>
+      <pubDate>Wed, 30 Oct 2024 13:19:20 +0800</pubDate>
+      <guid>http://localhost:1313/moments/1-hello/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;在这里展示即刻短文，除了图像，还可以加上外部分享链接。这些超链接可以是网站网址，也可以 app 的分享地址。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
