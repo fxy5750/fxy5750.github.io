@@ -381,39 +381,51 @@
 <li>打开 Windows PowerShell ，不是（管理员）版的，输入下方命令，等待安装。</li>
 </ol>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-comment"># 下载 Hugo 扩展版本</span><br>winget <span class="hljs-keyword">install</span> Hugo.Hugo.Extended<br></code></pre></td></tr></table></figure>
-<ol>
+
+<ol start="2">
 <li><p>关闭终端，重新打开一次。</p>
 </li>
 <li><p>输入 <code>hugo --version</code> ，或  <code>hugo version</code> 检查版本信息。</p>
 </li>
 </ol>
 <ul>
-<li>v0.136.5-46cccb021bc6425455f4eec093f5cc4a32f1d12c+extended windows/amd64 BuildDate=2024-10-24T12:26:27Z VendorInfo=gohugoio</li>
+<li>v0.136.5-46cccb021bc6425455f4eec093f5cc4a32f1d12c+extended windows&#x2F;amd64 BuildDate&#x3D;2024-10-24T12:26:27Z VendorInfo&#x3D;gohugoio</li>
 </ul>
-<ol>
-<li>使用 <code>CD</code> + <code>你需要预置的目录</code></li>
-<li>输入 <code>hugo new site Blog</code>  Blog 为你要存放 Hugo 的目录</li>
-<li>输入 <code>cd Blog</code> 进入创建好的 Hugo 目录，里面有 Hugo 释放的文件</li>
-<li>输入<code>git init</code> 构建 （需要安装git和配置path环境）</li>
-<li>重新配置好后，记得cd到你创建的目录 <code>Blog</code></li>
-<li>输入  <code>git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book</code> 添加 Hugo-book 主题</li>
-<li>手动找到你新建的 <code>Blog</code> 目录，找到 <code>hugo.toml</code> 文件并打开</li>
-<li>在底部添加配置  <code>theme = &#39;hugo-book&#39;</code> hugo-book为默认主题</li>
+<ol start="4">
+<li><p>使用 <code>CD</code> + <code>你需要预置的目录</code></p>
+</li>
+<li><p>输入 <code>hugo new site Blog</code>  Blog 为你要存放 Hugo 的目录</p>
+</li>
+<li><p>输入 <code>cd Blog</code> 进入创建好的 Hugo 目录，里面有 Hugo 释放的文件</p>
+</li>
+<li><p>输入<code> git init</code> 构建 （需要安装git和配置path环境）</p>
+</li>
+<li><p>重新配置好后，记得cd到你创建的目录 <code>Blog</code></p>
+</li>
+<li><p>输入  <code>git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book</code> 添加 Hugo-book 主题</p>
+</li>
+<li><p>手动找到你新建的 <code>Blog</code> 目录，找到 <code>hugo.toml</code> 文件并打开</p>
+</li>
+<li><p>在底部添加配置  <code>theme = &#39;hugo-book&#39;</code> hugo-book为默认主题</p>
+</li>
 <li><p>运行 <code>hugo server</code> 启动</p>
 </li>
 <li><p>添加项目命令（可手动在 content 目录添加）</p>
 </li>
 </ol>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">hugo <span class="hljs-built_in">new</span> content posts/my-<span class="hljs-keyword">first</span>-<span class="hljs-built_in">post</span>.md<br></code></pre></td></tr></table></figure>
-<ol>
+
+<ol start="14">
 <li>启动服务</li>
 </ol>
 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><span class="hljs-meta">#携带草稿启动</span><br>hugo <span class="hljs-keyword">server</span> --buildDrafts<br><span class="hljs-meta">#更方便 -D</span><br>hugo <span class="hljs-keyword">server</span> -D<br></code></pre></td></tr></table></figure>
-<ol>
+
+<ol start="15">
 <li>调试完成后可以清理文件重新生成并运行</li>
 </ol>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs applescript"><span class="hljs-comment"># 生成并清理站点</span><br>hugo <span class="hljs-comment">--cleanDestinationDir</span><br>hugo server<br></code></pre></td></tr></table></figure>
-<ol>
+
+<ol start="15">
 <li>这样你就完成了一次 Hugo 构建</li>
 </ol>
 <h2 id="Hugo-的目录结构"><a href="#Hugo-的目录结构" class="headerlink" title="Hugo 的目录结构"></a>Hugo 的目录结构</h2><p>用 Hugo 创建的网站共有 7 个文件夹和 1 个文件，这些文件分别代表：</p>
@@ -425,7 +437,7 @@
 <li><strong>data</strong>：存放创建站点时 Hugo 使用的其他数据</li>
 <li><strong>public</strong>：存放 Hugo 生成的静态网页</li>
 <li><strong>themes</strong>：存放主题文件</li>
-<li><strong>config.toml</strong>：网站配置文件 （hugo.toml / hugo.yaml）</li>
+<li><strong>config.toml</strong>：网站配置文件 （hugo.toml &#x2F; hugo.yaml）</li>
 </ul>
 <h2 id="配置-Hugo-主题"><a href="#配置-Hugo-主题" class="headerlink" title="配置 Hugo 主题"></a>配置 Hugo 主题</h2><ol>
 <li>一般安装的 Hugo 主题的文件结构中都会有 <code>exampleSite</code> 文件夹，也是你在选择主题时参考的网站 demo。</li>
@@ -437,44 +449,56 @@
 <li>其中在复制<code>config.toml</code>的内容时要注意：</li>
 </ol>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">baseURL</span> = <span class="hljs-string">&quot;https://example.com/&quot;</span> <span class="hljs-comment">#把https://example.com/改成自己的域名</span><br></code></pre></td></tr></table></figure>
+
 <ul>
 <li>如果你没有在 GitHub Pages 中设置自定义域名，这里的域名应该填 <code>https://.github.io/</code> （⚠️ 注意：最后的<code>/</code>不要忘了加）<code>themes</code></li>
 </ul>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">themes</span> = <span class="hljs-string">&quot;你选择的主题名字&quot;</span>。 <span class="hljs-comment">#这一行命令代表启用你安装的主题</span><br></code></pre></td></tr></table></figure>
+
 <ul>
 <li>在 <code>config.toml</code> 中输入这行命令才能启用安装的主题，不过一般这行命令在你复制 <code>exampleSite</code> 的配置文件信息时，主题作者已经写好了这行。</li>
 </ul>
-<ol>
+<ol start="5">
 <li>剩余的需要自行在主题的 <code>hugo.toml</code> 或  <code>config.toml</code>  配置，如果是新建立的站点，这需要花费一段时间去调整每个参数。</li>
 </ol>
-<p>参考内容：<a target="_blank" rel="noopener" href="https://krislinzhao.github.io/docs/create-a-wesite-using-github-pages-and-hugo/#2-创建-github-仓库">如何用 GitHub Pages + Hugo 搭建个人博客 · KrislinBlog</a></p>
-<p><br></p>
+<p>参考内容：<a target="_blank" rel="noopener" href="https://krislinzhao.github.io/docs/create-a-wesite-using-github-pages-and-hugo/#2-%E5%88%9B%E5%BB%BA-github-%E4%BB%93%E5%BA%93">如何用 GitHub Pages + Hugo 搭建个人博客 · KrislinBlog</a></p>
+<br>
+
 <h2 id="镜像一个-Hugo-站点-MD简明版"><a href="#镜像一个-Hugo-站点-MD简明版" class="headerlink" title="镜像一个 Hugo 站点 - MD简明版"></a>镜像一个 Hugo 站点 - MD简明版</h2><blockquote>
 <p>原因：在2024年5月2日实测所有Gitee Pages服务均已挂，一律返回502.全站无任何通知声明，Gitee群里无人回应。止增笑耳；其中收录的MK简明版失效，无法访问，因此我花了点时间镜像了一份MK简明版文档，并将其收录到友链中。</p>
 </blockquote>
 <p>原有的md简明版网站：</p>
 <p><a target="_blank" rel="noopener" href="https://keatonlao.gitee.io/a-study-note-for-markdown/">A Study Note for Markdown.</a></p>
-<p><br></p>
+<br>
+
 <p>通过时光机预览md简明版原站点：</p>
 <p><a target="_blank" rel="noopener" href="https://web.archive.org/web/20230602143806/https://keatonlao.gitee.io/a-study-note-for-markdown/syntax/#%E5%85%B6%E4%BB%96-html-%E6%94%AF%E6%8C%81">https://web.archive.org/web/20230602143806/https://keatonlao.gitee.io/a-study-note-for-markdown/syntax/#%E5%85%B6%E4%BB%96-html-%E6%94%AF%E6%8C%81</a></p>
-<p><br></p>
+<br>
+
 <p>后来我发现有一个md简明版克隆站点：（内容差不多，不过整体的效果不太像）</p>
 <p><a target="_blank" rel="noopener" href="https://md.xalaok.top/">https://md.xalaok.top/</a></p>
-<p><br></p>
+<br>
+
 <p>因此，我最终镜像了一个md简明版网站</p>
 <p>镜像站：<a href="https://fxy5750.github.io/tool/mkdocs/">小晓de雨滴 ・ MD简明版</a></p>
-<p><br></p>
+<br>
+
+
+
 <p>克隆一个这样的网站需要先准备和被克隆站点接近的 Hugo 版本，然后调整 config 的参数配置，和构建网站，最好要有一个 pages 静态页面，不过离线的也行。 还要有一定的耐心。</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-comment"># 构建离线站点（适用此站点的文档手册）</span><br>https:<span class="hljs-regexp">//</span>bootstrap.hugoblox.com<span class="hljs-regexp">/hugo-tutorials/</span>offline-site/<br><br><span class="hljs-comment"># 这是一个较早期的版本，因此不能使用新的 Hugo 运行它，不然会报错</span><br><br><span class="hljs-comment"># Hugo 0.78</span><br>https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/gohugoio/</span>hugo<span class="hljs-regexp">/releases/</span>tag/v0.<span class="hljs-number">78.0</span><br><br><span class="hljs-comment"># 直接下载 hugo_extended_0.78.0_Windows-64bit.zip</span><br><span class="hljs-comment"># 解压文件 hugo.exe 提取到下载好的md文档目录 `a-study-note-for-markdown-master` - `src`</span><br><span class="hljs-comment"># 直接在地址栏输入 cmd 打开 cmd 窗口</span><br><span class="hljs-comment"># 输入 hugo server</span><br><span class="hljs-comment"># cmd会输出这样一段内容</span><br><br>WARN <span class="hljs-number">2024</span><span class="hljs-regexp">/10/</span><span class="hljs-number">29</span> <span class="hljs-number">15</span>:<span class="hljs-number">07</span>:<span class="hljs-number">38</span> Module <span class="hljs-string">&quot;wowchemy&quot;</span> is not compatible with this Hugo version; run <span class="hljs-string">&quot;hugo mod graph&quot;</span> <span class="hljs-keyword">for</span> more information.<br>Start building sites …<br><br>                   | EN<br>-------------------+-----<br>  Pages            | <span class="hljs-number">65</span><br>  Paginator pages  |  <span class="hljs-number">0</span><br>  Non-page files   |  <span class="hljs-number">0</span><br>  Static files     | <span class="hljs-number">13</span><br>  Processed images | <span class="hljs-number">25</span><br>  Aliases          |  <span class="hljs-number">4</span><br>  Sitemaps         |  <span class="hljs-number">1</span><br>  Cleaned          |  <span class="hljs-number">0</span><br><br>Built <span class="hljs-keyword">in</span> <span class="hljs-number">342</span> ms<br>Watching <span class="hljs-keyword">for</span> changes <span class="hljs-keyword">in</span> C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\&#123;assets,content,data,layouts,static,themes&#125;<br>Watching <span class="hljs-keyword">for</span> config changes <span class="hljs-keyword">in</span> C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\config.toml, C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\config\_default, C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\themes\wowchemy\config.yaml, C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\themes\netlify-cms-academic\config.yaml, C:\test\a-study-note-<span class="hljs-keyword">for</span>-markdown-master\src\go.mod<br>Environment: <span class="hljs-string">&quot;development&quot;</span><br>Serving pages from memory<br>Running <span class="hljs-keyword">in</span> Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender<br>Web Server is available at http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">1313</span><span class="hljs-regexp">/a-study-note-for-markdown/</span> (bind address <span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>)<br>Press Ctrl+C to stop<br><br><span class="hljs-comment"># 复制这个链接 http://localhost:1313/a-study-note-for-markdown/</span><br><span class="hljs-comment"># 现在可以进入浏览器访问它</span><br><span class="hljs-comment"># 修改尾缀,定位目录 a-study-note-for-markdown-master\src\config\_default </span><br><span class="hljs-comment"># 找到配置文件 config.toml 定位到13行</span><br><br><span class="hljs-comment"># The URL of your site.</span><br><span class="hljs-comment"># End your URL with a `/` trailing slash, e.g. `https://example.com/`.</span><br>baseurl = <span class="hljs-string">&quot;https://keatonlao.gitee.io/a-study-note-for-markdown/&quot;</span><br><br><span class="hljs-comment"># 将地址修改为你的地址，例如： （fxy5750.github.io）</span><br><span class="hljs-comment"># 将尾缀修改为你需要的尾缀，例如 （tool/mkdocs）</span><br><span class="hljs-comment"># 尾缀要符合你放在服务器的路径 ./tool/mkdocs</span><br><span class="hljs-comment"># 修改后保存</span><br><br><span class="hljs-comment"># 生成并清理站点</span><br>hugo --cleanDestinationDir<br>hugo server<br><br><span class="hljs-comment"># 现在窗口就会提示一串新路径</span><br><span class="hljs-comment"># 回到 src 根目录，找到 public 文件，将其复制到你需要指定的地方，并更名</span><br>示例：mkdocs<br>路径： .<span class="hljs-regexp">/tool/m</span>kdocs<br></code></pre></td></tr></table></figure>
+
 <p>克隆站点到这里就结束了，虽然很简单，但它却是我花了一天的时间去琢磨，学习 hugo 的基础，搭建一个简单的blog页面，然后在克隆站点。</p>
-<p><br></p>
+<br>
+
 <h2 id="利用-Hugo-为-Hexo-新增功能-迁移计划"><a href="#利用-Hugo-为-Hexo-新增功能-迁移计划" class="headerlink" title="利用 Hugo 为 Hexo 新增功能 - 迁移计划"></a>利用 Hugo 为 Hexo 新增功能 - 迁移计划</h2><blockquote>
-<p>迁移目的？为什么需要迁移：原则上来说 Hexo 驱动的 Fluid 仍然是我使用这个博客的主站点，会利用 Hugo 的部分功能来实现辅助，例如照片墙，即刻说说，vurepress/hugobook做文档，以及 Dream 主题展示主要作品。</p>
+<p>迁移目的？为什么需要迁移：原则上来说 Hexo 驱动的 Fluid 仍然是我使用这个博客的主站点，会利用 Hugo 的部分功能来实现辅助，例如照片墙，即刻说说，vurepress&#x2F;hugobook做文档，以及 Dream 主题展示主要作品。</p>
 </blockquote>
-<p><br></p>
+<br>
+
 <h2 id="计划使用到的开源主题"><a href="#计划使用到的开源主题" class="headerlink" title="计划使用到的开源主题"></a>计划使用到的开源主题</h2><h3 id="短文推文博客样式："><a href="#短文推文博客样式：" class="headerlink" title="短文推文博客样式："></a>短文推文博客样式：</h3><p><a target="_blank" rel="noopener" href="https://themes.gohugo.io/themes/hugo-theme-moments/">Moments | Hugo Themes</a></p>
 <p>主题预览：<a target="_blank" rel="noopener" href="https://farseash.github.io/demo-hugo-theme-moments/demo/">Moments Demo</a></p>
-<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/FarseaSH/hugo-theme-moments">FarseaSH/hugo-theme-moments: A Hugo theme designed for micro-blogging. 专为动态发布设计的Hugo主题</a></p>
+<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/FarseaSH/hugo-theme-moments">FarseaSH&#x2F;hugo-theme-moments: A Hugo theme designed for micro-blogging. 专为动态发布设计的Hugo主题</a></p>
 <p>更多Moments用例: <a target="_blank" rel="noopener" href="https://farseash.github.io/demo-hugo-theme-moments/showcases/couple/">情侣点滴</a> | 朋友分享 | 个人成长 | 产品更新</p>
 <h4 id="特点-Feature"><a href="#特点-Feature" class="headerlink" title="特点 Feature"></a>特点 Feature</h4><ol>
 <li>专门支持短博文的 Hugo 主题</li>
@@ -486,13 +510,13 @@
 </ol>
 <h3 id="照片墙示例主题："><a href="#照片墙示例主题：" class="headerlink" title="照片墙示例主题："></a>照片墙示例主题：</h3><p><a target="_blank" rel="noopener" href="https://themes.gohugo.io/themes/gallerydeluxe/">Gallery Deluxe 画廊 |Hugo 主题</a></p>
 <p>参考效果预览：<a target="_blank" rel="noopener" href="https://staticbattery.com/">staticbattery.com</a></p>
-<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/bep/gallerydeluxe">bep/gallerydeluxe: Fast Hugo gallery theme/module suitable for lots of images.</a></p>
+<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/bep/gallerydeluxe">bep&#x2F;gallerydeluxe: Fast Hugo gallery theme&#x2F;module suitable for lots of images.</a></p>
 <h4 id="特点-Feature-1"><a href="#特点-Feature-1" class="headerlink" title="特点 Feature"></a>特点 Feature</h4><ol>
-<li>一个 Hugo 模块，用于显示照片库。它非常快速/有效，尤其是在您显示大量图像时。</li>
+<li>一个 Hugo 模块，用于显示照片库。它非常快速&#x2F;有效，尤其是在您显示大量图像时。</li>
 <li>这个主题就是你在 staticbattery.com 上看到的，在撰写本文时，它在移动和桌面的 Google PageSpeed 上得分为 100。</li>
 </ol>
 <h3 id="hugobook主题："><a href="#hugobook主题：" class="headerlink" title="hugobook主题："></a>hugobook主题：</h3><p><a target="_blank" rel="noopener" href="https://themes.gohugo.io/themes/hugo-book/">Book | Hugo Themes</a></p>
-<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/alex-shpak/hugo-book">alex-shpak/hugo-book: Hugo documentation theme as simple as plain book</a></p>
+<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/alex-shpak/hugo-book">alex-shpak&#x2F;hugo-book: Hugo documentation theme as simple as plain book</a></p>
 <h4 id="特点-Feature-2"><a href="#特点-Feature-2" class="headerlink" title="特点 Feature"></a>特点 Feature</h4><ol>
 <li>Hugo 文档主题像普通书一样简单</li>
 <li>干净简单的设计</li>
@@ -507,11 +531,13 @@
 <li>深色模式</li>
 </ol>
 <h3 id="Hugo-Dream主题："><a href="#Hugo-Dream主题：" class="headerlink" title="Hugo Dream主题："></a>Hugo Dream主题：</h3><p><a target="_blank" rel="noopener" href="https://themes.gohugo.io/themes/hugo-theme-dream/">Dream | Hugo Themes</a></p>
-<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/g1eny0ung/hugo-theme-dream">g1eny0ung/hugo-theme-dream: 🌱 A Hugo theme named Dream.</a></p>
+<p>主题下载：<a target="_blank" rel="noopener" href="https://github.com/g1eny0ung/hugo-theme-dream">g1eny0ung&#x2F;hugo-theme-dream: 🌱 A Hugo theme named Dream.</a></p>
 <p>主题演示：<a target="_blank" rel="noopener" href="https://g1en.site/">首页 | g1eny0ung 的博客</a></p>
 <p>主题文档：<a target="_blank" rel="noopener" href="https://g1en.site/hugo-theme-dream/">Quick Start | Hugo Theme Dream</a></p>
-<p><br/></p>
+<br/>
+
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="language-xml"># 组图概览</span><br><span class="language-xml"></span><br><span class="language-xml"></span><span class="hljs-template-tag">&#123;% <span class="hljs-name">gi</span> total n1-n2-... %&#125;</span><span class="language-xml"></span><br><span class="language-xml"></span><br><span class="language-xml"></span><br><span class="language-xml"></span><br><span class="language-xml"></span><span class="hljs-template-tag">&#123;% <span class="hljs-name">endgi</span> %&#125;</span><br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
