@@ -26,13 +26,13 @@
 <meta property="og:site_name" content="小晓de雨滴">
 <meta property="og:description" content="工作的时候，时常会用到两个以上的微信，简单的方法就是快速双击微信，就能启动两个。不过这有的时候考验手速，不如用脚本一键启动多个微信">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fxy5750.github.io/img/images/if1hZVGv3l2X7M6.webp">
+<meta property="og:image" content="https://fxy5750.github.io/2023/06/20/img/images/if1hZVGv3l2X7M6.webp">
 <meta property="article:published_time" content="2023-06-20T11:00:00.000Z">
 <meta property="article:modified_time" content="2023-06-20T12:00:00.000Z">
 <meta property="article:author" content="fxy5750">
 <meta property="article:tag" content="IT技术">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://fxy5750.github.io/img/images/if1hZVGv3l2X7M6.webp">
+<meta name="twitter:image" content="https://fxy5750.github.io/2023/06/20/img/images/if1hZVGv3l2X7M6.webp">
   
   
   
@@ -377,17 +377,16 @@
             
               <div class="markdown-body">
                 
-                <h2 id="一键启动两个微信或多个微信"><a href="#一键启动两个微信或多个微信" class="headerlink" title="一键启动两个微信或多个微信"></a>一键启动两个微信或多个微信</h2><p><img src="/../img/images/if1hZVGv3l2X7M6.webp"></p>
+                <h2 id="一键启动两个微信或多个微信"><a href="#一键启动两个微信或多个微信" class="headerlink" title="一键启动两个微信或多个微信"></a>一键启动两个微信或多个微信</h2><p><img src="../img/images/if1hZVGv3l2X7M6.webp" alt=""></p>
 <h3 id="使用说明："><a href="#使用说明：" class="headerlink" title="使用说明："></a>使用说明：</h3><blockquote>
 <p>直接点击运行脚本即可，如果没反应的话，请右键：“以管理员运行”</p>
 <p>不掺杂任何广告和恶意导航，简洁明了。</p>
 </blockquote>
-<h3 id="示例下载："><a href="#示例下载：" class="headerlink" title="示例下载："></a>示例下载：</h3><p><a href="/dl/%E5%90%AF%E5%8A%A8%E4%B8%A4%E4%B8%AA%E5%BE%AE%E4%BF%A1.bat">启动两个微信，下载即用</a></p>
-<p><a href="/dl/%E5%90%AF%E5%8A%A8%E4%B8%89%E4%B8%AA%E5%BE%AE%E4%BF%A1.bat">启动三个微信，下载即用</a></p>
-<p><a href="/dl/%E5%90%AF%E5%8A%A8%E5%9B%9B%E4%B8%AA%E5%BE%AE%E4%BF%A1.bat">启动四个微信，下载即用</a></p>
+<h3 id="示例下载："><a href="#示例下载：" class="headerlink" title="示例下载："></a>示例下载：</h3><p><a href="/dl/启动两个微信.bat">启动两个微信，下载即用</a></p>
+<p><a href="/dl/启动三个微信.bat">启动三个微信，下载即用</a></p>
+<p><a href="/dl/启动四个微信.bat">启动四个微信，下载即用</a></p>
 <hr>
 <h3 id="bat内容："><a href="#bat内容：" class="headerlink" title="bat内容："></a>bat内容：</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs awk">@echo off<br>title 服务启动中<br><br>echo 检查微信是否运行<br><br>tasklist <span class="hljs-regexp">/FI &quot;IMAGENAME eq WeChat.exe&quot; | find /i</span> <span class="hljs-string">&quot;WeChat.exe&quot;</span> &gt; nul<br><span class="hljs-keyword">if</span> %errorlevel% equ <span class="hljs-number">1</span> (<br>    echo 微信没有运行，可以执行“启动微信多开脚本”.<br>) <span class="hljs-keyword">else</span> (<br>    echo 你的电脑正在运行微信.<br>)<br><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改.<br> <br>:杀死进程<br>taskkill <span class="hljs-regexp">/f /im</span> WeChat.exe<br><br>:需要启动多少个微信，复制下方的完整地址即可，例如，启动两个就复制两行完整的 start 字段内容<br><br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改..<br>start <span class="hljs-string">&quot;&quot;</span> <span class="hljs-string">&quot;C:\Program Files (x86)\Tencent\WeChat\WeChat.exe&quot;</span><br>echo 如果你的微信不在默认路径，请手动更改...<br><br>echo 即将自动关闭此窗口<br>timeout /t <span class="hljs-number">3</span><br><br><span class="hljs-keyword">exit</span><br></code></pre></td></tr></table></figure>
-
 
                 
               </div>
