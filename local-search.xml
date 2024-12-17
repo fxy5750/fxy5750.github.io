@@ -4,11 +4,38 @@
   
   
   <entry>
+    <title>DAZ Studio 备忘录</title>
+    <link href="/2024/12/17/44-DAZ%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2024/12/17/44-DAZ%E8%BD%AF%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="DAZ软件踩坑备忘录-问题"><a href="#DAZ软件踩坑备忘录-问题" class="headerlink" title="DAZ软件踩坑备忘录 - 问题"></a>DAZ软件踩坑备忘录 - 问题</h1><p><strong>问题描述：一直卡加载界面，闪退。</strong></p><ul><li>2024年12月17日，启动DAZ软件失败，报错提示：Only one instance of Studio General Release can be running at a time，后过一会儿就会退出软件，搜了一圈，有人说是DAZ没卸载干净，实际上是 <code>log.txt</code>  和 <code>dazstudio.dau</code> 文件的锅。如果删掉整个C盘 Roaming 里面的DAZ 3D文件夹和重装系统都很麻烦，个人设置也没了，所以只需要</li><li>win+r 输入 <code>%AppData% </code> </li><li>定位到你的 DAZ 3D 目录，找到 <code>Studio4</code> 文件夹里面的 <code>log.txt</code> 和 <code>dazstudio.dau</code> 这两个文件，再启动就Ok了</li><li>C:\Users\你的用户名称\AppData\Roaming\DAZ 3D\Studio4</li></ul><p>来自：<a href="https://tieba.baidu.com/p/6693594929">百度贴吧 21楼回答</a></p><p>关键词：# ExP Exporter己加载.  # 闪退 # DAZ # 卡加载界面 </p><br/>]]></content>
+    
+    
+    <categories>
+      
+      <category>设计类</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Blender</tag>
+      
+      <tag>3D建模</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>欧式乡村小木屋</title>
     <link href="/2024/12/02/43-LogCabin/"/>
     <url>/2024/12/02/43-LogCabin/</url>
     
-    <content type="html"><![CDATA[<h1 id="xiaoxiao-de-小木屋"><a href="#xiaoxiao-de-小木屋" class="headerlink" title="xiaoxiao de 小木屋"></a>xiaoxiao de 小木屋</h1><p>11月份“花了点”时间自己做的小木屋，建模前半个月就做好了，渲染一直拖着，因为期间布景我没去弄，那时候看起来就很突兀，总是感觉哪哪不对劲，一直拖到今天解决完成，还是得靠植物插件布置整个场景。</p><p>按照花瓣采集的某张画进行临摹，脱离了教程除了建模部分，其它有不适应的”灯光”、”材质”、”植被布景”、总结，想一次性就能渲染出满意的效果很难，基本要在后期调色，整体才好看，哭辽。。。</p><br/><ol start="0"><li><p>调色还是要系统的学一下，这样随便调一下经不起细看。</p></li><li><p>Geo - Scatter5：几何节点植物散布插件。优点是它的散布是用的几何节点，大大节省了运算，其他插件大多用的粒子散布。缺点是植物动画略微粗糙。 </p></li><li><p>Botaniq：植物质量和植物动画很棒，完美解决了Scatter5的缺点。但缺点是它的散布系统用的粒子散布，处理起来很慢。所以一般是用Botaniq生成植物和动画，再用Scatter5散布。</p></li><li><p>Vegetation：和Botaniq差不多，自带的植物资产和动画很棒，botaniq的替代插件。</p></li></ol><br/><p><strong>说明:</strong></p><ul><li>文件包含材质贴图、静态网格模型文件。</li><li>此资产文件仅供学习使用。</li></ul><br/><p><strong>练习来自:</strong></p><ul><li><p>建筑参考：<a href="https://huaban.com/pins/5898388210">41方升萍改 拷贝图片 - 花瓣网</a></p></li><li><p>云朵、景色来自：B站 <strong><a href="https://space.bilibili.com/3188115">R-WHS</a></strong> 适合萌新的blender入门场景流程【中文语音全流程】</p><p>角度基本和他的一样，如果你需要构建相似的文件，请点击 <a href="https://www.bilibili.com/video/BV1oT421e74X">蓝色链接</a> 自行学习</p></li></ul><br/><p><strong>下载地址：</strong></p><blockquote><p>【主用渠道】</p><p>通过百度网盘分享的文件：欧式乡村小木屋.7z<br>链接:<a href="https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg">https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg</a><br>提取码:bude<br>复制这段内容打开「百度网盘APP 即可获取」</p><br/><p>【备用渠道】</p><p>通过百度网盘分享的文件：欧式乡村小木屋.7z<br>链接：<a href="https://pan.baidu.com/s/19kcv0SF5f9Pjb3hA1kfyMA?pwd=bude">https://pan.baidu.com/s/19kcv0SF5f9Pjb3hA1kfyMA?pwd=bude</a><br>提取码：bude<br>–来自百度网盘超级会员V4的分享</p></blockquote> <br/><p><strong>2024年12月3日 补充说明：</strong> </p><p>已优化：现在房子还有一些地方没有细化，观望台上的门没加窗户，木屋上的窗户没放花盆，旗帜没有其它内容，显得细节经不起推敲，等以后有时间来优化吧，优化完成后我会第一时间免费开源公布。</p><br/><p><strong>添加的内容：</strong></p><ul><li>支持开源分享。</li><li>关键词：blender 小木屋 临摹 欧式乡村 原木小屋</li></ul><br/><p><strong>可用性说明：</strong></p><ul><li>文件使用 blender 3.6.4 构建，建议使用相同版本或更高的软件版本使用。</li></ul><br/><table><thead><tr><th>名称</th><th>欧式乡村小木屋</th><th>使用软件</th><th>Blender</th></tr></thead><tbody><tr><td>总计时长</td><td>11月5日 ~ 12月2日（非连续）</td><td>风格</td><td>CG</td></tr><tr><td>总计屏数</td><td>1P</td><td>规范信息</td><td>1920*1080px</td></tr><tr><td>帧率</td><td>24 fps</td><td>主要文件</td><td>blender×1</td></tr><tr><td>产品定位</td><td>场景系列</td><td>备注</td><td>CY 渲染</td></tr><tr><td>公开方式</td><td>主动公开</td><td>公开期限</td><td>常年公开</td></tr><tr><td>文件公布</td><td><a href="https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg">点击下载</a> 提取码：bude</td><td>文件版本</td><td>v1.0</td></tr></tbody></table><br/><h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/%E6%B5%8B%E9%87%8F.jpg" alt="测量"></div><div class="group-image-wrap"><img src="/../img/images/%E5%B0%8F%E6%9C%A8%E5%B1%8B_1.png" alt="小木屋_1"></div><div class="group-image-wrap"><img src="/../img/images/%E6%B8%B2%E6%9F%93_1_%E5%8D%8A%E6%88%90%E5%93%81.png" alt="渲染_1_半成品"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/LogCabin_2024-12-2.png" alt="LogCabin_2024-12-2"></div></div></div>]]></content>
+    <content type="html"><![CDATA[<h1 id="xiaoxiao-de-小木屋"><a href="#xiaoxiao-de-小木屋" class="headerlink" title="xiaoxiao de 小木屋"></a>xiaoxiao de 小木屋</h1><p>11月份“花了点”时间自己做的小木屋，建模前半个月就做好了，渲染一直拖着，因为期间布景我没去弄，那时候看起来就很突兀，总是感觉哪哪不对劲，一直拖到今天解决完成，还是得靠植物插件布置整个场景。</p><p>按照花瓣采集的某张画进行临摹，脱离了教程除了建模部分，其它有不适应的”灯光”、”材质”、”植被布景”、总结，想一次性就能渲染出满意的效果很难，基本要在后期调色，整体才好看，哭辽。。。</p><br/><ol start="0"><li><p>调色还是要系统的学一下，这样随便调一下经不起细看。</p></li><li><p>Geo - Scatter5：几何节点植物散布插件。优点是它的散布是用的几何节点，大大节省了运算，其他插件大多用的粒子散布。缺点是植物动画略微粗糙。 </p></li><li><p>Botaniq：植物质量和植物动画很棒，完美解决了Scatter5的缺点。但缺点是它的散布系统用的粒子散布，处理起来很慢。所以一般是用Botaniq生成植物和动画，再用Scatter5散布。</p></li><li><p>Vegetation：和Botaniq差不多，自带的植物资产和动画很棒，botaniq的替代插件。</p></li></ol><br/><p><strong>说明:</strong></p><ul><li>文件包含材质贴图、静态网格模型文件。</li><li>此资产文件仅供学习使用。</li></ul><br/><p><strong>练习来自:</strong></p><ul><li><p>建筑参考：<a href="https://huaban.com/pins/5898388210">41方升萍改 拷贝图片 - 花瓣网</a></p></li><li><p>云朵、景色来自：B站 <strong><a href="https://space.bilibili.com/3188115">R-WHS</a></strong> 适合萌新的blender入门场景流程【中文语音全流程】</p><p>角度基本和他的一样，如果你需要构建相似的文件，请点击 <a href="https://www.bilibili.com/video/BV1oT421e74X">蓝色链接</a> 自行学习</p></li></ul><br/><p><strong>下载地址：</strong></p><blockquote><p>【主用渠道】</p><p>通过百度网盘分享的文件：欧式乡村小木屋.7z<br>链接:<a href="https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg">https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg</a><br>提取码:bude<br>复制这段内容打开「百度网盘APP 即可获取」</p><br/><p>【备用渠道】</p><p>通过百度网盘分享的文件：欧式乡村小木屋.7z<br>链接：<a href="https://pan.baidu.com/s/19kcv0SF5f9Pjb3hA1kfyMA?pwd=bude">https://pan.baidu.com/s/19kcv0SF5f9Pjb3hA1kfyMA?pwd=bude</a><br>提取码：bude<br>–来自百度网盘超级会员V4的分享</p></blockquote> <br/><p><strong>2024年12月3日 补充说明：</strong> </p><p>已优化：现在房子还有一些地方没有细化，观望台上的门没加窗户，木屋上的窗户没放花盆，旗帜没有其它内容，显得细节经不起推敲，等以后有时间来优化吧，优化完成后我会第一时间免费开源公布。</p><br/><p><strong>添加的内容：</strong></p><ul><li>支持开源分享。</li><li>关键词：blender 小木屋 临摹 欧式乡村 原木小屋 中世纪</li></ul><br/><p><strong>可用性说明：</strong></p><ul><li>文件使用 blender 3.6.4 构建，建议使用相同版本或更高的软件版本使用。</li></ul><br/><table><thead><tr><th>名称</th><th>欧式乡村小木屋</th><th>使用软件</th><th>Blender</th></tr></thead><tbody><tr><td>总计时长</td><td>11月5日 ~ 12月2日（非连续）</td><td>风格</td><td>CG</td></tr><tr><td>总计屏数</td><td>1P</td><td>规范信息</td><td>1920*1080px</td></tr><tr><td>帧率</td><td>24 fps</td><td>主要文件</td><td>blender×1</td></tr><tr><td>产品定位</td><td>场景系列</td><td>备注</td><td>CY 渲染</td></tr><tr><td>公开方式</td><td>主动公开</td><td>公开期限</td><td>常年公开</td></tr><tr><td>文件公布</td><td><a href="https://pan.baidu.com/s/1WHgqR29qv-xb-S4KmiTFGg">点击下载</a> 提取码：bude</td><td>文件版本</td><td>v1.0</td></tr></tbody></table><br/><h2 id="组图概览"><a href="#组图概览" class="headerlink" title="组图概览"></a>组图概览</h2><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/%E6%B5%8B%E9%87%8F.jpg" alt="测量"></div><div class="group-image-wrap"><img src="/../img/images/%E5%B0%8F%E6%9C%A8%E5%B1%8B_1.png" alt="小木屋_1"></div><div class="group-image-wrap"><img src="/../img/images/%E6%B8%B2%E6%9F%93_1_%E5%8D%8A%E6%88%90%E5%93%81.png" alt="渲染_1_半成品"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="/../img/images/LogCabin_2024-12-2.png" alt="LogCabin_2024-12-2"></div></div></div>]]></content>
     
     
     <categories>
