@@ -1,7 +1,7 @@
 @ECHO OFF
 TITLE %device_name%     By£ºxiaoxiao
 
-ECHO. ¡¾É¾³ý log.txt & dazstudio.dau¡¿
+ECHO. ¡¾É¾³ý log.txt ºÍ dazstudio.dau¡¿
 del "%AppData%\DAZ 3D\Studio4\log*.txt" 
 del "%AppData%\DAZ 3D\Studio4\dazstudio.dau" 
 
