@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar-2.png">
+  <link rel="icon" href="/img/avatar-2.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="fxy5750">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="因为厌倦了云音乐平台歌曲无版权变灰色&#x2F;非会员试听一分钟等限制，所以在网上搜了搜音乐播放器，存粹的音乐播放器当然不是我需要的，光是简陋的界面和播放列表不能自定义就被 pass 掉了，因此特地在 B 站搜了一下，真好找着了，它就是Musicbee。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Musicbee 本地音乐管理软件">
+<meta property="og:url" content="https://fxy5750.github.io/2025/01/31/46-Musicbee/index.html">
+<meta property="og:site_name" content="小晓de雨滴">
+<meta property="og:description" content="因为厌倦了云音乐平台歌曲无版权变灰色&#x2F;非会员试听一分钟等限制，所以在网上搜了搜音乐播放器，存粹的音乐播放器当然不是我需要的，光是简陋的界面和播放列表不能自定义就被 pass 掉了，因此特地在 B 站搜了一下，真好找着了，它就是Musicbee。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-01-31T11:00:00.000Z">
+<meta property="article:modified_time" content="2025-02-01T04:00:00.000Z">
+<meta property="article:author" content="fxy5750">
+<meta property="article:tag" content="音乐相关">
+<meta property="article:tag" content="本地音乐">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Musicbee 本地音乐管理软件 - 小晓de雨滴</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"fxy5750.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":40,"cursorChar":" | ","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小晓de雨滴</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/photo/" target="_self">
+                <i class="iconfont icon-images"></i>
+                <span>相册</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont  icon-th-large"></i>
+                <span>工具</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/links/" target="_self">
+                    
+                    <span>友链</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tool/phonetic/" target="_self">
+                    
+                    <span>国际音标表</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tool/view360/" target="_self">
+                    
+                    <span>全景图容器</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tool/TextPrompt/" target="_self">
+                    
+                    <span>文本提示词</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tool/aspect/" target="_self">
+                    
+                    <span>比例换算器</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/" target="_self">
+                    
+                    <span>此博客</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/i/" target="_self">
+                    
+                    <span>本人</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/../img/bg/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">Musicbee 本地音乐管理软件</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-01-31 19:00" pubdate>
+          2025年1月31日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          854 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          8 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Musicbee 本地音乐管理软件</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <blockquote>
+<p>Musicbee是一款本地音乐播放器管理软件，可通过你自己的喜好自定义界面样式，主要是用它播放自己喜欢的音乐，就像以前 MP3 、MP4 、 MP5 的时代一样，一个纯粹的音乐播放器，存什么歌就放什么歌，没有花哨的banner和弹窗广告，直播推荐，把自己喜欢的音乐存到本地，就不会因为版权问题变灰色，更不会发生A平台开了会员，部分资源却在B平台上，甚至C平台上才能听的尴尬情况，就像我开头说的一样，这只是一个音乐播放器，支持高度自定义的音乐播放器。</p>
+</blockquote>
+<h1 id="回归本地化管理-Musicbee"><a href="#回归本地化管理-Musicbee" class="headerlink" title="回归本地化管理 - Musicbee"></a>回归本地化管理 - Musicbee</h1><iframe width="100%" height="500" src="//player.bilibili.com/player.html?isOutside=true&aid=402319873&bvid=BV19o4y1N7hz&cid=1164027451&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p><br/>这个视频是看别的up推荐的，软件是自己跟着摸索的，<strong>Musicbee作为一个纯粹的音乐播放器管理软件</strong>，主要用它放一些自己收藏的歌单歌曲，毕竟自己收藏下来的歌曲才有意义，有种回到 mp3、mp4、mp5 时代的感觉。。。</p>
+<p>还有一种方案，是在群晖上搭建音乐服务器，实现播放自己喜欢的歌曲，优点是不用担心设备平台的问题，缺点是折腾麻烦了点，要自己设置直通，不然就是mp3音源。（这个方案看自己喜好来了）</p>
+<br/>
+
+<h2 id="Musicbee-官网"><a href="#Musicbee-官网" class="headerlink" title="Musicbee 官网"></a>Musicbee 官网</h2><p><a target="_blank" rel="noopener" href="https://getmusicbee.com/">https://getmusicbee.com/</a></p>
+<br/>
+
+
+
+<h2 id="皮肤"><a href="#皮肤" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐皮肤，这个主要看个人喜好</p>
+<p>官方主题列表：<a target="_blank" rel="noopener" href="https://getmusicbee.com/addons/s/?type=1">Skins for MusicBee</a></p>
+<p>深色主题：<a target="_blank" rel="noopener" href="https://getmusicbee.com/addons/skins/474/centrol-dark/">https://getmusicbee.com/addons/skins/474/centrol-dark/</a> （目前用的这个）</p>
+<p>纯黑色主题：<a target="_blank" rel="noopener" href="https://getmusicbee.com/addons/skins/482/centrol-black/">https://getmusicbee.com/addons/skins/482/centrol-black/</a></p>
+<br/>
+
+
+
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>官方插件列表：<a target="_blank" rel="noopener" href="https://getmusicbee.com/addons/s/?type=2">Plugins for MusicBee</a></p>
+<br/>
+
+<h2 id="获取歌词"><a href="#获取歌词" class="headerlink" title="获取歌词"></a>获取歌词</h2><p>因为Musicbee的歌词需要手动添加，嵌入到音乐文件中，用到的软件有：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/jitwxs/163MusicLyrics/releases/tag/v6.5">云音乐歌词获取 Release 163MusicLyrics v6.5 · jitwxs&#x2F;163MusicLyrics</a></p>
+<ul>
+<li>用来获取 网抑云，企鹅音乐 的在线歌词，精确到时分秒的，两者相较这个最方便。</li>
+</ul>
+<br/>
+
+<p><a target="_blank" rel="noopener" href="https://wiki.linsakura.com/doku.php?id=wiki:linsoft:klm">klm krc歌词制作工具 - 幻月百科</a></p>
+<ul>
+<li>这个是将酷狗本地的 krc 歌词文件为 lrc 逐行歌词文件，也是精确到时分秒的，比较方便，但功能多。</li>
+</ul>
+<br/>
+
+<h2 id="路径梳理："><a href="#路径梳理：" class="headerlink" title="路径梳理："></a>路径梳理：</h2><p>音乐播放器配置文件路径：C:\Users\Fxy5750\AppData\Roaming\MusicBee<br>库文件：C:\Users\Fxy5750\Music\MusicBee<br>备份设置：<a target="_blank" rel="noopener" href="https://musicbee.fandom.com/wiki/Backup_%26_Restore">https://musicbee.fandom.com/wiki/Backup_%26_Restore</a></p>
+<br/>
+
+<h2 id="关于版权问题"><a href="#关于版权问题" class="headerlink" title="关于版权问题"></a>关于版权问题</h2><p>播放本地音乐不含传播行为是不构成侵权的、音源请支持正版。</p>
+<br/>
+
+<h2 id="感兴趣的可以继续看看"><a href="#感兴趣的可以继续看看" class="headerlink" title="感兴趣的可以继续看看"></a>感兴趣的可以继续看看</h2><p>相似的 URL：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.dewsweet.cc/archives/1708007305156">本地音乐的管理——Musicbee简单上手指南 | 清新小甜的个人博客</a></p>
+<br/>
+
+<h3 id="吐槽："><a href="#吐槽：" class="headerlink" title="吐槽："></a>吐槽：</h3><p>云音乐给我的感觉就是喜欢听的歌听着听着就变成VIP试听，每次听歌的时候，有的歌曲播放个60秒，刚听到来劲就切到下一曲，这体验真的就是一言难尽。。。</p>
+<p>拒绝版权流氓，国内 A 平台开的会员，然而某些音乐却在 B 平台上，甚至在 C 平台，用户为什么要为平台行为负责？</p>
+<p>不过说这么多，也没什么用，云音乐类的软件毕竟是商业软件，（免费用听歌识曲，歌词显示，收藏歌单，社交互动，虽然这些都没主动要求收费），毕竟理想与现实往往不尽人意，能做的也只有管好自己了。</p>
+<p>最后，内容仅为个人观点，请勿过分解读。</p>
+<br/>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%85%B6%E5%AE%83%E7%BB%BC%E5%90%88/" class="category-chain-item">其它综合</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%9F%B3%E4%B9%90%E7%9B%B8%E5%85%B3/" class="print-no-link">#音乐相关</a>
+      
+        <a href="/tags/%E6%9C%AC%E5%9C%B0%E9%9F%B3%E4%B9%90/" class="print-no-link">#本地音乐</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Musicbee 本地音乐管理软件</div>
+      <div>https://fxy5750.github.io/2025/01/31/46-Musicbee/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>fxy5750</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年1月31日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2025年2月1日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-cc-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-cc-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/01/04/45-%E9%A3%8E%E6%A0%BC%E5%8C%96%E8%A7%92%E8%89%B2/" title="风格化角色">
+                        <span class="hidden-mobile">风格化角色</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <p>本站使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.fluid-dev.com/docs/" data-pjax-state>Fluid</a> 作为主题 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/" data-pjax-state>Hexo</a> 框架驱动 | 由  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com" data-pjax-state>Github</a> 托管 &amp;  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dash.cloudflare.com/" data-pjax-state>Cloudflare</a> 提供加速服务</p>
+
+<div> <br/> <p><a target="_blank" rel="noopener" href="https://fxy5750.gitee.io/gps/"><span><i class="iconfont icon-map"></i> 查找我的站点</span></a> | <a href="../2024/07/25/35-PrivacyPolicy/"><span><i class="iconfont icon-plan"></i> 个人隐私防止开盒建议</span></a> </p>
+<br/> </div>
+<div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/outdate.js"></script>
+  <div id="aplayer"></div>
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+  <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+  <script defer src="/js/aplayer.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>
