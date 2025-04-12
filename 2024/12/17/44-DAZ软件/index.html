@@ -26,14 +26,14 @@
 <meta property="og:site_name" content="小晓de雨滴">
 <meta property="og:description" content="记录了DAZ软件的一些插件和踩坑、模型等备忘录，告别应急找不到的烦恼，纯为个人兴趣收集。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-12-25_22-47-17.png">
+<meta property="og:image" content="https://fxy5750.github.io/2024/12/17/img/images/Snipaste_2024-12-25_22-47-17.png">
 <meta property="article:published_time" content="2024-12-17T11:00:00.000Z">
 <meta property="article:modified_time" content="2024-12-17T04:00:00.000Z">
 <meta property="article:author" content="fxy5750">
 <meta property="article:tag" content="Blender">
 <meta property="article:tag" content="3D建模">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://fxy5750.github.io/img/images/Snipaste_2024-12-25_22-47-17.png">
+<meta name="twitter:image" content="https://fxy5750.github.io/2024/12/17/img/images/Snipaste_2024-12-25_22-47-17.png">
   
   
   
@@ -378,38 +378,31 @@
             
               <div class="markdown-body">
                 
-                <h1 id="DAZ软件踩坑备忘录-问题"><a href="#DAZ软件踩坑备忘录-问题" class="headerlink" title="DAZ软件踩坑备忘录 - 问题"></a>DAZ软件踩坑备忘录 - 问题</h1><h3 id="问题描述：一直卡加载界面，闪退。"><a href="#问题描述：一直卡加载界面，闪退。" class="headerlink" title="问题描述：一直卡加载界面，闪退。"></a><strong>问题描述：一直卡加载界面，闪退。</strong></h3><p><img src="/../img/images/Snipaste_2024-12-25_22-47-17.png" alt="Snipaste_2024-12-25_22-47-17"></p>
+                <h1 id="DAZ软件踩坑备忘录-问题"><a href="#DAZ软件踩坑备忘录-问题" class="headerlink" title="DAZ软件踩坑备忘录 - 问题"></a>DAZ软件踩坑备忘录 - 问题</h1><h3 id="问题描述：一直卡加载界面，闪退。"><a href="#问题描述：一直卡加载界面，闪退。" class="headerlink" title="问题描述：一直卡加载界面，闪退。"></a><strong>问题描述：一直卡加载界面，闪退。</strong></h3><p><img src="../img/images/Snipaste_2024-12-25_22-47-17.png" alt="Snipaste_2024-12-25_22-47-17"></p>
 <ul>
 <li>2024年12月17日，启动DAZ软件失败，报错提示：Only one instance of Studio General Release can be running at a time，后过一会儿就会退出软件，搜了一圈，有人说是DAZ没卸载干净，实际上是 <code>log.txt</code>  和 <code>dazstudio.dau</code> 文件的锅。如果删掉整个C盘 Roaming 里面的DAZ 3D文件夹和重装系统都很麻烦，个人设置也没了，所以只需要</li>
-<li>win+r 输入 <code>%AppData% </code> </li>
+<li>win+r 输入 <code>%AppData%</code> <ul>
 <li>定位到你的 DAZ 3D 目录，找到 <code>Studio4</code> 文件夹里面的 <code>log.txt</code> 和 <code>dazstudio.dau</code> 这两个文件，再启动就Ok了</li>
 <li>C:\Users\你的用户名称\AppData\Roaming\DAZ 3D\Studio4</li>
+</ul>
+</li>
 </ul>
 <p>来自：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/6693594929">百度贴吧 21楼回答</a></p>
 <p>关键词：# ExP Exporter己加载.  # 闪退 # DAZ # 卡加载界面 </p>
 <p>版本：DAZ Studio 4.22</p>
-<br/>
-
+<p><br/></p>
 <h4 id="一键清理日志脚本："><a href="#一键清理日志脚本：" class="headerlink" title="一键清理日志脚本："></a>一键清理日志脚本：</h4><ul>
 <li>最近，我发现触发这个 bug 只需要关闭 DAZ 3D 后，快速在启动一次 DAZ 3D 会概率触发这个无法双开实例的问题，因此我弄了一个脚本，双击一键删除 DAZ 3D里的 <code>log.txt</code> 和 <code>dazstudio.dau</code> 文件。</li>
 </ul>
 <p>示例下载：</p>
-<p><a href="/dl/DAZ3D%E6%B8%85%E7%90%86%E6%97%A5%E5%BF%97%E3%80%90%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E7%89%88%E3%80%91.bat">DAZ3D清理日志【开机自启版】.bat</a> （小白推荐这个，只需要点击一次这个脚本，后期出现卡加载界面问题，重启一下电脑即可。）</p>
-<p><a href="/dl/DAZ3D%E6%B8%85%E7%90%86%E6%97%A5%E5%BF%97%E3%80%90%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E3%80%91.bat">DAZ3D清理日志【手动清理】.bat</a> （如果你的工作不允许重启，卡加载界面问题就手动双击这个脚本，即可删除日志。）</p>
-<br/>
-
+<p><a href="/dl/DAZ3D清理日志【开机自启版】.bat">DAZ3D清理日志【开机自启版】.bat</a> （小白推荐这个，只需要点击一次这个脚本，后期出现卡加载界面问题，重启一下电脑即可。）</p>
+<p><a href="/dl/DAZ3D清理日志【手动清理】.bat">DAZ3D清理日志【手动清理】.bat</a> （如果你的工作不允许重启，卡加载界面问题就手动双击这个脚本，即可删除日志。）</p>
+<p><br/></p>
 <h4 id="bat内容："><a href="#bat内容：" class="headerlink" title="bat内容："></a>bat内容：</h4><p>手动清理版：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs cmd">@<span class="hljs-built_in">ECHO</span> OFF<br><span class="hljs-built_in">TITLE</span> <span class="hljs-variable">%device_name%</span>     By：xiaoxiao<br><br><span class="hljs-built_in">ECHO</span>. 【删除 log.txt 和 dazstudio.dau】<br><span class="hljs-built_in">del</span> &quot;<span class="hljs-variable">%AppData%</span>\DAZ <span class="hljs-number">3</span>D\Studio4\log*.txt&quot; <br><span class="hljs-built_in">del</span> &quot;<span class="hljs-variable">%AppData%</span>\DAZ <span class="hljs-number">3</span>D\Studio4\dazstudio.dau&quot; <br><br><span class="hljs-built_in">echo</span> 清理工作已完成，接下来你可以启动 DAZ <span class="hljs-number">3</span>D 了...<br><span class="hljs-built_in">echo</span> 即将自动关闭此窗口<br>timeout /t <span class="hljs-number">3</span><br><br><span class="hljs-keyword">exit</span><br><br></code></pre></td></tr></table></figure>
-
-
-
 <p>开机自动清理版：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs cmd">@<span class="hljs-built_in">ECHO</span> OFF<br><span class="hljs-built_in">TITLE</span> <span class="hljs-variable">%device_name%</span>     By：xiaoxiao<br><br><span class="hljs-built_in">ECHO</span>. 【删除 log.txt 和 dazstudio.dau】<br><span class="hljs-built_in">del</span> &quot;<span class="hljs-variable">%AppData%</span>\DAZ <span class="hljs-number">3</span>D\Studio4\log*.txt&quot; <br><span class="hljs-built_in">del</span> &quot;<span class="hljs-variable">%AppData%</span>\DAZ <span class="hljs-number">3</span>D\Studio4\dazstudio.dau&quot; <br><span class="hljs-built_in">ECHO</span>. 复制【清理DAZ3D日志】作为开机自启计划<br><span class="hljs-built_in">copy</span> DAZ3D清理日志【开机自启版】.bat &quot;<span class="hljs-variable">%USERPROFILE%</span>\AppData\Roaming\Microsoft\Windows\<span class="hljs-built_in">Start</span> Menu\Programs\Startup\&quot; <br><br></code></pre></td></tr></table></figure>
-
-
-
-<br/>
-
+<p><br/></p>
 <h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>DAZ用到的资源网站，用来下载模型：</p>
 <p><a target="_blank" rel="noopener" href="https://www.daz3d.com/shop">3D Models and Assets | Daz 3D</a> （富哥富婆有经济实力就用这个）</p>
 <p><a target="_blank" rel="noopener" href="https://www.daz3d.cn/">DAZ模型网_Daz Studio-专注DAZ资源下载</a> （无需翻墙 会员制不贵 有汉化软件）</p>
