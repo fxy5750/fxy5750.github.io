@@ -99,7 +99,7 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><style>.post-content .board { max-width: 1000px !important; margin: 0 auto; }</style></head>
 
 
 <body>
@@ -325,7 +325,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          2.4k 字
         
       </span>
     
@@ -336,7 +336,7 @@
         
         
         
-          14 分钟
+          20 分钟
         
       </span>
     
@@ -379,47 +379,44 @@
               <div class="markdown-body">
                 
                 <h1 id="风格化角色"><a href="#风格化角色" class="headerlink" title="风格化角色"></a>风格化角色</h1><blockquote>
-<p>心得：嗯，拖了好久啊，一直卡在头发上，</p>
+<p>心得：嗯，拖了好久啊，一直卡在头发上，没想到一拖就是一年 :-(   ，可以说是每个坑都踩了一下</p>
 </blockquote>
-<br/>
-
-
-
-
-
+<p><br/></p>
 <h2 id="主要日志"><a href="#主要日志" class="headerlink" title="主要日志"></a>主要日志</h2><h3 id="角色毛发部分日志："><a href="#角色毛发部分日志：" class="headerlink" title="角色毛发部分日志："></a>角色毛发部分日志：</h3><p><strong>2025年1月11日：</strong>目前头发这一块遇到挫折，保底我可以用纯粒子来制作毛发，主要是为了研究粒子+面片方式的毛发，第一次这样尝试失败了，粒子镜像后的面朝向不对称问题，因此我需要再次尝试不使用镜像的方法，也就是说整个头部都需要手动加粒子。或者用路径曲线一片一片摆，这样镜像过去方便，（粒子+面片的面朝向问题解决不了）毛发细节可以用粒子系统。</p>
 <p><strong>2025年2月28日：</strong>偶然发现通过网格一片一片摆合并，在使用曲线控制，这样可以避免毛发重复问题。</p>
 <figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs subunit">![Snipaste_2025<span class="hljs-string">-02</span><span class="hljs-string">-28</span>_21<span class="hljs-string">-02</span><span class="hljs-string">-09</span>](../img/images/Snipaste_2025<span class="hljs-string">-02</span><span class="hljs-string">-28</span>_21<span class="hljs-string">-02</span><span class="hljs-string">-09</span>.png)<br>![Snipaste_2025<span class="hljs-string">-02</span><span class="hljs-string">-28</span>_21<span class="hljs-string">-27</span><span class="hljs-string">-43</span>](../img/images/Snipaste_2025<span class="hljs-string">-02</span><span class="hljs-string">-28</span>_21<span class="hljs-string">-27</span><span class="hljs-string">-43</span>.png)<br>![Snipaste_2025<span class="hljs-string">-03</span><span class="hljs-string">-08</span>_21<span class="hljs-string">-56</span><span class="hljs-string">-11</span>](../img/images/Snipaste_2025<span class="hljs-string">-03</span><span class="hljs-string">-08</span>_21<span class="hljs-string">-56</span><span class="hljs-string">-11</span>.png)<br>![Snipaste_2025<span class="hljs-string">-03</span><span class="hljs-string">-08</span>_21<span class="hljs-string">-57</span><span class="hljs-string">-30</span>](../img/images/Snipaste_2025<span class="hljs-string">-03</span><span class="hljs-string">-08</span>_21<span class="hljs-string">-57</span><span class="hljs-string">-30</span>.png)<br></code></pre></td></tr></table></figure>
-
-<p><strong>2025年3月27日：</strong>实验失败，现在它困扰了我很久，必须是在EV下制作的风格化毛发，效果是7片&#x2F;5片毛发结合在一起，我试过几种方法，</p>
+<p><strong>2025年3月27日：</strong>实验失败，现在它困扰了我很久，必须是在EV下制作的风格化毛发，效果是7片/5片毛发结合在一起，我试过几种方法，</p>
 <ul>
-<li>第一种是：用曲线实例样条线，这这种方法不能单独调整多片毛发的UV，</li>
-<li>第二种：我用的是曲线+曲线修改器来控制面片网格，虽然能控制UV，可是无法控制整体长度，以及角色的毛发在后期要调整整体的面片数量要一个一个调，这是非常繁琐的，同时 Yulia 角色头发两侧有麻花辫，既能保证UV的统一，又能出很好的造型，手动调整可能不是很现实，以及第三层的细节部分，有大量的细节毛发，用来覆盖表层的大形，如果用曲线，恐怕要摆很久很久，所以我认为，作者很有可能是用 Hair Tool 或类似的程序化毛发插件制作的毛发。</li>
-<li>第三种：我用的是粒子系统来控制面片，可是无法合理的控制整体的面朝向，我嘞个赛博鬼打墙</li>
+<li>第一种（V2）：用曲线实例样条线，这种方法不能单独调整多片毛发的UV，[#安扣王的教程]</li>
+<li>第二种（V2.5）：我用的是曲线+曲线修改器来控制面片网格，虽然能控制UV，可是无法控制整体长度，以及角色的毛发在后期要调整整体的面片数量要一个一个调，这是非常繁琐的，同时 Yulia 角色头发两侧有麻花辫，既能保证UV的统一，又能出很好的造型，手动调整可能不是很现实，以及第三层的细节部分，有大量的细节毛发，用来覆盖表层的大形，如果用曲线，恐怕要摆很久很久，所以我认为，作者很有可能是用 Hair Tool 或类似的程序化毛发插件制作的毛发。[#自己摸索的<em>已废弃</em>]</li>
+<li>第三种（V1）：我用的是粒子系统来控制面片，可是无法合理的控制整体的面朝向，我嘞个赛博鬼打墙 [#羊叔的教程]</li>
 </ul>
 <p><strong>2025年4月4日：</strong>重新推翻之前的方法，过于笨拙，用曲线路径引导形状并不是一个理想的方法，过于繁琐不说，且长度无法控制，整体的效果并不是很好，在正常的工作流中会严重拖慢进度，我认为是方法的问题，经过了前几次的经验教训，最终决定使用 <code>hair tool for blender</code> 插件，用于制作毛发</p>
 <ul>
 <li>我找到了使用该插件创建的类似毛发 <a target="_blank" rel="noopener" href="https://www.artstation.com/artwork/zOX89q">https://www.artstation.com/artwork/zOX89q</a> </li>
 <li>插件的官网： <a target="_blank" rel="noopener" href="https://gumroad.com/l/hairtool">https://gumroad.com/l/hairtool</a> </li>
-<li>使用文档 <a target="_blank" rel="noopener" href="https://joseconseco.github.io/HairToolDocs_28/">Hair Tool 2 Docs</a> &#x2F; <a target="_blank" rel="noopener" href="https://joseconseco.github.io/HairTool_3_Documentation/">Hair Tool 4</a></li>
+<li>使用文档 <a target="_blank" rel="noopener" href="https://joseconseco.github.io/HairToolDocs_28/">Hair Tool 2 Docs</a> / <a target="_blank" rel="noopener" href="https://joseconseco.github.io/HairTool_3_Documentation/">Hair Tool 4</a></li>
 </ul>
 <p><strong>2025年4月6日：</strong>嗯，重大发现，使用的是<strong>v2.46版本</strong>，支持3.6的blender系统，并且可以使用旧版曲线来控制，现在可以编辑曲线来控制发片的形状。</p>
 <ul>
 <li>hair tool v2.46 版本最后支持到 blender 3.6，这个插件支持旧版曲线</li>
-<li>hair tool v3.x &#x2F; v4.x 之后的版本则不支持旧版曲线，采用全新的修改器和毛发曲线的操作</li>
+<li>hair tool v3.x / v4.x 之后的版本则不支持旧版曲线，采用全新的修改器和毛发曲线的操作</li>
 </ul>
 <p><strong>2025年4月7日：</strong>借助 hair tool v2.4.6 插件的旧版曲线毛发系统可以将 我之前的第一种和第二种方法的优点结合起来，既拥有了曲线调整的优势，也拥有了网格面片来调整UV的便捷，同时还能在原始面片中修改面片数量，以达到控制整体毛发面片的效果，这是一个很好的开始。</p>
-<p><img src="/../img/images/Snipaste_2025-04-08_19-36-08.png" alt="Snipaste_2025-04-08_19-36-08"></p>
-<p><img src="/../img/images/Snipaste_2025-04-08_19-38-53.png" alt="Snipaste_2025-04-08_19-38-53"></p>
-<p><img src="/../img/images/Snipaste_2025-04-08_19-47-13.png" alt="Snipaste_2025-04-08_19-47-13"></p>
-<p><img src="/../img/images/Snipaste_2025-04-08_20-46-37.png" alt="Snipaste_2025-04-08_20-46-37"></p>
+<p><img src="../img/images/Snipaste_2025-04-08_19-36-08.png" alt="Snipaste_2025-04-08_19-36-08"></p>
+<p><img src="../img/images/Snipaste_2025-04-08_19-38-53.png" alt="Snipaste_2025-04-08_19-38-53"></p>
+<p><img src="../img/images/Snipaste_2025-04-08_19-47-13.png" alt="Snipaste_2025-04-08_19-47-13"></p>
+<p><img src="../img/images/Snipaste_2025-04-08_20-46-37.png" alt="Snipaste_2025-04-08_20-46-37"></p>
 <p><strong>2025年4月8日：</strong>整理了一下具体步骤</p>
 <ul>
-<li>将制作好的基础面片整理好，并组合成曲线配置文件层，作为一簇头发的样式（记得细分发片，否则放样的<br>头发弯曲不了。）<ul>
+<li><p>第四种方法（V3）：</p>
+</li>
+<li><p>将制作好的基础面片整理好，并组合成曲线配置文件层，作为一簇头发的样式（记得细分发片，否则放样的<br>头发弯曲不了。）</p>
+<ul>
 <li>确保你已经在基础层面片上配置了UV</li>
 <li>头发簇可以是多个，例如：外层[细]、外层[薄]、底层[厚]</li>
 <li>要保持曲线的原点都在顶部，曲线的路径是从上到下。（物体的原点在中心即可，无特殊情况无需另外调整）</li>
-<li>要保持两个轴向均在正视图 &#x2F; 左右两侧视图下编辑，顶视图编辑生成的无效！方向错误。（ <code>曲线配置文件/层</code> 和 <code>曲线引导</code>）。</li>
+<li>要保持两个轴向均在正视图 / 左右两侧视图下编辑，顶视图编辑生成的无效！方向错误。（ <code>曲线配置文件/层</code> 和 <code>曲线引导</code>）。</li>
 </ul>
 </li>
 <li>然后用曲线路径引导（必须使用 NURBS 曲线！！！），头发插件下新建头发系统-头发系统过滤器（Add Hair System Filter or Generator. it can create and modify hair strands with hair Deformers stack.）</li>
@@ -429,17 +426,33 @@
 </ul>
 <p><strong>2025年4月9日：</strong>今天把毛发研究出来了，现在这个新的方法 面片控制UV + hair tool 插件控制曲线和材质，确实可以实现那种风格化的效果，只要将合理的将毛发按照分区摆好，就能出现那种类似于手绘上去的风格化效果，也不枉这几个月的琢磨了。</p>
 <p><strong>2025年4月12日：</strong>必须使用 NURBS 曲线！！！普通的路径曲线没用！没用！！没用！！！(因为普通路径曲线的转角比较死板，过渡不会像NURBS曲线那样自然)，我知道之前为什么一直是错的了，因为之前一直错误的使用了路径曲线，而我在测试 <code>hairtool</code> 插件的毛发时候，恰巧使用的是 NURBS 曲线，但在自己的项目中，却一直使用的是路径曲线，所以，我在给角色制作毛发的时候一度让我怀疑人生。</p>
-<p><strong>2025年5月21日：</strong>（复习）NURBS曲线在”曲线数据”中，将 活动样条线 - 端点 U 勾选， </p>
-<br/>
-
-
-
+<p><strong>2025年5月21日：</strong>（复习）NURBS曲线在”曲线数据”中，将 活动样条线 - 端点 U 勾选，</p>
+<p>中间三个月做那个飞船去了，另一个月看角色视频教程，基于粒子毛发驱动的头发系统 。</p>
+<p><strong>2025年9月3日：</strong>想要做好面片毛发，<em>没有捷径，必须要多练习</em>，今天注意到如果面片作为毛发摆在头上会出现重复的问题，这个也是困扰了很久，其实这个很简单，只需要在 <code>hairtool</code> 中重新指定一组面片预设即可[1]，也就是说一组毛发会存在多组面片 (发卡) 才能避免看上去穿帮的问题。</p>
+<p><strong>2025年9月4日：</strong>研究一种新方法，作为V3的升级方案，无需再初始时候创建多种发卡和手动切换每组发卡的UV顺序。</p>
+<ul>
+<li><p>第五种方法（V4）：使用  <strong><code>hair tool 3.6.6</code></strong> 插件的新版曲线系统，①并通过曲线作为轮廓控制，②造型分区（编辑模式内控制分区、物体模式复制后就是新分区），③不仅支持毛发雕刻（手调最好开衰减编辑），④同时支持随机UV分布，相较V3去手动化调整前期的多组发卡，每组曲线支持不同的轮廓控制。</p>
+<p>| 方面             | 方法四（V3）                                                 | 方法五（V4）                                         |<br>| ———————— | —————————————————————————————— | —————————————————————————— |<br>| 插件版本         | hair Tool 2.4.6                                              | hair Tool 3.6.6                                      |<br>| 主要引导方式     | 旧版曲线引导发簇/网格                                        | 毛发曲线引导+曲线轮廓                                |<br>| 发卡             | 需要前期准备多组发卡                                         | 无需前期准备多组发卡                                 |<br>| 引导路径实现原理 | 使用曲线配置文件（不同发卡的网格体）控制外观                 | 使用曲线轮廓控制每组发簇的外观                       |<br>| 编辑方式         | 编辑模式下控制单独发簇                                       | 编辑模式/雕刻模式控制发簇或整个毛发分区              |<br>| 制作效率         | ★★☆☆☆                                                        | ★★★☆☆                                                |<br>| 额外节点         | 无需额外处理UV节点                                           | 需要额外处理一组UV节点（复制默认的UV节点）           |<br>| UV               | 可单独到发卡的随机UV                                         | 仅支持基于分区的随机UV，不支持单独发簇随机UV         |<br>| 缺点             | 效率较低                                                     | 依赖插件、（不熟悉插件，效率也低）                   |<br>| 总结             | 两个版本有好也有不好的地方，例如V3可以指定某一部分的UV，可脱离插件 | V4采用随机UV分配方式，且不同分区支持UV控制，依赖插件 |</p>
+</li>
+</ul>
+<ul>
+<li>粒子转面片：快、麻烦</li>
+<li>插片：方便、好控制、但是慢、麻烦<ul>
+<li>第一种：纯修改方案（不美观、但是快）</li>
+<li>第二种：修改器+手调（美观、但是耗时长）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li></li>
+</ul>
+<p><br/></p>
 <h3 id="场景材质部分日志"><a href="#场景材质部分日志" class="headerlink" title="场景材质部分日志"></a>场景材质部分日志</h3><p>角色材质：角色面部妆容</p>
-<br/>
-
+<p><br/></p>
 <h3 id="角色服装部分日志："><a href="#角色服装部分日志：" class="headerlink" title="角色服装部分日志："></a>角色服装部分日志：</h3><p>目前服装大形算是搞定了…吧?</p>
 <p>遇到的问题是服装边缘没能很好的处理。</p>
-<br/>
+<p><br/></p>
+
                 
               </div>
             
@@ -543,29 +556,6 @@
 
 
 
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2025/01/31/46-Musicbee/" title="Musicbee 本地音乐管理软件">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Musicbee 本地音乐管理软件</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2024/12/17/44-DAZ%E8%BD%AF%E4%BB%B6/" title="DAZ Studio 备忘录">
-                        <span class="hidden-mobile">DAZ Studio 备忘录</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
               
             </div>
 
