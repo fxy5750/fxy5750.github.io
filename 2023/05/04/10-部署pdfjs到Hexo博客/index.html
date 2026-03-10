@@ -322,7 +322,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          910 字
+          911 字
         
       </span>
     
@@ -383,27 +383,29 @@
 </li>
 <li><h3 id="创建一个名为“pdfjs”的文件夹"><a href="#创建一个名为“pdfjs”的文件夹" class="headerlink" title="创建一个名为“pdfjs”的文件夹"></a>创建一个名为“pdfjs”的文件夹</h3><p>从步骤1中下载的 PDF.js 解压缩到”sourece”文件夹中。将文件从命名为“pdfjs”的文件</p>
 </li>
-<li><h3 id="将-PDF-文件放入“pdfjs-web”目录中"><a href="#将-PDF-文件放入“pdfjs-web”目录中" class="headerlink" title="将 PDF 文件放入“pdfjs/web”目录中"></a>将 PDF 文件放入“pdfjs/web”目录中</h3><p>将要引用的 PDF 文件放入“pdfjs/web”目录中，例如：如果要引用一个名为“example.pdf”的文件，则将其放入“pdfjs/web/”目录下。</p>
+<li><h3 id="将-PDF-文件放入“pdfjs-x2F-web”目录中"><a href="#将-PDF-文件放入“pdfjs-x2F-web”目录中" class="headerlink" title="将 PDF 文件放入“pdfjs&#x2F;web”目录中"></a>将 PDF 文件放入“pdfjs&#x2F;web”目录中</h3><p>将要引用的 PDF 文件放入“pdfjs&#x2F;web”目录中，例如：如果要引用一个名为“example.pdf”的文件，则将其放入“pdfjs&#x2F;web&#x2F;”目录下。</p>
 </li>
 <li><h3 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h3><p>打开 Hexo 博客中使用的主题的配置文件（一般是“_config.yml”文件），找到“Fuild”主题的安装位置，打开配置文件。添加以下代码：</p>
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># pdfjs</span><br><span class="hljs-meta"># pdfjs.enable: 表示是否启用pdfjs插件，这里设置为true，即启用。</span><br><span class="hljs-meta"># pdfjs.src: 表示pdf.js文件的相对路径，即PDF.js的核心代码所在位置。</span><br><span class="hljs-meta"># pdfjs.workerSrc: 表示pdf.worker.js文件的相对路径，即PDF.js中文档渲染所需要的Worker线程代码所在位置。</span><br><span class="hljs-symbol">pdfjs:</span><br><span class="hljs-symbol">  enable:</span> true<br><span class="hljs-symbol">  src:</span> <span class="hljs-keyword">/pdfjs/</span>build/pdf.js<br><span class="hljs-symbol">  workerSrc:</span> <span class="hljs-keyword">/pdfjs/</span>build/pdf.worker.js<br></code></pre></td></tr></table></figure>
+
 <p>这将使 Fuild 主题加载 PDF.js 库，并指定相应的路径。</p>
 </li>
 <li><h3 id="在-Markdown-文件中引用-PDF-文件"><a href="#在-Markdown-文件中引用-PDF-文件" class="headerlink" title="在 Markdown 文件中引用 PDF 文件"></a>在 Markdown 文件中引用 PDF 文件</h3><p>在 Markdown 文件中，可以使用以下语法来引用 PDF 文件：</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs abnf">&lt;div class<span class="hljs-operator">=</span><span class="hljs-string">&quot;pdf-container&quot;</span>&gt;<br>  &lt;iframe src<span class="hljs-operator">=</span><span class="hljs-string">&quot;/pdfjs/web/viewer.html?file=/pdfjs/web/example.pdf&quot;</span> width<span class="hljs-operator">=</span><span class="hljs-string">&quot;100%&quot;</span> height<span class="hljs-operator">=</span><span class="hljs-string">&quot;600px&quot;</span>&gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
 <p>将“example.pdf”替换为要引用的实际 PDF 文件的文件名即可。</p>
 </li>
 </ol>
 <p>通过以上步骤，您就可以将 PDF.js 集成到 Hexo 博客中，并在 Markdown 文件中使用 iframe 来展示 PDF 文件。</p>
-<h2 id="如果网页显示“Cannot-GET-pdfjs-web-viewer-html”"><a href="#如果网页显示“Cannot-GET-pdfjs-web-viewer-html”" class="headerlink" title="如果网页显示“Cannot GET /pdfjs/web/viewer.html”"></a>如果网页显示“Cannot GET /pdfjs/web/viewer.html”</h2><p>这可能是因为您没有正确安装或配置PDF.js库所导致的。要确保正确使用PDF.js，您需要遵循以下步骤：</p>
+<h2 id="如果网页显示“Cannot-GET-x2F-pdfjs-x2F-web-x2F-viewer-html”"><a href="#如果网页显示“Cannot-GET-x2F-pdfjs-x2F-web-x2F-viewer-html”" class="headerlink" title="如果网页显示“Cannot GET &#x2F;pdfjs&#x2F;web&#x2F;viewer.html”"></a>如果网页显示“Cannot GET &#x2F;pdfjs&#x2F;web&#x2F;viewer.html”</h2><p>这可能是因为您没有正确安装或配置PDF.js库所导致的。要确保正确使用PDF.js，您需要遵循以下步骤：</p>
 <ol>
-<li>确认您已经从<a target="_blank" rel="noopener" href="https://github.com/mozilla/pdf.js下载了最新版本的PDF.js库，并将其提取到您的项目目录中。">https://github.com/mozilla/pdf.js下载了最新版本的PDF.js库，并将其提取到您的项目目录中。</a></li>
-<li>检查您的文件路径是否正确。在上面的代码段中，您正在尝试加载“/pdfjs/web/viewer.html”文件。这意味着您必须在您的项目根目录中有一个名为“pdfjs”的文件夹，其中包含“web”子文件夹和所有必需的文件。</li>
+<li>确认您已经从<a target="_blank" rel="noopener" href="https://github.com/mozilla/pdf.js%E4%B8%8B%E8%BD%BD%E4%BA%86%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84PDF.js%E5%BA%93%EF%BC%8C%E5%B9%B6%E5%B0%86%E5%85%B6%E6%8F%90%E5%8F%96%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E4%B8%AD%E3%80%82">https://github.com/mozilla/pdf.js下载了最新版本的PDF.js库，并将其提取到您的项目目录中。</a></li>
+<li>检查您的文件路径是否正确。在上面的代码段中，您正在尝试加载“&#x2F;pdfjs&#x2F;web&#x2F;viewer.html”文件。这意味着您必须在您的项目根目录中有一个名为“pdfjs”的文件夹，其中包含“web”子文件夹和所有必需的文件。</li>
 <li>如果您使用的是本地服务器，例如XAMPP或WAMP，则确保您的服务器已配置为正确处理PDF文件类型。您可以通过编辑服务器上的MIME类型来完成此操作。如果您使用的是云主机，则需要与托管服务提供商联系以获取更多帮助。</li>
 <li>最后，您可以检查控制台以查看可能会向您显示警告或错误消息的任何问题。这些消息可能包括有关缺少文件或其他错误的信息。</li>
 </ol>
 <p>如果您仍然无法解决问题，请尝试参考PDF.js官方文档（ <a target="_blank" rel="noopener" href="https://mozilla.github.io/pdf.js/getting_started/">https://mozilla.github.io/pdf.js/getting_started/</a> ）以获取更多帮助。</p>
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p><a href="[素描笔记 - 小晓de雨滴 (fxy5750.github.io">PDF-Demo</a>](<a href="https://fxy5750.github.io/2021/02/02/06-素描笔记源文件/#素描学习笔记">https://fxy5750.github.io/2021/02/02/06-素描笔记源文件/#素描学习笔记</a>))</p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>[PDF-Demo](<a href="https://fxy5750.github.io/2021/02/02/06-%E7%B4%A0%E6%8F%8F%E7%AC%94%E8%AE%B0%E6%BA%90%E6%96%87%E4%BB%B6/#%E7%B4%A0%E6%8F%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">素描笔记 - 小晓de雨滴 (fxy5750.github.io)</a>)</p>
 
                 
               </div>
