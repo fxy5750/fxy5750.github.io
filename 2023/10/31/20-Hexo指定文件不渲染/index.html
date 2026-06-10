@@ -19,12 +19,12 @@
   <meta name="author" content="fxy5750">
   <meta name="keywords" content="">
   
-    <meta name="description" content="需要添加自定义静态页面？那就跳过hexo主题渲染请注意：修改是在hexo目录的_config.yml文件，不是主题的，同时修改后，一定要执行一下hexo clean，不然skip_render可能不会生效。   前段时间想把履历和一些Demo页放到一个网站展示，当时还不知道这个hexo可以置入额外的静态页面，绕来绕去就差买云主机了，看了一下价格，哦买噶钱包瘪了QwQ，算了吧还要买域名和备案，太麻烦">
+    <meta name="description" content="需要添加自定义静态页面？那就跳过hexo主题渲染请注意：修改是在hexo目录的_config.yml文件，不是主题的，同时修改后，一定要执行一下hexo clean，不然skip_render可能不会生效。 &lt;&#x2F;br&gt; 前段时间想把履历和一些Demo页放到一个网站展示，当时还不知道这个hexo可以置入额外的静态页面，绕来绕去就差买云主机了，看了一下价格，哦买噶钱包瘪了QwQ，算了吧还要">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 指定文件不渲染">
 <meta property="og:url" content="https://fxy5750.github.io/2023/10/31/20-Hexo%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E4%B8%8D%E6%B8%B2%E6%9F%93/index.html">
 <meta property="og:site_name" content="小晓de雨滴">
-<meta property="og:description" content="需要添加自定义静态页面？那就跳过hexo主题渲染请注意：修改是在hexo目录的_config.yml文件，不是主题的，同时修改后，一定要执行一下hexo clean，不然skip_render可能不会生效。   前段时间想把履历和一些Demo页放到一个网站展示，当时还不知道这个hexo可以置入额外的静态页面，绕来绕去就差买云主机了，看了一下价格，哦买噶钱包瘪了QwQ，算了吧还要买域名和备案，太麻烦">
+<meta property="og:description" content="需要添加自定义静态页面？那就跳过hexo主题渲染请注意：修改是在hexo目录的_config.yml文件，不是主题的，同时修改后，一定要执行一下hexo clean，不然skip_render可能不会生效。 &lt;&#x2F;br&gt; 前段时间想把履历和一些Demo页放到一个网站展示，当时还不知道这个hexo可以置入额外的静态页面，绕来绕去就差买云主机了，看了一下价格，哦买噶钱包瘪了QwQ，算了吧还要">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-10-31T12:59:07.000Z">
@@ -322,7 +322,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          617 字
+          630 字
         
       </span>
     
@@ -376,8 +376,7 @@
               <div class="markdown-body">
                 
                 <h2 id="需要添加自定义静态页面？那就跳过hexo主题渲染"><a href="#需要添加自定义静态页面？那就跳过hexo主题渲染" class="headerlink" title="需要添加自定义静态页面？那就跳过hexo主题渲染"></a>需要添加自定义静态页面？那就跳过hexo主题渲染</h2><p><strong><p class="note note-warning">请注意：修改是在hexo目录的_config.yml文件，不是主题的，同时修改后，一定要执行一下hexo clean，不然skip_render可能不会生效。</p></strong></p>
-</br>
-
+<p>&lt;/br&gt;</p>
 <p>前段时间想把履历和一些Demo页放到一个网站展示，当时还不知道这个hexo可以置入额外的静态页面，绕来绕去就差买云主机了，看了一下价格，哦买噶钱包瘪了QwQ，算了吧还要买域名和备案，太麻烦了，hexo又不是不能用。好了开始折腾之旅。</p>
 <p>首先，不处理source目录的个别文件，例如将一些Demo一起放到博客上去，默认情况下，Hexo也会将这部分Demo进行处理，导致这些Demo页面渲染上了博客主题，如何不处理这些Demo页面呢?</p>
 <p>假设你的Source文件夹里面有个 <code>Demo</code> 目录，要忽略Demo目录下的所有html页面，可以通过在_config.yml设置skip_render来忽略的目录，具体如下：</p>
@@ -388,31 +387,18 @@
 <li>如果找不到该设置，你可以在文件的底部添加以下内容：</li>
 </ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html">skip_render: Demo/*.html<br>#注意要在你的hexo更目录的 _config.yml 文件进行修改，而不是主题里的 _config.yml<br></code></pre></td></tr></table></figure>
-
-<ol start="5">
+<ol>
 <li>保存并关闭文件。</li>
 </ol>
 <h3 id="1-单个文件夹下全部文件："><a href="#1-单个文件夹下全部文件：" class="headerlink" title="1.单个文件夹下全部文件："></a>1.单个文件夹下全部文件：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">skip_render: demo/*<br></code></pre></td></tr></table></figure>
-
-
-
 <h3 id="2-单个文件夹下指定类型文件："><a href="#2-单个文件夹下指定类型文件：" class="headerlink" title="2.单个文件夹下指定类型文件："></a>2.单个文件夹下指定类型文件：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">skip_render: demo/*.html<br></code></pre></td></tr></table></figure>
-
-
-
 <h3 id="3-单个文件夹下全部文件以及子目录"><a href="#3-单个文件夹下全部文件以及子目录" class="headerlink" title="3.单个文件夹下全部文件以及子目录:"></a>3.单个文件夹下全部文件以及子目录:</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html">skip_render: demo/**<br>#一般情况用这个就行，省事。<br></code></pre></td></tr></table></figure>
-
-
-
 <h3 id="4-多个文件夹以及各种复杂情况："><a href="#4-多个文件夹以及各种复杂情况：" class="headerlink" title="4.多个文件夹以及各种复杂情况："></a>4.多个文件夹以及各种复杂情况：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html">skip_render:<br>    - &#x27;demo/*.html&#x27;<br>    - &#x27;demo/**&#x27;<br></code></pre></td></tr></table></figure>
-
-</br>
-
-<h3 id="5-如何访问自定义页？"><a href="#5-如何访问自定义页？" class="headerlink" title="5.如何访问自定义页？"></a>5.如何访问自定义页？</h3><p>输入地址+你的页面路径：<br>例如文件路径是 <code>/source/Demo/123.html</code><br>那么在浏览器里输入 <a target="_blank" rel="noopener" href="http://localhost:4000/Demo/123.html">http://localhost:4000/Demo/123.html</a> 即可访问本地的hexo服务<br>如果网站推送上去了则是 线上网址+ &#x2F;Demo&#x2F;123.html<br>只需要输入<code>/source/</code>之后的文件路径即可</p>
-</br>
-
+<p>&lt;/br&gt;</p>
+<h3 id="5-如何访问自定义页？"><a href="#5-如何访问自定义页？" class="headerlink" title="5.如何访问自定义页？"></a>5.如何访问自定义页？</h3><p>输入地址+你的页面路径：<br>例如文件路径是 <code>/source/Demo/123.html</code><br>那么在浏览器里输入 <a target="_blank" rel="noopener" href="http://localhost:4000/Demo/123.html">http://localhost:4000/Demo/123.html</a> 即可访问本地的hexo服务<br>如果网站推送上去了则是 线上网址+ /Demo/123.html<br>只需要输入<code>/source/</code>之后的文件路径即可</p>
+<p>&lt;/br&gt;</p>
 <h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><p>声明一下，文章是搬运简书，此前已经使用AI验证过可靠性，并且实践操作可行链接：</p>
-<p><a target="_blank" href="https://www.jianshu.com/p/76220131c7e9" style="position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; box-sizing: border-box; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 390px; min-height: 84px; border-radius: 8px; max-width: 100%; overflow: hidden; margin: 16px auto; padding: 12px 12px 9px 12px; background-color: #F6F6F6;"><span class="LinkCard-contents"><span style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-height: 40px; line-height: 1.25; color: #121212;">hexo设置skip_render, 指定不进行渲染的文件或文件夹</span><span style="display: -webkit-box; font-size: 13px; height: 18px; line-height: 18px; color: #999; word-break: break-all; text-overflow: ellipsis; overflow: hidden; -webkit-line-clamp: 1; -webkit-box-orient: vertical;"><span style="display: inline-flex; align-items: center;"><svg class="Zi Zi--InsertLink" fill="currentColor" viewBox="0 0 24 24" width="14" height="14"><path d="M13.414 4.222a4.5 4.5 0 1 1 6.364 6.364l-3.005 3.005a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l3.005-3.005a2.5 2.5 0 1 0-3.536-3.536l-3.005 3.005a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l3.005-3.005zm-6.187 6.187a.5.5 0 0 1 .638-.058l.07.058.706.707a.5.5 0 0 1 .058.638l-.058.07-3.005 3.004a2.5 2.5 0 0 0 3.405 3.658l.13-.122 3.006-3.005a.5.5 0 0 1 .638-.058l.069.058.707.707a.5.5 0 0 1 .058.638l-.058.069-3.005 3.005a4.5 4.5 0 0 1-6.524-6.196l.16-.168 3.005-3.005zm8.132-3.182a.25.25 0 0 1 .353 0l1.061 1.06a.25.25 0 0 1 0 .354l-8.132 8.132a.25.25 0 0 1-.353 0l-1.061-1.06a.25.25 0 0 1 0-.354l8.132-8.132z"></path></svg></span><span>https://www.jianshu.com/p/76220131c7e9</span></span></span></a></p>
+<p><a target="_blank" href="https://www.jianshu.com/p/76220131c7e9" style="position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; box-sizing: border-box; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 390px; min-height: 84px; border-radius: 8px; max-width: 100%; overflow: hidden; margin: 16px auto; padding: 12px 12px 9px 12px; background-color: #F6F6F6;"><span class="LinkCard-contents"><span style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-height: 40px; line-height: 1.25; color: #121212;">hexo设置skip_render, 指定不进行渲染的文件或文件夹</span><span style="display: -webkit-box; font-size: 13px; height: 18px; line-height: 18px; color: #999; word-break: break-all; text-overflow: ellipsis; overflow: hidden; -webkit-line-clamp: 1; -webkit-box-orient: vertical;"><span style="display: inline-flex; align-items: center;"><svg class="Zi Zi--InsertLink" fill="currentColor" viewBox="0 0 24 24" width="14" height="14"><path d="M13.414 4.222a4.5 4.5 0 1 1 6.364 6.364l-3.005 3.005a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l3.005-3.005a2.5 2.5 0 1 0-3.536-3.536l-3.005 3.005a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l3.005-3.005zm-6.187 6.187a.5.5 0 0 1 .638-.058l.07.058.706.707a.5.5 0 0 1 .058.638l-.058.07-3.005 3.004a2.5 2.5 0 0 0 3.405 3.658l.13-.122 3.006-3.005a.5.5 0 0 1 .638-.058l.069.058.707.707a.5.5 0 0 1 .058.638l-.058.069-3.005 3.005a4.5 4.5 0 0 1-6.524-6.196l.16-.168 3.005-3.005zm8.132-3.182a.25.25 0 0 1 .353 0l1.061 1.06a.25.25 0 0 1 0 .354l-8.132 8.132a.25.25 0 0 1-.353 0l-1.061-1.06a.25.25 0 0 1 0-.354l8.132-8.132z"></path></svg></span><span>https://www.jianshu.com/p/76220131c7e9</span>&lt;/span&gt;&lt;/span&gt;</a></p>
 
                 
               </div>

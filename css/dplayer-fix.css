@@ -1,0 +1,32 @@
+/* DPlayer Fix: 修复进度条无法拖动的问题 */
+/* 问题原因：DPlayer v1.27.1 的 .dplayer-bar-wrap 没有设置 touch-action: none，
+   现代浏览器(Chrome 55+) 默认的 touch-action 行为会拦截触摸事件的鼠标回退，
+   导致 mousedown 事件无法正确触发，进度条拖拽失效 */
+
+.dplayer-controller .dplayer-bar-wrap {
+    touch-action: none !important;
+    -ms-touch-action: none !important;
+}
+
+/* 同时修复音量滑块同样的问题 */
+.dplayer-controller .dplayer-volume .dplayer-volume-bar-wrap {
+    touch-action: none !important;
+    -ms-touch-action: none !important;
+}
+
+/* 修复弹幕透明度滑块 */
+.dplayer-controller .dplayer-danmaku-bar-wrap {
+    touch-action: none !important;
+    -ms-touch-action: none !important;
+}
+
+/* 确保控制器区域不会因为父级 overflow 被裁剪 */
+.dplayer {
+    overflow: visible !important;
+}
+
+/* 修复播放中时控制栏 hover 无法正确显示的问题（避免 transition 滞后） */
+.dplayer.dplayer-playing .dplayer-controller,
+.dplayer.dplayer-playing .dplayer-controller-mask {
+    transition: none !important;
+}
