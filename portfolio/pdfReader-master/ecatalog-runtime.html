@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+  <title>电子画册</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/player.css" />
+  <link rel="stylesheet" href="./css/phoneTemplate.css" />
+  <link rel="stylesheet" href="./css/template.css" />
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background:
+        var(--ecatalog-background-image, none),
+        linear-gradient(180deg, #1f2232 0%, #050608 100%) !important;
+      background-position: center !important;
+      background-size: cover !important;
+    }
+
+    body::before,
+    body::after {
+      display: none !important;
+    }
+
+    .fbTopBar,
+    .topBar,
+    .phoneTopBar,
+    .phoneBottomBar,
+    .phoneGotoPageContent,
+    #menu,
+    #topBar,
+    #fbTopBar {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+    .customMunu {
+      overflow: hidden !important;
+      min-width: 188px !important;
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      border-radius: 8px !important;
+      background: rgba(8, 14, 20, 0.84) !important;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34) !important;
+      color: rgba(247, 251, 255, 0.92) !important;
+      backdrop-filter: blur(24px) !important;
+    }
+
+    .customMunu .button {
+      min-height: 40px !important;
+      background: transparent !important;
+      color: inherit !important;
+    }
+
+    .customMunu .button:hover {
+      background: rgba(0, 212, 255, 0.14) !important;
+    }
+
+    .customMunu span {
+      color: rgba(247, 251, 255, 0.9) !important;
+    }
+
+    .tableofcontent_form {
+      overflow: hidden !important;
+      border: 1px solid rgba(255, 255, 255, 0.14) !important;
+      border-radius: 8px !important;
+      background: rgba(8, 14, 20, 0.88) !important;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38) !important;
+      color: rgba(247, 251, 255, 0.92) !important;
+      backdrop-filter: blur(24px) !important;
+    }
+
+    .tableofcontent_form .form_title {
+      margin: 0 !important;
+      padding: 0 12px !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+      color: #fff !important;
+      font-family: Arial, "Microsoft YaHei", sans-serif !important;
+      font-weight: 700 !important;
+      line-height: 30px !important;
+    }
+
+    .tableofcontent_form .close {
+      top: 8px !important;
+      opacity: 0.86 !important;
+      filter: invert(1) !important;
+    }
+
+    .tableofcontent_form .tableofcontent_content {
+      background: rgba(255, 255, 255, 0.045) !important;
+    }
+
+    .tableofcontent_form .item {
+      margin: 4px 6px !important;
+      border-radius: 6px !important;
+      color: rgba(247, 251, 255, 0.9) !important;
+    }
+
+    .tableofcontent_form .item:hover {
+      background: rgba(0, 212, 255, 0.14) !important;
+    }
+
+    .flip_button_left,
+    .flip_button_right,
+    .flip_button_first,
+    .flip_button_last {
+      display: grid !important;
+      place-items: center !important;
+      width: 58px !important;
+      height: 86px !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      color: rgba(247, 251, 255, 0.76) !important;
+      opacity: 0.76 !important;
+      outline: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+      transform: none !important;
+      transition: color 0.18s ease !important;
+    }
+
+    .flip_button_left:hover,
+    .flip_button_right:hover,
+    .flip_button_first:hover,
+    .flip_button_last:hover {
+      color: #00d4ff !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      outline: 0 !important;
+      transform: none !important;
+    }
+
+    .flip_button_left img,
+    .flip_button_right img,
+    .flip_button_first img,
+    .flip_button_last img {
+      display: none !important;
+    }
+
+    .flip_button_left::before,
+    .flip_button_right::before,
+    .flip_button_first::before,
+    .flip_button_last::before,
+    .flip_button_first::after,
+    .flip_button_last::after {
+      display: block;
+      color: currentColor;
+      content: "";
+    }
+
+    .flip_button_left::before {
+      width: 42px;
+      height: 42px;
+      content: "\2039";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 58px;
+      font-weight: 200;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    .flip_button_right::before {
+      width: 42px;
+      height: 42px;
+      content: "\203A";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 58px;
+      font-weight: 200;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    .flip_button_first,
+    .flip_button_last {
+      width: 34px !important;
+      height: 34px !important;
+      opacity: 0.42 !important;
+    }
+
+    .flip_button_first::before,
+    .flip_button_first::after,
+    .flip_button_last::before,
+    .flip_button_last::after {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    .flip_button_first::before {
+      content: "\2039";
+      transform: translateX(4px);
+    }
+
+    .flip_button_first::after {
+      content: "\2039";
+      transform: translateX(-4px);
+    }
+
+    .flip_button_last::before {
+      content: "\203A";
+      transform: translateX(-4px);
+    }
+
+    .flip_button_last::after {
+      content: "\203A";
+      transform: translateX(4px);
+    }
+  </style>
+  <script>
+    var title = '电子画册';
+    var desc = '';
+    var link = location.href;
+    var imgUrl = '';
+  </script>
+</head>
+
+<body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/config.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var storageKey = params.get('key');
+      var fallbackPayload = { title: '电子画册', pages: [], toc: [], musicUrl: '', backgroundImageUrl: '', enableFlipSound: true };
+      var payload = fallbackPayload;
+
+      try {
+        payload = JSON.parse(window.sessionStorage.getItem(storageKey) || '') || fallbackPayload;
+      } catch (error) {
+        payload = fallbackPayload;
+      }
+
+      payload.pages = Array.isArray(payload.pages) ? payload.pages.filter(Boolean) : [];
+      payload.toc = Array.isArray(payload.toc) ? payload.toc : [];
+      window.__ECATALOG_PAYLOAD__ = payload;
+      window.ols = payload.toc.length
+        ? payload.toc.map(function (item, index) {
+            return {
+              caption: item.caption || ('第 ' + (index + 1) + ' 页'),
+              page: String(item.page || index + 1),
+            };
+          })
+        : payload.pages.map(function (_, index) {
+            return {
+              caption: '第 ' + (index + 1) + ' 页',
+              page: String(index + 1),
+            };
+          });
+      var ols = window.ols;
+
+      function applyCatalogConfig() {
+        title = payload.title || '电子画册';
+        desc = payload.description || '';
+        imgUrl = payload.pages[0] || '';
+
+        bookConfig.bookTitle = title;
+        bookConfig.bookDescription = desc;
+        bookConfig.totalPageCount = Math.max(payload.pages.length, 1);
+        bookConfig.largePageWidth = String(payload.pageWidth || bookConfig.largePageWidth || 822);
+        bookConfig.largePageHeight = String(payload.pageHeight || bookConfig.largePageHeight || 1218);
+        bookConfig.topMargin = '28';
+        bookConfig.bottomMargin = '28';
+        bookConfig.topMarginOnMobile = '16';
+        bookConfig.bottomMarginOnMobile = '16';
+        bookConfig.normalPath = '';
+        bookConfig.largePath = '';
+        bookConfig.thumbPath = '';
+        bookConfig.FlipStyle = 'Flip';
+        bookConfig.FlipSound = payload.enableFlipSound === false ? 'No' : 'Yes';
+        bookConfig.CurlingPageCorner = 'Yes';
+        bookConfig.SupportOperatePageZoom = 'Yes';
+        bookConfig.BackgroundSoundURL = payload.musicUrl || '';
+        bookConfig.BackgroundSoundLoop = '-1';
+        bookConfig.BackgroundSoundButtonVisible = payload.musicUrl ? 'Show' : 'Hide';
+        bookConfig.backGroundImgURL = payload.backgroundImageUrl || '';
+        bookConfig.SearchButtonVisible = 'Hide';
+        bookConfig.ShareButtonVisible = 'Hide';
+        bookConfig.EnableReportButton = false;
+        bookConfig.HomeButtonVisible = 'Hide';
+        bookConfig.PrintButtonVisible = 'Hide';
+        bookConfig.DownloadButtonVisible = 'Hide';
+        bookConfig.BookMarkButtonVisible = 'Hide';
+        bookConfig.AutoPlayButtonVisible = 'Hide';
+        bookConfig.aboutButtonVisible = 'Hide';
+        bookConfig.AnnotationButtonVisible = 'Hide';
+        bookConfig.TableOfContentButtonVisible = payload.toc.length ? 'Show' : 'Hide';
+        bookConfig.ThumbnailsButtonVisible = 'Show';
+        bookConfig.FullscreenButtonVisible = 'Hide';
+        bookConfig.toolbarAlwaysShow = 'No';
+        bookConfig.ToolBarVisible = 'Hide';
+        bookConfig.isStopMouseMenu = 'Yes';
+        bookConfig.backGroundColor = '#050608';
+        bookConfig.bgBeginColor = '#1f2232';
+        bookConfig.bgEndColor = '#050608';
+        bookConfig.loadingBackground = '#050608';
+        bookConfig.backgroundScene = 'None';
+        document.documentElement.style.setProperty(
+          '--ecatalog-background-image',
+          payload.backgroundImageUrl ? 'url("' + payload.backgroundImageUrl.replace(/"/g, '\\"') + '")' : 'none'
+        );
+        bookConfig.getPageURL = function (pageIndex) {
+          return payload.pages[Number(pageIndex) - 1] || payload.pages[0] || '';
+        };
+      }
+
+      applyCatalogConfig();
+      window.__applyECatalogConfig = applyCatalogConfig;
+    })();
+  </script>
+  <script src="./js/main.js"></script>
+  <script>
+    window.__applyECatalogConfig && window.__applyECatalogConfig();
+  </script>
+  <script src="./js/check.js"></script>
+  <script src="./js/LoadingJS.js"></script>
+  <script>
+    (function () {
+      var lastPage = 0;
+      var lastZoomed = false;
+
+      function post(type, data) {
+        if (!window.parent || window.parent === window) return;
+        var targetOrigin = window.location.protocol === 'file:' ? '*' : window.location.origin;
+        window.parent.postMessage(Object.assign({ source: 'ecatalog-runtime', type: type }, data || {}), targetOrigin);
+      }
+
+      function currentPage() {
+        try {
+          if (typeof BookInfo !== 'undefined' && BookInfo.getCurrentPageIndex) return Number(BookInfo.getCurrentPageIndex()) || 1;
+          if (typeof BookInfo !== 'undefined' && BookInfo.getCurrentPages) return Number(BookInfo.getCurrentPages()[0]) || 1;
+        } catch (error) {}
+        return 1;
+      }
+
+      function isZoomed() {
+        try {
+          var book = typeof BookInfo !== 'undefined' && BookInfo.getBook && BookInfo.getBook();
+          var zoomTargets = [
+            book && book.book,
+            book && book.bookContent,
+            document.querySelector('.book'),
+            document.querySelector('#book'),
+          ].filter(Boolean);
+          return zoomTargets.some(function (target) {
+            var node = target.jquery ? target[0] : target;
+            return node && node.parameters && node.parameters.zoomFlag;
+          });
+        } catch (error) {}
+        return false;
+      }
+
+      function getNode(value) {
+        return value && value.jquery ? value[0] : value;
+      }
+
+      function getZoomTarget() {
+        try {
+          var book = typeof BookInfo !== 'undefined' && BookInfo.getBook && BookInfo.getBook();
+          var candidates = [
+            book && book.showPage,
+            book && book.flipBook,
+            book && book.getBook && book.getBook(),
+            window.flipBook,
+            window.singlePageBook && window.singlePageBook.flipBook,
+            window.catalogBook && window.catalogBook.flipBook,
+            window.slideBook && window.slideBook.flipBook,
+            window.singleSlideBook && window.singleSlideBook.flipBook,
+          ];
+
+          for (var index = 0; index < candidates.length; index += 1) {
+            var candidate = candidates[index];
+            if (candidate && typeof candidate.onDoubleTap === 'function') return candidate;
+          }
+        } catch (error) {}
+
+        return null;
+      }
+
+      function getZoomEvent(target) {
+        var node = getNode(target) || document.querySelector('#book, .book, canvas, body');
+        var rect = node.getBoundingClientRect();
+        var pageX = window.scrollX + rect.left + rect.width / 2;
+        var pageY = window.scrollY + rect.top + rect.height / 2;
+
+        return {
+          type: 'doubletap',
+          pageX: pageX,
+          pageY: pageY,
+          center: { x: pageX, y: pageY },
+          pointers: [{ pageX: pageX, pageY: pageY }],
+          preventDefault: function () {},
+          srcEvent: { preventDefault: function () {} },
+        };
+      }
+
+      function triggerZoom(nextZoomed) {
+        var target = getZoomTarget();
+        if (target && typeof target.onDoubleTap === 'function') {
+          var isTargetZoomed = Boolean(target.parameters && target.parameters.zoomFlag);
+          if (typeof nextZoomed === 'undefined' || isTargetZoomed !== Boolean(nextZoomed)) {
+            target.onDoubleTap(getZoomEvent(target));
+          }
+          return true;
+        }
+
+        var node = document.querySelector('#book, .book, canvas, body');
+        if (!node) return false;
+        var rect = node.getBoundingClientRect();
+        node.dispatchEvent(new MouseEvent('dblclick', {
+          bubbles: true,
+          cancelable: true,
+          view: window,
+          clientX: rect.left + rect.width / 2,
+          clientY: rect.top + rect.height / 2,
+        }));
+        return true;
+      }
+
+      function withReader(callback) {
+        try {
+          callback();
+        } catch (error) {}
+      }
+
+      function postSoundState() {
+        post('sound', {
+          enabled: bookConfig.FlipSound !== 'No' || (typeof isPlaying !== 'undefined' && !!isPlaying),
+          playing: typeof isPlaying !== 'undefined' && !!isPlaying,
+        });
+      }
+
+      window.addEventListener('message', function (event) {
+        var trustedOrigin = window.location.protocol === 'file:' || event.origin === window.location.origin;
+        if (!trustedOrigin || !event.data || event.data.source !== 'ecatalog-shell') return;
+
+        switch (event.data.action) {
+          case 'first':
+            withReader(function () { typeof firstPageFun === 'function' ? firstPageFun() : gotoPageFun(1); });
+            break;
+          case 'last':
+            withReader(function () { typeof lastPageFun === 'function' ? lastPageFun() : gotoPageFun(bookConfig.totalPageCount); });
+            break;
+          case 'prev':
+            withReader(function () { typeof previousPageFun === 'function' ? previousPageFun() : gotoPageFun(Math.max(1, currentPage() - 1)); });
+            break;
+          case 'next':
+            withReader(function () { typeof nextPageFun === 'function' ? nextPageFun() : gotoPageFun(Math.min(bookConfig.totalPageCount, currentPage() + 1)); });
+            break;
+          case 'goto':
+            withReader(function () { typeof gotoPageFun === 'function' && gotoPageFun(Number(event.data.page) || 1); });
+            break;
+          case 'toggleThumbs':
+            withReader(function () { typeof thumbnail !== 'undefined' && thumbnail.showOrHide && thumbnail.showOrHide(); });
+            break;
+          case 'toggleToc':
+            withReader(function () { typeof frmTableOfContent !== 'undefined' && frmTableOfContent.showOrHide && frmTableOfContent.showOrHide(); });
+            break;
+          case 'zoomIn':
+            triggerZoom(true);
+            break;
+          case 'zoomOut':
+          case 'fit':
+            triggerZoom(false);
+            break;
+          case 'toggleSound':
+            withReader(function () {
+              bookConfig.FlipSound = bookConfig.FlipSound === 'No' ? 'Yes' : 'No';
+              if (bookConfig.FlipSound === 'No' && typeof flipSoundIsPlaying !== 'undefined') flipSoundIsPlaying = false;
+              if (bookConfig.FlipSound !== 'No' && typeof flipSoundIsPlaying !== 'undefined') flipSoundIsPlaying = true;
+              if (typeof bgSound !== 'undefined' && bgSound.playOrPause) bgSound.playOrPause();
+              postSoundState();
+            });
+            break;
+          case 'toggleMusic':
+            withReader(function () {
+              if (typeof bgSound !== 'undefined' && bgSound.playOrPause) bgSound.playOrPause();
+              postSoundState();
+            });
+            break;
+          default:
+            break;
+        }
+      });
+
+      post('ready');
+      postSoundState();
+      window.setInterval(function () {
+        var page = currentPage();
+        var zoomed = isZoomed();
+        if (page !== lastPage) {
+          lastPage = page;
+          post('page', { page: page });
+        }
+        if (zoomed !== lastZoomed) {
+          lastZoomed = zoomed;
+          post('zoom', { zoomed: zoomed });
+        }
+      }, 250);
+    })();
+  </script>
+</body>
+
+</html>
